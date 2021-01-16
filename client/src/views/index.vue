@@ -3,12 +3,15 @@
 		<BCarousel :slideObjs="slideObjs" />
 
 		<BContainer>
+			<h1>Hello</h1>
+			<button class="btn btn-primary">Test</button>
 		</BContainer>
 	</div>
 </template>
 
 <script>
-import carousel from '@/defaults/carousel_imges'
+// [IMPORT] //
+import Carousel from '@/defaults/carousel_imges'
 import BCarousel from '@/components/BCarousel'
 import PageService from '@/services/PageService'
 
@@ -17,7 +20,7 @@ export default {
 
 	data() {
 		return {
-			slideObjs: carousel,
+			slideObjs: Carousel,
 			reqData: '',
 		}
 	},
