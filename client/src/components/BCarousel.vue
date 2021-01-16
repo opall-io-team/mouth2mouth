@@ -20,6 +20,7 @@
 				:caption="slideObj.caption"
 				:text="slideObj.text"
 				:img-src="slideObj.imgSrc"
+				style="max-height: 300px;"
 			/>
 		</BCarousel>
 	</div>
