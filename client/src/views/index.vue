@@ -29,6 +29,22 @@
 						>
 					</BCol>
 				</BRow>
+
+				<BRow class="mt-3">
+					<BCol cols="12" sm="6">
+						<img
+							:src="DPage.teethCleaning.image"
+							alt="No Image"
+							class="w-100"
+							style=""
+						>
+					</BCol>
+
+					<BCol cols="12" sm="6">
+						<h5>{{ DPage.teethCleaning.header }}</h5>
+						<p>{{ DPage.teethCleaning.text }}</p>
+					</BCol>
+				</BRow>
 			</BContainer>
 		</BCard>
 	</div>
