@@ -2,9 +2,14 @@
 	<div class="">
 		<BCarousel :slideObjs="slideObjs" />
 
-		<BContainer>
-			<h1>Hello</h1>
-			<button class="btn btn-primary">Test</button>
+		<BContainer class="mt-3 text-center">
+			<!-- Caption -->
+			<h4>Permanent Cosmetic Studio</h4>
+
+			<!-- Address -->
+			<h1 class="text-center">3 Banta Place Hackensack NJ 07601</h1>
+
+			<BButton variant="primary">Create Apointment</BButton>
 		</BContainer>
 	</div>
 </template>
