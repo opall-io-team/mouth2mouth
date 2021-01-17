@@ -1,11 +1,11 @@
-/**
- * Router is used to structure website pages
- */
+// [IMPORT] //
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Index from '../views'
-import About from '../views/about'
-import Gallery from '../views/gallery'
+
+// [IMPORT] Personal //
+import Index from '@/views'
+import About from '@/views/about'
+import Gallery from '@/views/gallery'
 
 Vue.use(VueRouter)
 

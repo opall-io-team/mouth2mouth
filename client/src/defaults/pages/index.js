@@ -3,15 +3,21 @@ module.exports = {
 	caraousel: [
 		{
 			caption: 'The Beauty Bar',
-			text: 'Welcome..',
-			img: require('../../assets/media/images/caraousel/slide1.jpg'),
+			text: '3 Banta Place Hackensack NJ, 07601',
+			img: require('../../assets/media/images/caraousel/slide2.jpg'),
 		},
 		{
 			caption: '',
 			text: '',
-			img: require('../../assets/media/images/caraousel/slide2.jpg'),
+			img: require('../../assets/media/images/caraousel/slide1.jpg'),
 		},
 	],
+
+	mainDetails: {
+		caption1: 'Mouth 2 Mouth',
+		caption2: 'Permanent Cosmetic Studio',
+		address: '3 Banta Place Hackensack NJ, 07601',
+	},
 
 	aboutUs: {
 		header: 'What we do..',

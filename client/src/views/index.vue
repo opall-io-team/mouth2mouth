@@ -3,17 +3,19 @@
 		<!-- Caraousel -->
 		<BCarousel :slideObjs="DPage.caraousel" class="shadow" />
 
-		<BContainer class="mt-3 text-center">
+		<!-- Main Details -->
+		<BContainer class="mt-5 text-center">
 			<!-- Caption -->
-			<h4>Permanent Cosmetic Studio</h4>
+			<h1>{{ DPage.mainDetails.caption1 }}</h1>
+			<h2>{{ DPage.mainDetails.caption2 }}</h2>
 
 			<!-- Address -->
-			<h1 class="text-center">3 Banta Place Hackensack NJ 07601</h1>
+			<h4 class="text-center">{{ DPage.mainDetails.address }}</h4>
 
-			<BButton variant="primary mt-3">Create Apointment</BButton>
+			<BButton variant="primary mt-3">Book Apointment</BButton>
 		</BContainer>
 
-		<BCard class="mt-3">
+		<BCard class="mt-5">
 			<BContainer>
 				<BRow>
 					<BCol cols="12" sm="6">

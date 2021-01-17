@@ -1,5 +1,7 @@
 <template>
-	<BContainer class="bg-light">
+	<BContainer class="mt-3">
+		<h4>Gallery</h4>
+
 		<BRow>
 			<BCol v-for="(image, index) in allImages" :key="index" cols="3">
 				<BCard class="mt-3">
