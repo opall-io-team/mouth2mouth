@@ -5,7 +5,7 @@
 
 		<!-- Main Details -->
 		<BContainer class="mt-5 text-center">
-			<BCard bg-variant="info" border-variant="info" class="text-light">
+			<BCard bg-variant="light" border-variant="info" class="text-info">
 				<!-- Captions -->
 				<h1>{{ DPage.mainDetails.caption1 }}</h1>
 				<h2>{{ DPage.mainDetails.caption2 }}</h2>
@@ -15,7 +15,7 @@
 					<h4 class="text-center">{{ DPage.mainDetails.address }}</h4>
 				</a>
 
-				<BButton variant="primary mt-3">Book Apointment</BButton>
+				<BButton variant="info" class="mt-3">Book Apointment</BButton>
 			</BCard>
 		</BContainer>
 

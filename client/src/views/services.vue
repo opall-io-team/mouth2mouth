@@ -9,9 +9,9 @@
 
 				<!-- Best Sellers -->
 				<BCol cols="12" md="6" lg="4">
-					<h4 class="text-center text-secondary">Best Sellers</h4>
+					<h4 class="text-center text-info font-weight-bold">Best Sellers</h4>
 
-					<h6>Classic/Natural</h6>
+					<h6 class="font-weight-bold">Classic/Natural</h6>
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.bestSellers.classic_natural"
@@ -20,12 +20,12 @@
 						>
 							{{ service.name }}
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0">${{ service.price }}</h6>
+								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
 
-					<h6>Maga Volume</h6>
+					<h6 class="font-weight-bold">Maga Volume</h6>
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.bestSellers.megaVolume"
@@ -34,12 +34,12 @@
 						>
 							{{ service.name }}
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0">${{ service.price }}</h6>
+								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
 
-					<h6>Volume</h6>
+					<h6 class="font-weight-bold">Volume</h6>
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.bestSellers.volume"
@@ -48,12 +48,12 @@
 						>
 							{{ service.name }}
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0">${{ service.price }}</h6>
+								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
 
-					<h6>Hybrid</h6>
+					<h6 class="m-0 font-weight-bold">Hybrid</h6>
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.bestSellers.hybrid"
@@ -62,7 +62,7 @@
 						>
 							{{ service.name }}
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0">${{ service.price }}</h6>
+								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
@@ -70,7 +70,7 @@
 
 				<!-- Permanent Makeup -->
 				<BCol cols="12" md="6" lg="4">
-					<h4 class="text-center text-secondary">Permanent Makeup</h4>
+					<h4 class="text-center text-info font-weight-bold">Permanent Makeup</h4>
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
@@ -80,7 +80,7 @@
 						>
 							{{ service.name }}
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0">${{ service.price }}</h6>
+								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
@@ -88,7 +88,7 @@
 
 				<!-- Spa -->
 				<BCol cols="12" md="6" lg="4">
-					<h4 class="text-center text-secondary">Spa</h4>
+					<h4 class="text-center text-info font-weight-bold">Spa</h4>
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
@@ -98,7 +98,7 @@
 						>
 							{{ service.name }}
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0">${{ service.price }}</h6>
+								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
