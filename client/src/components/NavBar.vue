@@ -1,15 +1,18 @@
 <template>   
 	<nav class="navbar navbar-light bg-light" style="height: 100px;">
 		<div class="container">
-			<h6 class="m-0">
-				Call: (201) 403-1984 
-			</h6>
-
 			<div class="text-center">
 				<RouterLink to="/">
-					<h3 class="m-0 font-weight-bold">The Beauty Bar</h3>
+					<h4 class="m-0 font-weight-bold text-info">Mouth 2 Mouth</h4>
+					<h5 class="m-0 font-weight-bold">
+						The Beauty Bar
+					</h5>
 				</RouterLink>
 			</div>
+
+			<h6 class="m-0">
+				Call Us: (201) 403-1984 
+			</h6>
 
 			<div>
 				<h6>

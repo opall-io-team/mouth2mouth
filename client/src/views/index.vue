@@ -22,11 +22,14 @@
 		<!-- More Details -->
 		<BCard class="mt-5">
 			<BContainer>
+				<!-- What We Can Do For You -->
 				<BRow>
 					<BCol cols="12" sm="8">
 						<Transition name="fade">
 							<div v-if="show">
-								<h5>{{ DPage.moreDetails.aboutUs.header }}</h5>
+								<h5 class="text-info font-weight-bold">
+									{{ DPage.moreDetails.aboutUs.header }}
+								</h5>
 								<p>{{ DPage.moreDetails.aboutUs.text }}</p>
 							</div>
 						</Transition>
@@ -45,6 +48,7 @@
 					</BCol>
 				</BRow>
 
+				<!-- Meet Our Staff -->
 				<BRow class="mt-4">
 					<BCol cols="12" sm="6">
 						<Transition name="fade">
@@ -59,7 +63,9 @@
 					<BCol cols="12" sm="6">
 						<Transition name="fade">
 							<div v-if="show">
-								<h5 >{{ DPage.moreDetails.meetTheStaff.header }}</h5>
+								<h5 class="text-info font-weight-bold">
+									{{ DPage.moreDetails.meetTheStaff.header }}
+								</h5>
 								<p>{{ DPage.moreDetails.meetTheStaff.text }}</p>
 							</div>
 						</Transition>
