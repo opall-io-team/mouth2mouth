@@ -5,21 +5,25 @@
 
 		<!-- Main Details -->
 		<BContainer class="mt-5 text-center">
-			<!-- Caption -->
-			<h1>{{ DPage.mainDetails.caption1 }}</h1>
-			<h2>{{ DPage.mainDetails.caption2 }}</h2>
+			<BCard bg-variant="info" border-variant="info" class="text-light">
+				<!-- Captions -->
+				<h1>{{ DPage.mainDetails.caption1 }}</h1>
+				<h2>{{ DPage.mainDetails.caption2 }}</h2>
+				
+				<!-- Address -->
+				<a :href="DPage.mainDetails.googleMapsLink">
+					<h4 class="text-center">{{ DPage.mainDetails.address }}</h4>
+				</a>
 
-			<!-- Address -->
-			<h4 class="text-center">{{ DPage.mainDetails.address }}</h4>
-
-			<BButton variant="primary mt-3">Book Apointment</BButton>
+				<BButton variant="primary mt-3">Book Apointment</BButton>
+			</BCard>
 		</BContainer>
 
 		<!-- More Details -->
 		<BCard class="mt-5">
 			<BContainer>
 				<BRow>
-					<BCol cols="12" sm="6">
+					<BCol cols="12" sm="8">
 						<Transition name="fade">
 							<div v-if="show">
 								<h5>{{ DPage.moreDetails.aboutUs.header }}</h5>
@@ -28,14 +32,14 @@
 						</Transition>
 					</BCol>
 
-					<BCol cols="12" sm="6">
+					<BCol cols="12" sm="4">
 						<Transition name="fade">
 							<img
 								v-if="show"
 								:src="DPage.moreDetails.aboutUs.image"
 								alt="No Image"
 								class="w-100 mb-3 shadow"
-								style="height: 600px; object-fit: cover;"
+								style="height: 400px; object-fit: cover;"
 							>
 						</Transition>
 					</BCol>
@@ -46,7 +50,7 @@
 						<Transition name="fade">
 							<BCarousel
 								v-if="show"
-								:slideObjs="DPage.moreDetails.teethCleaning.caraousel"
+								:slideObjs="DPage.moreDetails.meetTheStaff.caraousel"
 								class="mb-3 shadow"
 							/>
 						</Transition>
@@ -55,8 +59,8 @@
 					<BCol cols="12" sm="6">
 						<Transition name="fade">
 							<div v-if="show">
-								<h5 >{{ DPage.moreDetails.teethCleaning.header }}</h5>
-								<p>{{ DPage.moreDetails.teethCleaning.text }}</p>
+								<h5 >{{ DPage.moreDetails.meetTheStaff.header }}</h5>
+								<p>{{ DPage.moreDetails.meetTheStaff.text }}</p>
 							</div>
 						</Transition>
 					</BCol>

@@ -19,6 +19,11 @@
 					>Home</RouterLink> |
 
 					<RouterLink
+						to="/services"
+						class="text-secondary"
+					>Our Services</RouterLink> |
+
+					<RouterLink
 						to="/directions"
 						class="text-secondary"
 					>Get Directions</RouterLink> |
