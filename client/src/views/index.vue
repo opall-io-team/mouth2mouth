@@ -23,18 +23,18 @@
 
 					<BCol cols="12" sm="6">
 						<img
-							:src="DPage.teethCleaning.image"
+							:src="DPage.aboutUs.image"
 							alt="No Image"
 							class="w-100"
-							style=""
+							style="height: 600px; object-fit: cover;"
 						>
 						
 					</BCol>
 				</BRow>
 
-				<BRow class="mt-3">
+				<BRow class="mt-4">
 					<BCol cols="12" sm="6">
-						<BCarousel :slideObjs="DPage.aboutUs.caraousel" class="shadow" />
+						<BCarousel :slideObjs="DPage.teethCleaning.caraousel" class="shadow" />
 					</BCol>
 
 					<BCol cols="12" sm="6">
