@@ -19,7 +19,7 @@
 					>Home</RouterLink> |
 
 					<RouterLink
-						to="/"
+						to="/directions"
 						class="text-secondary"
 					>Get Directions</RouterLink> |
 

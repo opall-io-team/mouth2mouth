@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 // [IMPORT] Personal //
 import Index from '@/views'
 import About from '@/views/about'
+import Directions from '../views/directions'
 import Gallery from '@/views/gallery'
 
 Vue.use(VueRouter)
@@ -12,19 +13,24 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Index
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'about',
     component: About
+  },
+  {
+    path: '/directions',
+    name: 'directions',
+    component: Directions
   },
   {
     path: '/gallery',
     name: 'gallery',
     component: Gallery
-  }
+  },
 ]
 
 const router = new VueRouter({

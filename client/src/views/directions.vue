@@ -1,0 +1,36 @@
+<template>
+	<BContainer class="mt-3">
+		<BCard bg-variant="light" class="mt-3">
+			<h3 class="text-primary text-center">Directions</h3>
+
+			<BRow>
+				<BCol cols="12" lg="6">		
+					<a
+						:href="DPage.googleMapsLink"
+						class="mt-5 text-secondary text-center"
+					><h5>{{ DPage.address }}</h5></a>
+				</BCol>
+
+				<BCol cols="12" lg="6">
+					<a
+						:href="DPage.googleMapsLink"
+						class="mt-5 text-secondary text-center"
+					><img :src="DPage.gMapsPlaceholder" class="mt-3 w-100"></a>
+				</BCol>
+			</BRow>
+		</BCard>
+	</BContainer>
+</template>
+
+<script>
+	// [IMPORT] Personal //
+	import DPage from '@/defaults/pages/directions'
+
+	export default {
+		data() {
+			return {
+				DPage: DPage,
+			}
+		},
+	}
+</script>

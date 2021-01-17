@@ -1,3 +1,5 @@
+const companyInfo = require('../companyInfo') 
+
 // [EXPORT] //
 module.exports = {
 	caraousel: [
@@ -26,7 +28,7 @@ module.exports = {
 	mainDetails: {
 		caption1: 'Mouth 2 Mouth',
 		caption2: 'Permanent Cosmetic Studio',
-		address: '3 Banta Place Hackensack NJ, 07601',
+		address: companyInfo.address,
 	},
 
 	moreDetails: {

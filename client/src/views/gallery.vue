@@ -3,7 +3,7 @@
 		<BCard bg-variant="light" class="mt-3">
 			<h3 class="text-primary text-center">Gallery</h3>
 
-			<!-- component -->
+			<!-- viewer -->
 			<viewer :options="{ title: false, transition: false, }" :images="allImages">
 				<BRow>
 					<BCol v-for="(image, index) in allImages" :key="index" cols="4">
@@ -21,6 +21,7 @@
 </template>
 
 <script>
+	// [IMPORT] Personal //
 	import allImages from '@/defaults/allImages'
 
 	export default {

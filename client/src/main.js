@@ -5,17 +5,21 @@ import Viewer from 'v-viewer'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'viewerjs/dist/viewer.css'
 
+
 // [IMPORT] Personal //
 import App from './App.vue'
 import router from './router'
 import './assets/styles/bootstrap-override.scss'
 import './assets/styles/style.scss'
 
+
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(Viewer)
 
+
 Vue.config.productionTip = false
+
 
 new Vue({
   router,
