@@ -11,7 +11,7 @@
 						:key="index"
 						cols="12" sm="6" md="4" lg="4" xl="3"
 					>
-						<BCard variant="white" border-variant="white" class="mb-3 shadow">
+						<BCard variant="white" border-variant="white" class="mb-3 shadow rounded-0">
 							<img
 								:src="image"
 								alt="No Photo"
