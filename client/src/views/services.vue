@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="my-3">
+	<BContainer class="my-4">
 		<BCard bg-variant="light" class="mt-3 shadow">
 			<BRow>
 				<!-- Title -->
