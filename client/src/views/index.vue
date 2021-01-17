@@ -1,6 +1,6 @@
 <template>
 	<div class="">
-		<BCarousel :slideObjs="slideObjs" />
+		<BCarousel :slideObjs="DPage.caraousel" />
 
 		<BContainer class="mt-3 text-center">
 			<!-- Caption -->
@@ -52,7 +52,6 @@
 
 <script>
 // [IMPORT] //
-import Carousel from '@/defaults/carousel_imges'
 import DPage from '@/defaults/pages'
 import BCarousel from '@/components/BCarousel'
 import PageService from '@/services/PageService'
@@ -62,7 +61,6 @@ export default {
 
 	data() {
 		return {
-			slideObjs: Carousel,
 			reqData: '',
 			DPage: DPage
 		}
