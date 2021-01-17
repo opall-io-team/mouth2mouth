@@ -67,40 +67,40 @@
 </template>
 
 <script>
-// [IMPORT] //
-import DPage from '@/defaults/pages'
-import BCarousel from '@/components/BCarousel'
-import PageService from '@/services/PageService'
+	// [IMPORT] Personal //
+	import DPage from '@/defaults/pages'
+	import BCarousel from '@/components/BCarousel'
+	import PageService from '@/services/PageService'
 
-export default {
-	name: 'Home',
+	export default {
+		name: 'Home',
 
-	data() {
-		return {
-			DPage: DPage,
-			reqData: '',
-			show: false,
-		}
-	},
-
-	components: {
-		BCarousel,
-	},
-
-	created: async function() {
-		this.getPageData()
-	},
-
-	mounted() {
-		this.show = true
-	},
-
-	methods: {
-		async getPageData() {
-			this.reqData = await PageService.s_()
+		data() {
+			return {
+				DPage: DPage,
+				reqData: '',
+				show: false,
+			}
 		},
+
+		components: {
+			BCarousel,
+		},
+
+		created: async function() {
+			this.getPageData()
+		},
+
+		mounted() {
+			this.show = true
+		},
+
+		methods: {
+			async getPageData() {
+				this.reqData = await PageService.s_()
+			},
+		}
 	}
-}
 </script>
 
 <style lang="scss">

@@ -7,14 +7,16 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar"
-import Footer from "@/components/Footer"
-export default {
-	components: {
-		NavBar,
-		Footer,
+	// [IMPORT] Personal //
+	import NavBar from "@/components/NavBar"
+	import Footer from "@/components/Footer"
+
+	export default {
+		components: {
+			NavBar,
+			Footer,
+		}
 	}
-}
 </script>
 
 <style lang="scss">

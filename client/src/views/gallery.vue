@@ -4,7 +4,7 @@
 			<h3 class="text-primary text-center">Gallery</h3>
 
 			<!-- component -->
-			<viewer :images="allImages">
+			<viewer :options="{ title: false, transition: false, }" :images="allImages">
 				<BRow>
 					<BCol v-for="(image, index) in allImages" :key="index" cols="4">
 						<img
