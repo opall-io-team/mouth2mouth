@@ -1,5 +1,5 @@
 <template>   
-	<nav class="navbar navbar-light bg-light" style="height: 100px;">
+	<nav class="navbar navbar-light bg-light" style="height: 120px;">
 		<div class="container">
 			<div class="text-center">
 				<RouterLink to="/">
@@ -10,35 +10,35 @@
 				</RouterLink>
 			</div>
 
-			<h6 class="m-0">
+			<h6 class="m-0 font-weight-bold">
 				Call Us: (201) 403-1984 
 			</h6>
 
 			<div>
-				<h6>
+				<h6 class="m-0 font-weight-bold">
 					<RouterLink
 						to="/"
-						class="text-secondary"
+						class="text-primary"
 					>Home</RouterLink> |
 
 					<RouterLink
 						to="/services"
-						class="text-secondary"
+						class="text-primary"
 					>Our Services</RouterLink> |
 
 					<RouterLink
 						to="/directions"
-						class="text-secondary"
+						class="text-primary"
 					>Get Directions</RouterLink> |
 
 					<RouterLink
 						to="/about"
-						class="text-secondary"
+						class="text-primary"
 					>About</RouterLink> |
 
 					<RouterLink
 					to="/gallery"
-					class="text-secondary"
+					class="text-primary"
 					>Gallery</RouterLink>
 				</h6>
 			</div>

@@ -1,7 +1,7 @@
 <template>
 	<BContainer class="mt-3">
 		<BCard bg-variant="light" class="mt-3">
-			<h3 class="text-primary text-center">{{ DPage.title }}</h3>
+			<h3 class="mb-3 text-primary text-center">{{ DPage.title }}</h3>
 
 			<!-- viewer -->
 			<viewer :options="{ title: false, transition: false, }" :images="allImages">
