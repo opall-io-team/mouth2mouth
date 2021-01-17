@@ -8,7 +8,7 @@
 			indicators
 			background="#ababab"
 			img-width="1024"
-			img-height="480"
+			img-height="680"
 			style="text-shadow: 1px 1px 2px #333;"
 			@sliding-start="onSlideStart"
 			@sliding-end="onSlideEnd"
@@ -19,8 +19,8 @@
 				:key="index"
 				:caption="slideObj.caption"
 				:text="slideObj.text"
-				:img-src="slideObj.imgSrc"
-				style="max-height: 300px;"
+				:img-src="slideObj.img"
+				style="max-height: 400px;"
 			/>
 		</BCarousel>
 	</div>

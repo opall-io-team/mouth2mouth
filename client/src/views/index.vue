@@ -1,6 +1,7 @@
 <template>
 	<div class="">
-		<BCarousel :slideObjs="DPage.caraousel" />
+		<!-- Caraousel -->
+		<BCarousel :slideObjs="DPage.caraousel" class="shadow" />
 
 		<BContainer class="mt-3 text-center">
 			<!-- Caption -->
@@ -22,22 +23,18 @@
 
 					<BCol cols="12" sm="6">
 						<img
-							:src="DPage.aboutUs.image"
-							alt="No Image"
-							class="w-100"
-							style="width: 250px; height: 400px; object-fit: cover;"
-						>
-					</BCol>
-				</BRow>
-
-				<BRow class="mt-3">
-					<BCol cols="12" sm="6">
-						<img
 							:src="DPage.teethCleaning.image"
 							alt="No Image"
 							class="w-100"
 							style=""
 						>
+						
+					</BCol>
+				</BRow>
+
+				<BRow class="mt-3">
+					<BCol cols="12" sm="6">
+						<BCarousel :slideObjs="DPage.aboutUs.caraousel" class="shadow" />
 					</BCol>
 
 					<BCol cols="12" sm="6">
