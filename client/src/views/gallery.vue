@@ -1,8 +1,8 @@
 <template>
 	<BContainer class="mt-3">
-		<h4>Gallery</h4>
-
 		<BCard bg-variant="light" class="mt-3">
+			<h3 class="text-primary text-center">Gallery</h3>
+
 			<!-- component -->
 			<viewer :images="allImages">
 				<BRow>

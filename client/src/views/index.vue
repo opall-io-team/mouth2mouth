@@ -1,5 +1,5 @@
 <template>
-	<div class="">
+	<div>
 		<!-- Caraousel -->
 		<BCarousel :slideObjs="DPage.caraousel" class="shadow" />
 
@@ -20,31 +20,45 @@
 			<BContainer>
 				<BRow>
 					<BCol cols="12" sm="6">
-						<h5>{{ DPage.moreDetails.aboutUs.header }}</h5>
-						<p>{{ DPage.moreDetails.aboutUs.text }}</p>
+						<Transition name="fade">
+							<div v-if="show">
+								<h5>{{ DPage.moreDetails.aboutUs.header }}</h5>
+								<p>{{ DPage.moreDetails.aboutUs.text }}</p>
+							</div>
+						</Transition>
 					</BCol>
 
 					<BCol cols="12" sm="6">
-						<img
-							:src="DPage.moreDetails.aboutUs.image"
-							alt="No Image"
-							class="w-100 mb-3 shadow"
-							style="height: 600px; object-fit: cover;"
-						>
+						<Transition name="fade">
+							<img
+								v-if="show"
+								:src="DPage.moreDetails.aboutUs.image"
+								alt="No Image"
+								class="w-100 mb-3 shadow"
+								style="height: 600px; object-fit: cover;"
+							>
+						</Transition>
 					</BCol>
 				</BRow>
 
 				<BRow class="mt-4">
 					<BCol cols="12" sm="6">
-						<BCarousel
-							:slideObjs="DPage.moreDetails.teethCleaning.caraousel"
-							class="mb-3 shadow"
-						/>
+						<Transition name="fade">
+							<BCarousel
+								v-if="show"
+								:slideObjs="DPage.moreDetails.teethCleaning.caraousel"
+								class="mb-3 shadow"
+							/>
+						</Transition>
 					</BCol>
 
 					<BCol cols="12" sm="6">
-						<h5>{{ DPage.moreDetails.teethCleaning.header }}</h5>
-						<p>{{ DPage.moreDetails.teethCleaning.text }}</p>
+						<Transition name="fade">
+							<div v-if="show">
+								<h5 >{{ DPage.moreDetails.teethCleaning.header }}</h5>
+								<p>{{ DPage.moreDetails.teethCleaning.text }}</p>
+							</div>
+						</Transition>
 					</BCol>
 				</BRow>
 			</BContainer>
@@ -63,8 +77,9 @@ export default {
 
 	data() {
 		return {
+			DPage: DPage,
 			reqData: '',
-			DPage: DPage
+			show: false,
 		}
 	},
 
@@ -76,10 +91,21 @@ export default {
 		this.getPageData()
 	},
 
+	mounted() {
+		this.show = true
+	},
+
 	methods: {
 		async getPageData() {
-		this.reqData = await PageService.s_()
-		}
-	},
+			this.reqData = await PageService.s_()
+		},
+	}
 }
 </script>
+
+<style lang="scss">
+	.fade-enter-active,
+	.fade-leave-active { transition: opacity 1s; }
+	.fade-enter,
+	.fade-leave-to { opacity: 0; }
+</style>
