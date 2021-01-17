@@ -5,6 +5,7 @@ import VueRouter from 'vue-router'
 // [IMPORT] Personal //
 import Index from '@/views'
 import About from '@/views/about'
+import Book from '@/views/book'
 import Directions from '../views/directions'
 import Gallery from '@/views/gallery'
 import Services from '@/views/services'
@@ -15,27 +16,32 @@ const routes = [
 	{
 		path: '/',
 		name: 'home',
-		component: Index
+		component: Index,
 	},
 	{
 		path: '/about',
 		name: 'about',
-		component: About
+		component: About,
+	},
+	{
+		path: '/book',
+		name: 'book',
+		component: Book,
 	},
 	{
 		path: '/directions',
 		name: 'directions',
-		component: Directions
+		component: Directions,
 	},
 	{
 		path: '/gallery',
 		name: 'gallery',
-		component: Gallery
+		component: Gallery,
 	},
 	{
 		path: '/services',
 		name: 'services',
-		component: Services
+		component: Services,
 	},
 ]
 
