@@ -12,7 +12,6 @@
 							alt=""
 							class="w-100 m-2 shadow"
 							style="height: 300px; object-fit: cover;"
-							v-viewer
 						>
 					</BCol>
 				</BRow>
