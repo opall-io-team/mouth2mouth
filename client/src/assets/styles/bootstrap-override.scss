@@ -5,4 +5,10 @@ $theme-colors: (
 
 
 // [IMPORT] //
-@import 'bootstrap/scss/bootstrap.scss'
+@import 'bootstrap/scss/bootstrap.scss';
+
+
+// [CONTAINER] //
+@media (min-width: 1600px) {
+    .container { max-width: 1500px; }
+}

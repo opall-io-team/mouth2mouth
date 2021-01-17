@@ -1,7 +1,9 @@
 // [IMPORT] //
-import Vue from 'vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import Vue from 'vue'
+import Viewer from 'v-viewer'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'viewerjs/dist/viewer.css'
 
 // [IMPORT] Personal //
 import App from './App.vue'
@@ -11,6 +13,7 @@ import './assets/styles/style.scss'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(Viewer)
 
 Vue.config.productionTip = false
 
