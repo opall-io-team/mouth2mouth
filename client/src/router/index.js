@@ -5,6 +5,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Index from '../views'
 import About from '../views/about'
+import Gallery from '../views/gallery'
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/gallery',
+    name: 'gallery',
+    component: Gallery
   }
 ]
 
