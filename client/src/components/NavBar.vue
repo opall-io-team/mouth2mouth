@@ -1,5 +1,5 @@
 <template>   
-	<nav class="navbar navbar-light bg-light" style="height: 120px;">
+	<BNavbar variant="light" class="bg-light border-bottom border-info" style="height: 120px;">
 		<div class="container">
 			<div class="text-center">
 				<RouterLink to="/">
@@ -43,5 +43,5 @@
 				</h6>
 			</div>
 		</div>
-	</nav>
+	</BNavbar>
 </template>

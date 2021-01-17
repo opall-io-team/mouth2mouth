@@ -1,6 +1,6 @@
 <template>
-	<BContainer class="mt-3">
-		<BCard bg-variant="light" class="mt-3">
+	<BContainer class="my-3">
+		<BCard bg-variant="light" class="mt-3 shadow">
 			<BRow>
 				<!-- Title -->
 				<BCol cols="12">

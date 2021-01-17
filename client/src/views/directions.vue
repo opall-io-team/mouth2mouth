@@ -1,6 +1,6 @@
 <template>
-	<BContainer class="mt-3">
-		<BCard bg-variant="light" class="mt-3">
+	<BContainer class="my-3">
+		<BCard bg-variant="light" class="mt-3 shadow">
 			<h3 class="text-primary text-center">Directions</h3>
 
 			<BRow>

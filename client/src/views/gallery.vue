@@ -1,6 +1,6 @@
 <template>
-	<BContainer class="mt-3">
-		<BCard bg-variant="light" class="mt-3">
+	<BContainer class="my-3">
+		<BCard bg-variant="light" class="mt-3 shadow">
 			<h3 class="mb-3 text-primary text-center">{{ DPage.title }}</h3>
 
 			<!-- viewer -->

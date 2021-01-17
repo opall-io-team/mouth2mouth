@@ -5,7 +5,7 @@
 
 		<!-- Main Details -->
 		<BContainer class="mt-5 text-center">
-			<BCard bg-variant="light" border-variant="info" class="text-info">
+			<BCard bg-variant="light" border-variant="info" class="shadow text-info">
 				<!-- Captions -->
 				<h1>{{ DPage.mainDetails.caption1 }}</h1>
 				<h2>{{ DPage.mainDetails.caption2 }}</h2>
@@ -20,7 +20,7 @@
 		</BContainer>
 
 		<!-- More Details -->
-		<BCard class="mt-5">
+		<BCard bg-variant="" border-variant="light" class="mt-5 shadow rounded-0">
 			<BContainer>
 				<!-- What We Can Do For You -->
 				<BRow>
