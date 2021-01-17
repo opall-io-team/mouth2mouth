@@ -6,13 +6,19 @@
 			<!-- viewer -->
 			<viewer :options="{ title: false, transition: false, }" :images="allImages">
 				<BRow>
-					<BCol v-for="(image, index) in allImages" :key="index" cols="4">
-						<img
-							:src="image"
-							alt=""
-							class="w-100 m-2 shadow"
-							style="height: 300px; object-fit: cover;"
-						>
+					<BCol
+						v-for="(image, index) in allImages"
+						:key="index"
+						cols="12" sm="6" md="4" lg="4" xl="3"
+					>
+						<BCard variant="white" border-variant="white" class="mb-3 shadow">
+							<img
+								:src="image"
+								alt="No Photo"
+								class="w-100"
+								style="height: 300px; object-fit: cover;"
+							>
+						</BCard>
 					</BCol>
 				</BRow>
 			</viewer>
