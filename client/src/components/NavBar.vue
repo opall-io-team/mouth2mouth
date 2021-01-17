@@ -1,11 +1,38 @@
 <template>   
-	<nav class="navbar navbar-light bg-light">
+	<nav class="navbar navbar-light bg-light" style="height: 100px;">
 		<div class="container">
-			<a class="navbar-brand" href="#">The Beauty Bar</a>
+			<h6 class="m-0">
+				Call: (201) 403-1984 
+			</h6>
+
+			<div class="text-center">
+				<RouterLink to="/">
+					<h3 class="m-0 font-weight-bold">The Beauty Bar</h3>
+				</RouterLink>
+			</div>
+
 			<div>
-				<RouterLink to="/">Home</RouterLink> |
-				<RouterLink to="/about">About</RouterLink> |
-				<RouterLink to="/gallery">Gallery</RouterLink>
+				<h6>
+					<RouterLink
+						to="/"
+						class="text-secondary"
+					>Home</RouterLink> |
+
+					<RouterLink
+						to="/"
+						class="text-secondary"
+					>Get Directions</RouterLink> |
+
+					<RouterLink
+						to="/about"
+						class="text-secondary"
+					>About</RouterLink> |
+
+					<RouterLink
+					to="/gallery"
+					class="text-secondary"
+					>Gallery</RouterLink>
+				</h6>
 			</div>
 		</div>
 	</nav>

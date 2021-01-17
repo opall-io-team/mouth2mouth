@@ -1,5 +1,5 @@
 <template>
-	<div class="w-100 mt-4 bg-primary">
+	<div class="w-100 mt-4 bg-secondary text-light" style="height: 500px;">
 		<BContainer>
 			<BRow>
 				<BCol cols="12" class="my-3 text-center">

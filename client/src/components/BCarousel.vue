@@ -6,6 +6,7 @@
 			:interval="4000"
 			controls
 			indicators
+			fade
 			background="#ababab"
 			img-width="1024"
 			img-height="680"
@@ -19,6 +20,7 @@
 				:key="index"
 				:caption="slideObj.caption"
 				:text="slideObj.text"
+				:text-html="slideObj.textHtml"
 				:img-src="slideObj.img"
 				style="max-height: 400px;"
 			/>

@@ -15,33 +15,36 @@
 			<BButton variant="primary mt-3">Book Apointment</BButton>
 		</BContainer>
 
+		<!-- More Details -->
 		<BCard class="mt-5">
 			<BContainer>
 				<BRow>
 					<BCol cols="12" sm="6">
-						<h5>{{ DPage.aboutUs.header }}</h5>
-						<p>{{ DPage.aboutUs.text }}</p>
+						<h5>{{ DPage.moreDetails.aboutUs.header }}</h5>
+						<p>{{ DPage.moreDetails.aboutUs.text }}</p>
 					</BCol>
 
 					<BCol cols="12" sm="6">
 						<img
-							:src="DPage.aboutUs.image"
+							:src="DPage.moreDetails.aboutUs.image"
 							alt="No Image"
-							class="w-100"
+							class="w-100 mb-3 shadow"
 							style="height: 600px; object-fit: cover;"
 						>
-						
 					</BCol>
 				</BRow>
 
 				<BRow class="mt-4">
 					<BCol cols="12" sm="6">
-						<BCarousel :slideObjs="DPage.teethCleaning.caraousel" class="shadow" />
+						<BCarousel
+							:slideObjs="DPage.moreDetails.teethCleaning.caraousel"
+							class="mb-3 shadow"
+						/>
 					</BCol>
 
 					<BCol cols="12" sm="6">
-						<h5>{{ DPage.teethCleaning.header }}</h5>
-						<p>{{ DPage.teethCleaning.text }}</p>
+						<h5>{{ DPage.moreDetails.teethCleaning.header }}</h5>
+						<p>{{ DPage.moreDetails.teethCleaning.text }}</p>
 					</BCol>
 				</BRow>
 			</BContainer>
