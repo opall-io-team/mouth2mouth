@@ -8,7 +8,7 @@
 					<p>{{ DPage.description }}</p>
 				</BCol>
 
-				<BCol cols="5" class="px-5">
+				<BCol cols="12" md="5" class="px-5">
 					<BCard variant="white" border-variant="white" class="shadow">
 						<img :src="DPage.image" alt="No Image" class="w-100">
 					</BCard>
