@@ -28,6 +28,12 @@
 			return {
 				DPage: DPage,
 			}
-		},	
+		},
+
+		created() {
+			const imageDir = __dirname
+
+			console.log(imageDir)
+		},
 }
 </script>
