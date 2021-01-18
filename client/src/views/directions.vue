@@ -10,7 +10,7 @@
 					<a
 						:href="DPage.googleMapsLink"
 						class="mt-5 text-secondary"
-					><h5>{{ DPage.address }}</h5></a>
+					><h4>{{ DPage.address }}</h4></a>
 
 					<a :href="DPage.googleMapsLink" class="text-secondary">
 						<BButton variant="info" size="lg" class="mt-3">
@@ -20,10 +20,12 @@
 				</BCol>
 
 				<BCol cols="12" lg="6">
-					<a
-						:href="DPage.googleMapsLink"
-						class="mt-5 text-secondary text-center"
-					><img :src="DPage.gMapsPlaceholder" class="mt-3 w-100"></a>
+					<BCard variant="white" border-variant="light" class="shadow">
+						<a
+							:href="DPage.googleMapsLink"
+							class="text-secondary text-center"
+						><img :src="DPage.gMapsPlaceholder" class="w-100"></a>
+					</BCard>
 				</BCol>
 			</BRow>
 		</BCard>
