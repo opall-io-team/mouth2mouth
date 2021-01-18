@@ -1,5 +1,5 @@
 <template>
-	<div class="w-100 p-4 bg-light border-bottom border-info">
+	<div class="w-100 pt-4 bg-light border-bottom border-info">
 		<BContainer
 			variant="light"
 			class="bg-light"
