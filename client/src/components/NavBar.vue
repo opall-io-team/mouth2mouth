@@ -1,47 +1,57 @@
-<template>   
-	<BNavbar variant="light" class="bg-light border-bottom border-info" style="height: 120px;">
-		<div class="container">
-			<div class="text-center">
-				<RouterLink to="/">
-					<h4 class="m-0 font-weight-bold text-info">Mouth 2 Mouth</h4>
-					<h5 class="m-0 font-weight-bold">
-						The Beauty Bar
-					</h5>
-				</RouterLink>
-			</div>
+<template>
+	<div class="w-100 p-4 bg-light border-bottom border-info">
+		<BContainer
+			variant="light"
+			class="bg-light"
+		>
+			<BRow>
+				<!-- Title -->
+				<BCol cols="12" sm="4" class="mb-3 text-center">
+					<RouterLink to="/">
+						<h4 class="m-0 font-weight-bold text-info">Mouth 2 Mouth</h4>
+						<h5 class="m-0 font-weight-bold">
+							The Beauty Bar
+						</h5>
+					</RouterLink>
+				</BCol>
 
-			<h6 class="m-0 font-weight-bold">
-				Call Us: (201) 403-1984 
-			</h6>
+				<!-- Phone # -->
+				<BCol cols="12" sm="4" class="mb-3 text-center">
+					<h6 class="m-0 font-weight-bold">
+						Call Us: (201) 403-1984 
+					</h6>
+				</BCol>
 
-			<div>
-				<h6 class="m-0 font-weight-bold">
-					<RouterLink
-						to="/"
+				<!-- Links -->
+				<BCol cols="12" sm="4" class="mb-3">
+					<h6 class="m-0 font-weight-bold">
+						<RouterLink
+							to="/"
+							class="text-primary"
+						>Home</RouterLink> |
+
+						<RouterLink
+							to="/services"
+							class="text-primary"
+						>Our Services</RouterLink> |
+
+						<RouterLink
+							to="/directions"
+							class="text-primary"
+						>Get Directions</RouterLink> |
+
+						<RouterLink
+							to="/about"
+							class="text-primary"
+						>About</RouterLink> |
+
+						<RouterLink
+						to="/gallery"
 						class="text-primary"
-					>Home</RouterLink> |
-
-					<RouterLink
-						to="/services"
-						class="text-primary"
-					>Our Services</RouterLink> |
-
-					<RouterLink
-						to="/directions"
-						class="text-primary"
-					>Get Directions</RouterLink> |
-
-					<RouterLink
-						to="/about"
-						class="text-primary"
-					>About</RouterLink> |
-
-					<RouterLink
-					to="/gallery"
-					class="text-primary"
-					>Gallery</RouterLink>
-				</h6>
-			</div>
-		</div>
-	</BNavbar>
+						>Gallery</RouterLink>
+					</h6>
+				</BCol>
+			</BRow>
+		</BContainer>
+	</div>
 </template>
