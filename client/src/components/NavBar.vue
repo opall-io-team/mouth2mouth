@@ -17,9 +17,11 @@
 
 				<!-- Phone # -->
 				<BCol cols="12" md="6" lg="4" class="mb-3 text-center">
-					<h6 class="m-0 font-weight-bold">
-						Call Us: (201) 403-1984 
-					</h6>
+					<a :href="companyInfo.phoneNumberLink" class="text-secondary">
+						<h6 class="m-0 font-weight-bold">
+							Call Us: {{ companyInfo.phoneNumber }} 
+						</h6>
+					</a>
 				</BCol>
 
 				<!-- Links -->
@@ -54,7 +56,7 @@
 					</div>
 					<div class="w-100 mt-3 text-center text-lg-right font-weight-bold">
 						<a
-							href="https://www.instagram.com/mouth2mouthbeautybar/?hl=en"
+							:href="companyInfo.companyInstagram"
 							class="text-secondary"
 						>
 							<span class="mr-3">Follow us:</span>
@@ -70,11 +72,18 @@
 </template>
 
 <script>
+	import companyInfo from '../defaults/companyInfo'
 	import { InstagramIcon } from 'vue-feather-icons'
 
 	export default {
 		components: {
 			InstagramIcon
-		}
+		},
+
+		data() {
+			return {
+				companyInfo: companyInfo
+			}
+		},
 	}
 </script>

@@ -3,10 +3,14 @@
 		<BRow>
 			<BCol cols="12">
 				<BCard class="text-center shadow">
-					<a href="tel:201-403-1984">
+					<a :href="companyInfo.phoneNumberLink">
 						<h1>Call Us</h1>
-						<h1>(201) 403-1984</h1>
-						<PhoneIcon size="5x" class="text-primary" />
+						<h1>{{ companyInfo.phoneNumber }}</h1>
+						<PhoneIcon size="5x" class="mb-4 text-primary" />
+					</a>
+
+					<a :href="companyInfo.googleMapsLink" class="text-secondary">
+						<h2>{{ companyInfo.address }}</h2>
 					</a>
 				</BCard>
 			</BCol>
@@ -15,11 +19,18 @@
 </template>
 
 <script>
+import companyInfo from '../defaults/companyInfo'
 import { PhoneIcon } from 'vue-feather-icons'
 
 export default {
 	components: {
 		PhoneIcon
-	}
+	},
+
+	data() {
+		return {
+			companyInfo: companyInfo,
+		}
+	},
 }
 </script>

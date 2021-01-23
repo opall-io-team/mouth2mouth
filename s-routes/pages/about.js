@@ -11,6 +11,7 @@ router.get(
         const lit = {
             status: true,
             lit: true,
+            directory: __dirname,
         }
         res.send(lit)
     }
