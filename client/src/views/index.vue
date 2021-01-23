@@ -96,6 +96,50 @@
 						</Transition>
 					</BCol>
 				</BRow>
+
+				<BRow class="mt-4">
+					<Transition name="fade">
+						<BCol cols="4">
+							
+						</BCol>
+					</Transition>
+
+					<Transition name="fade">
+						<BCol cols="12" md="8">
+							<img
+								v-if="show"
+								:src="DPage.moreDetails.row4.image1"
+								alt="No Image"
+								class="w-50 p-2"
+								style="height: 300px; object-fit: cover;"
+							>
+
+							<img
+								v-if="show"
+								:src="DPage.moreDetails.row4.image3"
+								alt="No Image"
+								class="w-50 p-2"
+								style="height: 300px; object-fit: cover;"
+							>
+
+							<img
+								v-if="show"
+								:src="DPage.moreDetails.row4.image3"
+								alt="No Image"
+								class="w-50 p-2"
+								style="height: 300px; object-fit: cover;"
+							>
+
+							<img
+								v-if="show"
+								:src="DPage.moreDetails.row4.image1"
+								alt="No Image"
+								class="w-50 p-2"
+								style="height: 300px; object-fit: cover;"
+							>
+						</BCol>
+					</Transition>
+				</BRow>
 			</BContainer>
 		</BCard>
 	</div>

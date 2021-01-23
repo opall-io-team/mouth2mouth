@@ -59,5 +59,10 @@ module.exports = {
 				},
 			],
 		},
+
+		row4: {
+			image1: require('../../assets/media/images/pages/home/chair.jpg'),
+			image3: require('../../assets/media/images/pages/home/front.jpg'),
+		},
 	},
 }
