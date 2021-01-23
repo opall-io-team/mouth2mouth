@@ -24,7 +24,7 @@
 
 				<!-- Links -->
 				<BCol cols="12" md="12" lg="5" class="mb-3">
-					<div class="text-center">
+					<div class="text-center text-lg-right">
 						<h6 class="m-0 font-weight-bold">
 							<RouterLink
 								to="/"
@@ -52,8 +52,29 @@
 							>Gallery</RouterLink>
 						</h6>
 					</div>
+					<div class="w-100 mt-3 text-center text-lg-right font-weight-bold">
+						<a
+							href="https://www.instagram.com/mouth2mouthbeautybar/?hl=en"
+							class="text-secondary"
+						>
+							<span class="mr-3">Follow us:</span>
+							<InstagramIcon size="1.5x" />
+						</a>
+					</div>
 				</BCol>
+			</BRow>
+			<BRow>
 			</BRow>
 		</BContainer>
 	</div>
 </template>
+
+<script>
+	import { InstagramIcon } from 'vue-feather-icons'
+
+	export default {
+		components: {
+			InstagramIcon
+		}
+	}
+</script>

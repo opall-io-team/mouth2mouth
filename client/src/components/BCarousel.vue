@@ -22,7 +22,7 @@
 				:text="slideObj.text"
 				:text-html="slideObj.textHtml"
 				:img-src="slideObj.img"
-				style="max-height: 400px;"
+				:style="`max-height: ${maxHeight}px;`"
 			/>
 		</BCarousel>
 	</div>
@@ -34,22 +34,28 @@
 			slideObjs: {
 				type: Array,
 				required: true,
-			}
+			},
+
+			maxHeight: {
+				type: Number,
+				default: 400,
+			},
 		},
 
 		data() {
 			return {
 				slide: 0,
-				sliding: null
+				sliding: null,
+				currentSlid: null,
 			}
 		},
 		methods: {
 			onSlideStart(slide) {
-				console.log(slide)
+				this.currentSlid = slide
 				this.sliding = true
 			},
 			onSlideEnd(slide) {
-				console.log(slide)
+				this.currentSlid = slide
 				this.sliding = false
 			}
 		}

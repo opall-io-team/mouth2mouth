@@ -7,7 +7,7 @@ module.exports = {
 			caption: 'The Beauty Bar',
 			text: '3 Banta Place Hackensack NJ, 07601',
 			textHtml: `
-				<a href="/book">
+				<a href="/company-info">
 					<button class="btn btn-light">Book Apointment</button>
 				</a>
 			`,
@@ -17,7 +17,7 @@ module.exports = {
 			caption: '',
 			text: '',
 			textHtml: `
-				<a href="/book">
+				<a href="/company-info">
 					<button class="btn btn-light">Book Apointment</button>
 				</a>
 			`,
@@ -33,13 +33,17 @@ module.exports = {
 	},
 
 	moreDetails: {
-		aboutUs: {
+		row1: {
+			image: require('../../assets/media/images/pages/home/blackmarble.jpg'),
+		},
+
+		row2: {
 			header: 'What we can do for you!',
 			text: 'lit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
 			image: require('../../assets/media/images/pages/home/wwcdfy.jpg'),
 		},
 	
-		meetTheStaff: {
+		row3: {
 			header: 'Meet our staff!',
 			text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 			caraousel: [
