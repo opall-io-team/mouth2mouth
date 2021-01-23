@@ -34,13 +34,15 @@
 								:src="DPage.moreDetails.row1.image"
 								alt="No Image"
 								class="img-responsive w-100 mb-3"
-								style="height: 150px; object-fit: cover;"
+								style="height: 136px; object-fit: cover;"
 							>
 							<div class="carousel-caption">
 								<h1 class="m-0">
-									<span class="h5">Now Booking</span>
-									<br>
-									<span>New Clients</span>
+									<RouterLink to="company-info" class="text-decoration-none">
+										<span class="h5">Now Booking</span>
+										<br>
+										<span>New Clients</span>
+									</RouterLink>
 								</h1>
 							</div>
 						</BCol>
