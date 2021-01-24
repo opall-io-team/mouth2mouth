@@ -8,7 +8,7 @@
     "dev": "nodemon server.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --only=dev --prefix client && npm run build --prefix client"
   },
-  "author": "Aleem Ahmed & Eric Milholen",
+  "author": "Aleem Ahmed",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
