@@ -3,76 +3,6 @@ module.exports = {
 	title: 'Our Services',
 
 	services: {
-		bestSellers: {
-			classic_natural: [
-				{
-					name: 'Week 1',
-					price: 48,
-				},
-				{
-					name: 'Week 2',
-					price: 78,
-				},
-				{
-					name: 'Week 3',
-					price: 86,
-				},
-				{
-					name: 'Week 4 (Full Set)',
-					price: 145,
-				},
-			],
-
-			megaVolume: [
-				{
-					name: 'Week 2',
-					price: 135,
-				},
-				{
-					name: 'Week 3',
-					price: 155,
-				},
-				{
-					name: 'Week 4 (Full Set)',
-					price: 199,
-				},
-			],
-
-			volume: [
-				{
-					name: 'Week 2',
-					price: 100,
-				},
-				{
-					name: 'Week 3',
-					price: 139,
-				},
-				{
-					name: 'Week 4 (Full Set)',
-					price: 175,
-				},
-			],
-
-			hybrid: [
-				{
-					name: 'Week 1',
-					price: 54,
-				},
-				{
-					name: 'Week 2',
-					price: 89,
-				},
-				{
-					name: 'Week 3',
-					price: 96,
-				},
-				{
-					name: 'Week 4 (Full Set)',
-					price: 160,
-				},
-			],
-		},
-
 		permanentMakeup: [
 			{
 				name: 'Combination Brow',
@@ -109,6 +39,85 @@ module.exports = {
 			{
 				name: 'Freckles',
 				price: 200,
+			},
+		],
+
+		bestSellers: [
+			{
+				title: 'Classic/Natural',
+				types: [
+					{
+						name: 'Week 1',
+						price: 48,
+					},
+					{
+						name: 'Week 2',
+						price: 78,
+					},
+					{
+						name: 'Week 3',
+						price: 86,
+					},
+					{
+						name: 'Week 4 (Full Set)',
+						price: 145,
+					},
+				],
+			},
+			{
+				title: 'Hybrid',
+				types: [
+					{
+						name: 'Week 1',
+						price: 54,
+					},
+					{
+						name: 'Week 2',
+						price: 89,
+					},
+					{
+						name: 'Week 3',
+						price: 96,
+					},
+					{
+						name: 'Week 4 (Full Set)',
+						price: 160,
+					},
+				],
+			},
+			{
+				title: 'Volume',
+				types: [
+					{
+						name: 'Week 2',
+						price: 100,
+					},
+					{
+						name: 'Week 3',
+						price: 139,
+					},
+					{
+						name: 'Week 4 (Full Set)',
+						price: 175,
+					},
+				],
+			},
+			{
+				title: 'Mega Volume',
+				types: [
+					{
+						name: 'Week 2',
+						price: 135,
+					},
+					{
+						name: 'Week 3',
+						price: 155,
+					},
+					{
+						name: 'Week 4 (Full Set)',
+						price: 199,
+					},
+				],
 			},
 		],
 

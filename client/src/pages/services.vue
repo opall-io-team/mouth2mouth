@@ -9,79 +9,6 @@
 					</h1>
 				</BCol>
 
-				<!-- Best Sellers -->
-				<BCol cols="12" md="6" lg="4">
-					<h2 class="text-center text-info font-weight-bold">Best Sellers</h2>
-
-					<h4 class="font-weight-bold text-secondary">Classic/Natural</h4>
-					<BListGroup class="mb-3">
-						<BListGroupItem
-							v-for="(service, index) in DPage.services.bestSellers.classic_natural"
-							:key="index"
-							variant="info"
-							class="d-flex justify-content-between align-items-center"
-						>
-							<p class="m-0 h5">{{ service.name }}</p>
-							<BBadge variant="primary" class="badge-pill">
-								<p class="m-0 h5 font-weight-bold">
-									${{ service.price }}
-								</p>
-							</BBadge>
-						</BListGroupItem>
-					</BListGroup>
-
-					<h4 class="font-weight-bold text-secondary">Maga Volume</h4>
-					<BListGroup class="mb-3">
-						<BListGroupItem
-							v-for="(service, index) in DPage.services.bestSellers.megaVolume"
-							:key="index"
-							variant="info"
-							class="d-flex justify-content-between align-items-center"
-						>
-							<p class="m-0 h5">{{ service.name }}</p>
-							<BBadge variant="primary" class="badge-pill">
-								<p class="m-0 h5 font-weight-bold">
-									${{ service.price }}
-								</p>
-							</BBadge>
-						</BListGroupItem>
-					</BListGroup>
-
-					<h4 class="font-weight-bold text-secondary">Volume</h4>
-					<BListGroup class="mb-3">
-						<BListGroupItem
-							v-for="(service, index) in DPage.services.bestSellers.volume"
-							:key="index"
-							variant="info"
-							class="d-flex justify-content-between align-items-center"
-						>
-							<p class="m-0 h5">{{ service.name }}</p>
-							<BBadge variant="primary" class="badge-pill">
-								<p class="m-0 h5 font-weight-bold">
-									${{ service.price }}
-								</p>
-							</BBadge>
-						</BListGroupItem>
-					</BListGroup>
-
-					<h4 class="font-weight-bold text-secondary">Hybrid</h4>
-					<BListGroup class="mb-3">
-						<BListGroupItem
-							v-for="(service, index) in DPage.services.bestSellers.hybrid"
-							:key="index"
-							variant="info"
-							class="d-flex justify-content-between align-items-center"
-						>
-							<p class="m-0 h5">{{ service.name }}</p>
-							<BBadge variant="primary" class="badge-pill">
-								<p class="m-0 h5 font-weight-bold">
-									${{ service.price }}
-								</p>
-							</BBadge>
-						</BListGroupItem>
-					</BListGroup>
-				</BCol>
-
 				<!-- Permanent Makeup -->
 				<BCol cols="12" md="6" lg="4">
 					<h2 class="text-center text-info font-weight-bold">Permanent Makeup</h2>
@@ -101,6 +28,30 @@
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
+				</BCol>
+
+				<!-- Best Sellers -->
+				<BCol cols="12" md="6" lg="4">
+					<h2 class="text-center text-info font-weight-bold">Best Sellers</h2>
+
+					<div v-for="(bs, index) in DPage.services.bestSellers" :key="index">
+						<h4 class="font-weight-bold text-secondary">{{ bs.title }}</h4>
+						<BListGroup class="mb-3">
+							<BListGroupItem
+								v-for="(service, index) in bs.types"
+								:key="index"
+								variant="info"
+								class="d-flex justify-content-between align-items-center"
+							>
+								<p class="m-0 h5">{{ service.name }}</p>
+								<BBadge variant="primary" class="badge-pill">
+									<p class="m-0 h5 font-weight-bold">
+										${{ service.price }}
+									</p>
+								</BBadge>
+							</BListGroupItem>
+						</BListGroup>
+					</div>
 				</BCol>
 
 				<!-- Spa -->

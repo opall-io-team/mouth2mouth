@@ -10,16 +10,23 @@
 				<h1 class="m-0 font-weight-bold text-primary">
 					{{ DPage.mainDetails.caption1 }}
 				</h1>
-				<h2 class="font-weight-bold text-info">
-					{{ DPage.mainDetails.caption2 }}
-				</h2>
 				
 				<!-- Address -->
 				<a :href="DPage.mainDetails.googleMapsLink">
-					<h4 class="text-center font-weight-bold text-secondary">
+					<p class="h4 mb-4 text-center font-weight-bold text-secondary">
 						{{ DPage.mainDetails.address }}
-					</h4>
+					</p>
 				</a>
+
+				<!-- Hours of Operation -->
+				<ul class="text-info">
+					<li
+						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
+						:key="index"
+						class="m-0 list-unstyled"
+					><p class="h5">{{ hoo.days }} - {{ hoo.hours }}</p></li>
+				</ul>
+				
 
 				
 			</BCard>

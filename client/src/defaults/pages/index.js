@@ -2,13 +2,17 @@ const companyInfo = require('../companyInfo')
 
 // [EXPORT] //
 module.exports = {
+	// Caraousel Slider //
 	caraousel: [
 		{
-			caption: 'The Beauty Bar',
+			caption:'',
 			text: '3 Banta Place Hackensack NJ, 07601',
 			textHtml: `
+				<h1 class="font-weight-bold text-info">
+					${companyInfo.companyCaption2}
+				</h1>
 				<a href="/company-info">
-					<button class="btn btn-light">Book Apointment</button>
+					<button class="btn btn-primary">Book Apointment</button>
 				</a>
 			`,
 			img: require('../../assets/images/pages/index/slide2.jpg'),
@@ -17,19 +21,23 @@ module.exports = {
 			caption: '',
 			text: '',
 			textHtml: `
+				<h1 class="font-weight-bold text-info">
+					${companyInfo.companyCaption2}
+				</h1>
 				<a href="/company-info">
-					<button class="btn btn-light">Book Apointment</button>
+					<button class="btn btn-primary">Book Apointment</button>
 				</a>
 			`,
 			img: require('../../assets/images/pages/index/slide1.jpg'),
 		},
 	],
 
+	// Main Details Company Info //
 	mainDetails: {
 		caption1: companyInfo.companyCaption1,
-		caption2: companyInfo.companyCaption2,
 		address: companyInfo.address,
 		googleMapsLink: companyInfo.googleMapsLink,
+		hoursOfOperation: companyInfo.hoursOfOperation,
 	},
 
 	moreDetails: {
