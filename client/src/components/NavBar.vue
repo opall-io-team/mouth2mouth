@@ -8,9 +8,11 @@
 				<!-- Title -->
 				<BCol cols="12" md="6" lg="3" class="mb-3 text-center">
 					<RouterLink to="/">
-						<h4 class="m-0 font-weight-bold text-info">Mouth 2 Mouth</h4>
+						<h4 class="m-0 font-weight-bold text-info">
+							{{ companyInfo.companyName }}
+						</h4>
 						<h5 class="m-0 font-weight-bold">
-							The Beauty Bar
+							{{ companyInfo.companyCaption }}
 						</h5>
 					</RouterLink>
 				</BCol>

@@ -3,13 +3,13 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 // [IMPORT] Personal //
-import Index from '@/views'
-import About from '@/views/about'
-import Book from '@/views/book'
-import CompanyInfo from "@/views/company-info"
-import Directions from '@/views/directions'
-import Gallery from '@/views/gallery'
-import Services from '@/views/services'
+import Index from '@/pages'
+import About from '@/pages/about'
+import Book from '@/pages/book'
+import CompanyInfo from "@/pages/company-info"
+import Directions from '@/pages/directions'
+import Gallery from '@/pages/gallery'
+import Services from '@/pages/services'
 
 Vue.use(VueRouter)
 

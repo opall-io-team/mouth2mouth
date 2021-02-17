@@ -6,5 +6,5 @@ module.exports = {
 	address: companyInfo.address,
 	googleMapsLink: companyInfo.googleMapsLink,
 	buttonText: 'Open Google Maps',
-	gMapsPlaceholder: require('../../assets/media/gmaps-placeholder.png'),
+	gMapsPlaceholder: companyInfo.googleMapsImage,
 }

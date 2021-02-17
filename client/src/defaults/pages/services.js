@@ -100,7 +100,7 @@ module.exports = {
 			},
 			{
 				name: 'Lip Liner',
-				price: 550,
+				price: 400,
 			},
 			{
 				name: 'Beauty Mark',
@@ -123,7 +123,7 @@ module.exports = {
 			},
 			{
 				name: 'Glam Makeup',
-				price: 500,
+				price: 120,
 			},
 			{
 				name: '30 Minute Facial',

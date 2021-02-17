@@ -54,10 +54,10 @@
 					<BCol cols="12" sm="8">
 						<Transition name="fade">
 							<div v-if="show">
-								<h5 class="text-info font-weight-bold">
+								<h2 class="text-info font-weight-bold">
 									{{ DPage.moreDetails.row2.header }}
-								</h5>
-								<p>{{ DPage.moreDetails.row2.text }}</p>
+								</h2>
+								<p class="h4">{{ DPage.moreDetails.row2.text }}</p>
 							</div>
 						</Transition>
 					</BCol>
@@ -90,10 +90,15 @@
 					<BCol cols="12" sm="6">
 						<Transition name="fade">
 							<div v-if="show">
-								<h5 class="text-info font-weight-bold">
+								<h2 class="text-info font-weight-bold">
 									{{ DPage.moreDetails.row3.header }}
-								</h5>
-								<p>{{ DPage.moreDetails.row3.text }}</p>
+								</h2>
+								<p class="mb-4 h4">
+									{{ DPage.moreDetails.row3.description1 }}
+								</p>
+								<p class="h4">
+									{{ DPage.moreDetails.row3.description2 }}
+								</p>
 							</div>
 						</Transition>
 					</BCol>
