@@ -4,65 +4,79 @@
 			<BRow>
 				<!-- Title -->
 				<BCol cols="12">
-					<h3 class="text-primary text-center">{{ DPage.title }}</h3>
+					<h1 class="text-center font-weight-bold text-primary ">
+						{{ DPage.title }}
+					</h1>
 				</BCol>
 
 				<!-- Best Sellers -->
 				<BCol cols="12" md="6" lg="4">
-					<h4 class="text-center text-info font-weight-bold">Best Sellers</h4>
+					<h2 class="text-center text-info font-weight-bold">Best Sellers</h2>
 
-					<h6 class="font-weight-bold">Classic/Natural</h6>
+					<h4 class="font-weight-bold text-secondary">Classic/Natural</h4>
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.bestSellers.classic_natural"
 							:key="index"
+							variant="info"
 							class="d-flex justify-content-between align-items-center"
 						>
-							{{ service.name }}
+							<p class="m-0 h5">{{ service.name }}</p>
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
+								<p class="m-0 h5 font-weight-bold">
+									${{ service.price }}
+								</p>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
 
-					<h6 class="font-weight-bold">Maga Volume</h6>
+					<h4 class="font-weight-bold text-secondary">Maga Volume</h4>
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.bestSellers.megaVolume"
 							:key="index"
+							variant="info"
 							class="d-flex justify-content-between align-items-center"
 						>
-							{{ service.name }}
+							<p class="m-0 h5">{{ service.name }}</p>
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
+								<p class="m-0 h5 font-weight-bold">
+									${{ service.price }}
+								</p>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
 
-					<h6 class="font-weight-bold">Volume</h6>
+					<h4 class="font-weight-bold text-secondary">Volume</h4>
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.bestSellers.volume"
 							:key="index"
+							variant="info"
 							class="d-flex justify-content-between align-items-center"
 						>
-							{{ service.name }}
+							<p class="m-0 h5">{{ service.name }}</p>
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
+								<p class="m-0 h5 font-weight-bold">
+									${{ service.price }}
+								</p>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
 
-					<h6 class="m-0 font-weight-bold">Hybrid</h6>
+					<h4 class="font-weight-bold text-secondary">Hybrid</h4>
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.bestSellers.hybrid"
 							:key="index"
+							variant="info"
 							class="d-flex justify-content-between align-items-center"
 						>
-							{{ service.name }}
+							<p class="m-0 h5">{{ service.name }}</p>
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
+								<p class="m-0 h5 font-weight-bold">
+									${{ service.price }}
+								</p>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
@@ -70,17 +84,20 @@
 
 				<!-- Permanent Makeup -->
 				<BCol cols="12" md="6" lg="4">
-					<h4 class="text-center text-info font-weight-bold">Permanent Makeup</h4>
+					<h2 class="text-center text-info font-weight-bold">Permanent Makeup</h2>
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.permanentMakeup"
 							:key="index"
+							variant="info"
 							class="d-flex justify-content-between align-items-center"
 						>
-							{{ service.name }}
+							<p class="m-0 h5">{{ service.name }}</p>
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
+								<p class="m-0 h5 font-weight-bold">
+									${{ service.price }}
+								</p>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>
@@ -88,17 +105,20 @@
 
 				<!-- Spa -->
 				<BCol cols="12" md="6" lg="4">
-					<h4 class="text-center text-info font-weight-bold">Spa</h4>
+					<h2 class="text-center text-info font-weight-bold">Spa</h2>
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in DPage.services.spa"
 							:key="index"
+							variant="info"
 							class="d-flex justify-content-between align-items-center"
 						>
-							{{ service.name }}
+							<p class="m-0 h5">{{ service.name }}</p>
 							<BBadge variant="primary" class="badge-pill">
-								<h6 class="m-0 font-weight-bold">${{ service.price }}</h6>
+								<p class="m-0 h5 font-weight-bold">
+									${{ service.price }}
+								</p>
 							</BBadge>
 						</BListGroupItem>
 					</BListGroup>

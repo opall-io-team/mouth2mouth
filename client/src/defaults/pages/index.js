@@ -26,7 +26,7 @@ module.exports = {
 	],
 
 	mainDetails: {
-		caption1: companyInfo.companyName,
+		caption1: companyInfo.companyCaption1,
 		caption2: companyInfo.companyCaption2,
 		address: companyInfo.address,
 		googleMapsLink: companyInfo.googleMapsLink,

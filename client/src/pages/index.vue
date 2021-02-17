@@ -5,59 +5,70 @@
 
 		<!-- Main Details -->
 		<BContainer class="mt-5 text-center">
-			<BCard bg-variant="light" border-variant="info" class="shadow text-info">
+			<BCard bg-variant="light" class="shadow">
 				<!-- Captions -->
-				<h1>{{ DPage.mainDetails.caption1 }}</h1>
-				<h2>{{ DPage.mainDetails.caption2 }}</h2>
+				<h1 class="m-0 font-weight-bold text-primary">
+					{{ DPage.mainDetails.caption1 }}
+				</h1>
+				<h2 class="font-weight-bold text-info">
+					{{ DPage.mainDetails.caption2 }}
+				</h2>
 				
 				<!-- Address -->
 				<a :href="DPage.mainDetails.googleMapsLink">
-					<h4 class="text-center">{{ DPage.mainDetails.address }}</h4>
+					<h4 class="text-center font-weight-bold text-secondary">
+						{{ DPage.mainDetails.address }}
+					</h4>
 				</a>
 
-				<BButton
-					variant="info"
-					class="mt-3"
-					@click="redirectCompanyInfo()"
-				>Book Apointment</BButton>
+				
 			</BCard>
 		</BContainer>
 
 		<!-- More Details -->
-		<BCard bg-variant="" border-variant="light" class="mt-5 shadow rounded-0">
+		<BContainer fluid class="mt-5 bg-white border-top border-info shadow-lg">
 			<BContainer>
-				<BRow>
+				<!-- Black Marble Now Booking New Clients -->
+				<BRow class="mb-3">
 					<Transition name="fade">
 						<BCol cols="12">
 							<img
 								v-if="show"
 								:src="DPage.moreDetails.row1.image"
 								alt="No Image"
-								class="img-responsive w-100 mb-3"
-								style="height: 136px; object-fit: cover;"
+								class="img-responsive w-100 my-3"
+								style="height: 146px; object-fit: cover;"
 							>
 							<div class="carousel-caption">
-								<h1 class="m-0">
-									<RouterLink to="company-info" class="text-decoration-none">
-										<span class="h5">Now Booking</span>
-										<br>
-										<span>New Clients</span>
-									</RouterLink>
-								</h1>
+								<RouterLink
+									to="company-info"
+									class="font-weight-bold text-decoration-none"
+								>
+									<h1 class="font-weight-bold">
+										Now Booking New Clients
+									</h1>
+								</RouterLink>
+								
+
+								<BButton
+									variant="info"
+									class="mt-3"
+									@click="redirectCompanyInfo()"
+								>Book Apointment</BButton>
 							</div>
 						</BCol>
 					</Transition>
 				</BRow>
 				
 				<!-- What We Can Do For You -->
-				<BRow>
+				<BRow class="mb-3">
 					<BCol cols="12" sm="8">
 						<Transition name="fade">
 							<div v-if="show">
-								<h2 class="text-info font-weight-bold">
+								<h2 class="text-primary font-weight-bold">
 									{{ DPage.moreDetails.row2.header }}
 								</h2>
-								<p class="h4">{{ DPage.moreDetails.row2.text }}</p>
+								<p class="h4 text-secondary">{{ DPage.moreDetails.row2.text }}</p>
 							</div>
 						</Transition>
 					</BCol>
@@ -76,7 +87,7 @@
 				</BRow>
 
 				<!-- Meet Our Staff -->
-				<BRow class="mt-4">
+				<BRow class="mb-4">
 					<BCol cols="12" sm="6">
 						<Transition name="fade">
 							<BCarousel
@@ -90,65 +101,21 @@
 					<BCol cols="12" sm="6">
 						<Transition name="fade">
 							<div v-if="show">
-								<h2 class="text-info font-weight-bold">
+								<h2 class="text-primary font-weight-bold">
 									{{ DPage.moreDetails.row3.header }}
 								</h2>
-								<p class="mb-4 h4">
+								<p class="mb-4 h4 text-secondary">
 									{{ DPage.moreDetails.row3.description1 }}
 								</p>
-								<p class="h4">
+								<p class="h4 text-secondary">
 									{{ DPage.moreDetails.row3.description2 }}
 								</p>
 							</div>
 						</Transition>
 					</BCol>
 				</BRow>
-
-				<BRow class="mt-4">
-					<Transition name="fade">
-						<BCol cols="4">
-							
-						</BCol>
-					</Transition>
-
-					<Transition name="fade">
-						<BCol cols="12" md="8">
-							<img
-								v-if="show"
-								:src="DPage.moreDetails.row4.image1"
-								alt="No Image"
-								class="w-50 p-2"
-								style="height: 300px; object-fit: cover;"
-							>
-
-							<img
-								v-if="show"
-								:src="DPage.moreDetails.row4.image3"
-								alt="No Image"
-								class="w-50 p-2"
-								style="height: 300px; object-fit: cover;"
-							>
-
-							<img
-								v-if="show"
-								:src="DPage.moreDetails.row4.image3"
-								alt="No Image"
-								class="w-50 p-2"
-								style="height: 300px; object-fit: cover;"
-							>
-
-							<img
-								v-if="show"
-								:src="DPage.moreDetails.row4.image1"
-								alt="No Image"
-								class="w-50 p-2"
-								style="height: 300px; object-fit: cover;"
-							>
-						</BCol>
-					</Transition>
-				</BRow>
 			</BContainer>
-		</BCard>
+		</BContainer>
 	</div>
 </template>
 
@@ -174,7 +141,7 @@
 			BCarousel,
 		},
 
-		created: async function() {
+		async created() {
 			this.getPageData()
 		},
 
@@ -183,13 +150,9 @@
 		},
 
 		methods: {
-			async getPageData() {
-				this.reqData = await PageService.s_()
-			},
+			async getPageData() { this.reqData = await PageService.s_() },
 
-			redirectCompanyInfo() {
-				router.push({ name: 'company-info' })
-			},
+			redirectCompanyInfo() { router.push({ name: 'company-info' }) },
 		},
 	}
 </script>
