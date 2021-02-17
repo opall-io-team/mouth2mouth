@@ -44,21 +44,22 @@
 								:src="DPage.moreDetails.row1.image"
 								alt="No Image"
 								class="img-responsive w-100 my-3"
-								style="height: 146px; object-fit: cover;"
+								style="height: 176px; object-fit: cover;"
 							>
 							<div class="carousel-caption">
 								<RouterLink
-									to="company-info"
+									to="contact-us"
 									class="font-weight-bold text-decoration-none"
 								>
-									<h1 class="font-weight-bold">
+									<h2 class="font-weight-bold">
 										Now Booking New Clients
-									</h1>
+									</h2>
 								</RouterLink>
 								
 
 								<BButton
 									variant="info"
+									size="lg"
 									class="mt-3"
 									@click="redirectCompanyInfo()"
 								>Book Apointment</BButton>
@@ -159,7 +160,7 @@
 		methods: {
 			async getPageData() { this.reqData = await PageService.s_() },
 
-			redirectCompanyInfo() { router.push({ name: 'company-info' }) },
+			redirectCompanyInfo() { router.push({ name: 'contact-us' }) },
 		},
 	}
 </script>

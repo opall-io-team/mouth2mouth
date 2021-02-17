@@ -19,28 +19,33 @@
 					<h6 class="m-0 font-weight-bold">
 						<RouterLink
 							to="/"
-							class="mx-3 text-info"
+							class="h5 mx-2 text-info"
 						>Home</RouterLink>
 
 						<RouterLink
 							to="/services"
-							class="mx-3 text-info"
+							class="h5 mx-2 text-info"
 						>Our Services</RouterLink>
 
 						<RouterLink
 							to="/directions"
-							class="mx-3 text-info"
+							class="h5 mx-2 text-info"
 						>Get Directions</RouterLink>
 
 						<RouterLink
+							to="/gallery"
+							class="h5 mx-2 text-info"
+						>Gallery</RouterLink>
+
+						<RouterLink
 							to="/about"
-							class="mx-3 text-info"
+							class="h5 mx-2 text-info"
 						>About</RouterLink>
 
 						<RouterLink
-						to="/gallery"
-						class="mx-3 text-info"
-						>Gallery</RouterLink>
+							to="/contact-us"
+							class="h5 mx-2 text-info"
+						>Contact Us</RouterLink>
 					</h6>
 				</BCol>
 
@@ -52,39 +57,58 @@
 						</BButton>
 					</a>
 
-					<div class="w-100 mt-3 text-center text-lg-right font-weight-bold">
-						<a
-							:href="companyInfo.companyInstagram"
-							class="text-info"
-						>
-							<span class="mr-3">Follow us:</span>
-							<InstagramIcon size="1.5x" />
-						</a>
+					<div class="w-100 mt-3">
+						<SocialMediaPlug size="2x" variant="info" />
 					</div>
 				</BCol>
 
 				<!-- Hidden Menu Button -->
 				<BCol cols="12" class="d-block d-md-none mb-3">
-					<BButton variant="primary" class="w-100">menu</BButton>
+					<BButton
+						variant="primary"
+						class="w-100"
+						@click="toggle()"
+					>menu</BButton>
 				</BCol>
 			</BRow>
 		</BContainer>
+
+		<!-- Hidden Side Menu -->
+		<SideMenu :sideMenuOpen="sideMenuOpen" @closeMenu="toggle()" />
 	</div>
 </template>
 
 <script>
-	import companyInfo from '../defaults/companyInfo'
-	import { InstagramIcon } from 'vue-feather-icons'
+	// [IMPORT] Personal //
+	import SideMenu from '@/components/nav/SideMenu'
+	import SocialMediaPlug from '@/components/SocialMediaPlug'
+	import companyInfo from '@/defaults/companyInfo'
 
 	export default {
 		components: {
-			InstagramIcon
+			SideMenu,
+			SocialMediaPlug
 		},
 
 		data() {
 			return {
-				companyInfo: companyInfo
+				companyInfo: companyInfo,
+				loggedIn: false,
+				decoded: {},
+				sideMenuOpen: false
 			}
+		},
+
+		methods: {
+			toggle() { this.sideMenuOpen = !this.sideMenuOpen },
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.nav {
+		top: 0;
+		z-index: 10;
+		background-color: rgba(0, 0, 0, 0.726) !important;
+	}
+</style>

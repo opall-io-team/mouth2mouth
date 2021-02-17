@@ -6,7 +6,7 @@ import VueRouter from 'vue-router'
 import Index from '@/pages'
 import About from '@/pages/about'
 import Book from '@/pages/book'
-import CompanyInfo from "@/pages/company-info"
+import CompanyInfo from "@/pages/contact-us"
 import Directions from '@/pages/directions'
 import Gallery from '@/pages/gallery'
 import Services from '@/pages/services'
@@ -30,8 +30,8 @@ const routes = [
 		component: Book,
 	},
 	{
-		path: '/company-info',
-		name: 'company-info',
+		path: '/contact-us',
+		name: 'contact-us',
 		component: CompanyInfo,
 	},
 	{

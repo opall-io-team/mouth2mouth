@@ -1,15 +1,20 @@
 <template>
 	<div id="app">
-		<NavBar /> 
+		<!-- UI -->
+		<NavBar />
+
+		<!-- RouterView -->
 		<RouterView />
+
+		<!-- Footer -->
 		<Footer />
 	</div>
 </template>
 
 <script>
 	// [IMPORT] Personal //
-	import NavBar from "@/components/NavBar"
-	import Footer from "@/components/Footer"
+	import NavBar from "@/components/nav/NavBar"
+	import Footer from "@/components/nav/Footer"
 
 	export default {
 		components: {

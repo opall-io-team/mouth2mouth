@@ -26,5 +26,7 @@ module.exports = {
 	phoneNumber: '(201) 403-1984',
 	phoneNumberLink: 'tel:201-403-1984',
 
-	companyInstagram: 'https://www.instagram.com/mouth2mouthbeautybar/?hl=en',
+	facebookLink: 'https://www.facebook.com/',
+	instagramLink: 'https://www.instagram.com/mouth2mouthbeautybar/?hl=en',
+	youtubeLink: 'https://www.youtube.com',
 }

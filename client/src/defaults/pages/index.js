@@ -11,8 +11,8 @@ module.exports = {
 				<h1 class="font-weight-bold text-info">
 					${companyInfo.companyCaption2}
 				</h1>
-				<a href="/company-info">
-					<button class="btn btn-primary">Book Apointment</button>
+				<a href="/contact-us">
+					<button class="btn-lg btn-primary">Book Apointment</button>
 				</a>
 			`,
 			img: require('../../assets/images/pages/index/slide2.jpg'),
@@ -24,8 +24,8 @@ module.exports = {
 				<h1 class="font-weight-bold text-info">
 					${companyInfo.companyCaption2}
 				</h1>
-				<a href="/company-info">
-					<button class="btn btn-primary">Book Apointment</button>
+				<a href="/contact-us">
+					<button class="btn-lg btn-primary">Book Apointment</button>
 				</a>
 			`,
 			img: require('../../assets/images/pages/index/slide1.jpg'),
