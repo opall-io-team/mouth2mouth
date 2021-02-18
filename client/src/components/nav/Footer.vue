@@ -1,30 +1,69 @@
 <template>
-	<div class="w-100 bg-secondary text-light" style="height: 500px;">
+	<div class="w-100 bg-dark text-light">
 		<BContainer>
-			<BRow>
-				<BCol cols="12" class="my-3 text-center">
-					<small>© 2021</small>
+			<BRow class="pt-4">
+				<BCol cols="12" class="text-center">
+					<RouterLink to="/" class="text-decoration-none">
+						<h5 class="text-primary">
+							{{ companyInfo.companyName }} {{ new Date().getFullYear() }}
+						</h5>
+						<h6 v-html="companyInfo.companyCaption1" class="text-light">
+						</h6>
+						<hr>
+					</RouterLink>
 				</BCol>
 
-				<BCol cols="4">
-					<h5>Features</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Cool stuff</a></li>
+				<BCol cols="12" sm="4" class="text-left">
+					<h4 class="text-light">Location</h4>
+					<a :href="companyInfo.googleMapsLink" class="mb-3">
+						<h5 class="mb-4">{{ companyInfo.address }}</h5>
+					</a>
+
+					<h4 class="text-light">Hours</h4>
+					<ul class="list-unstyled text-small text-secondary">
+						<li
+							v-for="(hoo, index) in companyInfo.hoursOfOperation"
+							:key="index"
+						>
+							<span class="text-light">{{ hoo.days }}:</span>
+							{{ hoo.hours }}
+						</li>
 					</ul>
 				</BCol>
 
-				<BCol cols="4">
-					<h5>Resources</h5>
+				<BCol cols="12" sm="4" class="text-center">
+					<h4>Check Us Out</h4>
 					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Resource</a></li>
+						<li>
+							<RouterLink to="/services">
+								services
+							</RouterLink>
+						</li>
+						<li>
+							<RouterLink to="/gallery">
+								Gallery
+							</RouterLink>
+						</li>
+						<li>
+							<RouterLink to="/about">
+								About
+							</RouterLink>
+						</li>
+						<li>
+							<RouterLink to="/directions">
+								Directions
+							</RouterLink>
+						</li>
 					</ul>
 				</BCol>
 
-				<BCol cols="4">
-					<h5>About</h5>
-					<ul class="list-unstyled text-small">
-						<li><a class="text-muted" href="#">Team</a></li>
-					</ul>
+				<BCol cols="12" sm="4" class="text-center">
+					<h4>Follow Us</h4>
+					<SocialMediaPlug variant="primary" />
+				</BCol>
+
+				<BCol cols="12" class="my-3 text-center text-secondary">
+					<h6>© w3st.io {{ new Date().getFullYear() }}</h6>
 				</BCol>
 			</BRow>
 		</BContainer>
@@ -32,11 +71,18 @@
 </template>
 
 <script>
-export default {
-	data() {
-		return {
-			caption1: 'Album example is © Bootstrap, but please download and customize it for yourself!'
-		}
+	import SocialMediaPlug from '../../components/SocialMediaPlug'
+	import companyInfo from '../../defaults/companyInfo'
+
+	export default {
+		components: {
+			SocialMediaPlug
+		},
+
+		data() {
+			return {
+				companyInfo: companyInfo
+			}
+		},
 	}
-}
 </script>
