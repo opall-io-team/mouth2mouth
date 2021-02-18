@@ -19,7 +19,7 @@
 						:href="companyInfo.phoneNumberLink"
 						class="text-decoration-none"
 					>
-						<p class="h4 font-weight-bold text-info">
+						<p class="h4 mb-4 font-weight-bold text-info">
 							{{ companyInfo.phoneNumber }}
 						</p>
 					</a>
@@ -30,13 +30,20 @@
 						:href="companyInfo.googleMapsLink"
 						class="text-decoration-none text-info"
 					>
-						<p class="h4 font-weight-bold">
+						<p class="h4 mb-4 font-weight-bold">
 							{{ companyInfo.address }}
 						</p>
 					</a>
 
 					<!-- Hours -->
 					<h3 class="text-secondary">Hours</h3>
+					<ul class="list-unstyled text-small text-light">
+						<li
+							v-for="(hoo, index) in companyInfo.hoursOfOperation"
+							:key="index"
+							class="text-primary h5"
+						>{{ hoo.days }}: {{ hoo.hours }}</li>
+					</ul>
 				</BCol>
 
 				<BCol cols="12" md="8" class="px-5">
