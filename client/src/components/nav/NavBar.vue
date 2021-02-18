@@ -3,62 +3,62 @@
 		<BContainer bg-variant="dark">
 			<BRow>
 				<!-- Title -->
-				<BCol cols="12" md="12" lg="2" class="mb-3 text-center">
+				<BCol cols="12" md="12" lg="2" xl="3" class="mb-3 text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<h2 class="m-0 font-weight-bold text-primary">
+						<h3 class="m-0 font-weight-bold text-primary">
 							{{ companyInfo.companyName }}
-						</h2>
-						<h5 class="m-0 font-weight-bold text-info">
+						</h3>
+						<h4 class="m-0 font-weight-bold text-info">
 							{{ companyInfo.companyCaption1 }}
-						</h5>
+						</h4>
 					</RouterLink>
 				</BCol>
 
 				<!-- Links -->
-				<BCol cols="12" md="12" lg="8" class="d-none d-md-block mb-3 text-center">
+				<BCol cols="12" md="12" lg="8" xl="6" class="d-none d-md-block mb-3 text-center">
+					<a :href="companyInfo.googleMapsLink" >
+						<h5 class="mb-3">{{ companyInfo.address }}</h5>
+					</a>
+
 					<h6 class="m-0 font-weight-bold">
 						<RouterLink
 							to="/"
-							class="h5 mx-2 text-info"
+							class="h5 mx-2 text-info text-decoration-none"
 						>Home</RouterLink>
 
 						<RouterLink
 							to="/services"
-							class="h5 mx-2 text-info"
-						>Our Services</RouterLink>
-
-						<RouterLink
-							to="/directions"
-							class="h5 mx-2 text-info"
-						>Get Directions</RouterLink>
+							class="h5 mx-2 text-info text-decoration-none"
+						>Services</RouterLink>
 
 						<RouterLink
 							to="/gallery"
-							class="h5 mx-2 text-info"
+							class="h5 mx-2 text-info text-decoration-none"
 						>Gallery</RouterLink>
 
 						<RouterLink
 							to="/about"
-							class="h5 mx-2 text-info"
+							class="h5 mx-2 text-info text-decoration-none"
 						>About</RouterLink>
 
 						<RouterLink
-							to="/contact-us"
-							class="h5 mx-2 text-info"
-						>Contact Us</RouterLink>
+							to="/directions"
+							class="h5 mx-2 text-info text-decoration-none"
+						>Directions</RouterLink>
 					</h6>
 				</BCol>
 
 				<!-- Phone # & Social Media-->
-				<BCol cols="12" md="12" lg="2" class="mb-3 text-center text-lg-right">
+				<BCol cols="12" md="12" lg="2" xl="3" class="mb-3 text-center text-lg-right">
 					<a :href="companyInfo.phoneNumberLink">
-						<BButton variant="primary" pill>
+						<BButton variant="primary" class="mb-3" pill>
 							Call Us: {{ companyInfo.phoneNumber }} 
 						</BButton>
 					</a>
+					<br>
 
 					<div class="w-100 mt-3">
-						<SocialMediaPlug size="2x" variant="info" />
+						<SocialMediaPlug size="2x" variant="info" class="float-lg-right" />
 					</div>
 				</BCol>
 

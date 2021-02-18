@@ -1,7 +1,7 @@
 // [EXPORT] //
 module.exports = {
-	companyName: 'Mouth2Mouth',
-	companyCaption1: 'The Beauty Bar',
+	companyName: 'The Mouth2Mouth',
+	companyCaption1: 'Beauty Bar',
 	companyCaption2: 'Permanent Cosmetic Studio',
 
 	address: '3 Banta Place Hackensack NJ, 07601',

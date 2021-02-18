@@ -1,4 +1,13 @@
-const companyInfo = require('../companyInfo') 
+const companyInfo = require('../companyInfo')
+
+const slideHTML = `
+	<h1 class="font-weight-bold text-info">
+		${companyInfo.companyCaption2}
+	</h1>
+	<a href="/contact-us">
+		<button class="btn-lg btn-primary">Book Apointment</button>
+	</a>
+`
 
 // [EXPORT] //
 module.exports = {
@@ -6,29 +15,27 @@ module.exports = {
 	caraousel: [
 		{
 			caption:'',
-			text: '3 Banta Place Hackensack NJ, 07601',
-			textHtml: `
-				<h1 class="font-weight-bold text-info">
-					${companyInfo.companyCaption2}
-				</h1>
-				<a href="/contact-us">
-					<button class="btn-lg btn-primary">Book Apointment</button>
-				</a>
-			`,
+			text: '',
+			textHtml: slideHTML,
+			img: require('../../assets/images/pages/index/slide1.jpg'),
+		},
+		{
+			caption: '',
+			text: '',
+			textHtml: slideHTML,
 			img: require('../../assets/images/pages/index/slide2.jpg'),
 		},
 		{
 			caption: '',
 			text: '',
-			textHtml: `
-				<h1 class="font-weight-bold text-info">
-					${companyInfo.companyCaption2}
-				</h1>
-				<a href="/contact-us">
-					<button class="btn-lg btn-primary">Book Apointment</button>
-				</a>
-			`,
-			img: require('../../assets/images/pages/index/slide1.jpg'),
+			textHtml: slideHTML,
+			img: require('../../assets/images/pages/index/slide3.jpg'),
+		},
+		{
+			caption: '',
+			text: '',
+			textHtml: slideHTML,
+			img: require('../../assets/images/pages/index/slide4.jpg'),
 		},
 	],
 

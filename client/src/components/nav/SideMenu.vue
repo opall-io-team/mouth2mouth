@@ -22,15 +22,7 @@
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
 			@click="services()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Our Services</span></BButton>
-
-		<BButton
-			v-show="sideMenuOpen"
-			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
-			@click="directions()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Get Directions</span></BButton>
-
+		><span aria-hidden="true" style="font-size: 1.5em;">Services</span></BButton>
 
 		<BButton
 			v-show="sideMenuOpen"
@@ -45,16 +37,19 @@
 			class="w-100 p-2 text-primary"
 			@click="about()"
 		><span aria-hidden="true" style="font-size: 1.5em;">About</span></BButton>
-
+		
 		<BButton
 			v-show="sideMenuOpen"
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
-			@click="contactUs()"
-		><span aria-hidden="true" style="font-size: 1.5em;">Contact Us</span></BButton>
-		
+			@click="directions()"
+		><span aria-hidden="true" style="font-size: 1.5em;">Directions</span></BButton>
 
-		<SocialMediaPlug v-show="sideMenuOpen" size="48" class="my-3" />
+		<a :href="companyInfo.googleMapsLink" class="text-center">
+			<h5 class="h2 m-5 text-info">{{ companyInfo.address }}</h5>
+		</a>
+
+		<SocialMediaPlug v-show="sideMenuOpen" size="48" variant="info" class="my-3" />
 	</nav>
 </template>
 
@@ -63,6 +58,7 @@
 	import { XIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
+	import companyInfo from '@/defaults/companyInfo'
 	import SocialMediaPlug from '@/components/SocialMediaPlug'
 	import router from '@/router'
 
@@ -82,7 +78,7 @@
 
 		data() {
 			return {
-				query: ''
+				companyInfo: companyInfo
 			}
 		},
 
@@ -144,7 +140,7 @@
 		transition: 0.3s;
 		font-size: 2em;
 
-		&:hover { background: #212529; }
+		&:hover { background: hsl(224, 47%, 65%); }
 	}
 	
 	.isOpen { width: 75%; }

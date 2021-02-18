@@ -1,11 +1,11 @@
 <template>
 	<div>
 		<!-- Caraousel -->
-		<BCarousel :slideObjs="DPage.caraousel" :maxHeight="300" class="shadow" />
+		<BCarousel :slideObjs="DPage.caraousel" :maxHeight="510" class="shadow" />
 
 		<!-- Main Details -->
 		<BContainer class="mt-5 text-center">
-			<BCard bg-variant="light" class="shadow">
+			<BCard bg-variant="light" class="rounded-0 shadow">
 				<!-- Captions -->
 				<h1 class="m-0 font-weight-bold text-primary">
 					{{ DPage.mainDetails.caption1 }}
@@ -25,10 +25,7 @@
 						:key="index"
 						class="m-0 list-unstyled"
 					><p class="h5">{{ hoo.days }} - {{ hoo.hours }}</p></li>
-				</ul>
-				
-
-				
+				</ul>			
 			</BCard>
 		</BContainer>
 

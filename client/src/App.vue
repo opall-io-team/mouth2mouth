@@ -26,11 +26,16 @@
 
 <style lang="scss">
 	// [IMPORT] // Cuprum // Zilla Slab //
-	@import url('https://fonts.googleapis.com/css2?family=Allura&family=Courgette&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Libre+Baskerville&display=swap');
 
-	* { font-family: 'Courgette', cursive !important; }
+	@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+
+	* {
+		font-family: 'Balthazar', serif;
+		font-family: 'Libre Baskerville', serif;
+	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Allura', cursive !important;
+		font-family: 'Balthazar', serif !important;
 	}
 </style>
