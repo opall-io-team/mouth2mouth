@@ -2,7 +2,7 @@
 	<div class="w-100 bg-dark text-light">
 		<BContainer>
 			<BRow class="pt-4">
-				<BCol cols="12" class="text-center">
+				<BCol cols="12" class="text-center" data-aos="fade-up">
 					<RouterLink to="/" class="text-decoration-none">
 						<h5 class="text-primary">
 							{{ companyInfo.companyName }} {{ new Date().getFullYear() }}
@@ -13,7 +13,7 @@
 					</RouterLink>
 				</BCol>
 
-				<BCol cols="12" sm="4" class="text-left">
+				<BCol cols="12" sm="4" class="text-left" data-aos="fade-left">
 					<h4 class="text-light">Location</h4>
 					<a :href="companyInfo.googleMapsLink" class="mb-3">
 						<h5 class="mb-4">{{ companyInfo.address }}</h5>
@@ -31,7 +31,7 @@
 					</ul>
 				</BCol>
 
-				<BCol cols="12" sm="4" class="text-center">
+				<BCol cols="12" sm="4" class="text-center" data-aos="fade-left">
 					<h4>Check Us Out</h4>
 					<ul class="list-unstyled text-small">
 						<li>
@@ -57,7 +57,7 @@
 					</ul>
 				</BCol>
 
-				<BCol cols="12" sm="4" class="text-center">
+				<BCol cols="12" sm="4" class="text-center" data-aos="fade-left">
 					<h4>Follow Us</h4>
 					<SocialMediaPlug variant="primary" />
 				</BCol>

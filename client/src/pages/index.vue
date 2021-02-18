@@ -4,7 +4,7 @@
 		<BCarousel :slideObjs="DPage.caraousel" :maxHeight="510" class="shadow" />
 
 		<!-- Main Details -->
-		<BContainer class="mt-5 text-center">
+		<BContainer class="mt-5 text-center" data-aos="fade-up">
 			<BCard bg-variant="light" class="rounded-0 shadow">
 				<!-- Captions -->
 				<h1 class="m-0 font-weight-bold text-primary">
@@ -33,7 +33,7 @@
 		<BContainer fluid class="mt-5 bg-white border-top border-info shadow-lg">
 			<BContainer>
 				<!-- Black Marble Now Booking New Clients -->
-				<BRow class="mb-3">
+				<BRow class="mb-3" data-aos="fade">
 					<Transition name="fade">
 						<BCol cols="12">
 							<img
@@ -68,55 +68,50 @@
 				<!-- What We Can Do For You -->
 				<BRow class="mb-3">
 					<BCol cols="12" sm="8">
-						<Transition name="fade">
-							<div v-if="show">
-								<h2 class="text-primary font-weight-bold">
-									{{ DPage.moreDetails.row2.header }}
-								</h2>
-								<p class="h4 text-secondary">{{ DPage.moreDetails.row2.text }}</p>
-							</div>
-						</Transition>
+						<div v-if="show">
+							<h2 class="text-primary font-weight-bold">
+								{{ DPage.moreDetails.row2.header }}
+							</h2>
+							<p class="h4 text-secondary">
+								{{ DPage.moreDetails.row2.text }}
+							</p>
+						</div>
 					</BCol>
 
-					<BCol cols="12" sm="4">
-						<Transition name="fade">
-							<img
-								v-if="show"
-								:src="DPage.moreDetails.row2.image"
-								alt="No Image"
-								class="w-100 mb-3 shadow"
-								style="height: 400px; object-fit: cover;"
-							>
-						</Transition>
+					<BCol cols="12" sm="4" data-aos="fade-right">
+						<img
+							v-if="show"
+							:src="DPage.moreDetails.row2.image"
+							alt="No Image"
+							data-aos="fade"
+							class="w-100 mb-3 shadow"
+							style="height: 400px; object-fit: cover;"
+						>
 					</BCol>
 				</BRow>
 
 				<!-- Meet Our Staff -->
 				<BRow class="mb-4">
 					<BCol cols="12" sm="6">
-						<Transition name="fade">
-							<BCarousel
-								v-if="show"
-								:slideObjs="DPage.moreDetails.row3.caraousel"
-								class="mb-3 shadow"
-							/>
-						</Transition>
+						<BCarousel
+							v-if="show"
+							:slideObjs="DPage.moreDetails.row3.caraousel"
+							class="mb-3 shadow"
+							data-aos="fade-left"
+						/>
 					</BCol>
 
 					<BCol cols="12" sm="6">
-						<Transition name="fade">
-							<div v-if="show">
-								<h2 class="text-primary font-weight-bold">
-									{{ DPage.moreDetails.row3.header }}
-								</h2>
-								<p class="mb-4 h4 text-secondary">
-									{{ DPage.moreDetails.row3.description1 }}
-								</p>
-								<p class="h4 text-secondary">
-									{{ DPage.moreDetails.row3.description2 }}
-								</p>
-							</div>
-						</Transition>
+						<div v-if="show">
+							<h2 class="text-primary font-weight-bold">
+								{{ DPage.moreDetails.row3.header }}
+							</h2>
+							<p class="mb-4 h4 text-secondary">
+								{{ DPage.moreDetails.row3.description1 }}
+								<br><br>
+								{{ DPage.moreDetails.row3.description2 }}
+							</p>
+						</div>
 					</BCol>
 				</BRow>
 			</BContainer>
