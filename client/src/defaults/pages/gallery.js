@@ -180,17 +180,24 @@ module.exports = {
 				require('../../assets/images/pages/gallery/tools/5.jpg'),
 				require('../../assets/images/pages/gallery/tools/6.jpg'),
 				require('../../assets/images/pages/gallery/tools/7.jpg'),
-				require('../../assets/images/pages/gallery/tools/8.jpg'),
-				require('../../assets/images/pages/gallery/tools/9.jpg'),
-				require('../../assets/images/pages/gallery/tools/10.jpg'),
-				require('../../assets/images/pages/gallery/tools/11.jpg'),
-				require('../../assets/images/pages/gallery/tools/12.jpg'),
-				require('../../assets/images/pages/gallery/tools/13.jpg'),
-				require('../../assets/images/pages/gallery/tools/14.jpg'),
-				require('../../assets/images/pages/gallery/tools/15.jpg'),
-				require('../../assets/images/pages/gallery/tools/16.jpg'),
-				require('../../assets/images/pages/gallery/tools/17.jpg'),
-				require('../../assets/images/pages/gallery/tools/18.jpg'),
+			]
+		},
+
+		{
+			c1: { title: 'Training' },
+	
+			cx: [
+				require('../../assets/images/pages/gallery/training/8.jpg'),
+				require('../../assets/images/pages/gallery/training/9.jpg'),
+				require('../../assets/images/pages/gallery/training/10.jpg'),
+				require('../../assets/images/pages/gallery/training/11.jpg'),
+				require('../../assets/images/pages/gallery/training/12.jpg'),
+				require('../../assets/images/pages/gallery/training/13.jpg'),
+				require('../../assets/images/pages/gallery/training/14.jpg'),
+				require('../../assets/images/pages/gallery/training/15.jpg'),
+				require('../../assets/images/pages/gallery/training/16.jpg'),
+				require('../../assets/images/pages/gallery/training/17.jpg'),
+				require('../../assets/images/pages/gallery/training/18.jpg'),
 			]
 		},
 	]

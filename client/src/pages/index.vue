@@ -7,7 +7,7 @@
 		<BContainer class="mt-5 text-center">
 			<BCard bg-variant="light" class="rounded-0 shadow">
 				<!-- Captions -->
-				<h1 class="m-0 font-weight-bold text-primary">
+				<h1 class="font-weight-bold text-primary">
 					{{ DPage.mainDetails.caption1 }}
 				</h1>
 				
@@ -48,7 +48,7 @@
 									to="contact-us"
 									class="font-weight-bold text-decoration-none"
 								>
-									<h2 class="font-weight-bold">
+									<h2 class="font-weight-bold text-light">
 										Now Booking New Clients
 									</h2>
 								</RouterLink>
@@ -72,9 +72,19 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row2.header }}
 							</h2>
-							<p class="h4 text-secondary">
+							<p class="mb-4 h5 text-secondary">
 								{{ DPage.moreDetails.row2.text }}
 							</p>
+
+							<div class="w-100 text-center">
+								<RouterLink to="/about">
+									<BButton
+										variant="primary"
+										size="lg"
+										class="mb-4"
+									>Read More</BButton>
+								</RouterLink>
+							</div>
 						</div>
 					</BCol>
 
@@ -105,11 +115,21 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
-							<p class="mb-4 h4 text-secondary">
+							<p class="mb-4 h5 text-secondary">
 								{{ DPage.moreDetails.row3.description1 }}
 								<br><br>
 								{{ DPage.moreDetails.row3.description2 }}
 							</p>
+
+							<div class="w-100 text-center">
+								<RouterLink to="/services">
+									<BButton
+										variant="primary"
+										size="lg"
+										class="mb-4"
+									>Check Out Our Prices</BButton>
+								</RouterLink>
+							</div>
 						</div>
 					</BCol>
 				</BRow>
