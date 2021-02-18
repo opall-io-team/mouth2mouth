@@ -10,7 +10,7 @@
 				</BCol>
 
 				<!-- Permanent Makeup -->
-				<BCol cols="12" md="6" lg="4">
+				<BCol cols="12" md="6" lg="4" data-aos="fade-up">
 					<h2 class="text-center text-info font-weight-bold">Permanent Makeup</h2>
 
 					<BListGroup class="mb-3">
@@ -31,7 +31,7 @@
 				</BCol>
 
 				<!-- Best Sellers -->
-				<BCol cols="12" md="6" lg="4">
+				<BCol cols="12" md="6" lg="4" data-aos="fade-up">
 					<h2 class="text-center text-info font-weight-bold">Best Sellers</h2>
 
 					<div v-for="(bs, index) in DPage.services.bestSellers" :key="index">
@@ -55,7 +55,7 @@
 				</BCol>
 
 				<!-- Spa -->
-				<BCol cols="12" md="6" lg="4">
+				<BCol cols="12" md="6" lg="4" data-aos="fade-up">
 					<h2 class="text-center text-info font-weight-bold">Spa</h2>
 
 					<BListGroup class="mb-3">

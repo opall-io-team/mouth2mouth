@@ -25,6 +25,7 @@
 							alt="No Photo"
 							class="w-100 mb-4 shadow"
 							style="height: 300px; object-fit: cover;"
+							data-aos="fade-up"
 						>
 					</BCol>
 				</BRow>

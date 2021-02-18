@@ -13,7 +13,7 @@
 					</RouterLink>
 				</BCol>
 
-				<BCol cols="12" sm="4" class="text-left" data-aos="fade-left">
+				<BCol cols="12" sm="4" class="text-center text-sm-left" data-aos="fade-left">
 					<h4 class="text-light">Location</h4>
 					<a :href="companyInfo.googleMapsLink" class="mb-3">
 						<h5 class="mb-4">{{ companyInfo.address }}</h5>
@@ -29,6 +29,7 @@
 							{{ hoo.hours }}
 						</li>
 					</ul>
+					<hr>
 				</BCol>
 
 				<BCol cols="12" sm="4" class="text-center" data-aos="fade-left">
@@ -55,6 +56,7 @@
 							</RouterLink>
 						</li>
 					</ul>
+					<hr>
 				</BCol>
 
 				<BCol cols="12" sm="4" class="text-center" data-aos="fade-left">

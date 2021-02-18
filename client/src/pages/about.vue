@@ -8,7 +8,7 @@
 			</BRow>
 
 			<BRow>
-				<BCol cols="12" md="4" class="px-5">
+				<BCol cols="12" md="4" class="px-5" data-aos="fade">
 					<h1 class="mb-3 text-center font-weight-bold text-primary">
 						Find Us
 					</h1>
@@ -46,6 +46,7 @@
 							:src="pageData.image"
 							width="400"
 							class="float-right m-3 rounded shadow"
+							data-aos="fade-left"
 						/>
 						{{ pageData.description }}
 					</p>
