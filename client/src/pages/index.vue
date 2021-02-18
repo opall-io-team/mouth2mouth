@@ -1,7 +1,12 @@
 <template>
 	<div>
 		<!-- Caraousel -->
-		<BCarousel :slideObjs="DPage.caraousel" :maxHeight="510" class="shadow" />
+		<BCarousel
+			:slideObjs="DPage.caraousel"
+			:maxHeight="510"
+			class="shadow"
+			data-aos="fade-up"
+		/>
 
 		<!-- Main Details -->
 		<BContainer class="mt-5 text-center">

@@ -53,7 +53,7 @@
 							:src="pageData.image"
 							width="400"
 							class="float-right m-3 rounded shadow"
-							data-aos="fade-left"
+							data-aos="fade-up"
 						/>
 						{{ pageData.description }}
 					</p>

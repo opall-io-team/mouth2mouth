@@ -54,13 +54,12 @@
 				<!-- Phone # & Social Media-->
 				<BCol cols="12" md="12" lg="2" xl="3" class="mb-3 text-center text-lg-right">
 					<a :href="companyInfo.phoneNumberLink">
-						<BButton variant="primary" class="mb-3" pill>
-							Call Us: {{ companyInfo.phoneNumber }} 
+						<BButton variant="outline-primary" size="lg" class="mb-3">
+							{{ companyInfo.phoneNumber }} 
 						</BButton>
 					</a>
-					<br>
 
-					<div class="w-100 mt-3">
+					<div class="w-100">
 						<SocialMediaPlug size="2x" variant="info" class="float-lg-right" />
 					</div>
 				</BCol>
