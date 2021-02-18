@@ -4,7 +4,7 @@
 		<BCarousel :slideObjs="DPage.caraousel" :maxHeight="510" class="shadow" />
 
 		<!-- Main Details -->
-		<BContainer class="mt-5 text-center" data-aos="fade-up">
+		<BContainer class="mt-5 text-center">
 			<BCard bg-variant="light" class="rounded-0 shadow">
 				<!-- Captions -->
 				<h1 class="m-0 font-weight-bold text-primary">
@@ -78,7 +78,7 @@
 						</div>
 					</BCol>
 
-					<BCol cols="12" sm="4" data-aos="fade-right">
+					<BCol cols="12" sm="4" data-aos="fade-up">
 						<img
 							v-if="show"
 							:src="DPage.moreDetails.row2.image"
@@ -92,12 +92,11 @@
 
 				<!-- Meet Our Staff -->
 				<BRow class="mb-4">
-					<BCol cols="12" sm="6">
+					<BCol cols="12" sm="6" data-aos="fade-up">
 						<BCarousel
 							v-if="show"
 							:slideObjs="DPage.moreDetails.row3.caraousel"
 							class="mb-3 shadow"
-							data-aos="fade-left"
 						/>
 					</BCol>
 

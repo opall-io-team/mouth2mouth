@@ -41,7 +41,7 @@
 
 				<BCol cols="12" md="8" class="px-5">
 					
-					<p class="h3 text-secondary">
+					<p class="h4 text-secondary">
 						<img
 							:src="pageData.image"
 							width="400"

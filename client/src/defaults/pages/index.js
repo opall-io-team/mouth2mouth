@@ -1,11 +1,18 @@
 const companyInfo = require('../companyInfo')
 
 const slideHTML = `
-	<h1 class="font-weight-bold text-info">
+	<h1 class="d-none d-md-block font-weight-bold text-info">
 		${companyInfo.companyCaption2}
 	</h1>
-	<a href="/contact-us">
-		<button class="btn-lg btn-primary">Book Apointment</button>
+
+	<a href="/about">
+		<button class="d-none d-sm-block m-auto btn-lg btn-primary">
+			Book Apointment
+		</button>
+
+		<button class="d-block d-sm-none m-auto btn btn-primary">
+			Book Apointment
+		</button>
 	</a>
 `
 

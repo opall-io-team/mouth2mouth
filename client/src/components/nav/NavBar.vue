@@ -5,9 +5,9 @@
 				<!-- Title -->
 				<BCol cols="12" md="12" lg="2" xl="3" class="mb-3 text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<h3 class="m-0 font-weight-bold text-primary">
+						<h2 class="m-0 font-weight-bold text-primary">
 							{{ companyInfo.companyName }}
-						</h3>
+						</h2>
 						<h4 class="m-0 font-weight-bold text-info">
 							{{ companyInfo.companyCaption1 }}
 						</h4>
@@ -19,33 +19,36 @@
 					<a :href="companyInfo.googleMapsLink" >
 						<h5 class="mb-3">{{ companyInfo.address }}</h5>
 					</a>
+					
+					<RouterLink to="/">
+						<BButton variant="light" class="text-info font-weight-bold">
+							<HomeIcon size="1.1x" stroke-width="2.4" class="mx-2" />
+						</BButton>
+					</RouterLink>
 
-					<h6 class="m-0 font-weight-bold">
-						<RouterLink
-							to="/"
-							class="h5 mx-2 text-info text-decoration-none"
-						>Home</RouterLink>
+					<RouterLink to="/services">
+						<BButton variant="light" class="text-info font-weight-bold">
+							<h4 class="m-0">Services</h4>
+						</BButton>
+					</RouterLink>
 
-						<RouterLink
-							to="/services"
-							class="h5 mx-2 text-info text-decoration-none"
-						>Services</RouterLink>
+					<RouterLink to="/gallery">
+						<BButton variant="light" class="text-info font-weight-bold">
+							<h4 class="m-0">Gallery</h4>
+						</BButton>
+					</RouterLink>
 
-						<RouterLink
-							to="/gallery"
-							class="h5 mx-2 text-info text-decoration-none"
-						>Gallery</RouterLink>
+					<RouterLink to="/about">
+						<BButton variant="light" class="text-info font-weight-bold">
+							<h4 class="m-0">About Us</h4>
+						</BButton>
+					</RouterLink>
 
-						<RouterLink
-							to="/about"
-							class="h5 mx-2 text-info text-decoration-none"
-						>About</RouterLink>
-
-						<RouterLink
-							to="/directions"
-							class="h5 mx-2 text-info text-decoration-none"
-						>Directions</RouterLink>
-					</h6>
+					<RouterLink to="/directions">
+						<BButton variant="light" class="text-info font-weight-bold">
+							<h4 class="m-0">Directions</h4>
+						</BButton>
+					</RouterLink>
 				</BCol>
 
 				<!-- Phone # & Social Media-->
@@ -68,7 +71,7 @@
 						variant="primary"
 						class="w-100"
 						@click="toggle()"
-					>menu</BButton>
+					><MenuIcon /></BButton>
 				</BCol>
 			</BRow>
 		</BContainer>
@@ -79,6 +82,8 @@
 </template>
 
 <script>
+	import { HomeIcon, MenuIcon } from 'vue-feather-icons'
+
 	// [IMPORT] Personal //
 	import SideMenu from '@/components/nav/SideMenu'
 	import SocialMediaPlug from '@/components/SocialMediaPlug'
@@ -86,6 +91,8 @@
 
 	export default {
 		components: {
+			HomeIcon,
+			MenuIcon,
 			SideMenu,
 			SocialMediaPlug
 		},
