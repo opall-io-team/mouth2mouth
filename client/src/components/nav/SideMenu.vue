@@ -19,7 +19,10 @@
 			variant="outline-seconadry"
 			class="w-100 p-2 text-primary"
 			@click="menuItemClicked(button.type)"
-		><p aria-hidden="true" class="h1 my-3">{{ button.text }}</p></BButton>
+		>
+			<p v-if="button.text" class="h1 my-3">{{ button.text }}</p>
+			<span v-else v-html="button.slideMenuIcon"></span>
+		</BButton>
 
 		<a :href="companyInfo.googleMapsLink" class="text-center">
 			<h5 class="h2 m-5 text-info">{{ companyInfo.address }}</h5>
@@ -34,8 +37,9 @@
 	import { XIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
-	import companyInfo from '@/defaults/companyInfo'
 	import SocialMediaPlug from '@/components/SocialMediaPlug'
+	import companyInfo from '@/defaults/companyInfo'
+	import buttons from '@/defaults/pageLinks'
 	import router from '@/router'
 
 	// [EXPORT] //
@@ -55,16 +59,7 @@
 		data() {
 			return {
 				companyInfo: companyInfo,
-
-				buttons: [
-					{ type: 'home', text: 'Home', },
-					{ type: 'services', text: 'Services', },
-					{ type: 'faq', text: 'FAQ', },
-					{ type: 'our-team', text: 'Our Team', },
-					{ type: 'about', text: 'About Us', },
-					{ type: 'gallery', text: 'Gallery', },
-					{ type: 'directions', text: 'Directions', },
-				],
+				buttons: buttons,
 			}
 		},
 

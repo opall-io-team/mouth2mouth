@@ -19,46 +19,20 @@
 					<a :href="companyInfo.googleMapsLink" >
 						<h4 class="mb-2 text-secondary">{{ companyInfo.address }}</h4>
 					</a>
-					
-					<RouterLink to="/">
-						<BButton variant="light" class="text-info font-weight-bold">
-							<HomeIcon size="1.1x" stroke-width="2.4" />
-						</BButton>
-					</RouterLink>
 
-					<RouterLink to="/services">
-						<BButton variant="light" class="text-info font-weight-bold">
-							<h4 class="m-0">Services</h4>
-						</BButton>
-					</RouterLink>
-
-					<RouterLink to="/faq">
-						<BButton variant="light" class="text-info font-weight-bold">
-							<h4 class="m-0">FAQ</h4>
-						</BButton>
-					</RouterLink>
-
-					<RouterLink to="/our-team">
-						<BButton variant="light" class="text-info font-weight-bold">
-							<h4 class="m-0">Our Team</h4>
-						</BButton>
-					</RouterLink>
-
-					<RouterLink to="/about">
-						<BButton variant="light" class="text-info font-weight-bold">
-							<h4 class="m-0">About Us</h4>
-						</BButton>
-					</RouterLink>
-
-					<RouterLink to="/gallery">
-						<BButton variant="light" class="text-info font-weight-bold">
-							<h4 class="m-0">Gallery</h4>
-						</BButton>
-					</RouterLink>
-
-					<RouterLink to="/directions">
-						<BButton variant="light" class="text-info font-weight-bold">
-							<h4 class="m-0">Directions</h4>
+					<!-- Menu Items -->
+					<RouterLink
+						v-for="button in buttons"
+						:key="button.type"
+						:to="button.path"
+					>
+						<BButton
+							variant="light"
+							class="text-info font-weight-bold"
+							@click="menuItemClicked(button.type)"
+						>
+							<span v-if="button.text">{{ button.text }}</span>
+							<span v-else v-html="button.navIcon"></span>
 						</BButton>
 					</RouterLink>
 				</BCol>
@@ -93,16 +67,16 @@
 </template>
 
 <script>
-	import { HomeIcon, MenuIcon } from 'vue-feather-icons'
+	import { MenuIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
 	import SideMenu from '@/components/nav/SideMenu'
 	import SocialMediaPlug from '@/components/SocialMediaPlug'
 	import companyInfo from '@/defaults/companyInfo'
+	import buttons from '@/defaults/pageLinks'
 
 	export default {
 		components: {
-			HomeIcon,
 			MenuIcon,
 			SideMenu,
 			SocialMediaPlug
@@ -111,6 +85,7 @@
 		data() {
 			return {
 				companyInfo: companyInfo,
+				buttons: buttons,
 				loggedIn: false,
 				decoded: {},
 				sideMenuOpen: false

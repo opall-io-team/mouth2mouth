@@ -1,38 +1,52 @@
+const feather = require('feather-icons')
+
 // [EXPORT] //
 module.exports = [
 	{
-		type:'home',
-		text: 'Home',
 		path: '/',
+		type:'home',
+		text: '',
+		navIcon: feather.icons.home.toSvg({
+			'stroke-width': 2.4,
+			width: 18,
+			height: 18,
+			'class': ''
+		}),
+		slideMenuIcon: feather.icons.home.toSvg({
+			'stroke-width': 2.4,
+			width: 38,
+			height: 38,
+			'class': 'my-3'
+		}),
 	},
 	{
+		path: '/services',
 		type: 'services',
 		text: 'Services',
-		path: '/services',
 	},
 	{
+		path: '/faq',
 		type: 'faq',
 		text: 'FAQ',
-		path: '/faq',
 	},
 	{
+		path: '/our-team',
 		type: 'our-team',
 		text: 'Our Team',
-		path: '/our-team',
 	},
 	{
+		path: '/about',
 		type: 'about',
 		text: 'About Us',
-		path: '/about',
 	},
 	{
+		path: '/gallery',
 		type: 'gallery',
 		text: 'Gallery',
-		path: '/gallery',
 	},
 	{
+		path: '/directions',
 		type: 'directions',
 		text: 'Directions',
-		path: '/directions',
 	},
 ]

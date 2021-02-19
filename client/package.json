@@ -13,6 +13,7 @@
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
+    "feather-icons": "^4.28.0",
     "v-viewer": "^1.5.1",
     "vue": "^2.6.11",
     "vue-feather-icons": "^5.1.0",
