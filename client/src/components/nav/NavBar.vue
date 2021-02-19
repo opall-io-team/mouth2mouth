@@ -16,9 +16,11 @@
 
 				<!-- Links -->
 				<BCol cols="12" md="12" lg="8" class="d-none d-md-block mb-3 text-center">
-					<a :href="companyInfo.googleMapsLink" >
-						<h4 class="mb-2 text-secondary">{{ companyInfo.address }}</h4>
-					</a>
+					<a :href="companyInfo.googleMapsLink">
+						<BButton variant="light" class="mb-2 text-secondary">
+						<h4 class="m-0">{{ companyInfo.address }}</h4>
+						</BButton>
+					</a><br>
 
 					<!-- Menu Items -->
 					<RouterLink
