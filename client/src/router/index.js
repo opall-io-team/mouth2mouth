@@ -4,13 +4,15 @@ import VueRouter from 'vue-router'
 
 
 // [IMPORT] Personal //
-import Index from '@/pages'
-import About from '@/pages/about'
-import Book from '@/pages/book'
-import CompanyInfo from "@/pages/contact-us"
-import Directions from '@/pages/directions'
-import Gallery from '@/pages/gallery'
-import Services from '@/pages/services'
+import index from '@/pages'
+import about from '@/pages/about'
+import book from '@/pages/book'
+import contactUs from "@/pages/contact-us"
+import directions from '@/pages/directions'
+import faq from '@/pages/faq'
+import gallery from '@/pages/gallery'
+import ourTeam from '@/pages/our-team'
+import services from '@/pages/services'
 
 
 Vue.use(VueRouter)
@@ -23,44 +25,52 @@ const router = new VueRouter({
 		{
 			path: '/',
 			name: '/',
-			component: Index,
+			component: index,
 		},
 		{
 			path: '/about',
 			name: 'about',
-			component: About,
+			component: about,
 		},
 		{
 			path: '/book',
 			name: 'book',
-			component: Book,
+			component: book,
 		},
 		{
 			path: '/contact-us',
 			name: 'contact-us',
-			component: CompanyInfo,
+			component: contactUs,
 		},
 		{
 			path: '/directions',
 			name: 'directions',
-			component: Directions,
+			component: directions,
+		},
+		{
+			path: '/faq',
+			name: 'faq',
+			component: faq,
 		},
 		{
 			path: '/gallery',
 			name: 'gallery',
-			component: Gallery,
+			component: gallery,
+		},
+		{
+			path: '/our-team',
+			name: 'our-team',
+			component: ourTeam,
 		},
 		{
 			path: '/services',
 			name: 'services',
-			component: Services,
+			component: services,
 		},
 	],
 
 	// [VUE-ROUTER] Scroll Behavior //
-	scrollBehavior () {
-		return { x: 0, y: 0 }
-	}
+	scrollBehavior () { return { x: 0, y: 0 } }
 })
 
 export default router

@@ -61,7 +61,7 @@
 					{ type: 'services', text: 'Services', },
 					{ type: 'faq', text: 'FAQ', },
 					{ type: 'our-team', text: 'Our Team', },
-					{ type: 'about', text: 'About', },
+					{ type: 'about', text: 'About Us', },
 					{ type: 'gallery', text: 'Gallery', },
 					{ type: 'directions', text: 'Directions', },
 				],

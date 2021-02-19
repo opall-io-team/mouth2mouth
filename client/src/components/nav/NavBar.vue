@@ -32,13 +32,13 @@
 						</BButton>
 					</RouterLink>
 
-					<RouterLink to="/services">
+					<RouterLink to="/faq">
 						<BButton variant="light" class="text-info font-weight-bold">
 							<h4 class="m-0">FAQ</h4>
 						</BButton>
 					</RouterLink>
 
-					<RouterLink to="/about">
+					<RouterLink to="/our-team">
 						<BButton variant="light" class="text-info font-weight-bold">
 							<h4 class="m-0">Our Team</h4>
 						</BButton>
