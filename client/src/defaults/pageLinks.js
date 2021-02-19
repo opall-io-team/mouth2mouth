@@ -1,4 +1,6 @@
+// [REQUIRE] //
 const feather = require('feather-icons')
+
 
 // [EXPORT] //
 module.exports = [
