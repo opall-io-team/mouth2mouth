@@ -8,8 +8,8 @@ module.exports = [
 		text: '',
 		navIcon: feather.icons.home.toSvg({
 			'stroke-width': 2.4,
-			width: 18,
-			height: 18,
+			width: 20,
+			height: 20,
 			'class': ''
 		}),
 		slideMenuIcon: feather.icons.home.toSvg({
