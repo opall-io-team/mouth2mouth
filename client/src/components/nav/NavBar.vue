@@ -17,7 +17,7 @@
 				<!-- Links -->
 				<BCol cols="12" md="12" lg="8" xl="6" class="d-none d-md-block mb-3 text-center">
 					<a :href="companyInfo.googleMapsLink" >
-						<h5 class="mb-3">{{ companyInfo.address }}</h5>
+						<h4 class="mb-2 text-secondary">{{ companyInfo.address }}</h4>
 					</a>
 					
 					<RouterLink to="/">

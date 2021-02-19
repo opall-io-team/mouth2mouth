@@ -8,7 +8,7 @@
 			</BRow>
 
 			<BRow>
-				<BCol cols="12" md="4" class="px-5" data-aos="fade">
+				<BCol cols="12" lg="4" xl="3" class="px-5" data-aos="fade">
 					<h1 class="mb-3 text-center font-weight-bold text-primary">
 						Find Us
 					</h1>
@@ -46,7 +46,7 @@
 					</ul>
 				</BCol>
 
-				<BCol cols="12" md="8" class="px-5">
+				<BCol cols="12" lg="8" xl="9" class="px-5">
 					
 					<p class="h4 text-secondary">
 						<img
