@@ -3,7 +3,7 @@
 		<BContainer bg-variant="dark">
 			<BRow>
 				<!-- Title -->
-				<BCol cols="12" md="12" lg="2" xl="3" class="mb-3 text-center">
+				<BCol cols="12" md="12" lg="2" class="mb-3 text-center">
 					<RouterLink to="/" class="text-decoration-none">
 						<h2 class="m-0 font-weight-bold text-primary">
 							{{ companyInfo.companyName }}
@@ -15,14 +15,14 @@
 				</BCol>
 
 				<!-- Links -->
-				<BCol cols="12" md="12" lg="8" xl="6" class="d-none d-md-block mb-3 text-center">
+				<BCol cols="12" md="12" lg="8" class="d-none d-md-block mb-3 text-center">
 					<a :href="companyInfo.googleMapsLink" >
 						<h4 class="mb-2 text-secondary">{{ companyInfo.address }}</h4>
 					</a>
 					
 					<RouterLink to="/">
 						<BButton variant="light" class="text-info font-weight-bold">
-							<HomeIcon size="1.1x" stroke-width="2.4" class="mx-2" />
+							<HomeIcon size="1.1x" stroke-width="2.4" />
 						</BButton>
 					</RouterLink>
 
@@ -32,15 +32,27 @@
 						</BButton>
 					</RouterLink>
 
-					<RouterLink to="/gallery">
+					<RouterLink to="/services">
 						<BButton variant="light" class="text-info font-weight-bold">
-							<h4 class="m-0">Gallery</h4>
+							<h4 class="m-0">FAQ</h4>
+						</BButton>
+					</RouterLink>
+
+					<RouterLink to="/about">
+						<BButton variant="light" class="text-info font-weight-bold">
+							<h4 class="m-0">Our Team</h4>
 						</BButton>
 					</RouterLink>
 
 					<RouterLink to="/about">
 						<BButton variant="light" class="text-info font-weight-bold">
 							<h4 class="m-0">About Us</h4>
+						</BButton>
+					</RouterLink>
+
+					<RouterLink to="/gallery">
+						<BButton variant="light" class="text-info font-weight-bold">
+							<h4 class="m-0">Gallery</h4>
 						</BButton>
 					</RouterLink>
 
@@ -52,7 +64,7 @@
 				</BCol>
 
 				<!-- Phone # & Social Media-->
-				<BCol cols="12" md="12" lg="2" xl="3" class="mb-3 text-center text-lg-right">
+				<BCol cols="12" md="12" lg="2" class="mb-3 text-center text-lg-right">
 					<a :href="companyInfo.phoneNumberLink">
 						<BButton variant="outline-primary" size="lg" class="mb-3">
 							{{ companyInfo.phoneNumber }} 
