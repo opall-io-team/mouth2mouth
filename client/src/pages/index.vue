@@ -3,7 +3,8 @@
 		<!-- Caraousel -->
 		<BCarousel
 			:slideObjs="DPage.caraousel"
-			:maxHeight="510"
+			:maxHeight="400"
+			:rellaxNumber="2"
 			class="shadow"
 			data-aos="fade-up"
 		/>

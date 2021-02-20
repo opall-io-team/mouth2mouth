@@ -10,7 +10,7 @@
 		>
 			<h1
 				v-if="text"
-				class="my-auto text-center text-primary nav-spacer"
+				class="my-auto text-center text-light nav-spacer"
 				style="font-size: 4em;"
 			>{{ text }}</h1>
 		</div>
@@ -61,11 +61,11 @@
 	}
 
 	.nav-spacer {
-		padding-top: 220px;
+		padding-top: 80px;
 		text-shadow: black 0.05em 0.05em 0.2em;
 	}
 
-	@media only screen and (max-width: 991px) { .nav-spacer { padding-top: 280px; } }
+	@media only screen and (max-width: 991px) { .nav-spacer { padding-top: 90px; } }
 
-	@media only screen and (max-width: 768px) { .nav-spacer { padding-top: 240px; } }
+	@media only screen and (max-width: 768px) { .nav-spacer { padding-top: 70px; } }
 </style>

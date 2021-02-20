@@ -23,6 +23,11 @@
 				:text-html="slideObj.textHtml"
 				:img-src="slideObj.img"
 				:style="`max-height: ${maxHeight}px;`"
+				v-rellax
+				data-rellax-xs-speed="0"
+				data-rellax-mobile-speed="0"
+				data-rellax-tablet-speed="0"
+				:data-rellax-desktop-speed="rellaxNumber"
 			/>
 		</BCarousel>
 	</div>
@@ -39,6 +44,11 @@
 			maxHeight: {
 				type: Number,
 				default: 400,
+			},
+
+			rellaxNumber: {
+				type: Number,
+				default: 0,
 			},
 		},
 
