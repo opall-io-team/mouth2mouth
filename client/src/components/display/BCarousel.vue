@@ -60,4 +60,29 @@
 			}
 		}
 	}
+
+	/* Example Prop
+	[
+		{
+			caption: 'The Beauty Bar',
+			text: '3 Banta Place Hackensack NJ, 07601',
+			textHtml: `
+				<a href="/company-info">
+					<button class="btn btn-light">Book Apointment</button>
+				</a>
+			`,
+			img: http://www.blah.com/image-url-here.jpg,
+		},
+		{
+			caption: '',
+			text: '',
+			textHtml: `
+				<a href="/company-info">
+					<button class="btn btn-light">Book Apointment</button>
+				</a>
+			`,
+			img: img: http://www.blah.com/image-url-here.jpg,
+		},
+	]
+	*/
 </script>

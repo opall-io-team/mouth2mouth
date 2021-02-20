@@ -3,6 +3,7 @@ import aos from 'aos'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Vue from 'vue'
 import Viewer from 'v-viewer'
+import VueRellax from 'vue-rellax'
 import 'aos/dist/aos.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'viewerjs/dist/viewer.css'
@@ -18,6 +19,7 @@ import './assets/styles/style.scss'
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(Viewer)
+Vue.use(VueRellax)
 
 
 Vue.config.productionTip = false

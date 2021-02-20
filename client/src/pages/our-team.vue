@@ -1,33 +1,43 @@
 <template>
-	<BContainer class="my-4">
-		<BCard bg-variant="light" class="mt-3 shadow">
-			<h1 class="text-center text-primary font-weight-bold">
-				{{ pageData.pageTitle }}
-			</h1>
+	<div>
+		<Parallax :imgURL="pageData.parallax" :height="300" />	
+		
+		<BContainer class="my-4" v-rellax="{ speed: 4 }">
+			<BCard bg-variant="light" class="mt-3 shadow">
+				<h1 class="text-center text-primary font-weight-bold">
+					{{ pageData.pageTitle }}
+				</h1>
 
-			<BRow>
-				<BCol cols="12">
-					
-				</BCol>
-				<BCol cols="12" md="6">
-					<h2 class="text-center text-info">{{ pageData.r1.c1.title }}</h2>
-					<img :src="pageData.r1.c1.image" class="w-100">
-				</BCol>
-				<BCol cols="12" md="6">
-					<p>{{ pageData.r1.c2.description }}</p>
-				</BCol>
-			</BRow>
-		</BCard>
-	</BContainer>
+				<BRow class="mb-3">
+					<BCol
+						v-for="(col, index) in pageData.r1.cx" :key="index"
+						cols="12" sm="12" md="6" lg="4"
+						class="mb-3"
+					>
+						<BCard :img-src="col.image">
+							<h3 class="card-title">{{ col.title }}</h3>
+							<p class="card-text">{{ col.description }}</p>
+						</BCard>
+					</BCol>
+				</BRow>
+			</BCard>
+		</BContainer>
+	</div>
 </template>
 
 <script>
-import pageData from '@/defaults/pages/our-team'
-export default {
-	data() {
-		return {
-			pageData: pageData
-		}
-	},
-}
+	import Parallax from '../components/display/Parallax'
+	import pageData from '@/defaults/pages/our-team'
+
+	export default {
+		components: {
+			Parallax
+		},
+
+		data() {
+			return {
+				pageData: pageData
+			}
+		},
+	}
 </script>

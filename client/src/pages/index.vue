@@ -146,12 +146,16 @@
 <script>
 	// [IMPORT] Personal //
 	import DPage from '@/defaults/pages'
-	import BCarousel from '@/components/BCarousel'
+	import BCarousel from '@/components/display/BCarousel'
 	import PageService from '@/services/PageService'
 	import router from '@/router'
 
 	export default {
 		name: 'Home',
+
+		components: {
+			BCarousel,
+		},
 
 		data() {
 			return {
@@ -159,10 +163,6 @@
 				reqData: '',
 				show: false,
 			}
-		},
-
-		components: {
-			BCarousel,
 		},
 
 		async created() {
