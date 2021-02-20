@@ -4,7 +4,7 @@
 		<BCarousel
 			:slideObjs="DPage.caraousel"
 			:maxHeight="400"
-			:rellaxNumber="2"
+			:rellaxNumber="1"
 			class="shadow"
 			data-aos="fade-up"
 		/>
@@ -36,8 +36,8 @@
 		</BContainer>
 
 		<!-- More Details -->
-		<BContainer fluid class="mt-5 bg-white border-top border-info shadow-lg">
-			<BContainer>
+		<BContainer fluid class="my-5 bg-white border-top border-info shadow-lg">
+			<BContainer class="pb-3">
 				<!-- Black Marble Now Booking New Clients -->
 				<BRow class="mb-3" data-aos="fade">
 					<Transition name="fade">
@@ -128,14 +128,28 @@
 							</p>
 
 							<div class="w-100 text-center">
-								<RouterLink to="/services">
+								<RouterLink to="/our-team">
 									<BButton
 										variant="primary"
 										size="lg"
 										class="mb-4"
-									>Check Out Our Prices</BButton>
+									>Read More</BButton>
 								</RouterLink>
 							</div>
+						</div>
+					</BCol>
+				</BRow>
+
+				<BRow class="mb-3">
+					<BCol cols="12">
+						<h1 class="text-center text-primary">Interested?</h1>
+
+						<div class="text-center">
+							<RouterLink to="/services">
+								<BButton variant="primary">
+									Check Out Our Services
+								</BButton>
+							</RouterLink>
 						</div>
 					</BCol>
 				</BRow>

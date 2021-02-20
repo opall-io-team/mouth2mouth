@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="my-4">
+	<BContainer class="my-4" data-aos="fade-up">
 		<BCard bg-variant="light" class=" shadow">
 			<BRow class="mb-3">
 				<BCol cols="12">

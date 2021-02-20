@@ -1,8 +1,13 @@
 <template>
 	<div>
-		<Parallax :imgURL="pageData.parallax" :height="280" :text="pageData.pageTitle" />	
+		<Parallax
+			:imgURL="pageData.parallax"
+			:height="280"
+			:text="pageData.pageTitle"
+			data-aos="fade-up"
+		/>	
 		
-		<BContainer class="my-4" v-rellax="{ speed: 6 }">
+		<BContainer class="my-4" v-rellax="{ speed: 6 }" data-aos="fade">
 			<BRow class="mb-3">
 				<BCol
 					v-for="(col, index) in pageData.r1.cx" :key="index"
