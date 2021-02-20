@@ -24,7 +24,7 @@
 			<span v-else v-html="button.slideMenuIcon"></span>
 		</BButton>
 
-		<a :href="companyInfo.googleMapsLink" class="text-center">
+		<a v-show="sideMenuOpen" :href="companyInfo.googleMapsLink" class="text-center">
 			<h5 class="h2 m-5 text-info">{{ companyInfo.address }}</h5>
 		</a>
 
@@ -64,6 +64,11 @@
 		},
 
 		methods: {
+			closeMenu() {
+				this.sideMenuOpen = !this.sideMenuOpen
+				this.$emit('closeMenu')
+			},
+
 			menuItemClicked(type) {
 				switch(type) {
 					case 'close-menu':
