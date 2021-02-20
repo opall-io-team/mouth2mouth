@@ -5,12 +5,12 @@
 				<!-- Title -->
 				<BCol cols="12" md="12" lg="2" class="mb-3 text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<h2 class="m-0 font-weight-bold text-primary">
+						<h5 class="m-0 font-weight-bold text-primary">
 							{{ companyInfo.companyName }}
-						</h2>
-						<h4 class="m-0 font-weight-bold text-info">
+						</h5>
+						<h5 class="m-0 font-weight-bold text-info">
 							{{ companyInfo.companyCaption1 }}
-						</h4>
+						</h5>
 					</RouterLink>
 				</BCol>
 
@@ -42,7 +42,7 @@
 				<!-- Phone # & Social Media-->
 				<BCol cols="12" md="12" lg="2" class="mb-3 text-center text-lg-right">
 					<a :href="companyInfo.phoneNumberLink">
-						<BButton variant="outline-primary" size="lg" class="mb-3">
+						<BButton variant="outline-primary" class="mb-3">
 							{{ companyInfo.phoneNumber }} 
 						</BButton>
 					</a>
