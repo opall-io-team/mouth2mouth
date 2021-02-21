@@ -78,5 +78,8 @@ export default {
 <style lang="scss">
 	.q { transition: .5s; }
 
-	.q:hover { background-color: rgba(0, 0, 0, 0.178); }
+	.q:hover {
+		background-color: rgba(0, 0, 0, 0.178);
+		cursor: pointer;
+	}
 </style>
