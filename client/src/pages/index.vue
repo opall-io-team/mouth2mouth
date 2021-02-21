@@ -61,7 +61,7 @@
 								
 
 								<BButton
-									variant="info"
+									variant="light"
 									size="lg"
 									class="mt-3"
 									@click="redirectCompanyInfo()"
