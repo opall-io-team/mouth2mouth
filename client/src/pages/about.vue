@@ -55,7 +55,18 @@
 							class="float-right m-3 rounded shadow"
 							data-aos="fade-up"
 						/>
-						{{ pageData.description }}
+						{{ pageData.description1 }}
+						<br>
+						<br>
+						{{ pageData.description2 }}
+						<br>
+						<br>
+						{{ pageData.description3 }}
+						<br>
+						<br>
+						{{ pageData.description4 }}
+						<br>
+						<br>
 					</p>
 				</BCol>
 			</BRow>
