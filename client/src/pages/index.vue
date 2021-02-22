@@ -4,7 +4,7 @@
 		<BCarousel
 			:slideObjs="DPage.caraousel"
 			:maxHeight="400"
-			:rellaxNumber="1"
+			:rellaxNumber="2"
 			class="shadow"
 			data-aos="fade-up"
 		/>

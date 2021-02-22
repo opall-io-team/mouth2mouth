@@ -17,18 +17,18 @@
 			:key="button.type"
 			v-show="sideMenuOpen"
 			variant="outline-seconadry"
-			class="w-100 p-2 text-primary"
+			class="w-100 text-primary"
 			@click="menuItemClicked(button.type)"
 		>
-			<p v-if="button.text" class="h1 my-3">{{ button.text }}</p>
+			<p v-if="button.text" class="h1 my-1">{{ button.text }}</p>
 			<span v-else v-html="button.slideMenuIcon"></span>
 		</BButton>
 
 		<a v-show="sideMenuOpen" :href="companyInfo.googleMapsLink" class="text-center">
-			<h5 class="h2 m-5 text-info">{{ companyInfo.address }}</h5>
+			<h5 class="m-4 text-info">{{ companyInfo.address }}</h5>
 		</a>
 
-		<SocialMediaPlug v-show="sideMenuOpen" size="48" variant="info" class="my-3" />
+		<SocialMediaPlug v-show="sideMenuOpen" size="1.8x" variant="info" class="m-4" />
 	</nav>
 </template>
 

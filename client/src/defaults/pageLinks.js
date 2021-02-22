@@ -16,9 +16,9 @@ module.exports = [
 		}),
 		slideMenuIcon: feather.icons.home.toSvg({
 			'stroke-width': 2.4,
-			width: 38,
-			height: 38,
-			'class': 'my-3'
+			width: 34,
+			height: 34,
+			'class': 'my-2'
 		}),
 	},
 	{
