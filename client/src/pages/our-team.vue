@@ -25,7 +25,7 @@
 </template>
 
 <script>
-	import Parallax from '../components/display/Parallax'
+	import Parallax from '@/components/display/Parallax'
 	import pageData from '@/defaults/pages/our-team'
 
 	export default {
