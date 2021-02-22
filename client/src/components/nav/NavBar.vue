@@ -5,12 +5,10 @@
 				<!-- Title -->
 				<BCol cols="12" md="12" lg="3" class="mb-3 text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<h3 class="m-0 font-weight-bold text-primary">
-							{{ companyInfo.companyName }}
-						</h3>
-						<h5 class="m-0 font-weight-bold text-info">
+						<img :src="companyInfo.companyLogo" class="w-100" style="max-width: 300px;">
+						<h4 class="m-0 font-weight-bold text-info">
 							{{ companyInfo.companyCaption1 }}
-						</h5>
+						</h4>
 					</RouterLink>
 				</BCol>
 
@@ -48,7 +46,7 @@
 					</a>
 
 					<div class="w-100">
-						<SocialMediaPlug size="2x" variant="info" class="float-lg-right" />
+						<SocialMediaPlug size="1.8x" variant="info" class="float-lg-right" />
 					</div>
 				</BCol>
 
