@@ -26,16 +26,14 @@
 
 <style lang="scss">
 	// [IMPORT] // Cuprum // Zilla Slab //
-	@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Libre+Baskerville&display=swap');
-
 	@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
 
-	* {
-		font-family: 'Balthazar', serif;
-		font-family: 'Libre Baskerville', serif;
-	}
+	// [IMPORT] Personal //
+	@import url('./assets/fonts/copperplate/demo.css');
+
+	* { font-family: 'Balthazar', serif !important; }
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Balthazar', serif !important;
+		font-family: 'Copperplate W01 Bold', serif !important;
 	}
 </style>

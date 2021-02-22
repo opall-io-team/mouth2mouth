@@ -3,11 +3,11 @@
 		<BContainer bg-variant="dark">
 			<BRow>
 				<!-- Title -->
-				<BCol cols="12" md="12" lg="2" class="mb-3 text-center">
+				<BCol cols="12" md="12" lg="3" class="mb-3 text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<h5 class="m-0 font-weight-bold text-primary">
+						<h3 class="m-0 font-weight-bold text-primary">
 							{{ companyInfo.companyName }}
-						</h5>
+						</h3>
 						<h5 class="m-0 font-weight-bold text-info">
 							{{ companyInfo.companyCaption1 }}
 						</h5>
@@ -15,10 +15,10 @@
 				</BCol>
 
 				<!-- Links -->
-				<BCol cols="12" md="12" lg="8" class="d-none d-md-block mb-3 text-center">
+				<BCol cols="12" md="12" lg="6" class="d-none d-md-block mb-3 text-center">
 					<a :href="companyInfo.googleMapsLink">
 						<BButton variant="light" class="mb-2 text-secondary">
-						<h4 class="m-0">{{ companyInfo.address }}</h4>
+							<h5 class="m-0">{{ companyInfo.address }}</h5>
 						</BButton>
 					</a><br>
 
@@ -30,7 +30,7 @@
 					>
 						<BButton
 							variant="light"
-							class="text-info font-weight-bold"
+							class="mx-2 px-1 py-0 font-weight-bold text-info"
 							@click="menuItemClicked(button.type)"
 						>
 							<span v-if="button.text">{{ button.text }}</span>
@@ -40,7 +40,7 @@
 				</BCol>
 
 				<!-- Phone # & Social Media-->
-				<BCol cols="12" md="12" lg="2" class="mb-3 text-center text-lg-right">
+				<BCol cols="12" md="12" lg="3" class="mb-3 text-center text-lg-right">
 					<a :href="companyInfo.phoneNumberLink">
 						<BButton variant="outline-primary" class="mb-3">
 							{{ companyInfo.phoneNumber }} 

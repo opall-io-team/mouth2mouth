@@ -44,6 +44,7 @@
 							class="text-primary h5"
 						>{{ hoo.days }}: {{ hoo.hours }}</li>
 					</ul>
+					<hr>
 				</BCol>
 
 				<BCol cols="12" lg="8" xl="9" class="px-5">

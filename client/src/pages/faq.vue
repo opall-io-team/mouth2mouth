@@ -20,7 +20,7 @@
 					<BListGroupItem
 						v-if="inOpened(index)"
 						class="d-flex justify-content-between align-items-center"
-					><h4 class="font-weight-bold">{{ qa.a }}</h4></BListGroupItem>
+					><p class="h4 font-weight-bold">{{ qa.a }}</p></BListGroupItem>
 				</BListGroup>				
 			</div>
 		</BCard>

@@ -78,7 +78,7 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row2.header }}
 							</h2>
-							<p class="mb-4 h6 text-secondary">
+							<p class="mb-4 h5 text-secondary">
 								{{ DPage.moreDetails.row2.text }}
 							</p>
 
@@ -121,7 +121,7 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
-							<p class="mb-4 h6 text-secondary">
+							<p class="mb-4 h5 text-secondary">
 								{{ DPage.moreDetails.row3.description1 }}
 								<br><br>
 								{{ DPage.moreDetails.row3.description2 }}
