@@ -41,6 +41,7 @@
 				<BCol cols="12" md="12" lg="3" class="mb-3 text-center text-lg-right">
 					<a :href="companyInfo.phoneNumberLink">
 						<BButton variant="outline-primary" class="mb-3">
+							<PhoneIcon size="1x" />
 							{{ companyInfo.phoneNumber }} 
 						</BButton>
 					</a>
@@ -67,7 +68,7 @@
 </template>
 
 <script>
-	import { MenuIcon } from 'vue-feather-icons'
+	import { MenuIcon, PhoneIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
 	import SideMenu from '@/components/nav/SideMenu'
@@ -77,7 +78,7 @@
 
 	export default {
 		components: {
-			MenuIcon,
+			MenuIcon,PhoneIcon,
 			SideMenu,
 			SocialMediaPlug
 		},
