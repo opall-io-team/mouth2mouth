@@ -5,7 +5,7 @@
 				<!-- Title -->
 				<BCol cols="12" md="12" lg="3" class="mb-3 text-center">
 					<RouterLink to="/" class="text-decoration-none">
-						<img :src="companyInfo.companyLogo" class="w-100" style="max-width: 300px;">
+						<img :src="companyInfo.companyLogo" class="w-100" style="max-width: 260px;">
 						<h4 class="m-0 font-weight-bold text-info">
 							{{ companyInfo.companyCaption1 }}
 						</h4>
@@ -28,7 +28,7 @@
 					>
 						<BButton
 							variant="light"
-							class="mx-2 px-1 py-0 font-weight-bold text-info"
+							class="mx-1 px-2 py-0 font-weight-bold text-info"
 							@click="menuItemClicked(button.type)"
 						>
 							<span v-if="button.text">{{ button.text }}</span>
