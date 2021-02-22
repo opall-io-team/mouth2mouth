@@ -48,11 +48,11 @@
 
 				<BCol cols="12" lg="8" xl="9" class="px-5">
 					
-					<p class="h4 text-secondary">
+					<p class="h5 text-secondary">
 						<img
 							:src="pageData.image"
-							width="400"
-							class="float-right m-3 rounded shadow"
+							class="w-100 float-right m-3 rounded shadow"
+							style="max-width: 300px;"
 							data-aos="fade-up"
 						/>
 						{{ pageData.description1 }}
