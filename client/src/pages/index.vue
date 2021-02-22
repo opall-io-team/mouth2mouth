@@ -5,12 +5,12 @@
 			:slideObjs="DPage.caraousel"
 			:maxHeight="400"
 			:rellaxNumber="2"
-			class="shadow"
+			class="mb-4 shadow"
 			data-aos="fade-up"
 		/>
 
 		<!-- Main Details -->
-		<BContainer class="mt-5 text-center">
+		<BContainer class="mb-4 text-center">
 			<BCard bg-variant="light" class="rounded-0 shadow">
 				<!-- Captions -->
 				<h1 class="font-weight-bold text-primary">
@@ -35,8 +35,18 @@
 			</BCard>
 		</BContainer>
 
+		<BContainer fluid class="">
+			<!-- [R1] Conveyor -->
+			<BRow>
+				<!-- [R1.C1] -->
+				<BCol cols="12" class="mb-4">
+					<Conveyor :images="DPage.sliderImages" :totalOnLg="4" />
+				</BCol>
+			</BRow>
+		</BContainer>
+
 		<!-- More Details -->
-		<BContainer fluid class="my-5 bg-white border-top border-info shadow-lg">
+		<BContainer fluid class="mb-5 bg-white border-top border-info shadow-lg">
 			<BContainer class="pb-3">
 				<!-- Black Marble Now Booking New Clients -->
 				<BRow class="mb-3" data-aos="fade">
@@ -162,6 +172,7 @@
 	// [IMPORT] Personal //
 	import DPage from '@/defaults/pages'
 	import BCarousel from '@/components/display/BCarousel'
+	import Conveyor from '@/components/display/Conveyor'
 	import PageService from '@/services/PageService'
 	import router from '@/router'
 
@@ -170,6 +181,7 @@
 
 		components: {
 			BCarousel,
+			Conveyor,
 		},
 
 		data() {

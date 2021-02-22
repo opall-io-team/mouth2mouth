@@ -6,6 +6,7 @@ import Viewer from 'v-viewer'
 import VueRellax from 'vue-rellax'
 import 'aos/dist/aos.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'tiny-slider/src/tiny-slider.scss'
 import 'viewerjs/dist/viewer.css'
 
 

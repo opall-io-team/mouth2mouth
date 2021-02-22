@@ -54,6 +54,17 @@ module.exports = {
 		hoursOfOperation: companyInfo.hoursOfOperation,
 	},
 
+	sliderImages: [
+		require('../../assets/images/pages/index/slider/1.jpg'),
+		require('../../assets/images/pages/index/slider/2.jpg'),
+		require('../../assets/images/pages/index/slider/3.jpg'),
+		require('../../assets/images/pages/index/slider/4.jpg'),
+		require('../../assets/images/pages/index/slider/5.jpg'),
+		require('../../assets/images/pages/index/slider/6.jpg'),
+		require('../../assets/images/pages/index/slider/7.jpg'),
+		require('../../assets/images/pages/index/slider/8.jpg'),
+	],
+
 	moreDetails: {
 		row1: {
 			image: require('../../assets/images/pages/index/blackmarble.jpg'),
