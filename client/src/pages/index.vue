@@ -40,6 +40,8 @@
 			<BRow>
 				<!-- [R1.C1] -->
 				<BCol cols="12" class="mb-4">
+					<h1 class="text-center">Our Satified Customers</h1>
+
 					<Conveyor :images="DPage.sliderImages" :totalOnLg="4" />
 				</BCol>
 			</BRow>
