@@ -97,11 +97,3 @@
 		},
 	}
 </script>
-
-<style lang="scss" scoped>
-	.nav {
-		top: 0;
-		z-index: 10;
-		background-color: rgba(0, 0, 0, 0.726) !important;
-	}
-</style>
