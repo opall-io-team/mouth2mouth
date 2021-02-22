@@ -22,7 +22,7 @@ module.exports = {
 		},
 		{
 			days: 'Sunday',
-			hours: 'Closed'
+			hours: '6:00 AM - 9:00 PM'
 		},
 	],
 

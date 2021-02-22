@@ -65,7 +65,6 @@ module.exports = {
 				require('../../assets/images/pages/gallery/eyelashes/21.jpg'),
 				require('../../assets/images/pages/gallery/eyelashes/22.jpg'),
 				require('../../assets/images/pages/gallery/eyelashes/23.jpg'),
-				require('../../assets/images/pages/gallery/eyelashes/24.jpg'),
 				require('../../assets/images/pages/gallery/eyelashes/25.jpg'),
 				require('../../assets/images/pages/gallery/eyelashes/26.jpg'),
 				require('../../assets/images/pages/gallery/eyelashes/27.jpg'),
@@ -87,6 +86,7 @@ module.exports = {
 				require('../../assets/images/pages/gallery/facial/9.jpg'),
 				require('../../assets/images/pages/gallery/facial/10.jpg'),
 				require('../../assets/images/pages/gallery/facial/11.jpg'),
+				require('../../assets/images/pages/gallery/facial/24.jpg'),
 			]
 		},
 		{
@@ -115,8 +115,6 @@ module.exports = {
 				require('../../assets/images/pages/gallery/shop/8.jpg'),
 				require('../../assets/images/pages/gallery/shop/9.jpg'),
 				require('../../assets/images/pages/gallery/shop/10.jpg'),
-				require('../../assets/images/pages/gallery/shop/11.jpg'),
-				require('../../assets/images/pages/gallery/shop/12.jpg'),
 				require('../../assets/images/pages/gallery/shop/13.jpg'),
 				require('../../assets/images/pages/gallery/shop/14.jpg'),
 				require('../../assets/images/pages/gallery/shop/15.jpg'),
@@ -126,6 +124,8 @@ module.exports = {
 				require('../../assets/images/pages/gallery/shop/19.jpg'),
 				require('../../assets/images/pages/gallery/shop/20.jpg'),
 				require('../../assets/images/pages/gallery/shop/21.jpg'),
+				require('../../assets/images/pages/gallery/shop/22.jpg'),
+				require('../../assets/images/pages/gallery/shop/23.jpg'),
 			]
 		},
 		{

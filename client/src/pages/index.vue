@@ -25,13 +25,17 @@
 				</a>
 
 				<!-- Hours of Operation -->
-				<ul class="text-info">
+				<ul class="mb-4 text-info">
 					<li
 						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
 						:key="index"
 						class="m-0 list-unstyled"
 					><p class="h5">{{ hoo.days }} - {{ hoo.hours }}</p></li>
-				</ul>			
+				</ul>
+
+				<h5 class="text-secondary text-decoration-underline">
+					<u>{{ DPage.mainDetails.text }}</u>
+				</h5>			
 			</BCard>
 		</BContainer>
 

@@ -52,6 +52,7 @@ module.exports = {
 		address: companyInfo.address,
 		googleMapsLink: companyInfo.googleMapsLink,
 		hoursOfOperation: companyInfo.hoursOfOperation,
+		text: 'By the hour, apointments only',
 	},
 
 	sliderImages: [
@@ -84,6 +85,16 @@ module.exports = {
 			description2: 'Our spa’s aesthetician Nia Rosario provides all our client’s luxury facials, makeup services and eyelash extensions. She is the mother of 3 beautiful daughters Ava, Leila and Chanel and was trained at Parisian Beauty School. She has also worked with numerous celebrities and worked for New York Fashion Week.  ',
 
 			caraousel: [
+				{
+					caption: '',
+					text: '',
+					img: require('../../assets/images/pages/index/meetstaff00.jpg'),
+				},
+				{
+					caption: '',
+					text: '',
+					img: require('../../assets/images/pages/index/meetstaff0.jpg'),
+				},
 				{
 					caption: '',
 					text: '',
