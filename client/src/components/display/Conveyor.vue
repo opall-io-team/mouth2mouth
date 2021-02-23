@@ -1,32 +1,14 @@
 <template>
 	<div>
-		<!-- lg -->
-		<VueTinySlider v-bind="lg" class="d-none d-lg-block my-3">
-			<div v-for="(img, index) in images" :key="index" class="text-center">
-				<img :src="img" class="rounded-lg shadow image">
-			</div>
-		</VueTinySlider>
-
-		<!-- md -->
-		<VueTinySlider v-bind="md" class="d-none d-md-block d-lg-none my-3">
-			<div v-for="(img, index) in images" :key="index" class="text-center">
-				<img :src="img" class="rounded-lg shadow image">
-			</div>
-		</VueTinySlider>
-
-		<!-- sm -->
-		<VueTinySlider v-bind="sm" class="d-none d-sm-block d-md-none my-3">
-			<div v-for="(img, index) in images" :key="index" class="text-center">
-				<img :src="img" class="rounded-lg shadow image">
-			</div>
-		</VueTinySlider>
-
-		<!-- xs -->
-		<VueTinySlider v-bind="xs" class="d-block d-sm-none my-3">
-			<div v-for="(img, index) in images" :key="index" class="text-center">
-				<img :src="img" class="rounded-lg shadow image">
-			</div>
-		</VueTinySlider>
+		<!-- All Sliders -->
+		<div v-for="(slider, index) in sliders" :key="index">
+			<VueTinySlider v-bind="slider.options" :class="slider.class">
+				<!-- All Images -->
+				<div v-for="(img, index) in images" :key="index" class="text-center">
+					<img :src="img" class="rounded-lg shadow image">
+				</div>
+			</VueTinySlider>
+		</div>
 	</div>
 </template>
 
@@ -52,46 +34,64 @@
 
 		data() {
 			return {
-				lg: {
-					items: this.totalOnLg,
-					gutter: 20,
-					nav: false,
-					controls: false,
-					loop: true,
-					autoplay: true,
-					autoplayButtonOutput: false,
-					autoplayTimeout: 2000,
-				},
-				md: {
-					items: this.totalOnLg - 1,
-					gutter: 20,
-					nav: false,
-					controls: false,
-					loop: true,
-					autoplay: true,
-					autoplayButtonOutput: false,
-					autoplayTimeout: 2000,
-				},
-				sm: {
-					items: this.totalOnLg - 2,
-					gutter: 20,
-					nav: false,
-					controls: false,
-					loop: true,
-					autoplay: true,
-					autoplayButtonOutput: false,
-					autoplayTimeout: 2000,
-				},
-				xs: {
-					items: this.totalOnLg - 3,
-					gutter: 20,
-					nav: false,
-					controls: false,
-					loop: true,
-					autoplay: true,
-					autoplayButtonOutput: false,
-					autoplayTimeout: 2000,
-				},
+				sliders: [
+					// LG
+					{
+						class: 'd-none d-lg-block my-3',
+						options: {
+							items: this.totalOnLg,
+							gutter: 20,
+							nav: false,
+							controls: false,
+							loop: true,
+							autoplay: true,
+							autoplayButtonOutput: false,
+							autoplayTimeout: 2000,
+						},
+					},
+					// MD
+					{
+						class: 'd-none d-md-block d-lg-none my-3',
+						options: {
+							items: this.totalOnLg - 1,
+							gutter: 20,
+							nav: false,
+							controls: false,
+							loop: true,
+							autoplay: true,
+							autoplayButtonOutput: false,
+							autoplayTimeout: 2000,
+						},
+					},
+					// SM
+					{
+						class: 'd-none d-sm-block d-md-none my-3',
+						options: {
+							items: this.totalOnLg - 2,
+							gutter: 20,
+							nav: false,
+							controls: false,
+							loop: true,
+							autoplay: true,
+							autoplayButtonOutput: false,
+							autoplayTimeout: 2000,
+						},
+					},
+					// XS
+					{
+						class: 'd-block d-sm-none my-3',
+						options: {
+							items: this.totalOnLg - 3,
+							gutter: 20,
+							nav: false,
+							controls: false,
+							loop: true,
+							autoplay: true,
+							autoplayButtonOutput: false,
+							autoplayTimeout: 2000,
+						},
+					},
+				],
 			}
 		},
 	}
@@ -99,8 +99,8 @@
 
 <style lang="scss">
 	.image {
-		max-width: 200px;
-		height: 200px;
+		max-width: 100%;
+		height: 240px;
 		object-fit: cover;
 	}
 </style>
