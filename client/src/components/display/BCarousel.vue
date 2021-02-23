@@ -3,7 +3,7 @@
 		<BCarousel
 			id="carousel-1"
 			v-model="slide"
-			:interval="4000"
+			:interval="3000"
 			controls
 			indicators
 			fade
@@ -20,7 +20,6 @@
 				:key="index"
 				:caption="slideObj.caption"
 				:text="slideObj.text"
-				:text-html="slideObj.textHtml"
 				:img-src="slideObj.img"
 				:style="`max-height: ${maxHeight}px;`"
 				v-rellax
@@ -28,7 +27,27 @@
 				data-rellax-mobile-speed="0"
 				data-rellax-tablet-speed="0"
 				:data-rellax-desktop-speed="rellaxNumber"
-			/>
+			>
+				<div v-if="isHero">
+					<h1 class="d-none d-md-block font-weight-bold text-secondary">
+						Beauty Bar
+					</h1>
+
+					<RouterLink to="/book">
+						<BButton
+							variant="primary"
+							size="lg"
+							class="d-none d-sm-block m-auto"
+						>Book Apointment</BButton>
+
+						<BButton
+							variant="primary"
+							size="lg"
+							class="d-block d-sm-none m-auto"
+						>Book Apointment</BButton>
+					</RouterLink>
+				</div>
+			</BCarouselSlide>
 		</BCarousel>
 	</div>
 </template>
@@ -36,6 +55,11 @@
 <script>
 	export default {
 		props: {
+			isHero: {
+				type: Boolean,
+				default: false,
+			},
+
 			slideObjs: {
 				type: Array,
 				required: true,

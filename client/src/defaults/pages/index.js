@@ -1,21 +1,5 @@
 const companyInfo = require('../companyInfo')
 
-const slideHTML = `
-	<h1 class="d-none d-md-block font-weight-bold text-info">
-		${companyInfo.companyCaption2}
-	</h1>
-
-	<a href="/book">
-		<button class="d-none d-sm-block m-auto btn-lg btn-primary">
-			Book Apointment
-		</button>
-
-		<button class="d-block d-sm-none m-auto btn btn-primary">
-			Book Apointment
-		</button>
-	</a>
-`
-
 // [EXPORT] //
 module.exports = {
 	// Caraousel Slider //
@@ -23,25 +7,21 @@ module.exports = {
 		{
 			caption:'',
 			text: '',
-			textHtml: slideHTML,
 			img: require('../../assets/images/pages/index/slide1.jpg'),
 		},
 		{
 			caption: '',
 			text: '',
-			textHtml: slideHTML,
 			img: require('../../assets/images/pages/index/slide2.jpg'),
 		},
 		{
 			caption: '',
 			text: '',
-			textHtml: slideHTML,
 			img: require('../../assets/images/pages/index/slide3.jpg'),
 		},
 		{
 			caption: '',
 			text: '',
-			textHtml: slideHTML,
 			img: require('../../assets/images/pages/index/slide4.jpg'),
 		},
 	],

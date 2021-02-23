@@ -2,6 +2,7 @@
 	<div>
 		<!-- Caraousel -->
 		<BCarousel
+			:isHero="true"
 			:slideObjs="DPage.caraousel"
 			:maxHeight="400"
 			:rellaxNumber="2"
