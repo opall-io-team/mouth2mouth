@@ -179,7 +179,6 @@
 	import DPage from '@/defaults/pages'
 	import BCarousel from '@/components/display/BCarousel'
 	import Conveyor from '@/components/display/Conveyor'
-	import PageService from '@/services/PageService'
 	import router from '@/router'
 
 	export default {
@@ -198,17 +197,13 @@
 			}
 		},
 
-		async created() {
-			this.getPageData()
-		},
+		async created() {},
 
 		mounted() {
 			this.show = true
 		},
 
 		methods: {
-			async getPageData() { this.reqData = await PageService.s_() },
-
 			redirectCompanyInfo() { router.push({ name: 'contact-us' }) },
 		},
 	}
