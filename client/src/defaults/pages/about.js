@@ -8,7 +8,7 @@ module.exports = {
 	
 	description2: 'Our mission is to enhance your natural appearance, by substituting our client’s daily cosmetic products for our permanent cosmetic services.',
 	
-	description3: 'Our services create our clients desired look and save them time on applying cosmetics daily leaving no margin for error and inconsistencies',
+	description3: 'Our services create our clients desired look and save them time on applying cosmetics daily, leaving no margin for error and inconsistencies!',
 
 	description4: 'Enjoy the ease of a completed cosmetic look whether it be natural or more intense.',
 	
