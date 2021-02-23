@@ -5,8 +5,9 @@ const http = require('http')
 const mongoose = require('mongoose')
 
 
-// [REQUIRE] Personal // 
+// [REQUIRE] Personal // Other // API // Pages //
 const config = require('./s-config')
+
 const p_ = require('./s-routes/pages')
 const p_about = require('./s-routes/pages/about')
 
@@ -31,11 +32,11 @@ mongoose.connect(
 )
 
 
-// [USE] //
+// [USE] // Default Stuff // Set static Folder // Rate-Limiter //
 app.use(cors())
 
 
-// [USE] Personal - Rate-Limiter / API / Pages //
+// [USE] Personal // API // Pages //
 app.use('/pages', p_)
 app.use('/pages/about', p_about)
 

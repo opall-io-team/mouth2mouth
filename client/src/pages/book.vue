@@ -7,7 +7,7 @@
 
 	export default {
 		components: {
-			ContactUs
+			ContactUs,
 		},
 	}
 </script>

@@ -12,6 +12,7 @@ import directions from '@/pages/directions'
 import faq from '@/pages/faq'
 import gallery from '@/pages/gallery'
 import ourTeam from '@/pages/our-team'
+import payment from '@/pages/payment'
 import services from '@/pages/services'
 
 
@@ -61,6 +62,11 @@ const router = new VueRouter({
 			path: '/our-team',
 			name: 'our-team',
 			component: ourTeam,
+		},
+		{
+			path: '/payment',
+			name: 'payment',
+			component: payment,
 		},
 		{
 			path: '/services',

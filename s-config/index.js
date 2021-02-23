@@ -14,9 +14,4 @@ module.exports = {
 	
 	// [SECRET] //
 	SECRET_KEY: process.env.SECRET_KEY || 'secret',
-
-
-	// [IEX] //
-	IEX_PUBLIC_KEY: process.env.IEX_PUBLIC_KEY || '',
-	IEX_SB_PUBLIC_KEY: process.env.IEX_SB_PUBLIC_KEY || '',
 }
