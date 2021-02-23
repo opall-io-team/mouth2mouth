@@ -3,28 +3,28 @@
 		<!-- lg -->
 		<VueTinySlider v-bind="lg" class="d-none d-lg-block my-3">
 			<div v-for="(img, index) in images" :key="index" class="text-center">
-				<img :src="img" class="rounded-lg image">
+				<img :src="img" class="rounded-lg shadow image">
 			</div>
 		</VueTinySlider>
 
 		<!-- md -->
 		<VueTinySlider v-bind="md" class="d-none d-md-block d-lg-none my-3">
 			<div v-for="(img, index) in images" :key="index" class="text-center">
-				<img :src="img" class="rounded-lg image">
+				<img :src="img" class="rounded-lg shadow image">
 			</div>
 		</VueTinySlider>
 
 		<!-- sm -->
 		<VueTinySlider v-bind="sm" class="d-none d-sm-block d-md-none my-3">
 			<div v-for="(img, index) in images" :key="index" class="text-center">
-				<img :src="img" class="rounded-lg image">
+				<img :src="img" class="rounded-lg shadow image">
 			</div>
 		</VueTinySlider>
 
 		<!-- xs -->
 		<VueTinySlider v-bind="xs" class="d-block d-sm-none my-3">
 			<div v-for="(img, index) in images" :key="index" class="text-center">
-				<img :src="img" class="rounded-lg image">
+				<img :src="img" class="rounded-lg shadow image">
 			</div>
 		</VueTinySlider>
 	</div>

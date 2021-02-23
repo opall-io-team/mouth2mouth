@@ -14,6 +14,7 @@
 
 					<a :href="DPage.googleMapsLink" class="text-secondary">
 						<BButton variant="info" size="lg" class="my-3">
+							<MapPinIcon size="1x" />
 							{{ DPage.buttonText }}
 						</BButton>
 					</a>
@@ -33,10 +34,17 @@
 </template>
 
 <script>
+	// [IMPORT] //
+	import { MapPinIcon } from 'vue-feather-icons'
+
 	// [IMPORT] Personal //
 	import DPage from '@/defaults/pages/directions'
 
 	export default {
+		components: {
+			MapPinIcon
+		},
+
 		data() {
 			return {
 				DPage: DPage,
