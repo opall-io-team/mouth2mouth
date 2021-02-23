@@ -6,12 +6,21 @@
 			:text="pageData.pageTitle"
 			data-aos="fade-up"
 		/>	
-		
-		<BContainer class="my-4" v-rellax="{ speed: 6 }" data-aos="fade">
+
+		<BContainer
+			class="my-4"
+			data-aos="fade"
+			v-rellax
+			data-rellax-xs-speed="0"
+			data-rellax-mobile-speed="0"
+			data-rellax-tablet-speed="0"
+			data-rellax-desktop-speed="6"
+		>
 			<BRow class="mb-3">
 				<BCol
-					v-for="(col, index) in pageData.r1.cx" :key="index"
-					cols="12" sm="12" md="6" lg="4"
+					v-for="(col, index) in pageData.r1.cx"
+					:key="index"
+					cols="12" sm="12" md="6" lg="6"
 					class="mb-3"
 				>
 					<BCard :img-src="col.image">
