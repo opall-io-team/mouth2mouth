@@ -3,13 +3,15 @@
 		<BCard bg-variant="light" class=" shadow">
 			<BRow class="mb-3">
 				<BCol cols="12">
-					<h1 class="text-center font-weight-bold text-info">{{ pageData.title }}</h1>
+					<h1 class="text-center font-weight-bold text-info">
+						{{ pageData.title }}
+					</h1>
 				</BCol>
 			</BRow>
 
 			<BRow>
 				<BCol cols="12" lg="4" xl="3" class="px-5" data-aos="fade">
-					<h1 class="mb-3 text-center font-weight-bold text-primary">
+					<h1 class="mb-3 text-center font-weight-bold text-secondary">
 						Find Us
 					</h1>
 
@@ -48,7 +50,6 @@
 				</BCol>
 
 				<BCol cols="12" lg="8" xl="9" class="px-5">
-					
 					<p class="h5 text-secondary">
 						<img
 							:src="pageData.image"
@@ -76,7 +77,7 @@
 </template>
 
 <script>
-	import companyInfo from '../defaults/companyInfo'
+	import companyInfo from '@/defaults/companyInfo'
 	import pageData from '@/defaults/pages/about'
 
 	export default {

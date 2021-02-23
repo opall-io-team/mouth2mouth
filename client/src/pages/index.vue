@@ -33,13 +33,13 @@
 					><p class="h5">{{ hoo.days }} - {{ hoo.hours }}</p></li>
 				</ul>
 
-				<h5 class="text-secondary text-decoration-underline">
-					<u>{{ DPage.mainDetails.text }}</u>
-				</h5>			
+				<RouterLink to="/book" class="h5 text-secondary">
+					{{ DPage.mainDetails.text }}
+				</RouterLink>
 			</BCard>
 		</BContainer>
 
-		<BContainer fluid class="">
+		<BContainer fluid>
 			<!-- [R1] Conveyor -->
 			<BRow>
 				<!-- [R1.C1] -->
@@ -67,7 +67,7 @@
 							>
 							<div class="carousel-caption">
 								<RouterLink
-									to="contact-us"
+									to="book"
 									class="font-weight-bold text-decoration-none"
 								>
 									<h2 class="font-weight-bold text-light">
@@ -204,7 +204,7 @@
 		},
 
 		methods: {
-			redirectCompanyInfo() { router.push({ name: 'contact-us' }) },
+			redirectCompanyInfo() { router.push({ name: 'book' }) },
 		},
 	}
 </script>

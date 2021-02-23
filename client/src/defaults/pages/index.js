@@ -5,7 +5,7 @@ const slideHTML = `
 		${companyInfo.companyCaption2}
 	</h1>
 
-	<a href="/about">
+	<a href="/book">
 		<button class="d-none d-sm-block m-auto btn-lg btn-primary">
 			Book Apointment
 		</button>

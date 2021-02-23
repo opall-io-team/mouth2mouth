@@ -16,7 +16,9 @@
 				<BCol cols="12" md="12" lg="6" class="d-none d-md-block mb-3 text-center">
 					<a :href="companyInfo.googleMapsLink">
 						<BButton variant="light" class="mb-2 text-secondary">
-							<h5 class="m-0">{{ companyInfo.address }}</h5>
+							<h5 class="m-0">
+								<MapPinIcon size="1x"/> {{ companyInfo.address }}
+							</h5>
 						</BButton>
 					</a><br>
 
@@ -68,7 +70,7 @@
 </template>
 
 <script>
-	import { MenuIcon, PhoneIcon } from 'vue-feather-icons'
+	import { MapPinIcon, MenuIcon, PhoneIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
 	import SideMenu from '@/components/nav/SideMenu'
@@ -78,7 +80,9 @@
 
 	export default {
 		components: {
-			MenuIcon,PhoneIcon,
+			MapPinIcon,
+			MenuIcon,
+			PhoneIcon,
 			SideMenu,
 			SocialMediaPlug
 		},
