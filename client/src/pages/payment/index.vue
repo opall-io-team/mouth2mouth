@@ -1,14 +1,28 @@
 <template>
 	<BContainer class="my-3">
-		<h1>Payment</h1>
+		<BRow>
+			<BCol cols="12">
+				<BCard bg-variant="white">
+					<h1>Payment</h1>
 
-		<StripeCheckout
-			ref="checkoutRef"
-			mode="payment"
-			:line-items="lineItems"
-			:pk="pk"
-		/>
-		<BButton variant="primary" @click="submit">Pay now!</BButton>
+					<StripeCheckout
+						ref="checkoutRef"
+						mode="payment"
+						:line-items="lineItems"
+						:success-url="`${successURL}/${sessionId}`"
+						:cancel-url="cancelURL"
+						:pk="publicKey"
+						:session-id="sessionId"
+					/>
+					
+					<BButton
+						:disabled="loading"
+						variant="primary"
+						@click="submit()"
+					>Pay Deposit Now</BButton>
+				</BCard>
+			</BCol>
+		</BRow>
 	</BContainer>
 </template>
 
@@ -23,27 +37,37 @@
 
 		data () {
 			return {
-				pk: 'pk_test_51INvnfCC0rHo3XXZIRZAaLkXUGf7iVmAeycF7sA0FrsBRfK5TgrZHyYxBndMY0x7mrMEyUW2Xp9TdgVYC8gGkgxr00X5ZcfZM6',
 				loading: false,
+				sessionId: 'testId',
+				publicKey: 'pk_test_51INvnfCC0rHo3XXZIRZAaLkXUGf7iVmAeycF7sA0FrsBRfK5TgrZHyYxBndMY0x7mrMEyUW2Xp9TdgVYC8gGkgxr00X5ZcfZM6',
 				lineItems: [
 					{
 						price: 'price_1IO7UYCC0rHo3XXZenRbrkpv',
 						quantity: 1,
 					},
 				],
-				successURL: 'your-success-url',
-				cancelURL: 'your-cancel-url',
+				successURL: '',
+				cancelURL: '',
 			}
 		},
 
 		created() {
-			if (window.webpackHotUpdate) {
-				console.log('In Dev Mode')
-			}
+			this.determinUrls()
 		},
 
 		methods: {
-			submit () {
+			determinUrls() {
+				if (window.webpackHotUpdate) {
+					this.successURL = 'http://localhost:8080/payment/'
+					this.cancelURL = 'http://localhost:8080/payment/'
+				}
+				else {
+					this.successURL = 'http://localhost:8080/'
+					this.cancelURL = 'http://localhost:8080/'
+				}
+			},
+
+			submit() {
 			// You will be redirected to Stripe's secure checkout page
 			this.$refs.checkoutRef.redirectToCheckout()
 			},
