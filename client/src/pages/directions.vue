@@ -26,7 +26,7 @@
 							allowfullscreen="true"
 							loading="lazy"
 							class="w-100"
-							style="border:0;"
+							style="border: 0;"
 						></iframe>
 					</BCard>
 				</BCol>
