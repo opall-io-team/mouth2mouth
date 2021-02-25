@@ -6,5 +6,4 @@ module.exports = {
 	address: companyInfo.address,
 	googleMapsLink: companyInfo.googleMapsLink,
 	buttonText: 'Open Google Maps',
-	gMapsPlaceholder: companyInfo.googleMapsImage,
 }
