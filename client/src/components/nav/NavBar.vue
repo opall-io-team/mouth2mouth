@@ -31,7 +31,6 @@
 						<BButton
 							variant="light"
 							class="mx-1 px-2 py-0 font-weight-bold text-info"
-							@click="menuItemClicked(button.type)"
 						>
 							<span v-if="button.text">{{ button.text }}</span>
 							<span v-else v-html="button.navIcon"></span>

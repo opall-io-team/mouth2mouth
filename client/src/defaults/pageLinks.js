@@ -51,4 +51,9 @@ module.exports = [
 		type: 'directions',
 		text: 'Directions',
 	},
+	{
+		path: '/contact-us',
+		type: 'contact-us',
+		text: 'Contact Us',
+	},
 ]

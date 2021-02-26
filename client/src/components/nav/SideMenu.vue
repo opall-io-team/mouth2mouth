@@ -112,6 +112,11 @@
 						router.push({ name: 'directions' })
 						this.closeMenu()
 						break
+
+					case 'contact-us':
+						router.push({ name: 'contact-us' })
+						this.closeMenu()
+						break
 				}
 			}
 		}
