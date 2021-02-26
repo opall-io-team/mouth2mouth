@@ -14,4 +14,7 @@ module.exports = {
 	
 	// [SECRET] //
 	SECRET_KEY: process.env.SECRET_KEY || 'secret',
+
+	// [STRIPE] //
+	STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY || ''
 }

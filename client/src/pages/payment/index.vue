@@ -1,25 +1,40 @@
 <template>
 	<BContainer class="my-3">
 		<BRow>
-			<BCol cols="12">
+			<BCol cols="8">
 				<BCard variant="white">
-					<h1>Please give us your payment details:</h1>
+					<h1>Check Out</h1>
 
+					<!-- Email -->
+					<label for="email">Your Email</label>
+					<input
+						v-model="email"
+						name="email"
+						type="email"
+						placeholder="Your Email"
+						class="form-control mb-3"
+					>
+
+					<!-- [CARD-INFO] Stripe -->
+					<label for="card-info">Please Enter Card Info</label>
 					<Card
-						stripe='pk_test_51INvnfCC0rHo3XXZIRZAaLkXUGf7iVmAeycF7sA0FrsBRfK5TgrZHyYxBndMY0x7mrMEyUW2Xp9TdgVYC8gGkgxr00X5ZcfZM6'
-						class='mb-3 stripe-card'
-						:class='{ complete }'
+						name="card-info"
+						:stripe="STRIPE_PK"
+						:class="{ complete }"
+						class="mb-3 stripe-card form-control"
 						@change="complete = $event.complete"
 					/>
 
+					<!-- [SUBMIT] -->
 					<BButton
 						:disabled='!complete'
 						variant="primary"
-						class="pay-with-stripe"
+						class="pay-with-stripe mb-3"
 						@click="pay"
 					>Pay with credit card</BButton>
 
-					<h1 class="text-danger">{{ error }}</h1>
+					<!-- Error -->
+					<p class="h6 text-danger">{{ error }}</p>
 				</BCard>
 			</BCol>
 		</BRow>
@@ -27,33 +42,44 @@
 </template>
  
 <script>
-import { Card, createToken } from 'vue-stripe-elements-plus'
- 
-export default {
-	components: { Card },
-		
-	data () {
-		return {
-			complete: false,
-			error: ''
-		}
-	},
- 
-	methods: {
-		pay () {
-			// createToken returns a Promise which resolves in a result object with
-			// either a token or an error key.
-			// See https://stripe.com/docs/api#tokens for the token object.
-			// See https://stripe.com/docs/api#errors for the error object.
-			// More general https://stripe.com/docs/stripe.js#stripe-create-token.
+	// [IMPORT] //
+	import { Card, createToken } from 'vue-stripe-elements-plus'
 
-			createToken()
-				.then(data => console.log(data.token))
-				.catch(err => this.error = err)
+	// [IMPORT] Personal //
+	import PaymentsService from '@/services/PaymentsService'
+	
+	export default {
+		components: { Card },
+			
+		data () {
+			return {
+				product_id: this.$route.params.product_id,
+				STRIPE_PK: process.env.VUE_APP_STRIPE_PK,
+				email: '',
+				complete: false,
+				token: {},
+				reqData: {},
+				error: '',
+			}
+		},
+	
+		methods: {
+			async pay() {
+				try {
+					this.reqData = await createToken()
 
+					this.reqData = await PaymentsService.s_charge(
+						this.product_id,
+						this.email,
+						this.reqData.token
+					)
+
+					this.error = this.reqData
+				}
+				catch (err) { this.error = err }
+			}
 		}
 	}
-}
 </script> 
  
 <style>
@@ -61,6 +87,7 @@ export default {
 		width: 300px;
 		border: 1px solid grey;
 	}
+
 	.stripe-card.complete {
 		border-color: green;
 	}

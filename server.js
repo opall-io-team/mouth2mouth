@@ -1,4 +1,5 @@
 // [REQUIRE] //
+const bodyParser = require('body-parser')
 const cors = require('cors')
 const express = require('express')
 const http = require('http')
@@ -8,6 +9,8 @@ const path = require('path')
 
 // [REQUIRE] Personal // Other // API // Pages //
 const config = require('./s-config')
+
+const a_payments = require('./s-routes/api/payments')
 
 const p_ = require('./s-routes/pages')
 const p_about = require('./s-routes/pages/about')
@@ -34,10 +37,14 @@ mongoose.connect(
 
 
 // [USE] // Default Stuff // Set static Folder // Rate-Limiter //
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
 
 
 // [USE] Personal // API // Pages //
+app.use('/api/payments', a_payments)
+
 app.use('/pages', p_)
 app.use('/pages/about', p_about)
 

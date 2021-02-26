@@ -65,7 +65,7 @@ const router = new VueRouter({
 			component: ourTeam,
 		},
 		{
-			path: '/payment',
+			path: '/payment/:product_id',
 			name: 'payment',
 			component: payment,
 		},
