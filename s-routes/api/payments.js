@@ -92,7 +92,9 @@ router.post(
 							amount: pObj.product.price * 100,
 							currency: 'usd',
 							receipt_email: req.body.email,
-							description: `purchase of ${pObj.product.name}`,
+							description: `
+								purchase of ${pObj.product.type} ${pObj.product.name}
+							`,
 							source: req.body.token.id
 						})
 			
