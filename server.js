@@ -9,6 +9,7 @@ const path = require('path')
 
 // [REQUIRE] Personal // Other // API // Pages //
 const config = require('./s-config')
+const Functionality = require('./s-middleware/Functionality')
 
 const a_payments = require('./s-routes/api/payments')
 
@@ -43,7 +44,7 @@ app.use(cors())
 
 
 // [USE] Personal // API // Pages //
-app.use('/api/payments', a_payments)
+app.use('/api/payments', Functionality.paymentsSystem(), a_payments)
 
 app.use('/pages', p_)
 app.use('/pages/about', p_about)
