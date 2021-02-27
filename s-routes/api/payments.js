@@ -84,12 +84,10 @@ router.post(
 						req.body.product_id
 					)
 
-					console.log(pObj)
-
 					if (pObj.product) {
-						// [STRIPE] Create Customer //
+						// [STRIPE] Charge //
 						const charge = await stripe.charges.create({
-							amount: pObj.product.price * 100,
+							amount: pObj.product.downPayment * 100,
 							currency: 'usd',
 							receipt_email: req.body.email,
 							description: `
@@ -98,12 +96,25 @@ router.post(
 							source: req.body.token.id
 						})
 			
-						res.send({
-							executed: true,
-							status: true,
-							location: '/api/payments/transactions',
-							message: charge,
-						})
+						// Payment success/fail //
+						if (pObj.paid == true) {
+							res.send({
+								executed: true,
+								status: true,
+								location: '/api/payments/transactions',
+								message: 'Success!',
+								paid: true,
+							})
+						}
+						else {
+							res.send({
+								executed: true,
+								status: true,
+								location: '/api/payments/transactions',
+								message: 'Something went wrong',
+								paid: false,
+							})
+						}
 					}
 					else {
 						res.send({

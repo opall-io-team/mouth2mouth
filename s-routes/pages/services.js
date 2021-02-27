@@ -5,15 +5,17 @@ const express = require('express')
 const router = express.Router().use(cors())
 
 
+const services = require('../../s-default/services')
+
+
 router.get(
 	'/',
 	async (req, res) => {
-		const lit = {
+		res.send({
 			executed: true,
 			status: true,
-			directory: __dirname,
-		}
-		res.send(lit)
+			services: services
+		})
 	}
 )
 

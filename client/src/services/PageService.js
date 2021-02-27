@@ -8,9 +8,7 @@ async function s_() {
 
 		return response.data
 	}
-	catch (err) {
-		return err
-	}
+	catch (err) { return err }
 }
 
 async function s_about() {
@@ -19,13 +17,32 @@ async function s_about() {
 
 		return response.data
 	}
-	catch (err) {
-		return err
+	catch (err) { return err }
+}
+
+async function s_payments(product_id) {
+	try {
+		const response = await axios.create().get(`/pages/payments/${product_id}`)
+
+		return response.data
 	}
+	catch (err) { return err }
+}
+
+
+async function s_services() {
+	try {
+		const response = await axios.create().get(`/pages/services`)
+
+		return response.data
+	}
+	catch (err) { return err }
 }
 
 
 export default {
 	s_,
 	s_about,
+	s_payments,
+	s_services,
 }

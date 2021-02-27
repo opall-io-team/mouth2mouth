@@ -2,7 +2,7 @@
 const validator = require('validator')
 
 // [IMPORT] Personal //
-const products = require('../s-default/products')
+const services = require('../s-default/services')
 
 
 // [READ-ALL] Sort //
@@ -22,7 +22,7 @@ const c_getProduct = async (product_id) => {
 		let product = null
 
 		// [GET-PRODUCT] //
-		products.services.permanentMakeup.forEach(p => {
+		services.permanentMakeup.forEach(p => {
 			if (product_id == p.id) {
 				product = p
 				return
@@ -30,7 +30,7 @@ const c_getProduct = async (product_id) => {
 		})
 
 		if (product == null) {
-			products.services.bestSellers.forEach(bestSeller => {
+			services.bestSellers.forEach(bestSeller => {
 				bestSeller.types.forEach(p => {
 					if (product_id == p.id) {
 						product = p
@@ -41,7 +41,7 @@ const c_getProduct = async (product_id) => {
 		}
 
 		if (product == null) {
-			products.services.spa.forEach(p => {
+			services.spa.forEach(p => {
 				if (product_id == p.id) {
 					product = p
 					return

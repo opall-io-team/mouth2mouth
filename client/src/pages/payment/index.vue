@@ -1,9 +1,25 @@
 <template>
 	<BContainer class="my-3">
-		<BRow>
-			<BCol cols="8">
+		<BRow v-if="product">
+			<!-- Your Order -->
+			<BCol cols="12" md="5" class="mb-3">
 				<BCard variant="white">
-					<h1>Check Out</h1>
+					<h2 class="text-center text-primary">Your Order</h2>
+					<p class="h4">Type: {{ product.type }}</p>
+					<p class="h4">Service: {{ product.name }}</p>
+					<p class="h4">Price: ${{ product.price }}</p>
+					<hr>
+
+					<p class="h2 text-success">
+						Down Payment: ${{ product.downPayment }}
+					</p>
+				</BCard>
+			</BCol>
+
+			<!-- Check Out -->
+			<BCol cols="12" md="7" class="mb-3">
+				<BCard variant="white">
+					<h2 class="text-center text-primary">Check Out</h2>
 
 					<!-- Email -->
 					<label for="email">Your Email</label>
@@ -27,14 +43,22 @@
 
 					<!-- [SUBMIT] -->
 					<BButton
-						:disabled='!complete'
+						:disabled="!complete"
 						variant="primary"
-						class="pay-with-stripe mb-3"
-						@click="pay"
+						class="pay-with-stripe w-100 mb-3"
+						@click="pay()"
 					>Pay with credit card</BButton>
 
 					<!-- Error -->
 					<p class="h6 text-danger">{{ error }}</p>
+				</BCard>
+			</BCol>
+		</BRow>
+
+		<BRow v-else>
+			<BCol cols="12">
+				<BCard variant="white">
+					<h1 class="text-center">Product Not Found</h1>
 				</BCard>
 			</BCol>
 		</BRow>
@@ -45,22 +69,33 @@
 	// [IMPORT] //
 	import { Card, createToken } from 'vue-stripe-elements-plus'
 
-	// [IMPORT] Personal //
+	// [IMPORT] Personal //\
+	import router from '@/router'
+	import PageService from '../../services/PageService'
 	import PaymentsService from '@/services/PaymentsService'
 	
 	export default {
-		components: { Card },
+		components: {
+			Card,
+		},
 			
-		data () {
+		data() {
 			return {
 				product_id: this.$route.params.product_id,
 				STRIPE_PK: process.env.VUE_APP_STRIPE_PK,
+				product: {},
 				email: '',
 				complete: false,
 				token: {},
 				reqData: {},
 				error: '',
 			}
+		},
+
+		async created() {
+			this.reqData = await PageService.s_payments(this.product_id)
+
+			this.product = this.reqData.product
 		},
 	
 		methods: {
@@ -74,7 +109,12 @@
 						this.reqData.token
 					)
 
-					this.error = this.reqData
+					if (this.reqData.status) {
+						router.push({ name: 'payment_success', })
+					}
+					else {
+						this.error = this.reqData.message
+					}
 				}
 				catch (err) { this.error = err }
 			}

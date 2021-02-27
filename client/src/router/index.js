@@ -13,6 +13,7 @@ import faq from '@/pages/faq'
 import gallery from '@/pages/gallery'
 import ourTeam from '@/pages/our-team'
 import payment from '@/pages/payment'
+import payment_success from '@/pages/payment/success'
 import services from '@/pages/services'
 import NotFound from '@/pages/404'
 
@@ -68,6 +69,11 @@ const router = new VueRouter({
 			path: '/payment/:product_id',
 			name: 'payment',
 			component: payment,
+		},
+		{
+			path: '/payment/success',
+			name: 'payment_success',
+			component: payment_success,
 		},
 		{
 			path: '/services',

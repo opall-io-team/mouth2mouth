@@ -1,6 +1,6 @@
 <template>
 	<BContainer class="my-4">
-		<BCard bg-variant="light" class="mt-3 shadow">
+		<BCard v-if="reqData.services" bg-variant="light" class="mt-3 shadow">
 			<BRow>
 				<!-- Title -->
 				<BCol cols="12">
@@ -15,7 +15,7 @@
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
-							v-for="(service, index) in DPage.services.permanentMakeup"
+							v-for="(service, index) in reqData.services.permanentMakeup"
 							:key="index"
 							variant="info"
 							class="d-flex justify-content-between align-items-center"
@@ -34,7 +34,7 @@
 				<BCol cols="12" md="6" lg="4" data-aos="fade-up">
 					<h2 class="text-center text-info font-weight-bold">Best Sellers</h2>
 
-					<div v-for="(bs, index) in DPage.services.bestSellers" :key="index">
+					<div v-for="(bs, index) in services.bestSellers" :key="index">
 						<h4 class="font-weight-bold text-secondary">{{ bs.title }}</h4>
 						<BListGroup class="mb-3">
 							<BListGroupItem
@@ -60,7 +60,7 @@
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
-							v-for="(service, index) in DPage.services.spa"
+							v-for="(service, index) in services.spa"
 							:key="index"
 							variant="info"
 							class="d-flex justify-content-between align-items-center"
@@ -74,6 +74,8 @@
 						</BListGroupItem>
 					</BListGroup>
 				</BCol>
+
+				{{ error }}
 			</BRow>
 		</BCard>
 	</BContainer>
@@ -82,12 +84,23 @@
 <script>
 	// [IMPORT] Personal //
 	import DPage from '@/defaults/pages/services'
+	import PageService from '@/services/PageService'
 
 	export default {
 		data() {
 			return {
 				DPage: DPage,
+				reqData: {},
+				services: [],
+				error: '',
 			}
+		},
+
+		async created() {
+			this.reqData = await PageService.s_services()
+
+			if (this.reqData.status) { this.services = this.reqData.services }
+			else { this.error = this.reqData.message }
 		},
 	}
 </script>

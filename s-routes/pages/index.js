@@ -9,8 +9,8 @@ router.get(
     '/',
     async (req, res) => {
         const lit = {
+            executed: true,
             status: true,
-            lit: true,
             directory: __dirname,
         }
         res.send(lit)

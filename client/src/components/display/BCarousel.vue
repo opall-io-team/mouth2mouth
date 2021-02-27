@@ -29,8 +29,8 @@
 				:data-rellax-desktop-speed="rellaxNumber"
 			>
 				<div v-if="isHero">
-					<h1 class="d-none d-md-block font-weight-bold text-secondary">
-						Beauty Bar
+					<h1 class="d-none d-md-block font-weight-bold text-dark">
+						Bergen County’s most luxurious permanent makeup and spa services
 					</h1>
 
 					<RouterLink to="/book">
