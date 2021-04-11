@@ -139,7 +139,7 @@ router.post(
 					executed: true,
 					status: false,
 					location: '/api/payments/charge',
-					message: `Error --> ${err}`
+					message: `Invalid product_id`
 				})
 			}
 		}
