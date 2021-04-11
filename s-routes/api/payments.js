@@ -10,12 +10,12 @@ const config = require('../../s-config/index')
 const productsCollection = require('../../s-collections/productsCollection')
 
 
-// [USE] //
-const router = express.Router().use(cors())
-
-
 // [STRIPE] //
 const stripe = Stripe(config.STRIPE_SECRET_KEY)
+
+
+// [USE] //
+const router = express.Router().use(cors())
 
 
 router.get(
