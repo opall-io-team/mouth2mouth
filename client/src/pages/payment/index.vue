@@ -69,7 +69,7 @@
 	// [IMPORT] //
 	import { Card, createToken } from 'vue-stripe-elements-plus'
 
-	// [IMPORT] Personal //\
+	// [IMPORT] Personal //
 	import router from '@/router'
 	import PageService from '../../services/PageService'
 	import PaymentsService from '@/services/PaymentsService'
