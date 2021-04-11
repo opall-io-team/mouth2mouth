@@ -71,7 +71,7 @@
 
 	// [IMPORT] Personal //
 	import router from '@/router'
-	import PageService from '../../services/PageService'
+	import PageService from '@/services/PageService'
 	import PaymentsService from '@/services/PaymentsService'
 	
 	export default {
