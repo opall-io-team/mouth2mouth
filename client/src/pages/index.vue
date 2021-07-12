@@ -5,7 +5,7 @@
 			:isHero="true"
 			:slideObjs="DPage.caraousel"
 			:maxHeight="400"
-			:rellaxNumber="2"
+			:rellaxNumber="1"
 			class="mb-4 shadow"
 			data-aos="fade-up"
 		/>

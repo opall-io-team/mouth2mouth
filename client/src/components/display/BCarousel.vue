@@ -29,9 +29,9 @@
 				:data-rellax-desktop-speed="rellaxNumber"
 			>
 				<div v-if="isHero">
-					<h1 class="d-none d-md-block font-weight-bold text-dark">
+					<h3 class="d-none d-md-block font-weight-bold text-light">
 						Bergen County’s most luxurious permanent makeup and spa services
-					</h1>
+					</h3>
 
 					<RouterLink to="/book">
 						<BButton

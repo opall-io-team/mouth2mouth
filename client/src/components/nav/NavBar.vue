@@ -1,66 +1,66 @@
 <template>
 	<div class="w-100 pt-4 bg-light border-bottom border-primary">
-		<BContainer bg-variant="dark">
-			<BRow>
-				<!-- Title -->
-				<BCol cols="12" md="12" lg="3" class="mb-3 text-center">
-					<RouterLink to="/" class="text-decoration-none">
-						<img :src="companyInfo.companyLogo" class="w-100" style="max-width: 260px;">
-						<h4 class="m-0 font-weight-bold text-info">
-							{{ companyInfo.companyCaption1 }}
-						</h4>
-					</RouterLink>
-				</BCol>
+		<BContainer bg-variant="dark" class="py-3 d-flex container-fluid">
+			<!-- Title -->
+			<div class="mb-3 text-center">
+				<RouterLink to="/" class="text-decoration-none">
+					<img :src="companyInfo.companyLogo" class="w-100" style="max-width: 200px;">
+					<h4 class="m-0 font-weight-bold text-info">
+						{{ companyInfo.companyCaption1 }}
+					</h4>
+				</RouterLink>
+			</div>
 
-				<!-- Links -->
-				<BCol cols="12" md="12" lg="6" class="d-none d-md-block mb-3 text-center">
-					<a :href="companyInfo.googleMapsLink">
-						<BButton variant="light" class="mb-2 text-secondary">
-							<h5 class="m-0">
-								<MapPinIcon size="1x"/> {{ companyInfo.address }}
-							</h5>
-						</BButton>
-					</a><br>
+			<!-- Links -->
+			<div class="d-none d-lg-block mx-auto text-lg-left">
+				<a :href="companyInfo.googleMapsLink">
+					<BButton variant="light" class="w-100 mb-2 text-secondary">
+						<h5 class="m-0">
+							<MapPinIcon size="1x"/> {{ companyInfo.address }}
+						</h5>
+					</BButton>
+				</a><br>
 
-					<!-- Menu Items -->
-					<RouterLink
-						v-for="button in buttons"
-						:key="button.type"
-						:to="button.path"
-					>
-						<BButton
-							variant="light"
-							class="mx-1 px-2 py-0 font-weight-bold text-info"
-						>
-							<span v-if="button.text">{{ button.text }}</span>
-							<span v-else v-html="button.navIcon"></span>
-						</BButton>
-					</RouterLink>
-				</BCol>
-
-				<!-- Phone # & Social Media-->
-				<BCol cols="12" md="12" lg="3" class="mb-3 text-center text-lg-right">
-					<a :href="companyInfo.phoneNumberLink">
-						<BButton variant="outline-primary" class="mb-3">
-							<PhoneIcon size="1x" />
-							{{ companyInfo.phoneNumber }} 
-						</BButton>
-					</a>
-
-					<div class="w-100">
-						<SocialMediaPlug size="1.8x" variant="info" class="float-lg-right" />
-					</div>
-				</BCol>
-
-				<!-- Hidden Menu Button -->
-				<BCol cols="12" class="d-block d-md-none mb-3">
+				<!-- Menu Items -->
+				<RouterLink
+					v-for="button in buttons"
+					:key="button.type"
+					:to="button.path"
+				>
 					<BButton
-						variant="primary"
-						class="w-100"
-						@click="toggle()"
-					><MenuIcon /></BButton>
-				</BCol>
-			</BRow>
+						variant="light"
+						class="mx-1 px-1 py-0 font-weight-bold text-info"
+					>
+						<span v-if="button.text">{{ button.text }}</span>
+						<span v-else v-html="button.navIcon"></span>
+					</BButton>
+				</RouterLink>
+			</div>
+
+			<!-- Phone # & Social Media-->
+			<div class="ml-auto mb-3 text-center text-lg-right">
+				<a :href="companyInfo.phoneNumberLink">
+					<BButton variant="outline-primary" class="mb-3">
+						<PhoneIcon size="1x" />
+						{{ companyInfo.phoneNumber }} 
+					</BButton>
+				</a>
+
+				<div class="w-100">
+					<SocialMediaPlug size="1.8x" variant="info" class="float-lg-right" />
+				</div>
+			</div>
+		</BContainer>
+
+		<BContainer>
+			<!-- Hidden Menu Button -->
+			<div class="w-100 d-block d-lg-none mb-3">
+				<BButton
+					variant="primary"
+					class="w-100"
+					@click="toggle()"
+				><MenuIcon /></BButton>
+			</div>
 		</BContainer>
 
 		<!-- Hidden Side Menu -->
