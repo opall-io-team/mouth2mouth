@@ -28,7 +28,7 @@
 					:to="button.path"
 				>
 					<BButton
-						variant="light"
+						variant="none"
 						class="mx-1 px-1 py-0 font-weight-bold text-info"
 					>
 						<span v-if="button.text">{{ button.text }}</span>
