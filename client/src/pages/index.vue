@@ -2,7 +2,8 @@
 	<div>
 		<!-- Caraousel -->
 		<BCarousel
-			:isHero="true"
+			:showContent="true"
+			:mainText="'Healing for the Mind, Body and Soul'"
 			:slideObjs="DPage.caraousel"
 			:maxHeight="400"
 			:rellaxNumber="1"

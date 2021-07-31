@@ -28,9 +28,10 @@
 				data-rellax-tablet-speed="0"
 				:data-rellax-desktop-speed="rellaxNumber"
 			>
-				<div v-if="isHero">
+				<!-- isHero -->
+				<div v-if="showContent">
 					<h3 class="d-none d-md-block font-weight-bold text-light">
-						Bergen County’s most luxurious permanent makeup and spa services
+						{{ mainText }}
 					</h3>
 
 					<RouterLink to="/book">
@@ -38,12 +39,6 @@
 							variant="primary"
 							size="lg"
 							class="d-none d-sm-block m-auto"
-						>Book Apointment</BButton>
-
-						<BButton
-							variant="primary"
-							size="lg"
-							class="d-block d-sm-none m-auto"
 						>Book Apointment</BButton>
 					</RouterLink>
 				</div>
@@ -55,7 +50,7 @@
 <script>
 	export default {
 		props: {
-			isHero: {
+			showContent: {
 				type: Boolean,
 				default: false,
 			},
@@ -74,6 +69,11 @@
 				type: Number,
 				default: 0,
 			},
+
+			mainText: {
+				type: String,
+				default: '',
+			},
 		},
 
 		data() {
@@ -88,35 +88,11 @@
 				this.currentSlid = slide
 				this.sliding = true
 			},
+
 			onSlideEnd(slide) {
 				this.currentSlid = slide
 				this.sliding = false
 			}
 		}
 	}
-
-	/* Example Prop
-	[
-		{
-			caption: 'The Beauty Bar',
-			text: '3 Banta Place Hackensack NJ, 07601',
-			textHtml: `
-				<a href="/company-info">
-					<button class="btn btn-light">Book Apointment</button>
-				</a>
-			`,
-			img: http://www.blah.com/image-url-here.jpg,
-		},
-		{
-			caption: '',
-			text: '',
-			textHtml: `
-				<a href="/company-info">
-					<button class="btn btn-light">Book Apointment</button>
-				</a>
-			`,
-			img: img: http://www.blah.com/image-url-here.jpg,
-		},
-	]
-	*/
 </script>

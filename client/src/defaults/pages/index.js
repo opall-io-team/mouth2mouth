@@ -12,7 +12,7 @@ module.exports = {
 		{
 			caption: '',
 			text: '',
-			img: require('../../assets/images/pages/index/slide3.jpg'),
+			img: require('../../assets/images/pages/index/slide2.jpg'),
 		},
 	],
 
@@ -58,7 +58,7 @@ module.exports = {
 				{
 					caption: '',
 					text: '',
-					img: require('../../assets/images/pages/index/meetstaff2.jpg'),
+					img: require('../../assets/images/pages/index/owner.jpg'),
 				},
 			],
 		},
