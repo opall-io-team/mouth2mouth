@@ -19,7 +19,7 @@ module.exports = {
 	PORT: process.env.PORT || 5000,
 	
 	// [MONGODB] //
-	MONG_URI: process.env.MONGO_URI || 'mongodb://localhost:27017/m2m',
+	MONG_URI: process.env.MONGO_URI || 'mongodb://localhost:27017/balance-within',
 	
 	// [SECRET] //
 	SECRET_KEY: process.env.SECRET_KEY || 'secret',

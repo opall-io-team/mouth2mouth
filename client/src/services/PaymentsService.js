@@ -14,17 +14,14 @@ async function authAxios() {
 }
 
 
-async function s_charge(product_id, email, token) {
-	try {
-		const authAxios = await this.authAxios()
-
-		return (await authAxios.post('/charge', { product_id, email, token })).data
-	}
-	catch (err) { return err }
-}
-
-
 export default {
 	authAxios,
-	s_charge,
+	s_charge: async function (product_id, email, token) {
+		try {
+			const authAxios = await this.authAxios()
+	
+			return (await authAxios.post('/charge', { product_id, email, token })).data
+		}
+		catch (err) { return err }
+	},
 }
