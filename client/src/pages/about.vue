@@ -53,7 +53,7 @@
 					<p class="h5 text-secondary">
 						<img
 							:src="pageData.image"
-							class="w-100 float-right m-3 rounded shadow"
+							class="w-100 float-right m-3 rounded"
 							style="max-width: 300px;"
 							data-aos="fade-up"
 						/>

@@ -8,7 +8,7 @@
 
 			<viewer :options="{ title: false, transition: false, }">
 				<!-- [Rx] Image Section -->
-				<BRow v-for="(row, index) in pageData.rx" :key="index" class="mb-3">
+				<BRow v-for="(row, i) in pageData.rx" :key="i" class="mb-3">
 					<!-- [C1] Title -->
 					<BCol cols="12">
 						<p class="mb-3 h2 text-info">{{ row.c1.title }}</p>
@@ -16,8 +16,8 @@
 
 					<!-- [CX] Images -->
 					<BCol
-						v-for="(image, index) in row.cx"
-						:key="index"
+						v-for="(image, ii) in row.cx"
+						:key="ii"
 						cols="12" sm="6" md="4" lg="4" xl="3"
 					>
 						<img

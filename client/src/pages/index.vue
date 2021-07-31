@@ -48,7 +48,7 @@
 				<BCol cols="12" class="mb-4">
 					<h1 class="text-center">Our Satified Customers</h1>
 
-					<Conveyor :images="DPage.sliderImages" :totalOnLg="4" />
+					<!-- <Conveyor :images="DPage.sliderImages" :totalOnLg="4" /> -->
 				</BCol>
 			</BRow>
 		</BContainer>
@@ -180,7 +180,7 @@
 	// [IMPORT] Personal //
 	import DPage from '@/defaults/pages'
 	import BCarousel from '@/components/display/BCarousel'
-	import Conveyor from '@/components/display/Conveyor'
+	//import Conveyor from '@/components/display/Conveyor'
 	import router from '@/router'
 
 	export default {
@@ -188,7 +188,7 @@
 
 		components: {
 			BCarousel,
-			Conveyor,
+			//Conveyor,
 		},
 
 		data() {

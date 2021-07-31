@@ -2,7 +2,7 @@
 module.exports = {
 	companyName: 'Balance Within',
 	
-	companyCaption1: '',
+	companyCaption1: 'Embrace wellness with energy healing',
 	companyCaption2: '',
 
 	companyLogo: require('../assets/images/logo.svg'),

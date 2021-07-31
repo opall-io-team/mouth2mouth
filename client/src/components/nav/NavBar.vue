@@ -5,9 +5,9 @@
 			<div class="mb-3 text-center">
 				<RouterLink to="/" class="text-decoration-none">
 					<h3>{{ companyInfo.companyName }}</h3>
-					<h4 class="m-0 font-weight-bold text-info">
+					<h6 class="m-0 font-weight-bold text-info">
 						{{ companyInfo.companyCaption1 }}
-					</h4>
+					</h6>
 				</RouterLink>
 			</div>
 
