@@ -28,12 +28,5 @@
 	// [IMPORT] // Cuprum // Zilla Slab //
 	@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
 
-	// [IMPORT] Personal //
-	@import url('./assets/fonts/copperplate/demo.css');
-
 	* { font-family: 'Balthazar', serif !important; }
-
-	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Copperplate W01 Bold', serif !important;
-	}
 </style>

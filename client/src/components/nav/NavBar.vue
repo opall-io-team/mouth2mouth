@@ -4,7 +4,7 @@
 			<!-- Title -->
 			<div class="mb-3 text-center">
 				<RouterLink to="/" class="text-decoration-none">
-					<img :src="companyInfo.companyLogo" class="w-100" style="max-width: 200px;">
+					<h3>{{ companyInfo.companyName }}</h3>
 					<h4 class="m-0 font-weight-bold text-info">
 						{{ companyInfo.companyCaption1 }}
 					</h4>
