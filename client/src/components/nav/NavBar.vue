@@ -14,7 +14,7 @@
 			<!-- Links -->
 			<div class="d-none d-lg-block mx-auto text-lg-left">
 				<a :href="companyInfo.googleMapsLink">
-					<BButton variant="light" class="w-100 mb-2 text-secondary">
+					<BButton variant="none" class="w-100 mb-2 text-primary">
 						<h5 class="m-0">
 							<MapPinIcon size="1x"/> {{ companyInfo.address }}
 						</h5>

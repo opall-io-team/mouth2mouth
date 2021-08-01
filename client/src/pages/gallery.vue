@@ -11,7 +11,7 @@
 				<BRow v-for="(row, i) in pageData.rx" :key="i" class="mb-3">
 					<!-- [C1] Title -->
 					<BCol cols="12">
-						<p class="mb-3 h2 text-info">{{ row.c1.title }}</p>
+						<p class="mb-3 h2 text-secondary">{{ row.c1.title }}</p>
 					</BCol>
 
 					<!-- [CX] Images -->

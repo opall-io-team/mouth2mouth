@@ -11,13 +11,13 @@
 
 				<!-- Permanent Makeup -->
 				<BCol cols="12" md="6" lg="4" data-aos="fade-up">
-					<h2 class="text-center text-info font-weight-bold">Permanent Makeup</h2>
+					<h2 class="text-center text-secondary font-weight-bold">Permanent Makeup</h2>
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in reqData.services.permanentMakeup"
 							:key="index"
-							variant="info"
+							variant="secondary"
 							class="d-flex justify-content-between align-items-center"
 						>
 							<p class="m-0 h5">{{ service.name }}</p>
@@ -32,7 +32,7 @@
 
 				<!-- Best Sellers -->
 				<BCol cols="12" md="6" lg="4" data-aos="fade-up">
-					<h2 class="text-center text-info font-weight-bold">Best Sellers</h2>
+					<h2 class="text-center text-secondary font-weight-bold">Best Sellers</h2>
 
 					<div v-for="(bs, index) in services.bestSellers" :key="index">
 						<h4 class="font-weight-bold text-secondary">{{ bs.title }}</h4>
@@ -40,7 +40,7 @@
 							<BListGroupItem
 								v-for="(service, index) in bs.types"
 								:key="index"
-								variant="info"
+								variant="secondary"
 								class="d-flex justify-content-between align-items-center"
 							>
 								<p class="m-0 h5">{{ service.name }}</p>
@@ -56,13 +56,13 @@
 
 				<!-- Spa -->
 				<BCol cols="12" md="6" lg="4" data-aos="fade-up">
-					<h2 class="text-center text-info font-weight-bold">Spa</h2>
+					<h2 class="text-center text-secondary font-weight-bold">Spa</h2>
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
 							v-for="(service, index) in services.spa"
 							:key="index"
-							variant="info"
+							variant="secondary"
 							class="d-flex justify-content-between align-items-center"
 						>
 							<p class="m-0 h5">{{ service.name }}</p>

@@ -27,7 +27,7 @@
 				</a>
 
 				<!-- Hours of Operation -->
-				<ul class="mb-4 text-info">
+				<ul class="mb-4 text-dark">
 					<li
 						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
 						:key="index"
@@ -54,7 +54,7 @@
 		</BContainer>
 
 		<!-- More Details -->
-		<BContainer fluid class="mb-5 bg-white border-top border-info shadow-lg">
+		<BContainer fluid class="mb-5 bg-white border-top border-secondary shadow-lg">
 			<BContainer class="pb-3">
 				<!-- Black Marble Now Booking New Clients -->
 				<BRow class="mb-3" data-aos="fade">

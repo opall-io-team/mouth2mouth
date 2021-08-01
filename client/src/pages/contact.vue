@@ -13,7 +13,7 @@
 						:href="companyInfo.phoneNumberLink"
 						class="text-decoration-none"
 					>
-						<BButton variant="outline-primary" size="lg" class="m-3">
+						<BButton variant="primary" size="lg" class="m-3">
 							<PhoneIcon size="1x" />
 							{{ companyInfo.phoneNumber }} 
 						</BButton>
@@ -25,7 +25,7 @@
 						:href="companyInfo.googleMapsLink"
 						class="text-decoration-none"
 					>
-						<BButton variant="outline-primary" size="lg" class="m-3">
+						<BButton variant="primary" size="lg" class="m-3">
 							<MapPinIcon size="1x" />
 							{{ companyInfo.address }}
 						</BButton>

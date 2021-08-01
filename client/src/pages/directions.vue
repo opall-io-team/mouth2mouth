@@ -13,7 +13,7 @@
 					><p class="h2">{{ DPage.address }}</p></a>
 
 					<a :href="DPage.googleMapsLink" class="text-secondary">
-						<BButton variant="info" size="lg" class="my-3">
+						<BButton variant="secondary" size="lg" class="my-3">
 							<MapPinIcon size="1x" />
 							{{ DPage.buttonText }}
 						</BButton>
