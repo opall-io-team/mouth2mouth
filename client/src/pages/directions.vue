@@ -18,17 +18,15 @@
 							{{ DPage.buttonText }}
 						</BButton>
 					</a>
-				
-					<BCard variant="white" border-variant="light" class="shadow">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.4070283729443!2d-74.0447317845898!3d40.884885579313426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fa1cda6354b3%3A0x7fa57b79e40217a0!2s3%20Banta%20Pl%2C%20Hackensack%2C%20NJ%2007601!5e0!3m2!1sen!2sus!4v1614232869636!5m2!1sen!2sus" 
-							width="600" height="450"
-							allowfullscreen="true"
-							loading="lazy"
-							class="w-100"
-							style="border: 0;"
-						></iframe>
-					</BCard>
+					
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.4070283729443!2d-74.0447317845898!3d40.884885579313426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fa1cda6354b3%3A0x7fa57b79e40217a0!2s3%20Banta%20Pl%2C%20Hackensack%2C%20NJ%2007601!5e0!3m2!1sen!2sus!4v1614232869636!5m2!1sen!2sus" 
+						width="600" height="450"
+						allowfullscreen="true"
+						loading="lazy"
+						class="w-100 shadow"
+						style="border: 0;"
+					></iframe>
 				</BCol>
 			</BRow>
 		</BCard>

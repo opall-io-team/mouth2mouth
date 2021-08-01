@@ -25,8 +25,10 @@
 </script>
 
 <style lang="scss">
-	// [IMPORT] // Cuprum // Zilla Slab //
+	// [IMPORT] // heading // * //
 	@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
 
-	* { font-family: 'Balthazar', serif !important; }
+	* { font-family: 'Hahmlet', serif !important; }
+	h1,h2,h3,h4,h5,h6 { font-family: 'Balthazar', serif !important; }
 </style>

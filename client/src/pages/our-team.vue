@@ -20,12 +20,25 @@
 				<BCol
 					v-for="(col, index) in pageData.r1.cx"
 					:key="index"
-					cols="12" sm="12" md="6" lg="6"
+					cols="12" sm="12" md="12" lg="12"
 					class="mb-3"
 				>
-					<BCard :img-src="col.image" class="shadow" data-aos="fade">
-						<h3 class="card-title">{{ col.title }}</h3>
-						<p class="card-text">{{ col.description }}</p>
+					<BCard class="shadow" data-aos="fade" no-body>
+						<BRow>
+							<BCol cols="12">
+								<h3 class="mt-3 text-center text-primary">{{ col.title }}</h3>
+							</BCol>
+
+							<BCol cols="12" sm="12" md="6" lg="8" order="2" order-md="1">
+								<p v-html="col.description" class="mb-4 px-3"></p>
+							</BCol>
+
+							<BCol cols="12" sm="12" md="6" lg="4" class="" order="1" order-md="2">
+								<div class="mb-3 px-3">
+									<img :src="col.image" alt="" class="w-100 rounded">
+								</div>
+							</BCol>
+						</BRow>
 					</BCard>
 				</BCol>
 			</BRow>

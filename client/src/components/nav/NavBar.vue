@@ -40,9 +40,8 @@
 			<!-- Phone # & Social Media-->
 			<div class="ml-auto mb-3 text-center text-lg-right">
 				<a :href="companyInfo.phoneNumberLink">
-					<BButton variant="outline-primary" class="mb-3">
+					<BButton variant="outline-primary" class="mb-3 px-5">
 						<PhoneIcon size="1x" />
-						{{ companyInfo.phoneNumber }} 
 					</BButton>
 				</a>
 

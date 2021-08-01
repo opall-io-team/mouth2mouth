@@ -10,7 +10,13 @@
 			</BRow>
 
 			<BRow>
-				<BCol cols="12" lg="4" xl="3" class="px-5" data-aos="fade">
+				<!-- FIND US -->
+				<BCol
+					cols="12" lg="4" xl="3"
+					order="2" order-lg="1"
+					class="px-5"
+					data-aos="fade"
+				>
 					<h1 class="mb-3 text-center font-weight-bold text-secondary">
 						Find Us
 					</h1>
@@ -21,7 +27,7 @@
 						:href="companyInfo.phoneNumberLink"
 						class="text-decoration-none"
 					>
-						<p class="h4 mb-4 font-weight-bold text-info">
+						<p class="h5 mb-4 font-weight-bold text-info">
 							{{ companyInfo.phoneNumber }}
 						</p>
 					</a>
@@ -32,7 +38,7 @@
 						:href="companyInfo.googleMapsLink"
 						class="text-decoration-none text-info"
 					>
-						<p class="h4 mb-4 font-weight-bold">
+						<p class="h5 mb-4 font-weight-bold">
 							{{ companyInfo.address }}
 						</p>
 					</a>
@@ -43,18 +49,23 @@
 						<li
 							v-for="(hoo, index) in companyInfo.hoursOfOperation"
 							:key="index"
-							class="text-primary h5"
+							class="text-primary h6"
 						>{{ hoo.days }}: {{ hoo.hours }}</li>
 					</ul>
 					<hr>
 				</BCol>
 
-				<BCol cols="12" lg="8" xl="9" class="px-5">
+				<BCol
+					cols="12" lg="8" xl="9"
+					order="1" order-lg="2"
+					class="px-5"
+					data-aos="fade"
+				>
 					<p class="h5 text-secondary">
 						<img
 							:src="pageData.image"
 							class="w-100 float-right m-3 rounded"
-							style="max-width: 300px;"
+							style="max-width: 250px;"
 							data-aos="fade-up"
 						/>
 						{{ pageData.description1 }}
@@ -64,9 +75,6 @@
 						<br>
 						<br>
 						{{ pageData.description3 }}
-						<br>
-						<br>
-						{{ pageData.description4 }}
 						<br>
 						<br>
 					</p>
