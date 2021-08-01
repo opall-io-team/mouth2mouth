@@ -1,13 +1,13 @@
 <template>
-	<ContactUs />
+	<Contact />
 </template>
 
 <script>
-	import ContactUs from './contact-us'
+	import Contact from './contact'
 
 	export default {
 		components: {
-			ContactUs,
+			Contact,
 		},
 	}
 </script>

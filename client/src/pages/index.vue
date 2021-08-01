@@ -124,7 +124,7 @@
 					</BCol>
 				</BRow>
 
-				<!-- Meet Our Staff -->
+				<!-- Meet Pamela -->
 				<BRow class="mb-4">
 					<BCol cols="12" sm="6" data-aos="fade-up">
 						<BCarousel

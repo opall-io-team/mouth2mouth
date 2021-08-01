@@ -29,16 +29,16 @@
 				:data-rellax-desktop-speed="rellaxNumber"
 			>
 				<!-- isHero -->
-				<div v-if="showContent">
-					<h3 class="d-none d-md-block font-weight-bold text-light">
+				<div v-if="showContent" class="content py-2 rounded shadow">
+					<h1 class="title d-none d-md-block font-weight-bold text-light">
 						{{ mainText }}
-					</h3>
+					</h1>
 
 					<RouterLink to="/book">
 						<BButton
 							variant="primary"
 							size="lg"
-							class="d-none d-sm-block m-auto"
+							class="m-auto shadow"
 						>Book Apointment</BButton>
 					</RouterLink>
 				</div>
@@ -96,3 +96,9 @@
 		}
 	}
 </script>
+
+<style lang="scss" scoped>
+	.content {
+		background: rgba(0, 0, 0, 0.30);
+	}
+</style>

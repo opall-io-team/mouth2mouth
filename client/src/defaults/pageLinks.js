@@ -39,7 +39,7 @@ module.exports = [
 	{
 		path: '/about',
 		type: 'about',
-		text: 'About Us',
+		text: 'About',
 	},
 	{
 		path: '/gallery',
@@ -52,8 +52,8 @@ module.exports = [
 		text: 'Directions',
 	},
 	{
-		path: '/contact-us',
-		type: 'contact-us',
-		text: 'Contact Us',
+		path: '/contact',
+		type: 'contact',
+		text: 'Contact',
 	},
 ]

@@ -7,7 +7,7 @@ import VueRouter from 'vue-router'
 import index from '@/pages'
 import about from '@/pages/about'
 import book from '@/pages/book'
-import contactUs from "@/pages/contact-us"
+import contact from "@/pages/contact"
 import directions from '@/pages/directions'
 import faq from '@/pages/faq'
 import gallery from '@/pages/gallery'
@@ -41,9 +41,9 @@ const router = new VueRouter({
 			component: book,
 		},
 		{
-			path: '/contact-us',
-			name: 'contact-us',
-			component: contactUs,
+			path: '/contact',
+			name: 'contact',
+			component: contact,
 		},
 		{
 			path: '/directions',

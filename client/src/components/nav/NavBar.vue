@@ -5,7 +5,7 @@
 			<div class="mb-3 text-center">
 				<RouterLink to="/" class="text-decoration-none">
 					<h3>{{ companyInfo.companyName }}</h3>
-					<h6 class="m-0 font-weight-bold text-info">
+					<h6 class="m-0 d-none d-md-block font-weight-bold text-info">
 						{{ companyInfo.companyCaption1 }}
 					</h6>
 				</RouterLink>
@@ -40,13 +40,17 @@
 			<!-- Phone # & Social Media-->
 			<div class="ml-auto mb-3 text-center text-lg-right">
 				<a :href="companyInfo.phoneNumberLink">
-					<BButton variant="outline-primary" class="mb-3 px-5">
-						<PhoneIcon size="1x" />
+					<BButton variant="info" class="mb-3">
+						<PhoneIcon size="2x" />
 					</BButton>
 				</a>
 
 				<div class="w-100">
-					<SocialMediaPlug size="1.8x" variant="info" class="float-lg-right" />
+					<SocialMediaPlug
+						size="1.8x"
+						variant="info"
+						class="d-none d-sm-block float-lg-right"
+					/>
 				</div>
 			</div>
 		</BContainer>

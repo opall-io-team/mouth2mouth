@@ -81,40 +81,8 @@
 						this.closeMenu()
 						break
 
-					case 'services':
-						router.push({ name: 'services' })
-						this.closeMenu()
-						break
-
-
-					case 'faq':
-						router.push({ name: 'faq' })
-						this.closeMenu()
-						break
-
-
-					case 'our-team':
-						router.push({ name: 'our-team' })
-						this.closeMenu()
-						break
-
-					case 'about':
-						router.push({ name: 'about' })
-						this.closeMenu()
-						break
-
-					case 'gallery':
-						router.push({ name: 'gallery' })
-						this.closeMenu()
-						break
-
-					case 'directions':
-						router.push({ name: 'directions' })
-						this.closeMenu()
-						break
-
-					case 'contact-us':
-						router.push({ name: 'contact-us' })
+					default:
+						router.push({ name: type })
 						this.closeMenu()
 						break
 				}
