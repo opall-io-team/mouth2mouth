@@ -72,14 +72,14 @@
 									to="book"
 									class="font-weight-bold text-decoration-none"
 								>
-									<h2 class="font-weight-bold text-light">
+									<h2 class="font-weight-bold text-primary">
 										Now Booking New Clients
 									</h2>
 								</RouterLink>
 								
 
 								<BButton
-									variant="light"
+									variant="secondary"
 									size="lg"
 									class="mt-3"
 									@click="redirectCompanyInfo()"

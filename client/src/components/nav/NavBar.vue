@@ -4,8 +4,8 @@
 			<!-- Title -->
 			<div class="mb-3 text-center">
 				<RouterLink to="/" class="text-decoration-none">
-					<h3>{{ companyInfo.companyName }}</h3>
-					<h6 class="m-0 d-none d-md-block font-weight-bold text-info">
+					<h3 class="m-0 font-weight-bold">{{ companyInfo.companyName }}</h3>
+					<h6 class="m-0 d-none d-md-block small font-weight-bold text-secondary">
 						{{ companyInfo.companyCaption1 }}
 					</h6>
 				</RouterLink>
@@ -29,7 +29,7 @@
 				>
 					<BButton
 						variant="none"
-						class="mx-1 px-1 py-0 font-weight-bold text-info"
+						class="mx-1 px-1 py-0 font-weight-bold text-secondary"
 					>
 						<span v-if="button.text">{{ button.text }}</span>
 						<span v-else v-html="button.navIcon"></span>
@@ -40,7 +40,7 @@
 			<!-- Phone # & Social Media-->
 			<div class="ml-auto mb-3 text-center text-lg-right">
 				<a :href="companyInfo.phoneNumberLink">
-					<BButton variant="info" class="mb-3">
+					<BButton variant="secondary" class="mb-3">
 						<PhoneIcon size="2x" />
 					</BButton>
 				</a>
@@ -48,7 +48,7 @@
 				<div class="w-100">
 					<SocialMediaPlug
 						size="1.8x"
-						variant="info"
+						variant="secondary"
 						class="d-none d-sm-block float-lg-right"
 					/>
 				</div>
