@@ -101,13 +101,13 @@
 							</p>
 
 							<div class="w-100 text-center">
-								<RouterLink to="/about">
+								<a href="/services/#reiki">
 									<BButton
 										variant="primary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>
-								</RouterLink>
+								</a>
 							</div>
 						</div>
 					</BCol>

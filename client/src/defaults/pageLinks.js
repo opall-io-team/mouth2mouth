@@ -22,10 +22,17 @@ module.exports = [
 		}),
 	},
 	{
+		path: '/services',
+		type: 'services',
+		text: 'Services',
+	},
+	/*
+	{
 		path: '/menu',
 		type: 'menu',
 		text: 'Menu',
 	},
+	*/
 	{
 		path: '/faq',
 		type: 'faq',

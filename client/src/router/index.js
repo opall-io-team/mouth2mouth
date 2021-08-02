@@ -15,7 +15,8 @@ import ourTeam from '@/pages/our-team'
 import payment from '@/pages/payment'
 import payment_success from '@/pages/payment/success'
 import menu from '@/pages/menu'
-import NotFound from '@/pages/404'
+import services from '@/pages/services'
+import notFound from '@/pages/404'
 
 
 Vue.use(VueRouter)
@@ -80,11 +81,16 @@ const router = new VueRouter({
 			name: 'menu',
 			component: menu,
 		},
+		{
+			path: '/services',
+			name: 'services',
+			component: services,
+		},
 		// Not-Found //
 		{
 			path: '/**',
 			name: 'not_found',
-			component: NotFound,
+			component: notFound,
 		},
 	],
 

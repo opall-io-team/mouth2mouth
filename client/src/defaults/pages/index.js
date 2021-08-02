@@ -1,4 +1,5 @@
 const companyInfo = require('../companyInfo')
+const services = require('./services')
 
 // [EXPORT] //
 module.exports = {
@@ -42,9 +43,9 @@ module.exports = {
 		},
 
 		row2: {
-			header: 'Reiki Energy Healing for Mind, Body, Spirit',
+			header: services.services[0].title,
 			
-			text: 'Today many people are in great need of healing and/or relief from illnesses, past traumas, stress, and addictions. Reiki is healing energy in its truest sense for the mind, body, and spirit. As a Reiki practitioner, I channel life energy through their hands to the recipient. This energy activates the body’s natural ability to heal itself. The energy goes to the deepest levels of a person’s being, where illnesses have their origin. It works wherever the recipient needs it most, releasing blocked energies, cleansing the body of toxins, and working to create a state of balance.',
+			text: services.services[0].description,
 
 			image: require('../../assets/images/pages/index/wwcdfy.jpg'),
 		},
