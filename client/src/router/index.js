@@ -14,7 +14,7 @@ import gallery from '@/pages/gallery'
 import ourTeam from '@/pages/our-team'
 import payment from '@/pages/payment'
 import payment_success from '@/pages/payment/success'
-import services from '@/pages/services'
+import menu from '@/pages/menu'
 import NotFound from '@/pages/404'
 
 
@@ -76,9 +76,9 @@ const router = new VueRouter({
 			component: payment_success,
 		},
 		{
-			path: '/services',
-			name: 'services',
-			component: services,
+			path: '/menu',
+			name: 'menu',
+			component: menu,
 		},
 		// Not-Found //
 		{

@@ -42,9 +42,9 @@ module.exports = {
 		},
 
 		row2: {
-			header: 'What We Can Offer You',
+			header: 'Reiki Energy Healing for Mind, Body, Spirit',
 			
-			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+			text: 'Today many people are in great need of healing and/or relief from illnesses, past traumas, stress, and addictions. Reiki is healing energy in its truest sense for the mind, body, and spirit. As a Reiki practitioner, I channel life energy through their hands to the recipient. This energy activates the body’s natural ability to heal itself. The energy goes to the deepest levels of a person’s being, where illnesses have their origin. It works wherever the recipient needs it most, releasing blocked energies, cleansing the body of toxins, and working to create a state of balance.',
 
 			image: require('../../assets/images/pages/index/wwcdfy.jpg'),
 		},

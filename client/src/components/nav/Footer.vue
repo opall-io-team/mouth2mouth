@@ -35,24 +35,10 @@
 				<BCol cols="12" sm="4" class="text-center" data-aos="fade-up">
 					<h4>Check Us Out</h4>
 					<ul class="list-unstyled text-small">
-						<li>
+						<li v-for="(link, i) in pageLinks" :key="i">
 							<RouterLink to="/services" class="text-light">
-								Services
-							</RouterLink>
-						</li>
-						<li>
-							<RouterLink to="/gallery" class="text-light">
-								Gallery
-							</RouterLink>
-						</li>
-						<li>
-							<RouterLink to="/about" class="text-light">
-								About
-							</RouterLink>
-						</li>
-						<li>
-							<RouterLink to="/directions" class="text-light">
-								Directions
+								<span v-if="link.text">{{ link.text }}</span>
+								<span v-else v-html="link.navIcon"></span>
 							</RouterLink>
 						</li>
 					</ul>
@@ -75,6 +61,7 @@
 <script>
 	import SocialMediaPlug from '../../components/SocialMediaPlug'
 	import companyInfo from '../../defaults/companyInfo'
+	import pageLinks from '../../defaults/pageLinks'
 
 	export default {
 		components: {
@@ -83,7 +70,8 @@
 
 		data() {
 			return {
-				companyInfo: companyInfo
+				companyInfo: companyInfo,
+				pageLinks: pageLinks,
 			}
 		},
 	}
