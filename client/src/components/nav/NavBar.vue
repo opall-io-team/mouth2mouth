@@ -67,7 +67,7 @@
 		</BContainer>
 
 		<!-- Hidden Side Menu -->
-		<SideMenu :sideMenuOpen="sideMenuOpen" @closeMenu="toggle()" />
+		<SideMenu />
 	</div>
 </template>
 
@@ -100,7 +100,7 @@
 		},
 
 		methods: {
-			toggle() { this.sideMenuOpen = !this.sideMenuOpen },
+			toggle() { this.$store.state.showMenu = !this.$store.state.showMenu },
 		},
 	}
 </script>

@@ -1,11 +1,11 @@
 <template>
 	<nav
 		class="bg-light shadow nav-drawer-menu"
-		:class="{ isOpen: sideMenuOpen }"
+		:class="{ isOpen: $store.state.showMenu }"
 	>
 		<!-- Close Button -->
 		<BButton
-			v-show="sideMenuOpen"
+			v-show="$store.state.showMenu"
 			variant="primary"
 			class="w-100 mb-2 p-4 text-light"
 			@click="menuItemClicked('close-menu')"
@@ -15,7 +15,7 @@
 		<BButton
 			v-for="button in buttons"
 			:key="button.type"
-			v-show="sideMenuOpen"
+			v-show="$store.state.showMenu"
 			variant="outline-seconadry"
 			class="w-100 text-primary"
 			@click="menuItemClicked(button.type)"
@@ -24,11 +24,16 @@
 			<span v-else v-html="button.slideMenuIcon"></span>
 		</BButton>
 
-		<a v-show="sideMenuOpen" :href="companyInfo.googleMapsLink" class="text-center">
+		<a v-show="$store.state.showMenu" :href="companyInfo.googleMapsLink" class="text-center">
 			<h5 class="m-4 text-secondary">{{ companyInfo.address }}</h5>
 		</a>
 
-		<SocialMediaPlug v-show="sideMenuOpen" size="1.8x" variant="secondary" class="m-4" />
+		<SocialMediaPlug
+			v-show="$store.state.showMenu"
+			size="1.8x"
+			variant="secondary"
+			class="m-4"
+		/>
 	</nav>
 </template>
 
@@ -44,13 +49,6 @@
 
 	// [EXPORT] //
 	export default {
-		props: {
-			sideMenuOpen: {
-				type: Boolean,
-				required: true,
-			}
-		},
-
 		components: {
 			XIcon,
 			SocialMediaPlug,
@@ -65,15 +63,13 @@
 
 		methods: {
 			closeMenu() {
-				this.sideMenuOpen = !this.sideMenuOpen
-				this.$emit('closeMenu')
+				this.$store.state.showMenu = !this.$store.state.showMenu
 			},
 
 			menuItemClicked(type) {
 				switch(type) {
 					case 'close-menu':
-						this.sideMenuOpen = !this.sideMenuOpen
-						this.$emit('closeMenu')
+						this.$store.state.showMenu = !this.$store.state.showMenu
 						break
 
 					case 'home':

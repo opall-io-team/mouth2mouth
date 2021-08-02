@@ -12,7 +12,8 @@ import 'viewerjs/dist/viewer.css'
 
 // [IMPORT] Personal //
 import App from './App.vue'
-import router from './router'
+import router from '@/router'
+import store from '@/store'
 import './assets/styles/bootstrap-override.scss'
 import './assets/styles/style.scss'
 
@@ -28,6 +29,7 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  store,
   created() { aos.init() },
   render: h => h(App)
 }).$mount('#app')
