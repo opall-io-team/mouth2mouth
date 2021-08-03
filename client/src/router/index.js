@@ -16,6 +16,7 @@ import payment from '@/pages/payment'
 import payment_success from '@/pages/payment/success'
 import menu from '@/pages/menu'
 import services from '@/pages/services'
+import services_reiki from '@/pages/services/reiki'
 import notFound from '@/pages/404'
 
 
@@ -85,6 +86,11 @@ const router = new VueRouter({
 			path: '/services',
 			name: 'services',
 			component: services,
+		},
+		{
+			path: '/services/reiki',
+			name: 'services_reiki',
+			component: services_reiki,
 		},
 		// Not-Found //
 		{
