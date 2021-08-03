@@ -15,7 +15,7 @@
 				</ul>
 			</div>
 
-			<!-- Reiki -->
+			<!-- Reiki FAQ -->
 			<h5 class="text-info">{{ pData.faq.faq[0].q }}</h5>
 			<p v-html="pData.faq.faq[0].a" class="text-dark"></p>
 
