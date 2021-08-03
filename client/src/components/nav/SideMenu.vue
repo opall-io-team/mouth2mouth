@@ -8,21 +8,18 @@
 			v-show="$store.state.showMenu"
 			variant="primary"
 			class="w-100 mb-2 p-4 text-light"
-			@click="menuItemClicked('close-menu')"
+			@click="closeMenu()"
 		><XIcon size="36" /></BButton>
 
 		<!-- Menu Items -->
 		<BButton
-			v-for="button in buttons"
-			:key="button.type"
+			v-for="(button, i) in buttons"
+			:key="i"
 			v-show="$store.state.showMenu"
 			variant="outline-seconadry"
 			class="w-100 text-primary"
-			@click="menuItemClicked(button.type)"
-		>
-			<p v-if="button.text" class="h1 my-1">{{ button.text }}</p>
-			<span v-else v-html="button.slideMenuIcon"></span>
-		</BButton>
+			@click="menuItemClicked(button.path)"
+		>{{ button.text }}</BButton>
 
 		<a v-show="$store.state.showMenu" :href="companyInfo.googleMapsLink" class="text-center">
 			<h5 class="m-4 text-secondary">{{ companyInfo.address }}</h5>
@@ -66,22 +63,9 @@
 				this.$store.state.showMenu = !this.$store.state.showMenu
 			},
 
-			menuItemClicked(type) {
-				switch(type) {
-					case 'close-menu':
-						this.$store.state.showMenu = !this.$store.state.showMenu
-						break
-
-					case 'home':
-						router.push({ name: '/' })
-						this.closeMenu()
-						break
-
-					default:
-						router.push({ name: type })
-						this.closeMenu()
-						break
-				}
+			menuItemClicked(path) {	
+				router.push(path)
+				this.closeMenu()
 			}
 		}
 	}

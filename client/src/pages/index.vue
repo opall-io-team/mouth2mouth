@@ -15,23 +15,23 @@
 		<BContainer class="mb-4 text-center">
 			<BCard bg-variant="light" border-variant="primary" class="rounded shadow">
 				<!-- Captions -->
-				<h2 class="font-weight-bold text-primary">
+				<h2 data-aos="fade" class="font-weight-bold text-primary">
 					{{ DPage.mainDetails.caption1 }}
 				</h2>
 				
 				<!-- Address -->
 				<a :href="DPage.mainDetails.googleMapsLink">
 					<p class="h6 mb-4 text-center font-weight-bold text-secondary">
-						{{ DPage.mainDetails.address }}
+						Our Hours
 					</p>
 				</a>
 
 				<!-- Hours of Operation -->
-				<ul class="mb-4 text-dark">
+				<ul class="m-0 mb-4 p-0 text-dark">
 					<li
 						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
 						:key="index"
-						class="m-0 list-unstyled"
+						class="m-0 list-unstyled text-center"
 					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 				</ul>
 

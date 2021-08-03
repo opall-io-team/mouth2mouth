@@ -23,16 +23,16 @@
 
 				<!-- Menu Items -->
 				<RouterLink
-					v-for="button in buttons"
-					:key="button.type"
+					v-for="(button, i) in buttons"
+					:key="i"
 					:to="button.path"
 				>
 					<BButton
 						variant="none"
 						class="mx-1 px-1 py-0 font-weight-bold text-secondary"
 					>
-						<span v-if="button.text">{{ button.text }}</span>
-						<span v-else v-html="button.navIcon"></span>
+						<span v-if="button.navIcon" v-html="button.navIcon"></span>
+						<span v-else>{{ button.text }}</span>
 					</BButton>
 				</RouterLink>
 			</div>
@@ -79,6 +79,7 @@
 	import SocialMediaPlug from '@/components/SocialMediaPlug'
 	import companyInfo from '@/defaults/companyInfo'
 	import buttons from '@/defaults/pageLinks'
+	import router from '../../router'
 
 	export default {
 		components: {
@@ -95,7 +96,7 @@
 				buttons: buttons,
 				loggedIn: false,
 				decoded: {},
-				sideMenuOpen: false
+				sideMenuOpen: false,router:router
 			}
 		},
 
