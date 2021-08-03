@@ -1,29 +1,49 @@
 <template>
 	<BContainer class="my-5">
 		<BCard class="shadow">
-			<h1 class="mb-3 text-center text-primary">{{ pData.services[0].title }}</h1>
-			
-			<p>{{ pData.services[0].description }}</p>
+			<BRow>
+				<BCol cols="12">
+					<h1 class="mb-3 text-center text-primary">
+						{{ pData.services[0].title }}
+					</h1>
+				</BCol>
 
-			<div v-if="pData.services[0].processSteps.length > 0">
-				<h5 class="text-info">Session Process</h5>
-				<ul>
-					<li
-						v-for="(p, i) in pData.services[0].processSteps"
-						:key="i"
-					>{{ p }}</li>
-				</ul>
-			</div>
+				<BCol cols="12" md="3" class="d-none d-md-block">
+					<img :src="pData.services[0].image" class="w-100 mb-3 rounded">
+				</BCol>
 
-			<!-- Reiki FAQ -->
-			<h5 class="text-info">{{ pData.faq.faq[0].q }}</h5>
-			<p v-html="pData.faq.faq[0].a" class="text-dark"></p>
+				<BCol cols="12" md="9">
+					<p>{{ pData.services[0].description }}</p>
 
-			<h5 class="text-info">{{ pData.faq.faq[1].q }}</h5>
-			<p v-html="pData.faq.faq[1].a" class="text-dark"></p>
+					<div v-if="pData.services[0].processSteps.length > 0">
+						<h5 class="text-info">Session Process</h5>
+						<ul>
+							<li
+								v-for="(p, i) in pData.services[0].processSteps"
+								:key="i"
+							>{{ p }}</li>
+						</ul>
+					</div>
 
-			<h5 class="text-info">{{ pData.faq.faq[2].q }}</h5>
-			<p v-html="pData.faq.faq[2].a" class="text-dark"></p>
+					<!-- Reiki FAQ -->
+					<h5 class="text-info">{{ pData.faq.faq[0].q }}</h5>
+					<p v-html="pData.faq.faq[0].a" class="text-dark"></p>
+
+					<h5 class="text-info">{{ pData.faq.faq[1].q }}</h5>
+					<p v-html="pData.faq.faq[1].a" class="text-dark"></p>
+
+					<h5 class="text-info">{{ pData.faq.faq[2].q }}</h5>
+					<p v-html="pData.faq.faq[2].a" class="text-dark"></p>
+				</BCol>
+
+				<BCol cols="12">
+					<RouterLink to="/contact">
+						<BButton variant="primary" size="lg" class="w-100 mt-3">
+							Book Now
+						</BButton>
+					</RouterLink>
+				</BCol>
+			</BRow>
 		</BCard>
 	</BContainer>
 </template>
