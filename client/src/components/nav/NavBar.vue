@@ -2,17 +2,17 @@
 	<div class="w-100 pt-4 bg-light border-bottom border-primary">
 		<BContainer bg-variant="dark" class="py-3 d-flex container-fluid">
 			<!-- Title -->
-			<div class="mb-3 text-center">
+			<div class="text-center" style="">
 				<RouterLink to="/" class="text-decoration-none">
 					<h3 class="m-0 font-weight-bold">{{ companyInfo.companyName }}</h3>
-					<h6 class="m-0 d-none d-md-block small font-weight-bold text-secondary">
+					<h6 class="m-0 small font-weight-bold text-secondary">
 						{{ companyInfo.companyCaption1 }}
 					</h6>
 				</RouterLink>
 			</div>
 
 			<!-- Links -->
-			<div class="d-none d-lg-block mx-auto text-lg-left">
+			<div class="d-none d-lg-block mx-auto">
 				<a :href="companyInfo.googleMapsLink">
 					<BButton variant="none" class="w-100 mb-2 text-primary">
 						<h5 class="m-0">
@@ -38,7 +38,7 @@
 			</div>
 
 			<!-- Phone # & Social Media-->
-			<div class="ml-auto mb-3 text-center text-lg-right">
+			<div class="ml-auto text-center text-lg-right" style="">
 				<a :href="companyInfo.phoneNumberLink">
 					<BButton variant="secondary" class="mb-3">
 						<PhoneIcon size="2x" />

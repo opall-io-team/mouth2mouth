@@ -29,10 +29,14 @@
 				:data-rellax-desktop-speed="rellaxNumber"
 			>
 				<!-- isHero -->
-				<div v-if="showContent" class="content py-2 rounded shadow">
+				<div v-if="showContent" class="py-2 rounded">
 					<h1 class="title d-none d-md-block font-weight-bold text-light">
 						{{ mainText }}
 					</h1>
+
+					<h4 class="title d-block d-md-none font-weight-bold text-light">
+						{{ mainText }}
+					</h4>
 
 					<RouterLink to="/book">
 						<BButton

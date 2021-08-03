@@ -5,7 +5,7 @@
 			:showContent="true"
 			:mainText="'Healing for the Mind, Body and Soul'"
 			:slideObjs="DPage.caraousel"
-			:maxHeight="400"
+			:maxHeight="600"
 			:rellaxNumber="1"
 			class="mb-4 shadow"
 			data-aos="fade-up"
@@ -13,15 +13,15 @@
 
 		<!-- Main Details -->
 		<BContainer class="mb-4 text-center">
-			<BCard bg-variant="light" class="rounded-0 shadow">
+			<BCard bg-variant="light" border-variant="primary" class="rounded shadow">
 				<!-- Captions -->
-				<h1 class="font-weight-bold text-primary">
+				<h2 class="font-weight-bold text-primary">
 					{{ DPage.mainDetails.caption1 }}
-				</h1>
+				</h2>
 				
 				<!-- Address -->
 				<a :href="DPage.mainDetails.googleMapsLink">
-					<p class="h4 mb-4 text-center font-weight-bold text-secondary">
+					<p class="h6 mb-4 text-center font-weight-bold text-secondary">
 						{{ DPage.mainDetails.address }}
 					</p>
 				</a>
@@ -32,7 +32,7 @@
 						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
 						:key="index"
 						class="m-0 list-unstyled"
-					><p class="h5">{{ hoo.days }} - {{ hoo.hours }}</p></li>
+					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 				</ul>
 
 				<RouterLink to="/book" class="h5 text-secondary">
