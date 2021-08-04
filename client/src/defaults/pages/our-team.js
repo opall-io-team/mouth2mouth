@@ -1,6 +1,6 @@
 // [EXPORT] //
 module.exports = {
-	parallax: require('../../assets/images/pages/1.jpg'),
+	parallax: require('../../assets/images/pages/our-team/1.jpg'),
 
 	pageTitle: 'Our Team',
 
