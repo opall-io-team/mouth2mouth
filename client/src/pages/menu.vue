@@ -1,6 +1,6 @@
 <template>
-	<BContainer class="my-4">
-		<BCard v-if="reqData.services" bg-variant="light" class="mt-3 shadow">
+	<BContainer v-if="menuItems != []" class="my-5">
+		<BCard bg-variant="light" class="mt-3 shadow">
 			<BRow>
 				<!-- Title -->
 				<BCol cols="12">
@@ -15,7 +15,7 @@
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
-							v-for="(service, index) in reqData.services.permanentMakeup"
+							v-for="(service, index) in menuItems.permanentMakeup"
 							:key="index"
 							variant="secondary"
 							class="d-flex justify-content-between align-items-center"
@@ -34,7 +34,7 @@
 				<BCol cols="12" md="6" lg="4" data-aos="fade-up">
 					<h2 class="text-center text-secondary font-weight-bold">Best Sellers</h2>
 
-					<div v-for="(bs, index) in services.bestSellers" :key="index">
+					<div v-for="(bs, index) in menuItems.bestSellers" :key="index">
 						<h4 class="font-weight-bold text-secondary">{{ bs.title }}</h4>
 						<BListGroup class="mb-3">
 							<BListGroupItem
@@ -60,7 +60,7 @@
 
 					<BListGroup class="mb-3">
 						<BListGroupItem
-							v-for="(service, index) in services.spa"
+							v-for="(service, index) in menuItems.spa"
 							:key="index"
 							variant="secondary"
 							class="d-flex justify-content-between align-items-center"
@@ -83,7 +83,7 @@
 
 <script>
 	// [IMPORT] Personal //
-	import DPage from '@/defaults/pages/services'
+	import DPage from '@/defaults/pages/menu'
 	import PageService from '@/services/PageService'
 
 	export default {
@@ -91,15 +91,15 @@
 			return {
 				DPage: DPage,
 				reqData: {},
-				services: [],
+				menuItems: [],
 				error: '',
 			}
 		},
 
 		async created() {
-			this.reqData = await PageService.s_services()
+			this.reqData = await PageService.s_menu()
 
-			if (this.reqData.status) { this.services = this.reqData.services }
+			if (this.reqData.status) { this.menuItems = this.reqData.menuItems }
 			else { this.error = this.reqData.message }
 		},
 	}

@@ -2,7 +2,7 @@
 const validator = require('validator')
 
 // [IMPORT] Personal //
-const services = require('../s-default/services')
+const services = require('../s-defaults/services')
 
 module.exports = {
 	// [READ-ALL] Sort //

@@ -6,7 +6,7 @@
 					<h1 class="mb-4 text-center text-primary">{{ pData.title }}</h1>
 				</BCol>
 				<BCol
-					v-for="(s, i) in pData.services" :key="i"
+					v-for="(s, i) in services" :key="i"
 					cols="12" md="6" lg="4"
 				>
 					<RouterLink :to="`/services/${s.id}`" class="text-decoration-none">
@@ -39,11 +39,21 @@
 
 <script>
 	import pData from '@/defaults/pages/services'
+	import PageService from '../../services/PageService'
+
 	export default {
 		data() {
 			return {
 				pData: pData,
+				services: [],
 			}
+		},
+
+		async created() {
+			this.reqData = await PageService.s_services()
+
+			if (this.reqData.status) { this.services = this.reqData.services }
+			else { this.error = this.reqData.message }
 		},
 	}
 </script>

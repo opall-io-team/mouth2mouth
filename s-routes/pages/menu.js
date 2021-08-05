@@ -5,7 +5,7 @@ const express = require('express')
 const router = express.Router().use(cors())
 
 
-const services = require('../../s-defaults/services')
+const menuItems = require('../../s-defaults/menuItems')
 
 
 router.get(
@@ -14,7 +14,7 @@ router.get(
 		res.send({
 			executed: true,
 			status: true,
-			services: services
+			menuItems: menuItems
 		})
 	}
 )
