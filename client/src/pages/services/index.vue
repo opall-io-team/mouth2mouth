@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="my-5">
+	<BContainer v-if="services != []" class="my-5">
 		<BCard class="shadow">
 			<BRow>
 				<BCol cols="12">
@@ -39,11 +39,13 @@
 
 <script>
 	import pData from '@/defaults/pages/services'
-	import PageService from '../../services/PageService'
+	import PageService from '@/services/PageService'
 
 	export default {
 		data() {
 			return {
+				loading: true,
+				reqData: {},
 				pData: pData,
 				services: [],
 			}
@@ -51,9 +53,12 @@
 
 		async created() {
 			this.reqData = await PageService.s_services()
+			console.log('234', this.reqData);
 
 			if (this.reqData.status) { this.services = this.reqData.services }
 			else { this.error = this.reqData.message }
+
+			this.loading = false
 		},
 	}
 </script>

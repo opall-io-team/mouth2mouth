@@ -257,5 +257,5 @@ module.exports = {
 			price: 95,
 			downPayment: 19,
 		},
-	]
+	],
 }

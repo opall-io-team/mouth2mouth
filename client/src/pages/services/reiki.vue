@@ -1,25 +1,25 @@
 <template>
-	<BContainer class="my-5">
+	<BContainer v-if="services != []" class="my-5">
 		<BCard class="shadow">
 			<BRow>
 				<BCol cols="12">
 					<h1 class="mb-3 text-center text-primary">
-						{{ pData.services[0].title }}
+						{{ pData.title }}
 					</h1>
 				</BCol>
 
 				<BCol cols="12" md="3" class="d-none d-md-block">
-					<img :src="pData.services[0].image" class="w-100 mb-3 rounded">
+					<img :src="services[0].image" class="w-100 mb-3 rounded">
 				</BCol>
 
 				<BCol cols="12" md="9">
-					<p>{{ pData.services[0].description }}</p>
+					<p>{{ services[0].description }}</p>
 
-					<div v-if="pData.services[0].processSteps.length > 0">
+					<div v-if="services[0].processSteps.length > 0">
 						<h5 class="text-info">Session Process</h5>
 						<ul>
 							<li
-								v-for="(p, i) in pData.services[0].processSteps"
+								v-for="(p, i) in services[0].processSteps"
 								:key="i"
 							>{{ p }}</li>
 						</ul>
@@ -49,12 +49,24 @@
 </template>
 
 <script>
-import pData from '@/defaults/pages/services'
-export default {
-	data() {
-		return {
-			pData: pData,
-		}
-	},
-}
+	import pData from '@/defaults/pages/services'
+	import PageService from '@/services/PageService'
+
+	export default {
+		data() {
+			return {
+				reqData: {},
+				pData: pData,
+				services: [],
+			}
+		},
+
+		async created() {
+			this.reqData = await PageService.s_services()
+			console.log('sdf', this.reqData);
+
+			if (this.reqData.status) { this.services = this.reqData.services }
+			else { this.error = this.reqData.message }
+		},
+	}
 </script>

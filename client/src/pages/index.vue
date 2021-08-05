@@ -94,10 +94,10 @@
 					<BCol cols="12" sm="8">
 						<div v-if="show">
 							<h2 class="text-primary font-weight-bold">
-								{{ DPage.moreDetails.row2.header }}
+								{{ reikiTitle }}
 							</h2>
 							<p class="mb-4 h5 text-secondary">
-								{{ DPage.moreDetails.row2.text }}
+								{{ reikiDescription }}
 							</p>
 
 							<div class="w-100 text-center">
@@ -178,6 +178,7 @@
 
 <script>
 	// [IMPORT] Personal //
+	import PageService from '../services/PageService'
 	import DPage from '@/defaults/pages'
 	import BCarousel from '@/components/display/BCarousel'
 	import Conveyor from '@/components/display/Conveyor'
@@ -194,12 +195,21 @@
 		data() {
 			return {
 				DPage: DPage,
-				reqData: '',
+				reqData: {},
 				show: false,
+				reikiTitle: '',
+				reikiDescription: '',
 			}
 		},
 
-		async created() {},
+		async created() {
+			this.reqData = await PageService.s_()
+
+			if (this.reqData.status) {
+				this.reikiTitle = this.reqData.reikiTitle
+				this.reikiDescription = this.reqData.reikiDescription
+			}
+		},
 
 		mounted() {
 			this.show = true
