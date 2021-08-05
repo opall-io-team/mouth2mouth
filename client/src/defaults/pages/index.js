@@ -25,16 +25,7 @@ module.exports = {
 		text: 'By the hour, apointments only',
 	},
 
-	sliderImages: [
-		require('../../assets/images/pages/index/slider/1.jpg'),
-		require('../../assets/images/pages/index/slider/2.jpg'),
-		require('../../assets/images/pages/index/slider/3.jpg'),
-		require('../../assets/images/pages/index/slider/4.jpg'),
-		require('../../assets/images/pages/index/slider/5.jpg'),
-		require('../../assets/images/pages/index/slider/6.jpg'),
-		require('../../assets/images/pages/index/slider/7.jpg'),
-		require('../../assets/images/pages/index/slider/8.jpg'),
-	],
+	sliderImages: [],
 
 	moreDetails: {
 		row1: {
