@@ -1,6 +1,6 @@
 <template>
 	<div class="w-100 pt-4 bg-light border-bottom border-primary">
-		<BContainer bg-variant="dark" class="py-3 d-flex container-fluid">
+		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid py-3">
 			<!-- Title -->
 			<div class="text-center" style="">
 				<RouterLink to="/" class="text-decoration-none">
