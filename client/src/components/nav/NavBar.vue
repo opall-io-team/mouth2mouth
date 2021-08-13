@@ -39,8 +39,8 @@
 				</RouterLink>
 			</div>
 
-			<!-- Phone # & Social Media-->
-			<div class="ml-auto text-center text-lg-right">
+			<!-- Phone # & Social Media -->
+			<div class="ml-auto text-right">
 				<a :href="companyInfo.phoneNumberLink">
 					<BButton variant="secondary" class="mb-3">
 						<PhoneIcon size="2x" />
