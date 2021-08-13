@@ -20,12 +20,11 @@
 				</h2>
 				
 				<!-- Address -->
-				<a :href="DPage.mainDetails.googleMapsLink">
-					<p class="h6 mb-4 text-center font-weight-bold text-secondary">
-						Our Hours
-					</p>
-				</a>
-
+				<p
+					v-if="DPage.mainDetails.hoursOfOperation > 0"
+					class="h6 mb-4 text-center font-weight-bold text-secondary"
+				>Our Hours</p>
+				
 				<!-- Hours of Operation -->
 				<ul class="m-0 mb-4 p-0 text-dark">
 					<li
@@ -35,8 +34,12 @@
 					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 				</ul>
 
-				<RouterLink to="/book" class="h5 text-secondary">
-					{{ DPage.mainDetails.text }}
+				<h3 class="mb-3 text-secondary">{{ DPage.mainDetails.text }}</h3>
+
+				<RouterLink to="/book">
+					<BButton variant="primary">
+						Contact Us!
+					</BButton>
 				</RouterLink>
 			</BCard>
 		</BContainer>
