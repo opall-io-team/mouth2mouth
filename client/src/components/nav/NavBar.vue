@@ -51,7 +51,7 @@
 				<div class="w-100">
 					<SocialMediaPlug
 						size="1.8x"
-						variant="secondary"
+						variant="primary"
 						class="d-none d-sm-block float-lg-right"
 					/>
 				</div>
