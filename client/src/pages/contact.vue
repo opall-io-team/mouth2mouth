@@ -50,6 +50,10 @@
 						>{{ hoo.days }}: {{ hoo.hours }}</li>
 					</ul>
 					<hr>
+
+					<!-- Social Media -->
+					<h3 class="mb-3 text-center text-secondary">Follow Us!</h3>
+					<SocialMediaPlug size="4x" variant="primary" />
 				</BCard>
 			</BCol>
 		</BRow>
@@ -61,12 +65,14 @@
 	import { MapPinIcon, PhoneIcon } from 'vue-feather-icons'
 
 	// [IMPORT] Personal //
+	import SocialMediaPlug from '../components/SocialMediaPlug.vue'
 	import companyInfo from '../defaults/companyInfo'
 
 	export default {
 		components: {
 			MapPinIcon,
 			PhoneIcon,
+			SocialMediaPlug,
 		},
 
 		data() {
