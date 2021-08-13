@@ -2,7 +2,7 @@
 	<div class="w-100 bg-light border-bottom border-primary">
 		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid py-3">
 			<!-- Title -->
-			<div class="text-center" style="">
+			<div class="text-center">
 				<RouterLink to="/" class="text-decoration-none">
 					<img :src="require('../../assets/logo.png')"
 						class="w-100 mb-2" style="max-width: 130px;"
@@ -40,7 +40,7 @@
 			</div>
 
 			<!-- Phone # & Social Media-->
-			<div class="ml-auto text-right">
+			<div class="ml-auto text-center text-lg-right">
 				<a :href="companyInfo.phoneNumberLink">
 					<BButton variant="secondary" class="mb-3">
 						<PhoneIcon size="2x" />
