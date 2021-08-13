@@ -2,7 +2,7 @@
 	<BContainer class="my-3">
 		<BRow>
 			<BCol cols="12">
-				<BCard variant="white" class="text-center shadow">
+				<BCard variant="light" class="text-center shadow">
 					<h1 class="mb-3 text-center font-weight-bold text-primary">
 						Find Us
 					</h1>
@@ -20,8 +20,11 @@
 					</a>
 
 					<!-- Location -->
-					<h3 class="text-secondary">Location</h3>
+					<h3 v-if="companyInfo.googleMapsLink" class="text-secondary">
+						Location
+					</h3>
 					<a
+						v-if="companyInfo.googleMapsLink"
 						:href="companyInfo.googleMapsLink"
 						class="text-decoration-none"
 					>
@@ -32,8 +35,14 @@
 					</a>
 
 					<!-- Hours -->
-					<h3 class="text-secondary">Hours</h3>
-					<ul class="list-unstyled text-small text-light">
+					<h3
+						v-if="companyInfo.hoursOfOperation > 0"
+						class="text-secondary"
+					>Hours</h3>
+					<ul
+						v-if="companyInfo.hoursOfOperation > 0"
+						class="list-unstyled text-small text-light"
+					>
 						<li
 							v-for="(hoo, index) in companyInfo.hoursOfOperation"
 							:key="index"
