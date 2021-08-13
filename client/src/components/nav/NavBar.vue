@@ -1,10 +1,12 @@
 <template>
-	<div class="w-100 pt-4 bg-light border-bottom border-primary">
+	<div class="w-100 bg-light border-bottom border-primary">
 		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid py-3">
 			<!-- Title -->
 			<div class="text-center" style="">
 				<RouterLink to="/" class="text-decoration-none">
-					<h3 class="m-0 font-weight-bold">{{ companyInfo.companyName }}</h3>
+					<img :src="require('../../assets/logo.png')"
+						class="w-100 mb-2" style="max-width: 130px;"
+					>
 					<h6 class="m-0 small font-weight-bold text-secondary">
 						{{ companyInfo.companyCaption1 }}
 					</h6>
@@ -38,7 +40,7 @@
 			</div>
 
 			<!-- Phone # & Social Media-->
-			<div class="ml-auto text-center text-lg-right" style="">
+			<div class="ml-auto text-right">
 				<a :href="companyInfo.phoneNumberLink">
 					<BButton variant="secondary" class="mb-3">
 						<PhoneIcon size="2x" />
