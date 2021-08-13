@@ -52,6 +52,7 @@
 
 				<BCol cols="12" class="my-3 text-center text-secondary">
 					<h6>© w3st.io {{ new Date().getFullYear() }}</h6>
+					<br><br><br><br><br>
 				</BCol>
 			</BRow>
 		</BContainer>
