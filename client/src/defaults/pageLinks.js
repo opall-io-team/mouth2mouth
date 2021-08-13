@@ -59,11 +59,13 @@ module.exports = [
 		text: 'Gallery',
 		children: [],
 	},
+	/*
 	{
 		path: '/directions',
 		text: 'Directions',
 		children: [],
 	},
+	*/
 	{
 		path: '/contact',
 		text: 'Contact',

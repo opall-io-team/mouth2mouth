@@ -15,13 +15,14 @@
 
 			<!-- Links -->
 			<div class="d-none d-lg-block mx-auto">
-				<a :href="companyInfo.googleMapsLink">
+				<a v-if="companyInfo.googleMapsLink" :href="companyInfo.googleMapsLink">
 					<BButton variant="none" class="w-100 mb-2 text-primary">
 						<h5 class="m-0">
 							<MapPinIcon size="1x"/> {{ companyInfo.address }}
 						</h5>
 					</BButton>
-				</a><br>
+				</a>
+				<hr class="border-primary">
 
 				<!-- Menu Items -->
 				<RouterLink

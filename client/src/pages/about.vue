@@ -3,7 +3,7 @@
 		<BCard bg-variant="light" class=" shadow">
 			<BRow class="mb-3">
 				<BCol cols="12">
-					<h1 class="text-center font-weight-bold text-info">
+					<h1 class="text-center font-weight-bold text-primary">
 						{{ pageData.title }}
 					</h1>
 				</BCol>

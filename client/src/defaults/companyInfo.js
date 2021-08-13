@@ -7,10 +7,11 @@ module.exports = {
 
 	companyLogo: require('../assets/images/logo.svg'),
 
-	address: '123 main st. teaneck NJ, 07666',
+	address: '',
 	googleMapsLink: '',
 
 	hoursOfOperation: [
+		/*
 		{
 			days: 'Monday - Friday',
 			hours: '6:00 AM - 9:00 PM'
@@ -23,6 +24,7 @@ module.exports = {
 			days: 'Sunday',
 			hours: '6:00 AM - 9:00 PM'
 		},
+		*/
 	],
 
 	phoneNumber: '(201) 123-4567',
