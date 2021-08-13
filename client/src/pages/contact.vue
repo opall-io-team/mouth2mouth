@@ -2,7 +2,7 @@
 	<BContainer class="my-5">
 		<BRow>
 			<BCol cols="12">
-				<BCard variant="light" class="text-center shadow">
+				<BCard bg-variant="light" class="text-center shadow">
 					<h1 class="mb-3 text-center font-weight-bold text-primary">
 						Find Us
 					</h1>

@@ -1,5 +1,5 @@
 <template>
-	<BContainer class="my-4">
+	<BContainer class="my-5">
 		<BCard bg-variant="light" class="mt-3 shadow">
 			<h1 class="mb-3 text-center text-primary font-weight-bold">
 				{{ pageData.pageTitle }}
