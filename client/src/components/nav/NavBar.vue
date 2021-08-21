@@ -43,7 +43,7 @@
 			<div class="ml-auto text-right">
 				<a :href="companyInfo.phoneNumberLink">
 					<BButton variant="outline-secondary" class="mb-3 px-4"
-						style="border-width: 2px; border-radius: 10px !important;"
+						style="border-width: 2px; border-radius: 8px !important;"
 					>
 						<PhoneIcon stroke-width="2" size="1.5x" />
 					</BButton>
