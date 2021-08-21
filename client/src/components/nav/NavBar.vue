@@ -7,8 +7,7 @@
 					<img :src="require('../../assets/logo.png')"
 						class="w-100 mb-2" style="max-width: 130px;"
 					>
-					<h6 class="m-0 small font-weight-bold text-secondary">
-						{{ companyInfo.companyCaption1 }}
+					<h6 v-html="companyInfo.companyCaption1" class="m-0 small font-weight-bold text-primary">
 					</h6>
 				</RouterLink>
 			</div>
@@ -43,8 +42,10 @@
 			<!-- Phone # & Social Media -->
 			<div class="ml-auto text-right">
 				<a :href="companyInfo.phoneNumberLink">
-					<BButton variant="secondary" class="mb-3">
-						<PhoneIcon size="2x" />
+					<BButton variant="outline-secondary" class="mb-3 px-4"
+						style="border-width: 2px; border-radius: 10px !important;"
+					>
+						<PhoneIcon stroke-width="2" size="1.5x" />
 					</BButton>
 				</a>
 

@@ -29,7 +29,7 @@ module.exports = {
 
 	moreDetails: {
 		row1: {
-			image: require('../../assets/images/pages/index/blackmarble.jpg'),
+			image: require('../../assets/images/stars-solo.jpg'),
 		},
 
 		row2: {

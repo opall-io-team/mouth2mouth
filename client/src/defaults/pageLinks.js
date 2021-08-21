@@ -1,9 +1,10 @@
 // [REQUIRE] //
-const feather = require('feather-icons')
+//const feather = require('feather-icons')
 
 
 // [EXPORT] //
 module.exports = [
+	/*
 	{
 		path: '/',
 		text: 'Home',
@@ -21,6 +22,7 @@ module.exports = [
 		}),
 		children: [],
 	},
+	*/
 	{
 		path: '/services',
 		text: 'Services',

@@ -75,7 +75,7 @@
 									to="book"
 									class="font-weight-bold text-decoration-none"
 								>
-									<h2 class="font-weight-bold text-primary">
+									<h2 class="font-weight-bold text-light">
 										Now Booking New Clients
 									</h2>
 								</RouterLink>
@@ -99,14 +99,14 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ reikiTitle }}
 							</h2>
-							<p class="mb-4 h5 text-secondary">
+							<p class="mb-4 h5 text-dark">
 								{{ reikiDescription }}
 							</p>
 
 							<div class="w-100 text-center">
 								<a href="/services/#reiki">
 									<BButton
-										variant="primary"
+										variant="secondary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>
@@ -142,7 +142,7 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
-							<p class="mb-4 h5 text-secondary">
+							<p class="mb-4 h5 text-dark">
 								{{ DPage.moreDetails.row3.description1 }}
 								<br><br>
 								{{ DPage.moreDetails.row3.description2 }}
@@ -151,7 +151,7 @@
 							<div class="w-100 text-center">
 								<RouterLink to="/our-team">
 									<BButton
-										variant="primary"
+										variant="secondary"
 										size="lg"
 										class="mb-4"
 									>Read More</BButton>
@@ -163,7 +163,7 @@
 
 				<BRow class="mb-3">
 					<BCol cols="12">
-						<h1 class="text-center text-primary">Interested?</h1>
+						<h1 class="text-center text-secondary">Interested?</h1>
 
 						<div class="text-center">
 							<RouterLink to="/services">

@@ -17,7 +17,7 @@
 					class="px-5"
 					data-aos="fade"
 				>
-					<h1 class="mb-3 text-center font-weight-bold text-secondary">
+					<h1 class="mb-3 text-center font-weight-bold text-primary">
 						Find Us
 					</h1>
 
@@ -27,31 +27,10 @@
 						:href="companyInfo.phoneNumberLink"
 						class="text-decoration-none"
 					>
-						<p class="h5 mb-4 font-weight-bold text-info">
+						<p class="h5 mb-4 font-weight-bold text-dark">
 							{{ companyInfo.phoneNumber }}
 						</p>
 					</a>
-
-					<!-- Location -->
-					<h3 class="text-secondary">Location</h3>
-					<a
-						:href="companyInfo.googleMapsLink"
-						class="text-decoration-none text-info"
-					>
-						<p class="h5 mb-4 font-weight-bold">
-							{{ companyInfo.address }}
-						</p>
-					</a>
-
-					<!-- Hours -->
-					<h3 class="text-secondary">Hours</h3>
-					<ul class="list-unstyled text-small text-light">
-						<li
-							v-for="(hoo, index) in companyInfo.hoursOfOperation"
-							:key="index"
-							class="text-primary h6"
-						>{{ hoo.days }}: {{ hoo.hours }}</li>
-					</ul>
 					<hr>
 				</BCol>
 
@@ -61,7 +40,7 @@
 					class="px-5"
 					data-aos="fade"
 				>
-					<p class="h5 text-secondary">
+					<p class="h5 text-dark">
 						<img
 							:src="pageData.image"
 							class="w-100 float-right m-3 rounded"
