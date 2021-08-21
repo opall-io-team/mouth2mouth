@@ -1,5 +1,5 @@
 <template>
-	<div class="w-100 bg-dark text-secondary">
+	<div class="w-100 bg-dark text-primary">
 		<BContainer>
 			<BRow class="pt-4">
 				<BCol cols="12" class="text-center" data-aos="fade">
@@ -7,25 +7,25 @@
 						<h5 class="m-0 text-light">
 							{{ companyInfo.companyName }}
 						</h5>
-						<h6 v-html="companyInfo.companyCaption1" class="text-secondary">
+						<h6 v-html="companyInfo.companyCaption1" class="text-primary">
 						</h6>
 						<hr>
 					</RouterLink>
 				</BCol>
 
 				<BCol cols="12" sm="4" class="text-center text-sm-left" data-aos="fade-up">
-					<h4 class="text-secondary">Location</h4>
+					<h4 class="text-primary">Location</h4>
 					<a :href="companyInfo.googleMapsLink" class="mb-3 text-light">
 						<h5 class="mb-4">{{ companyInfo.address }}</h5>
 					</a>
 
-					<h4 class="text-secondary">Hours</h4>
+					<h4 class="text-primary">Hours</h4>
 					<ul class="list-unstyled text-small text-light">
 						<li
 							v-for="(hoo, index) in companyInfo.hoursOfOperation"
 							:key="index"
 						>
-							<span class="text-secondary">{{ hoo.days }}:</span>
+							<span class="text-primary">{{ hoo.days }}:</span>
 							{{ hoo.hours }}
 						</li>
 					</ul>
@@ -51,7 +51,9 @@
 				</BCol>
 
 				<BCol cols="12" class="my-3 text-center text-secondary">
-					<h6>© w3st.io {{ new Date().getFullYear() }}</h6>
+					<h6>
+						<a href="https://www.w3st.io" target="_blank">© w3st.io {{ new Date().getFullYear() }}</a>
+					</h6>
 					<br><br><br><br><br>
 				</BCol>
 			</BRow>

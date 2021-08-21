@@ -1,15 +1,15 @@
 <template>
 	<div class="text-center">
 		<a :href="defaultData.facebookLink" :class="`text-${variant}`">
-			<FacebookIcon :size="size" class="mr-3" />
+			<FacebookIcon :stroke-width="strokeWidth" :size="size" class="mr-3" />
 		</a>
 
 		<a :href="defaultData.instagramLink" :class="`text-${variant}`">
-			<InstagramIcon :size="size" class="mr-3" />
+			<InstagramIcon :stroke-width="strokeWidth" :size="size" class="mr-3" />
 		</a>
 
 		<a :href="defaultData.youtubeLink" :class="`text-${variant}`">
-			<YoutubeIcon :size="size" class="" />
+			<YoutubeIcon :stroke-width="strokeWidth" :size="size" class="" />
 		</a>
 	</div>
 </template>
@@ -31,6 +31,11 @@
 			variant: {
 				type: String,
 				default: 'light'
+			},
+
+			strokeWidth: {
+				type: String,
+				default: '1.5'
 			},
 		},
 

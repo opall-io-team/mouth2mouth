@@ -6,14 +6,15 @@
 					<h1 class="mb-3 text-center font-weight-bold text-primary">
 						Find Us
 					</h1>
+					<hr>
 
 					<!-- Number -->
-					<h3 class="text-secondary">Number</h3>
+					<h3 class="font-weight-bold text-primary">Number</h3>
 					<a
 						:href="companyInfo.phoneNumberLink"
 						class="text-decoration-none"
 					>
-						<BButton variant="primary" size="lg" class="m-3">
+						<BButton variant="secondary" size="lg" class="m-3">
 							<PhoneIcon size="1x" />
 							{{ companyInfo.phoneNumber }} 
 						</BButton>
@@ -49,11 +50,12 @@
 							class="text-primary h5"
 						>{{ hoo.days }}: {{ hoo.hours }}</li>
 					</ul>
-					<hr>
+					<br>
+					<br>
 
 					<!-- Social Media -->
-					<h3 class="mb-3 text-center text-secondary">Follow Us!</h3>
-					<SocialMediaPlug size="4x" variant="primary" />
+					<h3 class="mb-3 text-center font-weight-bold text-primary">Follow Us!</h3>
+					<SocialMediaPlug strokeWidth="1" size="4x" variant="secondary" />
 				</BCard>
 			</BCol>
 		</BRow>

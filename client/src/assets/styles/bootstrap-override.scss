@@ -1,5 +1,5 @@
 $theme-colors: (
-    'primary': #c04600c4,
+    'primary': #fe9722ec,
     'secondary': #5100adcc,
     'info': rgb(94, 143, 250),
 );
@@ -8,6 +8,10 @@ $theme-colors: (
 // [IMPORT] //
 @import 'bootstrap/scss/bootstrap.scss';
 
+
+.btn {
+    border-radius: 0 !important;
+}
 
 // [CONTAINER] //
 @media (min-width: 1600px) {

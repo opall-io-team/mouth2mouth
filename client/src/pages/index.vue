@@ -34,10 +34,10 @@
 					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 				</ul>
 
-				<h3 class="mb-3 text-secondary">{{ DPage.mainDetails.text }}</h3>
+				<h3 class="mb-3 text-dark">{{ DPage.mainDetails.text }}</h3>
 
 				<RouterLink to="/book">
-					<BButton variant="primary">
+					<BButton variant="secondary">
 						Contact Us!
 					</BButton>
 				</RouterLink>
@@ -163,11 +163,11 @@
 
 				<BRow class="mb-3">
 					<BCol cols="12">
-						<h1 class="text-center text-secondary">Interested?</h1>
+						<h1 class="text-center text-primary">Interested?</h1>
 
 						<div class="text-center">
 							<RouterLink to="/services">
-								<BButton variant="primary">
+								<BButton variant="secondary">
 									Check Out Our Services
 								</BButton>
 							</RouterLink>

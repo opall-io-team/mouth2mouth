@@ -40,7 +40,7 @@
 
 					<RouterLink to="/book">
 						<BButton
-							variant="primary"
+							variant="secondary"
 							size="lg"
 							class="m-auto shadow"
 						>Book Apointment</BButton>
