@@ -12,7 +12,7 @@
 						class="d-flex justify-content-between align-items-center q"
 						@click="toggler(index)"
 					>
-						<h3 class="m-0 font-weight-bold text-secondary">{{ qa.q }}</h3>
+						<h3 class="m-0 font-weight-light text-secondary">{{ qa.q }}</h3>
 						<h2 v-if="!inOpened(index)" class="m-0">+</h2>
 						<h2 v-if="inOpened(index)" class="m-0">-</h2>
 					</BListGroupItem>
@@ -20,7 +20,7 @@
 					<BListGroupItem
 						v-if="inOpened(index)"
 						class="d-flex justify-content-between align-items-center"
-					><p v-html="qa.a" class="h5 font-weight-bold"></p></BListGroupItem>
+					><p v-html="qa.a" class="h5 font-weight-light"></p></BListGroupItem>
 				</BListGroup>				
 			</div>
 		</BCard>
@@ -80,7 +80,7 @@ export default {
 	.q { transition: .5s; }
 
 	.q:hover {
-		background-color: rgba(0, 0, 0, 0.178);
+		background-color: rgba(0, 0, 0, 0.1);
 		cursor: pointer;
 	}
 </style>
