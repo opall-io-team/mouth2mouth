@@ -120,5 +120,5 @@
 		background: rgba(0, 0, 0, 0.10);
 
 		backdrop-filter: blur(1px);
-		}
+	}
 </style>
