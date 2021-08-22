@@ -121,7 +121,7 @@
 							:src="DPage.moreDetails.row2.image"
 							alt="No Image"
 							data-aos="fade"
-							class="w-100 mb-3 shadow"
+							class="d-none d-sm-block w-100 mb-3 shadow"
 							style="height: 400px; object-fit: cover;"
 						>
 					</BCol>
@@ -200,8 +200,8 @@
 				DPage: DPage,
 				reqData: {},
 				show: false,
-				reikiTitle: '',
-				reikiDescription: '',
+				reikiTitle: 'Reiki Title',
+				reikiDescription: 'Reiki description goes here',
 			}
 		},
 

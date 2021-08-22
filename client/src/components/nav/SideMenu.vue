@@ -100,7 +100,7 @@
 		transition: 0.3s;
 		font-size: 2em;
 
-		&:hover { background: hsl(224, 47%, 65%); }
+		&:hover { background: hsla(0, 0%, 0%, 0.356); }
 	}
 
 	.is-open { width: 75%; }
