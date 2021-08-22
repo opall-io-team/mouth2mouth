@@ -7,8 +7,11 @@
 					<img :src="require('../../assets/logo.png')"
 						class="w-100 mb-2" style="max-width: 130px;"
 					>
-					<h6 v-html="companyInfo.companyCaption1" class="m-0 small font-weight-bold text-secondary">
-					</h6>
+					<h6
+						v-html="companyInfo.companyCaption1"
+						class="m-0 font-weight-bold text-secondary"
+						style="font-size: .8em;"
+					></h6>
 				</RouterLink>
 			</div>
 
@@ -60,10 +63,10 @@
 		</BContainer>
 
 		<BContainer>
-			<!-- Hidden Menu Button -->
+			<!-- [HIDDEN] Menu Button -->
 			<div class="w-100 d-block d-lg-none mb-3">
 				<BButton
-					variant="primary"
+					variant="secondary"
 					class="w-100"
 					@click="toggle()"
 				><MenuIcon /></BButton>

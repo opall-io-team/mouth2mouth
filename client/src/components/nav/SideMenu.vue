@@ -7,7 +7,7 @@
 			<!-- Close Button -->
 			<BButton
 				v-show="$store.state.showMenu"
-				variant="primary"
+				variant="secondary"
 				class="w-100 mb-2 p-4 text-light"
 				@click="closeMenu()"
 			><XIcon size="36" /></BButton>
@@ -118,5 +118,7 @@
 		overflow-x: hidden;
 
 		background: rgba(0, 0, 0, 0.10);
-	}
+
+		backdrop-filter: blur(1px);
+		}
 </style>
