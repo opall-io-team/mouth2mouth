@@ -17,7 +17,7 @@ module.exports = {
 		{
 			caption: '',
 			text: '',
-			img: 'https://images2.imgbox.com/36/20/uE2WBZES_o.jpg',
+			img: 'https://images2.imgbox.com/37/5f/vuSk5jUS_o.jpg',
 		},
 	],
 
