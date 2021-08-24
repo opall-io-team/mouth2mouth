@@ -33,9 +33,15 @@
 								<p v-html="col.description" class="mb-4 px-3"></p>
 							</BCol>
 
+							<!-- Owner Picture -->
 							<BCol cols="12" sm="12" md="6" lg="4" class="" order="1" order-md="2">
 								<div class="mb-3 px-3">
-									<img :src="col.image" alt="" class="w-100 rounded">
+									<img
+										:src="col.image"
+										alt="Pamela Richardson Image"
+										class="w-100 rounded border border-4 border-secondary shadow"
+										style="border-width: 4px !important;"
+									>
 								</div>
 							</BCol>
 						</BRow>
