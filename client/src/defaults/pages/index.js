@@ -12,7 +12,12 @@ module.exports = {
 		{
 			caption: '',
 			text: '',
-			img: require('../../assets/images/pages/index/slide2.jpg'),
+			img: 'https://images2.imgbox.com/19/be/Yy17hBRd_o.jpg',
+		},
+		{
+			caption: '',
+			text: '',
+			img: 'https://images2.imgbox.com/36/20/uE2WBZES_o.jpg',
 		},
 	],
 

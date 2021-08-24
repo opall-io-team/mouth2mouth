@@ -21,11 +21,15 @@
 									{{ s.title }}
 								</BCardTitle>
 								<BCardText class="text-dark">
+									<img v-if="s.cardImage" :src="s.cardImage" alt="" class="w-100">
+									<img v-else :src="s.image" alt="" class="w-100">
+									<!--
 									{{
 										s.description.length > 200 ?
 											s.description.substring(0, 200 - 3) + '...' :
 											s.description
 									}}
+									-->
 								</BCardText>
 								<BButton class="w-100">Click to Learn More</BButton>
 							</BCardBody>
@@ -53,7 +57,6 @@
 
 		async created() {
 			this.reqData = await PageService.s_services()
-			console.log('234', this.reqData);
 
 			if (this.reqData.status) { this.services = this.reqData.services }
 			else { this.error = this.reqData.message }
