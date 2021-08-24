@@ -5,6 +5,7 @@
 			<h1 class="mb-3 text-center font-weight-bold text-primary">
 				{{ pageData.title }}
 			</h1>
+			<hr class="bg-secondary">
 
 			<viewer :options="{ title: false, transition: false, }">
 				<!-- [Rx] Image Section -->

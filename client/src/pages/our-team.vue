@@ -27,6 +27,7 @@
 						<BRow>
 							<BCol cols="12">
 								<h3 class="mt-3 text-center text-primary">{{ col.title }}</h3>
+								<hr class="bg-secondary">
 							</BCol>
 
 							<BCol cols="12" sm="12" md="6" lg="8" order="2" order-md="1">

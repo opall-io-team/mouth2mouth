@@ -6,7 +6,7 @@
 					<h1 class="mb-3 text-center font-weight-bold text-primary">
 						Find Us
 					</h1>
-					<hr>
+					<hr class="bg-secondary">
 
 					<!-- Number -->
 					<h3 class="font-weight-bold text-primary">Number</h3>

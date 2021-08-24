@@ -1,10 +1,13 @@
 <template>
 	<BContainer v-if="services != []" class="my-5">
-		<BCard class="shadow">
+		<BCard bg-variant="light" class="shadow">
 			<BRow>
 				<BCol cols="12">
 					<h1 class="mb-4 text-center text-primary">{{ pData.title }}</h1>
+					<hr class="mb-5 bg-secondary">
 				</BCol>
+
+				<!-- Service Cards -->
 				<BCol
 					v-for="(s, i) in services" :key="i"
 					cols="12" md="6" lg="4"
@@ -13,8 +16,8 @@
 						<BCard
 							tag="article"
 							no-body
-							border-variant="primary"
-							class="mb-4 service-card"
+							border-variant="secondary"
+							class="mb-4 shadow service-card"
 						>
 							<BCardBody>
 								<BCardTitle class="h4 text-center text-primary">
@@ -31,7 +34,7 @@
 									}}
 									-->
 								</BCardText>
-								<BButton class="w-100">Click to Learn More</BButton>
+								<BButton class="w-100">Click to Learn More!</BButton>
 							</BCardBody>
 						</BCard>
 					</RouterLink>

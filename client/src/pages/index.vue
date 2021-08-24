@@ -13,7 +13,7 @@
 
 		<!-- Main Details -->
 		<BContainer class="mb-4 text-center">
-			<BCard bg-variant="light" border-variant="primary" class="rounded shadow">
+			<BCard bg-variant="light" border-variant="secondary" class="rounded shadow">
 				<!-- Captions -->
 				<h2 data-aos="fade" class="font-weight-bold text-primary">
 					{{ DPage.mainDetails.caption1 }}
@@ -21,12 +21,15 @@
 				
 				<!-- Address -->
 				<p
-					v-if="DPage.mainDetails.hoursOfOperation > 0"
+					v-if="DPage.mainDetails.hoursOfOperation.length > 0"
 					class="h6 mb-4 text-center font-weight-bold text-secondary"
 				>Our Hours</p>
 				
 				<!-- Hours of Operation -->
-				<ul class="m-0 mb-4 p-0 text-dark">
+				<ul
+					v-if="DPage.mainDetails.hoursOfOperation.length > 0"
+					class="m-0 mb-4 p-0 text-dark"
+				>
 					<li
 						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
 						:key="index"
@@ -34,7 +37,7 @@
 					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 				</ul>
 
-				<h3 class="mb-3 text-dark">{{ DPage.mainDetails.text }}</h3>
+				<h4 class="mb-3 text-dark">{{ DPage.mainDetails.text }}</h4>
 
 				<RouterLink to="/book">
 					<BButton variant="secondary">
@@ -67,7 +70,7 @@
 								v-if="show"
 								:src="DPage.moreDetails.row1.image"
 								alt="No Image"
-								class="img-responsive w-100 my-3"
+								class="img-responsive w-100 my-3 shadow"
 								style="height: 176px; object-fit: cover;"
 							>
 							<div class="carousel-caption">

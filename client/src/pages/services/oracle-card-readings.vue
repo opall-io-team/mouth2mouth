@@ -1,6 +1,6 @@
 <template>
 	<BContainer v-if="services != []" class="my-5">
-		<BCard class="shadow">
+		<BCard bg-variant="light" class="shadow">
 			<BRow>
 				<BCol cols="12">
 					<h1 class="mb-3 text-center text-primary">

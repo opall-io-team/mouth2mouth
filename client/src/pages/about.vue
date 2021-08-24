@@ -6,6 +6,7 @@
 					<h1 class="text-center font-weight-bold text-primary">
 						{{ pageData.title }}
 					</h1>
+					<hr class="bg-secondary">
 				</BCol>
 			</BRow>
 

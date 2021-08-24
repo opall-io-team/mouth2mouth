@@ -4,6 +4,7 @@
 			<h1 class="mb-3 text-center text-primary font-weight-bold">
 				{{ pageData.pageTitle }}
 			</h1>
+				<hr class="bg-secondary">
 
 			<div v-for="(qa, index) in pageData.faq" :key="index">
 				<BListGroup class="mb-3">
