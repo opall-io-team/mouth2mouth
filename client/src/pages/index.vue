@@ -60,7 +60,7 @@
 		</BContainer>
 
 		<!-- More Details -->
-		<BContainer fluid class="mb-5 bg-white border-top border-secondary shadow-lg">
+		<BContainer fluid class="bg-white border-top border-secondary -lg">
 			<BContainer class="pb-3">
 				<!-- Black Marble Now Booking New Clients -->
 				<BRow class="mb-3" data-aos="fade">
@@ -129,7 +129,7 @@
 						>
 					</BCol>
 				</BRow>
-
+				
 				<!-- Meet Pamela -->
 				<BRow class="mb-4">
 					<BCol cols="12" sm="6" data-aos="fade-up">
@@ -145,7 +145,7 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
-							<p class="mb-4 h5 text-dark">
+							<p class="mb-4 h5 text-light">
 								{{ DPage.moreDetails.row3.description1 }}
 								<br><br>
 								{{ DPage.moreDetails.row3.description2 }}
@@ -163,21 +163,33 @@
 						</div>
 					</BCol>
 				</BRow>
+			</BContainer>
+		</BContainer>
 
-				<BRow class="mb-3">
-					<BCol cols="12">
-						<h1 class="text-center text-primary">Interested?</h1>
+
+		<BContainer fluid class="px-0 py-5 bg-secondary">
+			
+				<BRow class="w-100 m-0 p-0">
+					<BCol cols="12" md="2" class="d-none d-md-block p-0 text-left">
+						<img src="https://images2.imgbox.com/c3/c3/XQ36FnwY_o.png" class="w-100" style="max-width: 200px;">
+					</BCol>
+
+					<BCol cols="12" md="8" class="m-auto">
+						<h1 class="mb-4 text-center text-light">Interested?</h1>
 
 						<div class="text-center">
 							<RouterLink to="/services">
-								<BButton variant="secondary">
+								<BButton size="lg" variant="light" class="text-primary shadow">
 									Check Out Our Services
 								</BButton>
 							</RouterLink>
 						</div>
 					</BCol>
+
+					<BCol cols="12" md="2" class="p-0 text-right">
+						<img src="https://images2.imgbox.com/11/93/PmJs689J_o.png" class="w-100" style="max-width: 200px;">
+					</BCol>
 				</BRow>
-			</BContainer>
 		</BContainer>
 	</div>
 </template>
