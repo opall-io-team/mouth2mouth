@@ -34,7 +34,7 @@
 				>
 					<BButton
 						variant="none"
-						class="mx-1 px-1 py-0 font-weight-bold text-secondary"
+						class="mx-2 mx-xl-4 px-1 py-0 font-weight-bold shadow-none text-secondary menu-link"
 					>
 						<span v-if="button.navIcon" v-html="button.navIcon"></span>
 						<span v-else>{{ button.text }}</span>
@@ -112,3 +112,15 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	@import '../../assets/styles/bootstrap-override.scss';
+
+	.router-link-exact-active {
+		.menu-link {
+			@extend .text-primary;
+
+			border-width: 2px !important;
+		}
+	}
+</style>

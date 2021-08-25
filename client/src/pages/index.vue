@@ -7,12 +7,12 @@
 			:slideObjs="DPage.caraousel"
 			:maxHeight="600"
 			:rellaxNumber="1"
-			class="mb-4 shadow"
+			class="mb-5 shadow"
 			data-aos="fade-up"
 		/>
 
 		<!-- Main Details -->
-		<BContainer class="mb-4 text-center">
+		<BContainer class="mb-5 text-center">
 			<BCard bg-variant="light" border-variant="secondary" class="rounded shadow">
 				<!-- Captions -->
 				<h2 data-aos="fade" class="font-weight-bold text-primary">
@@ -40,7 +40,7 @@
 				<h4 class="mb-3 text-dark">{{ DPage.mainDetails.text }}</h4>
 
 				<RouterLink to="/book">
-					<BButton variant="secondary">
+					<BButton size="lg" variant="outline-secondary" class="">
 						Contact Us!
 					</BButton>
 				</RouterLink>
@@ -87,7 +87,7 @@
 								<BButton
 									variant="secondary"
 									size="lg"
-									class="mt-3"
+									class="mt-3 shadow"
 									@click="redirectCompanyInfo()"
 								>Book Apointment</BButton>
 							</div>
@@ -111,7 +111,7 @@
 									<BButton
 										variant="secondary"
 										size="lg"
-										class="mb-4"
+										class="mb-4 shadow"
 									>Read More</BButton>
 								</a>
 							</div>
@@ -156,7 +156,7 @@
 									<BButton
 										variant="secondary"
 										size="lg"
-										class="mb-4"
+										class="mb-4 shadow"
 									>Read More</BButton>
 								</RouterLink>
 							</div>
@@ -186,7 +186,7 @@
 								<BButton
 									size="lg"
 									variant="light"
-									class="text-primary shadow"
+									class="shadow"
 								>Check Out Our Services</BButton>
 							</RouterLink>
 						</div>
