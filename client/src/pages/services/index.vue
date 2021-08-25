@@ -10,22 +10,26 @@
 				<!-- Service Cards -->
 				<BCol
 					v-for="(s, i) in services" :key="i"
-					cols="12" md="6" lg="4"
+					cols="12" md="6" lg="4" xl="3"
 				>
 					<RouterLink :to="`/services/${s.id}`" class="text-decoration-none">
 						<BCard
 							tag="article"
 							no-body
-							border-variant="secondary"
+							border-variant=""
+							bg-variant="light"
 							class="mb-4 shadow service-card"
 						>
 							<BCardBody>
 								<BCardTitle class="h4 text-center text-primary">
 									{{ s.title }}
 								</BCardTitle>
+
 								<BCardText class="text-dark">
-									<img v-if="s.cardImage" :src="s.cardImage" alt="" class="w-100">
-									<img v-else :src="s.image" alt="" class="w-100">
+									<hr>
+									
+									<img v-if="s.cardImage" :src="s.cardImage" class="w-100 rounded-lg">
+									<img v-else :src="s.image" class="w-100 rounded-lg">
 									<!--
 									{{
 										s.description.length > 200 ?
@@ -33,8 +37,13 @@
 											s.description
 									}}
 									-->
+									<hr>
+
+									<BButton
+										size="lg"
+										class="w-100 shadow"
+									>Click to Learn More!</BButton>
 								</BCardText>
-								<BButton class="w-100">Click to Learn More!</BButton>
 							</BCardBody>
 						</BCard>
 					</RouterLink>
@@ -71,7 +80,7 @@
 
 <style lang="scss" scoped>
 	.service-card:hover {
-		background-color: rgba(0, 0, 0, 0.10);
+		background-color: rgba(0, 0, 0, 0.10) !important;
 	}
 	
 </style>

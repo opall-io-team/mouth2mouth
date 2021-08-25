@@ -116,11 +116,15 @@
 <style lang="scss" scoped>
 	@import '../../assets/styles/bootstrap-override.scss';
 
+	.menu-link {
+		:hover {
+			@extend .text-primary;
+		}
+	}
+
 	.router-link-exact-active {
 		.menu-link {
 			@extend .text-primary;
-
-			border-width: 2px !important;
 		}
 	}
 </style>
