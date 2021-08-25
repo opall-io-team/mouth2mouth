@@ -49,10 +49,11 @@
 					<p class="h5 text-dark">
 						<img
 							:src="pageData.image"
-							class="w-100 float-right m-3 rounded"
+							class="w-100 float-right m-3 rounded-lg shadow"
 							style="max-width: 250px;"
 							data-aos="fade-up"
 						/>
+
 						{{ pageData.description1 }}
 						<br>
 						<br>
