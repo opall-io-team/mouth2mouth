@@ -166,40 +166,39 @@
 			</BContainer>
 		</BContainer>
 
+		<!-- INTERESTED? -->
+		<BContainer fluid class="px-0 py-3 bg-secondary">
+			<BRow class="w-100 m-0 p-0">
+				<BCol cols="12" md="2" class="d-none d-md-block p-0 text-left">
+					<img
+						src="https://images2.imgbox.com/c3/c3/XQ36FnwY_o.png"
+						class="w-100"
+						style="max-width: 200px;"
+					>
+				</BCol>
 
-		<BContainer fluid class="px-0 py-5 bg-secondary">
-			
-				<BRow class="w-100 m-0 p-0">
-					<BCol cols="12" md="2" class="d-none d-md-block p-0 text-left">
-						<img
-							src="https://images2.imgbox.com/c3/c3/XQ36FnwY_o.png"
-							class="w-100"
-							style="max-width: 200px;"
-						>
-					</BCol>
+				<BCol cols="12" md="8" class="m-auto">
+					<h1 class="mb-4 text-center text-light">Interested?</h1>
 
-					<BCol cols="12" md="8" class="m-auto">
-						<h1 class="mb-4 text-center text-light">Interested?</h1>
+					<div class="text-center">
+						<RouterLink to="/services">
+							<BButton
+								size="lg"
+								variant="light"
+								class="shadow"
+							>Check Out Our Services</BButton>
+						</RouterLink>
+					</div>
+				</BCol>
 
-						<div class="text-center">
-							<RouterLink to="/services">
-								<BButton
-									size="lg"
-									variant="light"
-									class="shadow"
-								>Check Out Our Services</BButton>
-							</RouterLink>
-						</div>
-					</BCol>
-
-					<BCol cols="12" md="2" class="p-0 text-right">
-						<img
-							src="https://images2.imgbox.com/11/93/PmJs689J_o.png"
-							class="w-100"
-							style="max-width: 200px;"
-						>
-					</BCol>
-				</BRow>
+				<BCol cols="12" md="2" class="p-0 text-right">
+					<img
+						src="https://images2.imgbox.com/11/93/PmJs689J_o.png"
+						class="w-100"
+						style="max-width: 200px;"
+					>
+				</BCol>
+			</BRow>
 		</BContainer>
 	</div>
 </template>

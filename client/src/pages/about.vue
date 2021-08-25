@@ -33,6 +33,11 @@
 						</p>
 					</a>
 					<hr>
+
+					<img
+						src="https://images2.imgbox.com/bd/0d/5vDKDIfP_o.png" 
+						class="w-100 rounded-lg shadow"
+					>
 				</BCol>
 
 				<BCol

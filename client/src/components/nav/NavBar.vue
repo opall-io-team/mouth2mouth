@@ -1,11 +1,11 @@
 <template>
 	<div class="w-100 bg-light border-bottom border-primary">
-		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid py-3">
+		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid pt-3 mb-1">
 			<!-- Title -->
 			<div class="text-left">
 				<RouterLink to="/" class="text-decoration-none">
 					<img :src="require('../../assets/logov2.png')"
-						class="w-100 mb-2" style="max-width: 140px;"
+						class="w-100 mb-2" style="max-width: 130px;"
 					>
 					<!--
 					<h6
