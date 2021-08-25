@@ -145,7 +145,7 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
-							<p class="mb-4 h5 text-light">
+							<p class="mb-4 h5 text-dark">
 								{{ DPage.moreDetails.row3.description1 }}
 								<br><br>
 								{{ DPage.moreDetails.row3.description2 }}
@@ -171,7 +171,11 @@
 			
 				<BRow class="w-100 m-0 p-0">
 					<BCol cols="12" md="2" class="d-none d-md-block p-0 text-left">
-						<img src="https://images2.imgbox.com/c3/c3/XQ36FnwY_o.png" class="w-100" style="max-width: 200px;">
+						<img
+							src="https://images2.imgbox.com/c3/c3/XQ36FnwY_o.png"
+							class="w-100"
+							style="max-width: 200px;"
+						>
 					</BCol>
 
 					<BCol cols="12" md="8" class="m-auto">
@@ -179,15 +183,21 @@
 
 						<div class="text-center">
 							<RouterLink to="/services">
-								<BButton size="lg" variant="light" class="text-primary shadow">
-									Check Out Our Services
-								</BButton>
+								<BButton
+									size="lg"
+									variant="light"
+									class="text-primary shadow"
+								>Check Out Our Services</BButton>
 							</RouterLink>
 						</div>
 					</BCol>
 
 					<BCol cols="12" md="2" class="p-0 text-right">
-						<img src="https://images2.imgbox.com/11/93/PmJs689J_o.png" class="w-100" style="max-width: 200px;">
+						<img
+							src="https://images2.imgbox.com/11/93/PmJs689J_o.png"
+							class="w-100"
+							style="max-width: 200px;"
+						>
 					</BCol>
 				</BRow>
 		</BContainer>
