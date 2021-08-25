@@ -36,20 +36,21 @@
 
 					<img
 						src="https://images2.imgbox.com/bd/0d/5vDKDIfP_o.png" 
-						class="w-100 rounded-lg shadow"
+						class="w-100 mb-4 rounded-lg shadow"
 					>
 				</BCol>
 
 				<BCol
 					cols="12" lg="8" xl="9"
 					order="1" order-lg="2"
-					class="px-5"
+					class="px-sm-5"
 					data-aos="fade"
 				>
 					<p class="h5 text-dark">
+						<!-- Right Img -->
 						<img
 							:src="pageData.image"
-							class="w-100 float-right m-3 rounded-lg shadow"
+							class="d-none d-sm-block w-100 float-right mx-4 mb-3 rounded-lg shadow"
 							style="max-width: 250px;"
 							data-aos="fade-up"
 						/>
