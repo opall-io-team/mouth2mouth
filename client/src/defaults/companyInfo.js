@@ -5,7 +5,7 @@ module.exports = {
 	companyCaption1: 'Embrace wellness with energy healing',
 	companyCaption2: '',
 
-	companyLogo: require('../assets/images/logo.svg'),
+	companyLogo: require('../assets/logov2.png'),
 
 	address: '',
 	googleMapsLink: '',

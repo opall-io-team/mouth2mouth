@@ -21,30 +21,48 @@
 				:caption="slideObj.caption"
 				:text="slideObj.text"
 				:img-src="slideObj.img"
-				:style="`max-height: ${maxHeight}px;`"
 				v-rellax
 				data-rellax-xs-speed="0"
 				data-rellax-mobile-speed="0"
 				data-rellax-tablet-speed="0"
 				:data-rellax-desktop-speed="rellaxNumber"
+				class="h-100"
+				:style="`max-height: ${maxHeight}px;`"
 			>
 				<!-- isHero -->
-				<div v-if="showContent" class="py-2 rounded">
-					<h1 class="title d-none d-md-block font-weight-bold text-light">
+				<div v-if="showContent" class="h-100 my-auto py-2 rounded">
+					<h1 class="title d-none d-md-block font-weight-light text-light"
+					style="font-size: 3em;">
 						{{ mainText }}
+						<br><br>
 					</h1>
 
-					<h4 class="title d-block d-md-none font-weight-bold text-light">
+					<h3 class="title d-none d-sm-block d-md-none font-weight-light text-light">
 						{{ mainText }}
-					</h4>
+						<br><br>
+					</h3>
 
-					<RouterLink to="/book">
+					<h5 class="title d-block d-sm-none font-weight-light text-light">
+						{{ mainText }}
+					</h5>
+
+					<RouterLink to="/book" class="text-decoration-none">
 						<BButton
 							variant="secondary"
 							size="lg"
-							class="m-auto shadow"
+							class="d-none d-sm-block m-auto shadow"
+						>Book Apointment</BButton>
+
+						<BButton
+							variant="secondary"
+							size=""
+							class="d-block d-sm-none m-auto shadow"
 						>Book Apointment</BButton>
 					</RouterLink>
+
+					<div class="title d-none d-md-block font-weight-bold text-light">
+						<br><br><br>
+					</div>
 				</div>
 			</BCarouselSlide>
 		</BCarousel>

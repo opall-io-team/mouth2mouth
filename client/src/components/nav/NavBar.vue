@@ -2,16 +2,18 @@
 	<div class="w-100 bg-light border-bottom border-primary">
 		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid py-3">
 			<!-- Title -->
-			<div class="text-center">
+			<div class="text-left">
 				<RouterLink to="/" class="text-decoration-none">
-					<img :src="require('../../assets/logo.png')"
-						class="w-100 mb-2" style="max-width: 130px;"
+					<img :src="require('../../assets/logov2.png')"
+						class="w-100 mb-2" style="max-width: 140px;"
 					>
+					<!--
 					<h6
 						v-html="companyInfo.companyCaption1"
 						class="m-0 font-weight-bold text-secondary"
 						style="font-size: .8em;"
 					></h6>
+					-->
 				</RouterLink>
 			</div>
 
@@ -34,7 +36,7 @@
 				>
 					<BButton
 						variant="none"
-						class="mx-2 mx-xl-4 px-1 py-0 font-weight-bold shadow-none text-secondary menu-link"
+						class="mx-4 px-1 py-4 font-weight-bold shadow-none text-secondary menu-link"
 					>
 						<span v-if="button.navIcon" v-html="button.navIcon"></span>
 						<span v-else>{{ button.text }}</span>
@@ -86,7 +88,7 @@
 	import SocialMediaPlug from '@/components/SocialMediaPlug'
 	import companyInfo from '@/defaults/companyInfo'
 	import buttons from '@/defaults/pageLinks'
-	import router from '../../router'
+	import router from '@/router'
 
 	export default {
 		components: {
@@ -122,9 +124,16 @@
 		}
 	}
 
+	@media (min-width: 1600px) {
+		.menu-link {
+			margin: 0 50px !important;
+		}
+	}
+
 	.router-link-exact-active {
 		.menu-link {
 			@extend .text-primary;
+			@extend .border-bottom;
 		}
 	}
 </style>

@@ -3,7 +3,7 @@
 		<!-- Caraousel -->
 		<BCarousel
 			:showContent="true"
-			:mainText="'Healing for the Mind, Body and Soul'"
+			:mainText="'Healing for the Mind, Body, and Soul..'"
 			:slideObjs="DPage.caraousel"
 			:maxHeight="600"
 			:rellaxNumber="1"
