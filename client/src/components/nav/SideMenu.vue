@@ -36,11 +36,13 @@
 			<br><br><br><br><br>
 		</nav>
 
-		<div
-			class="backdrop"
-			:class="{ 'is-open-backdrop w-100': $store.state.showMenu }"
-			@click="closeMenu()"
-		></div>
+		<transition name="fade">
+			<div
+				v-if="$store.state.showMenu"
+				class="backdrop w-100"
+				@click="closeMenu()"
+			></div>
+		</transition>
 	</div>
 </template>
 
@@ -117,8 +119,8 @@
 
 		overflow-x: hidden;
 
-		background: rgba(0, 0, 0, 0.10);
+		background: rgba(255, 255, 255, 0.1);
 
-		backdrop-filter: blur(1px);
+		backdrop-filter: blur(6px);
 	}
 </style>
