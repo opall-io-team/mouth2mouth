@@ -27,7 +27,7 @@ module.exports = {
 		address: companyInfo.address,
 		googleMapsLink: companyInfo.googleMapsLink,
 		hoursOfOperation: companyInfo.hoursOfOperation,
-		text: 'By the hour, apointments only',
+		text: 'By the hour, appointments only',
 	},
 
 	sliderImages: [],

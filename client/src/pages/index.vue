@@ -94,42 +94,7 @@
 						</BCol>
 					</Transition>
 				</BRow>
-				
-				<!-- What We Can Do For You -->
-				<BRow class="mb-3">
-					<BCol cols="12" sm="8">
-						<div v-if="show">
-							<h2 class="text-primary font-weight-bold">
-								{{ reikiTitle }}
-							</h2>
-							<p class="mb-4 h5 text-dark">
-								{{ reikiDescription }}
-							</p>
 
-							<div class="w-100 text-center">
-								<a href="/services/#reiki">
-									<BButton
-										variant="secondary"
-										size="lg"
-										class="mb-4 shadow"
-									>Read More</BButton>
-								</a>
-							</div>
-						</div>
-					</BCol>
-
-					<BCol cols="12" sm="4" data-aos="fade-up">
-						<img
-							v-if="show"
-							:src="DPage.moreDetails.row2.image"
-							alt="No Image"
-							data-aos="fade"
-							class="d-none d-sm-block w-100 mb-3 shadow"
-							style="height: 400px; object-fit: cover;"
-						>
-					</BCol>
-				</BRow>
-				
 				<!-- Meet Pamela -->
 				<BRow class="mb-4">
 					<BCol cols="12" sm="6" data-aos="fade-up">
@@ -171,6 +136,41 @@
 								</RouterLink>
 							</div>
 						</div>
+					</BCol>
+				</BRow>
+								
+				<!-- What We Can Do For You -->
+				<BRow class="mb-3">
+					<BCol cols="12" sm="8">
+						<div v-if="show">
+							<h2 class="text-primary font-weight-bold">
+								{{ reikiTitle }}
+							</h2>
+							<p class="mb-4 h5 text-dark">
+								{{ reikiDescription }}
+							</p>
+
+							<div class="w-100 text-center">
+								<a href="/services/#reiki">
+									<BButton
+										variant="secondary"
+										size="lg"
+										class="mb-4 shadow"
+									>Read More</BButton>
+								</a>
+							</div>
+						</div>
+					</BCol>
+
+					<BCol cols="12" sm="4" data-aos="fade-up">
+						<img
+							v-if="show"
+							:src="DPage.moreDetails.row2.image"
+							alt="No Image"
+							data-aos="fade"
+							class="d-none d-sm-block w-100 mb-3 shadow"
+							style="height: 400px; object-fit: cover;"
+						>
 					</BCol>
 				</BRow>
 			</BContainer>
