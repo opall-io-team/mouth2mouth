@@ -41,12 +41,6 @@ module.exports = [
 	},
 	*/
 	{
-		path: '/our-team',
-		text: 'Our Team',
-		children: [],
-
-	},
-	{
 		path: '/about',
 		text: 'About',
 		children: [],
@@ -62,6 +56,12 @@ module.exports = [
 		path: '/contact',
 		text: 'Contact',
 		children: [],
+	},
+	{
+		path: '/gallery',
+		text: 'Gallery',
+		children: [],
+
 	},
 	{
 		path: '/faq',

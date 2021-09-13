@@ -145,10 +145,20 @@
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
+							<h5 class="text-secondary">
+								{{ DPage.moreDetails.row3.header2 }}
+							</h5>
+							<br>
 							<p class="mb-4 h5 text-dark">
-								{{ DPage.moreDetails.row3.description1 }}
-								<br><br>
-								{{ DPage.moreDetails.row3.description2 }}
+								<i>
+									{{ DPage.moreDetails.row3.description1 }}
+									<br><br>
+									{{ DPage.moreDetails.row3.description2 }}
+									<br><br>
+									{{ DPage.moreDetails.row3.description3 }}
+									<br>
+									Pamela Richardson
+								</i>
 							</p>
 
 							<div class="w-100 text-center">

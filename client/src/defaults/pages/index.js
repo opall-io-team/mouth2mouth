@@ -42,11 +42,15 @@ module.exports = {
 		},
 	
 		row3: {
-			header: 'Meet Pamela',
+			header: 'Pamela, CEO/Founder of Balance Within',
 			
-			description1: 'Pamela, Owner and Founder of Balance Within is dedicated to assisting people to find peace within their lives.',
+			header2: 'Intuitive Empath, Light-worker and Energy Facilitator, Reiki Practitioner and Wellness Coach',
 
-			description2: 'As a Intuitive Healer, Reiki Practitioner and Wellness Coach - I offer my gifts, tools and teachings to assist others in their wellness journey for optimal health and it starts with mind, body and spirit - Reiki Energy Healing, Chakra Clearing and Attunements, Crystal Healing, Sound Bowl Healing...',
+			description1: 'Hi, I\'m Pamela. Thank you for taking the time to visit my page. I\'m so excited to have this platform to share the wellness tools such as Reiki and Crystal Healing, Chakra Balancing, Sound Bowl Healing, Oracle Card Readings, Meditation and much more, that have helped me on my healing journey.',
+
+			description2: 'I look forward to us sharing the you.',
+
+			description3: 'Love, Light, and Many Blessings',
 
 			caraousel: [
 				{
