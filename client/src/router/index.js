@@ -6,6 +6,7 @@ import VueRouter from 'vue-router'
 // [IMPORT] Personal //
 import index from '@/pages'
 import about from '@/pages/about'
+import blog from '@/pages/blog'
 import book from '@/pages/book'
 import contact from "@/pages/contact"
 import directions from '@/pages/directions'
@@ -43,6 +44,11 @@ const router = new VueRouter({
 			path: '/about',
 			name: 'about',
 			component: about,
+		},
+		{
+			path: '/blog',
+			name: 'blog',
+			component: blog,
 		},
 		{
 			path: '/book',
