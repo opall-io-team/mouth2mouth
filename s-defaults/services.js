@@ -4,11 +4,11 @@ module.exports = [
 		title: 'Reiki Energy Healing for Mind, Body, Spirit',
 		cardImage: '',
 		image: 'https://images2.imgbox.com/fb/dd/9eM7Z5XZ_o.jpg',
-		description: 'Today many people are in great need of healing and/or relief from illnesses, past traumas, stress, and addictions. Reiki is healing energy in its truest sense for the mind, body, and spirit. As a Reiki practitioner, I channel life energy through their hands to the recipient. This energy activates the body’s natural ability to heal itself. The energy goes to the deepest levels of a person’s being, where illnesses have their origin. It works wherever the recipient needs it most, releasing blocked energies, cleansing the body of toxins, and working to create a state of balance.',
+		description: 'All sessions with Pamela are conducted remotely via Zoom, Skype, or over the phone.',
 		processSteps: [
 			'Consultation 10-15 mins (first visit may be longer) on any health concerns',
 			'You will be provided an assessment sheet so that we could measure your progress.',
-			'You will be asked to lay flat on the table and to get relaxed and to close your eyes. (Most people fall asleep, either way healing is happening). ',
+			'You will be asked to lay flat on the table and to get relaxed and to close your eyes. (Most people fall asleep, either way healing is happening).',
 			'Sound healing is conducted during the session to aid in relaxation and healing on the cell molecular level.',
 		],
 	},
@@ -42,8 +42,12 @@ module.exports = [
 		title: 'Oracle Card Readings',
 		cardImage: '',
 		image: 'https://images2.imgbox.com/a9/ce/qnnt0Lol_o.jpg',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-		processSteps: []
+		description: 'Do you have a few pressing questions on your mind? Are you in the headspace, "where do I go from here?" Perhaps you have questions about money, career, your love life, or getting "unstuck?" Using the combination of her high-vibe Angel Oracle decks and clairvoyant gifts, Pamela offers a variety of packages to fit your needs.',
+		processSteps: [
+			'One or Two Oracle Card Reading via email = $15',
+			'Oracle Card Reading via email = $30',
+			'Oracle Card Reading via Zoom up to 15 minutes = $40',
+		]
 	},
 	{
 		id: 'essential-oils',

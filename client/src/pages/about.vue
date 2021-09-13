@@ -55,15 +55,20 @@
 							data-aos="fade-up"
 						/>
 
-						{{ pageData.description1 }}
+						<b class="text-secondary">{{ pageData.description1 }}</b>
+						<br>
+						<span class="text-primary">{{ pageData.description2 }}</span>
 						<br>
 						<br>
-						{{ pageData.description2 }}
+						<i>{{ pageData.description3 }}</i>
 						<br>
 						<br>
-						{{ pageData.description3 }}
+						<i>{{ pageData.description4 }}</i>
 						<br>
 						<br>
+						<i>{{ pageData.description5 }}</i>
+						<br>
+						<i>Pamela Richardson</i>
 					</p>
 				</BCol>
 			</BRow>

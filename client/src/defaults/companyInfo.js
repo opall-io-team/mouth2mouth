@@ -2,7 +2,7 @@
 module.exports = {
 	companyName: 'Balance Within',
 	
-	companyCaption1: 'Embrace wellness with energy healing',
+	companyCaption1: 'Embrace wellness with Pathways to Inner Balance',
 	companyCaption2: '',
 
 	companyLogo: require('../assets/logov2.png'),
@@ -27,8 +27,8 @@ module.exports = {
 		*/
 	],
 
-	phoneNumber: '(201) 123-4567',
-	phoneNumberLink: 'tel:201-123-4567',
+	phoneNumber: '(201) 913-5760',
+	phoneNumberLink: 'tel:201-913-5760',
 
 	facebookLink: 'https://www.facebook.com/',
 	instagramLink: 'https://www.instagram.com/',
