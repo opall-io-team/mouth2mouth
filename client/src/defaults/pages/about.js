@@ -4,15 +4,9 @@ const companyInfo = require('../companyInfo')
 module.exports = {
 	title: 'About',
 
-	description1: 'Pamela, CEO/Founder of Balance Within',
+	title1: 'Pamela, CEO/Founder of Balance Within',
 	
-	description2: 'Intuitive Empath, Light-worker and Energy Facilitator, Reiki Practitioner and Wellness Coach',
-	
-	description3: 'Hi, I\'m Pamela. Thank you for taking the time to visit my page. I\'m so excited to have this platform to share the wellness tools such as Reiki and Crystal Healing, Chakra Balancing, Sound Bowl Healing, Oracle Card Readings, Meditation and much more, that have helped me on my healing journey.',
-
-	description4: 'I look forward to us sharing the you.',
-
-	description5: 'Love, Light and Many Blessings',
+	description: 'Pamela Dawn Anthony, CEO/Owner of Balance Within, started her healing career in 1998 after being diagnosed with ulcerative colitis. During a difficult period with the disease, Pamela tapped into her spiritual gifts and received healing guidance through beautiful spiritual teachers and mentors. Pamela transformed her lifestyle through foods, meditation, therapeutic essential oils, spiritual practices and loving guidance. Pamela studied and received her Naturopath License from the District of Columbia in 2008; Pamela continues her studies in mastering different healing modalities: Reiki Energy Healing, Chakra Balancing, Aura Clearing, Crystal and Sound Bowl Healing, Wellness Products with Therapeutic Essential Oils, and Kangen Water.',
 	
 	image: 'https://images2.imgbox.com/93/bc/J3fmtNPv_o.png',
 	

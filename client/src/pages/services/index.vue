@@ -14,11 +14,11 @@
 				>
 					<RouterLink :to="`/services/${s.id}`" class="text-decoration-none">
 						<BCard
-							tag="article"
 							no-body
 							border-variant=""
 							bg-variant="light"
-							class="mb-4 shadow service-card"
+							class="mb-4 service-card"
+							style="min-height: 331px;"
 						>
 							<BCardBody>
 								<BCardTitle class="h3 text-center text-primary">
@@ -28,7 +28,7 @@
 
 								<BCardText class="text-dark">
 									<BRow>
-										<BCol cols="12" xl="8" class="pr-xl-0">
+										<BCol cols="12" class="pr-xl-0">
 											<p class="mb-2">
 												{{
 													s.description.length > 200 ?
@@ -36,27 +36,10 @@
 														s.description
 												}}
 											</p>
-										</BCol>
-
-										<BCol cols="12" xl="4">
-											<div
-												class="d-none d-md-block"
-												style="height: 200px; overflow: hidden;"
-											>
-												<img
-													v-if="s.cardImage"
-													:src="s.cardImage"
-													class="w-100 rounded-lg"
-													style=""
-												>
-												<img v-else :src="s.image" class="w-100 rounded-lg">
-
-											</div>
+											<hr>
 										</BCol>
 
 										<BCol cols="12">
-											<hr>
-
 											<BButton
 												size="lg"
 												class="w-100 shadow"

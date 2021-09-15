@@ -4,7 +4,7 @@
 			<BRow>
 				<BCol cols="12">
 					<h1 class="mb-3 text-center text-primary">
-						{{ pData.title }}
+						{{ services[0].title }}
 					</h1>
 				</BCol>
 
@@ -24,16 +24,6 @@
 							>{{ p }}</li>
 						</ul>
 					</div>
-
-					<!-- Reiki FAQ -->
-					<h5 class="text-info">{{ pData.faq.faq[0].q }}</h5>
-					<p v-html="pData.faq.faq[0].a" class="text-dark"></p>
-
-					<h5 class="text-info">{{ pData.faq.faq[1].q }}</h5>
-					<p v-html="pData.faq.faq[1].a" class="text-dark"></p>
-
-					<h5 class="text-info">{{ pData.faq.faq[2].q }}</h5>
-					<p v-html="pData.faq.faq[2].a" class="text-dark"></p>
 				</BCol>
 
 				<BCol cols="12">

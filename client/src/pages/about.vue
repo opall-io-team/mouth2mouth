@@ -34,8 +34,9 @@
 					</a>
 					<hr>
 
+					<!-- [LEFT][IMAGE] -->
 					<img
-						src="https://images2.imgbox.com/bd/0d/5vDKDIfP_o.png" 
+						:src="pageData.image"
 						class="w-100 mb-4 rounded-lg shadow"
 					>
 				</BCol>
@@ -46,29 +47,21 @@
 					class="px-sm-5"
 					data-aos="fade"
 				>
+					<h3 class="text-secondary">
+						{{ pageData.title }}
+					</h3>
 					<p class="h5 text-dark">
-						<!-- Right Img -->
+						<!-- [RIGHT] Img -->
 						<img
-							:src="pageData.image"
+							src="https://images2.imgbox.com/6f/f3/kiqIewcm_o.jpg" 
 							class="d-none d-sm-block w-100 float-right mx-4 mb-3 rounded-lg shadow"
 							style="max-width: 250px;"
 							data-aos="fade-up"
 						/>
-
-						<b class="text-secondary">{{ pageData.description1 }}</b>
-						<br>
-						<span class="text-primary">{{ pageData.description2 }}</span>
+						<span class="text-primary">{{ pageData.title1 }}</span>
 						<br>
 						<br>
-						<i>{{ pageData.description3 }}</i>
-						<br>
-						<br>
-						<i>{{ pageData.description4 }}</i>
-						<br>
-						<br>
-						<i>{{ pageData.description5 }}</i>
-						<br>
-						<i>Pamela Richardson</i>
+						{{ pageData.description }}
 					</p>
 				</BCol>
 			</BRow>

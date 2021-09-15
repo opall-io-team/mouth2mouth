@@ -13,99 +13,57 @@
 
 		<!-- Main Details -->
 		<BContainer class="mb-5 text-center">
-			<BCard bg-variant="light" border-variant="secondary" class="rounded shadow">
-				<!-- Captions -->
-				<h2 data-aos="fade" class="font-weight-bold text-primary">
-					{{ DPage.mainDetails.caption1 }}
-				</h2>
-				
-				<!-- Address -->
-				<p
-					v-if="DPage.mainDetails.hoursOfOperation.length > 0"
-					class="h6 mb-4 text-center font-weight-bold text-secondary"
-				>Our Hours</p>
-				
-				<!-- Hours of Operation -->
-				<ul
-					v-if="DPage.mainDetails.hoursOfOperation.length > 0"
-					class="m-0 mb-4 p-0 text-dark"
-				>
-					<li
-						v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
-						:key="index"
-						class="m-0 list-unstyled text-center"
-					><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
-				</ul>
+			<BCard
+				no-body
+				bg-variant="light"
+				class="rounded shadow"
+				style="
+					background-image: url('https://images2.imgbox.com/c2/ae/Wi5C61BU_o.jpg');
+					background-position: right;
+					border-width: 3px !important;
+				"
+			>
+				<div class="p-3 text-light">
+					<!-- Captions -->
+					<h2 data-aos="fade" class="font-weight-bold text-light">
+						{{ DPage.mainDetails.caption1 }}
+					</h2>
+					
+					<!-- Address -->
+					<p
+						v-if="DPage.mainDetails.hoursOfOperation.length > 0"
+						class="h6 mb-4 text-center font-weight-bold text-secondary"
+					>Our Hours</p>
+					
+					<!-- Hours of Operation -->
+					<ul
+						v-if="DPage.mainDetails.hoursOfOperation.length > 0"
+						class="m-0 mb-4 p-0 text-dark"
+					>
+						<li
+							v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
+							:key="index"
+							class="m-0 list-unstyled text-center"
+						><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
+					</ul>
 
-				<h4 class="mb-3 text-dark">{{ DPage.mainDetails.text }}</h4>
+					<h4 class="mb-3 text-light">{{ DPage.mainDetails.text }}</h4>
 
-				<RouterLink to="/book">
-					<BButton size="lg" variant="outline-secondary" class="">
-						Contact Us!
-					</BButton>
-				</RouterLink>
+					<RouterLink to="/book">
+						<BButton size="lg" variant="secondary" class="">
+							Contact Us!
+						</BButton>
+					</RouterLink>
+				</div>
 			</BCard>
-		</BContainer>
-
-		<BContainer fluid v-if="0==1">
-			<!-- [R1] Conveyor -->
-			<BRow>
-				<!-- [R1.C1] -->
-				<BCol cols="12" class="mb-4">
-					<h1 class="text-center">Our Satified Customers</h1>
-
-					<Conveyor :images="DPage.sliderImages" :totalOnLg="4" />
-				</BCol>
-			</BRow>
 		</BContainer>
 
 		<!-- More Details -->
 		<BContainer fluid class="bg-white border-top border-secondary -lg">
 			<BContainer class="pb-3">
-				<!-- Black Marble Now Booking New Clients -->
-				<BRow class="mb-3" data-aos="fade">
-					<Transition name="fade">
-						<BCol cols="12">
-							<img
-								v-if="show"
-								:src="DPage.moreDetails.row1.image"
-								alt="No Image"
-								class="img-responsive w-100 my-3 shadow"
-								style="height: 176px; object-fit: cover;"
-							>
-							<div class="carousel-caption">
-								<RouterLink
-									to="book"
-									class="font-weight-bold text-decoration-none"
-								>
-									<h2 class="font-weight-bold text-light">
-										Now Booking New Clients
-									</h2>
-								</RouterLink>
-								
-
-								<BButton
-									variant="secondary"
-									size="lg"
-									class="mt-3 shadow"
-									@click="redirectCompanyInfo()"
-								>Book Apointment</BButton>
-							</div>
-						</BCol>
-					</Transition>
-				</BRow>
-
 				<!-- Meet Pamela -->
-				<BRow class="mb-4">
-					<BCol cols="12" sm="6" data-aos="fade-up">
-						<BCarousel
-							v-if="show"
-							:slideObjs="DPage.moreDetails.row3.caraousel"
-							class="mb-3 shadow"
-						/>
-					</BCol>
-
-					<BCol cols="12" sm="6">
+				<BRow class="mb-4 py-4">
+					<BCol cols="12" sm="7">
 						<div v-if="show">
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
@@ -137,40 +95,13 @@
 							</div>
 						</div>
 					</BCol>
-				</BRow>
-								
-				<!-- What We Can Do For You -->
-				<BRow class="mb-3">
-					<BCol cols="12" sm="8">
-						<div v-if="show">
-							<h2 class="text-primary font-weight-bold">
-								{{ reikiTitle }}
-							</h2>
-							<p class="mb-4 h5 text-dark">
-								{{ reikiDescription }}
-							</p>
 
-							<div class="w-100 text-center">
-								<a href="/services/#reiki">
-									<BButton
-										variant="secondary"
-										size="lg"
-										class="mb-4 shadow"
-									>Read More</BButton>
-								</a>
-							</div>
-						</div>
-					</BCol>
-
-					<BCol cols="12" sm="4" data-aos="fade-up">
-						<img
+					<BCol cols="12" sm="5" data-aos="fade-up">
+						<BCarousel
 							v-if="show"
-							:src="DPage.moreDetails.row2.image"
-							alt="No Image"
-							data-aos="fade"
-							class="d-none d-sm-block w-100 mb-3 shadow"
-							style="height: 400px; object-fit: cover;"
-						>
+							:slideObjs="DPage.moreDetails.row3.caraousel"
+							class="mb-3 shadow"
+						/>
 					</BCol>
 				</BRow>
 			</BContainer>
@@ -218,7 +149,6 @@
 	import PageService from '../services/PageService'
 	import DPage from '@/defaults/pages'
 	import BCarousel from '@/components/display/BCarousel'
-	import Conveyor from '@/components/display/Conveyor'
 	import router from '@/router'
 
 	export default {
@@ -226,7 +156,6 @@
 
 		components: {
 			BCarousel,
-			Conveyor,
 		},
 
 		data() {
