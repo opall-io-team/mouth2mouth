@@ -7,12 +7,12 @@ module.exports = {
 		{
 			caption:'',
 			text: '',
-			img: require('../../assets/images/pages/index/slide1.jpg'),
+			img: require('../../assets/images/pages/index/slide.jpg'),
 		},
 		{
-			caption: '',
+			caption:'',
 			text: '',
-			img: 'https://images2.imgbox.com/19/be/Yy17hBRd_o.jpg',
+			img: require('../../assets/images/pages/index/slide1.jpg'),
 		},
 		{
 			caption: '',
