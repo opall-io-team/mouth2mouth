@@ -9,7 +9,7 @@ module.exports = [
 
 		image: 'https://images2.imgbox.com/fb/dd/9eM7Z5XZ_o.jpg',
 
-		description: 'All sessions with Pamela are conducted remotely via Zoom, Skype, or over the phone.',
+		description: 'Today many people are in great need of healing and/or relief from illnesses, past traumas, stress, and addictions. Reiki is healing energy in its truest sense for the mind, body, and spirit. As a Reiki practitioner, I channel life energy through their hands to the recipient. This energy activates the body’s natural ability to heal itself. The energy goes to the deepest levels of a person’s being, where illnesses have their origin. It works wherever the recipient needs it most, releasing blocked energies, cleansing the body of toxins, and working to create a state of balance.',
 
 		content: [
 			{
