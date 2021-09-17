@@ -17,11 +17,10 @@ import payment from '@/pages/payment'
 import payment_success from '@/pages/payment/success'
 import menu from '@/pages/menu'
 import services from '@/pages/services'
-import services_chakraBalancing from '@/pages/services/chakra-balancing'
-import services_crystalHealing from '../pages/services/crystal-healing'
+import services_chakraClearingWithCrystals from '@/pages/services/chakra-clearing-with-crystals'
 import services_footDetoxAndSpa from '@/pages/services/foot-detox-and-spa'
 import services_oracleCardReadings from '@/pages/services/oracle-card-readings'
-import services_reikiChargedWellnessProducts from '@/pages/services/reiki-charged-wellness-products'
+import services_wellnessProductsByPamela from '@/pages/services/wellness-products-by-pamela'
 import services_reiki from '@/pages/services/reiki'
 import notFound from '@/pages/404'
 
@@ -100,14 +99,9 @@ const router = new VueRouter({
 			component: services,
 		},
 		{
-			path: '/services/chakra-balancing',
-			name: 'services_chakraBalancing',
-			component: services_chakraBalancing,
-		},
-		{
-			path: '/services/crystal-healing',
-			name: 'services_crystalHealing',
-			component: services_crystalHealing,
+			path: '/services/chakra-clearing-with-crystals',
+			name: 'services_chakraClearingWithCrystals',
+			component: services_chakraClearingWithCrystals,
 		},
 		{
 			path: '/services/foot-detox-and-spa',
@@ -125,9 +119,9 @@ const router = new VueRouter({
 			component: services_reiki,
 		},
 		{
-			path: '/services/reiki-charged-wellness-products',
-			name: 'services_reikiChargedWellnessProducts',
-			component: services_reikiChargedWellnessProducts,
+			path: '/services/wellness-products-by-pamela',
+			name: 'services_wellnessProductsByPamela',
+			component: services_wellnessProductsByPamela,
 		},
 		// Not-Found //
 		{

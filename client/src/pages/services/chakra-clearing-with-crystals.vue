@@ -1,7 +1,7 @@
 <template>
 	<BContainer v-if="services != []" class="my-5">
 		<BCard bg-variant="light" class="shadow">
-			<Product :product="services[3]" />
+			<Product :product="services[1]" />
 		</BCard>
 	</BContainer>
 </template>
