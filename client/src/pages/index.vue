@@ -16,7 +16,7 @@
 			<BCard
 				no-body
 				bg-variant="light"
-				class="rounded shadow"
+				class="my-5 rounded-0 shadow"
 				style="
 					background-image: url('https://images2.imgbox.com/c2/ae/Wi5C61BU_o.jpg');
 					background-position: right;
@@ -64,7 +64,7 @@
 				<!-- Meet Pamela -->
 				<BRow class="mb-4 py-4">
 					<BCol cols="12" sm="7">
-						<div v-if="show">
+						<div v-if="show" class="py-5 pr-5">
 							<h2 class="text-primary font-weight-bold">
 								{{ DPage.moreDetails.row3.header }}
 							</h2>
