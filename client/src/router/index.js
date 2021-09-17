@@ -19,9 +19,7 @@ import menu from '@/pages/menu'
 import services from '@/pages/services'
 import services_chakraBalancing from '@/pages/services/chakra-balancing'
 import services_crystalHealing from '../pages/services/crystal-healing'
-import services_essentialOils from '@/pages/services/essential-oils'
 import services_footDetoxAndSpa from '@/pages/services/foot-detox-and-spa'
-import services_kengenWater from '@/pages/services/kengen-water'
 import services_oracleCardReadings from '@/pages/services/oracle-card-readings'
 import services_reikiChargedWellnessProducts from '@/pages/services/reiki-charged-wellness-products'
 import services_reiki from '@/pages/services/reiki'
@@ -112,19 +110,9 @@ const router = new VueRouter({
 			component: services_crystalHealing,
 		},
 		{
-			path: '/services/essential-oils',
-			name: 'services_essentialOils',
-			component: services_essentialOils,
-		},
-		{
 			path: '/services/foot-detox-and-spa',
 			name: 'services_footDetoxAndSpa',
 			component: services_footDetoxAndSpa,
-		},
-		{
-			path: '/services/kengen-water',
-			name: 'services_kengenWater',
-			component: services_kengenWater,
 		},
 		{
 			path: '/services/oracle-card-readings',
