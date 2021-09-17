@@ -21,14 +21,21 @@
 							style="min-height: 331px;"
 						>
 							<BCardBody>
-								<BCardTitle class="h3 text-center text-primary">
+								<BCardTitle
+									class="h3 text-center text-primary"
+									style="height: 120px;"
+								>
 									{{ s.title }}
 									<hr>
 								</BCardTitle>
 
 								<BCardText class="text-dark">
 									<BRow>
-										<BCol cols="12" class="pr-xl-0">
+										<BCol
+											cols="12"
+											class="pr-xl-0"
+											style="height: 180px;"
+										>
 											<p class="mb-2">
 												{{
 													s.description.length > 200 ?
@@ -36,7 +43,6 @@
 														s.description
 												}}
 											</p>
-											<hr>
 										</BCol>
 
 										<BCol cols="12">
