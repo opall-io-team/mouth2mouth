@@ -18,6 +18,7 @@ router.get(
 			directory: __dirname,
 			reikiTitle: services[0].title,
 			reikiDescription: services[0].description,
+			services: services,
 		})
 	}
 )

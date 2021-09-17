@@ -113,29 +113,71 @@
 				<BCol cols="12" md="2" class="d-none d-md-block p-0 text-left">
 					<img
 						src="https://images2.imgbox.com/c3/c3/XQ36FnwY_o.png"
-						class="w-100"
+						class="w-100 mt-5"
 						style="max-width: 200px;"
 					>
 				</BCol>
 
 				<BCol cols="12" md="8" class="m-auto">
-					<h1 class="mb-4 text-center text-light">Interested?</h1>
+					<BRow>
+						<BCol cols="12">
+							<h1 class="my-5 text-center text-light">
+								Some Services We Provide
+							</h1>
+						</BCol>
 
-					<div class="text-center">
-						<RouterLink to="/services">
-							<BButton
-								size="lg"
-								variant="light"
-								class="shadow"
-							>Check Out Our Services</BButton>
-						</RouterLink>
-					</div>
+						<BCol cols="12" md="6">
+							<BCard
+								bg-variant="secondary"
+								text-variant="light"
+								border-variant="light"
+								:img-src="services[0].image"
+								img-top
+								tag="article"
+								class="mb-5"
+							>
+								<BCardTitle>
+									<h4 class="text-center">{{ services[0].title }}</h4>
+								</BCardTitle>
+								<BCardBody>{{ services[0].description }}</BCardBody>
+							</BCard>
+						</BCol>
+
+						<BCol cols="12" md="6">
+							<BCard
+								bg-variant="secondary"
+								text-variant="light"
+								border-variant="light"
+								:img-src="services[1].image"
+								img-top
+								tag="article"
+								class="mb-5"
+							>
+								<BCardTitle>
+									<h4 class="text-center">{{ services[1].title }}</h4>
+								</BCardTitle>
+								<BCardBody>{{ services[1].description }}</BCardBody>
+							</BCard>
+						</BCol>
+
+						<BCol cols="12">
+							<div class="text-center">
+								<RouterLink to="/services">
+									<BButton
+										size="lg"
+										variant="light"
+										class="mb-5 shadow"
+									>All Services</BButton>
+								</RouterLink>
+							</div>
+						</BCol>
+					</BRow>
 				</BCol>
 
 				<BCol cols="12" md="2" class="p-0 text-right">
 					<img
 						src="https://images2.imgbox.com/11/93/PmJs689J_o.png"
-						class="w-100"
+						class="w-100 mt-5"
 						style="max-width: 200px;"
 					>
 				</BCol>
@@ -165,6 +207,7 @@
 				show: false,
 				reikiTitle: 'Reiki Title',
 				reikiDescription: 'Reiki description goes here',
+				services: [],
 			}
 		},
 
@@ -174,6 +217,7 @@
 			if (this.reqData.status) {
 				this.reikiTitle = this.reqData.reikiTitle
 				this.reikiDescription = this.reqData.reikiDescription
+				this.services = this.reqData.services
 			}
 		},
 
