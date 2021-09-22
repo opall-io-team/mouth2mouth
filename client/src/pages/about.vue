@@ -61,7 +61,7 @@
 						<span class="text-primary">{{ pageData.title1 }}</span>
 						<br>
 						<br>
-						{{ pageData.description }}
+						<span v-html="pageData.description"></span>
 					</p>
 				</BCol>
 			</BRow>
