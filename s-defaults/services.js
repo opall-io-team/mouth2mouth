@@ -70,7 +70,7 @@ module.exports = [
 		
 		content: [
 			{
-				type: 'list',
+				type: 'check-list',
 				title: 'The Effect of Well-balanced Chakras Often Translates Into Feeling of..',
 				items: [
 					'Relaxation',
