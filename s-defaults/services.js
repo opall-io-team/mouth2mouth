@@ -185,6 +185,17 @@ module.exports = [
 		content: [
 			{
 				type: 'list',
+				title: 'Our Products',
+				items: [
+					'Balms',
+					'Soaps',
+					'Roll One',
+					'Sprays',
+					'Bath Salts and Milks',
+				]
+			},
+			{
+				type: 'check-list',
 				title: 'What My Products Can Do For You',
 				items: [
 					'Safe comprehensive body detoxification',
