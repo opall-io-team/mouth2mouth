@@ -15,9 +15,9 @@
 		<BContainer class="mb-5 text-center">
 			<BCard
 				no-body
-				bg-variant="light"
+				bg-variant="primary"
 				class="my-5 rounded-0 shadow"
-				style="
+					style="
 					background-image: url('https://images2.imgbox.com/c2/ae/Wi5C61BU_o.jpg');
 					background-position: right;
 					border-width: 3px !important;
