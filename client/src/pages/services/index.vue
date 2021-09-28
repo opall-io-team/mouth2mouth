@@ -17,9 +17,9 @@
 						no-body
 						border-variant=""
 						bg-variant="light"
-						class="mb-4 service-card"
+						class="mb-4"
 					>
-						<BCardHeader class="h4 text-center text-primary">
+						<BCardHeader class="h4 text-center bg-light text-primary">
 							{{ s.title }}
 						</BCardHeader>
 
@@ -33,8 +33,11 @@
 							</p>
 						</BCardBody>
 
-						<BCardFooter>
-							<RouterLink :to="`/services/${s.id}`" class="text-decoration-none">
+						<BCardFooter class="bg-light">
+							<RouterLink
+								:to="`/services/${s.id}`"
+								class="text-decoration-none"
+							>
 								<BButton
 									size="lg"
 									class="w-100"
@@ -72,10 +75,3 @@
 		},
 	}
 </script>
-
-<style lang="scss" scoped>
-	.service-card:hover {
-		background-color: rgba(0, 0, 0, 0.10) !important;
-	}
-	
-</style>
