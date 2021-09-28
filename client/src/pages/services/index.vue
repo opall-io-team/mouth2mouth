@@ -11,51 +11,37 @@
 				<BCol
 					v-for="(s, i) in services" :key="i"
 					cols="12" md="6" lg="4"
+					class="d-flex align-items-stretch"
 				>
-					<RouterLink :to="`/services/${s.id}`" class="text-decoration-none">
-						<BCard
-							no-body
-							border-variant=""
-							bg-variant="light"
-							class="mb-4 service-card"
-							style="min-height: 331px;"
-						>
-							<BCardBody>
-								<BCardTitle
-									class="h3 text-center text-primary"
-									style="height: 120px;"
-								>
-									{{ s.title }}
-									<hr>
-								</BCardTitle>
+					<BCard
+						no-body
+						border-variant=""
+						bg-variant="light"
+						class="mb-4 service-card"
+					>
+						<BCardHeader class="h4 text-center text-primary">
+							{{ s.title }}
+						</BCardHeader>
 
-								<BCardText class="text-dark">
-									<BRow>
-										<BCol
-											cols="12"
-											class="pr-xl-0"
-											style="height: 180px;"
-										>
-											<p class="mb-2">
-												{{
-													s.description.length > 200 ?
-														s.description.substring(0, 200 - 3) + '...' :
-														s.description
-												}}
-											</p>
-										</BCol>
+						<BCardBody class="text-dark">
+							<p class="mb-2">
+								{{
+									s.description.length > 200 ?
+										s.description.substring(0, 200 - 3) + '...' :
+										s.description
+								}}
+							</p>
+						</BCardBody>
 
-										<BCol cols="12">
-											<BButton
-												size="lg"
-												class="w-100 shadow"
-											>Click to Learn More!</BButton>
-										</BCol>
-									</BRow>
-								</BCardText>
-							</BCardBody>
-						</BCard>
-					</RouterLink>
+						<BCardFooter>
+							<RouterLink :to="`/services/${s.id}`" class="text-decoration-none">
+								<BButton
+									size="lg"
+									class="w-100"
+								>Click to Learn More!</BButton>
+							</RouterLink>
+						</BCardFooter>
+					</BCard>
 				</BCol>
 			</BRow>
 		</BCard>
