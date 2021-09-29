@@ -14,9 +14,8 @@
 					class="d-flex align-items-stretch"
 				>
 					<BCard
-						no-body
-						border-variant=""
 						bg-variant="light"
+						no-body
 						class="mb-4"
 					>
 						<BCardHeader class="h4 text-center bg-light text-primary">
