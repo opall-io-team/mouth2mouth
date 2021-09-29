@@ -8,14 +8,14 @@
 
 <script>
 	import Product from '@/components/Product'
-	import pData from '@/defaults/pages/services'
+	import pageData from '@/defaults/pages/services'
 	import PageService from '@/services/PageService'
 
 	export default {
 		data() {
 			return {
 				reqData: {},
-				pData: pData,
+				pageData: pageData,
 				services: [],
 			}
 		},

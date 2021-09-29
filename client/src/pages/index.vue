@@ -4,7 +4,7 @@
 		<BCarousel
 			:showContent="true"
 			:mainText="'Healing for the Mind, Body, and Soul..'"
-			:slideObjs="DPage.caraousel"
+			:slideObjs="pageData.caraousel"
 			:maxHeight="600"
 			:rellaxNumber="1"
 			class="mb-5 shadow"
@@ -26,28 +26,28 @@
 				<div class="p-3 text-light">
 					<!-- Captions -->
 					<h2 data-aos="fade" class="font-weight-bold text-light">
-						{{ DPage.mainDetails.caption1 }}
+						{{ pageData.mainDetails.caption1 }}
 					</h2>
 					
 					<!-- Address -->
 					<p
-						v-if="DPage.mainDetails.hoursOfOperation.length > 0"
+						v-if="pageData.mainDetails.hoursOfOperation.length > 0"
 						class="h6 mb-4 text-center font-weight-bold text-secondary"
 					>Our Hours</p>
 					
 					<!-- Hours of Operation -->
 					<ul
-						v-if="DPage.mainDetails.hoursOfOperation.length > 0"
+						v-if="pageData.mainDetails.hoursOfOperation.length > 0"
 						class="m-0 mb-4 p-0 text-dark"
 					>
 						<li
-							v-for="(hoo, index) in DPage.mainDetails.hoursOfOperation"
+							v-for="(hoo, index) in pageData.mainDetails.hoursOfOperation"
 							:key="index"
 							class="m-0 list-unstyled text-center"
 						><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 					</ul>
 
-					<h4 class="mb-3 text-light">{{ DPage.mainDetails.text }}</h4>
+					<h4 class="mb-3 text-light">{{ pageData.mainDetails.text }}</h4>
 
 					<RouterLink to="/book">
 						<BButton size="lg" variant="secondary" class="">
@@ -66,14 +66,14 @@
 					<BCol cols="12" sm="7">
 						<div v-if="show" class="py-5 pr-5">
 							<h2 class="text-primary font-weight-bold">
-								{{ DPage.moreDetails.row3.header }}
+								{{ pageData.moreDetails.row3.header }}
 							</h2>
 							<h5 class="text-secondary">
-								{{ DPage.moreDetails.row3.header2 }}
+								{{ pageData.moreDetails.row3.header2 }}
 							</h5>
 							<br>
 							<p
-								v-html="DPage.moreDetails.row3.messageHTML"
+								v-html="pageData.moreDetails.row3.messageHTML"
 								class="mb-4 h5 text-dark"
 							></p>
 
@@ -93,7 +93,7 @@
 					<BCol cols="12" sm="5" data-aos="fade-up">
 						<BCarousel
 							v-if="show"
-							:slideObjs="DPage.moreDetails.row3.caraousel"
+							:slideObjs="pageData.moreDetails.row3.caraousel"
 							class="mb-3 shadow"
 						/>
 					</BCol>
@@ -120,37 +120,63 @@
 							</h1>
 						</BCol>
 
-						<BCol cols="12" md="6">
+						<BCol cols="12" md="6" class="d-flex align-items-stretch">
 							<BCard
 								bg-variant="secondary"
 								text-variant="light"
-								border-variant="light"
+								border-variant="muted"
+								no-body
 								:img-src="services[0].image"
 								img-top
 								tag="article"
 								class="mb-5"
 							>
-								<BCardTitle>
-									<h4 class="text-center">{{ services[0].title }}</h4>
-								</BCardTitle>
+								<BCardHeader>
+									<h3 class="m-0 text-center">
+										{{ services[0].title }}
+									</h3>
+								</BCardHeader>
+
 								<BCardBody>{{ services[0].description }}</BCardBody>
+
+								<BCardFooter class="">
+									<RouterLink :to="`/services/${services[0].id}`">
+										<BButton
+											variant="outline-light"
+											class="w-100 my-3"
+										>Read More</BButton>
+									</RouterLink>
+								</BCardFooter>
 							</BCard>
 						</BCol>
 
-						<BCol cols="12" md="6">
+						<BCol cols="12" md="6" class="d-flex align-items-stretch">
 							<BCard
 								bg-variant="secondary"
 								text-variant="light"
-								border-variant="light"
+								border-variant="muted"
+								no-body
 								:img-src="services[1].image"
 								img-top
 								tag="article"
 								class="mb-5"
 							>
-								<BCardTitle>
-									<h4 class="text-center">{{ services[1].title }}</h4>
-								</BCardTitle>
+								<BCardHeader>
+									<h3 class="m-0 text-center">
+										{{ services[1].title }}
+									</h3>
+								</BCardHeader>
+
 								<BCardBody>{{ services[1].description }}</BCardBody>
+
+								<BCardFooter class="">
+									<RouterLink :to="`/services/${services[1].id}`">
+										<BButton
+											variant="outline-light"
+											class="w-100 my-3"
+										>Read More</BButton>
+									</RouterLink>
+								</BCardFooter>
 							</BCard>
 						</BCol>
 
@@ -161,7 +187,7 @@
 										size="lg"
 										variant="light"
 										class="mb-5 shadow"
-									>All Services</BButton>
+									>Check Out All of Our Services</BButton>
 								</RouterLink>
 							</div>
 						</BCol>
@@ -183,7 +209,7 @@
 <script>
 	// [IMPORT] Personal //
 	import PageService from '../services/PageService'
-	import DPage from '@/defaults/pages'
+	import pageData from '@/defaults/pages'
 	import BCarousel from '@/components/display/BCarousel'
 	import router from '@/router'
 
@@ -196,7 +222,7 @@
 
 		data() {
 			return {
-				DPage: DPage,
+				pageData: pageData,
 				reqData: {},
 				show: false,
 				reikiTitle: 'Reiki Title',
