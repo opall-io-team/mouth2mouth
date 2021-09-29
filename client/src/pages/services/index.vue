@@ -18,7 +18,7 @@
 						no-body
 						class="mb-4"
 					>
-						<BCardHeader class="h4 text-center border-0 bg-light text-primary">
+						<BCardHeader class="h4 text-center bg-light text-primary">
 							{{ s.title }}
 						</BCardHeader>
 

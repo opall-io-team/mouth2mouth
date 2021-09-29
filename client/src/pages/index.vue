@@ -143,6 +143,7 @@
 									<RouterLink :to="`/services/${services[0].id}`">
 										<BButton
 											variant="outline-light"
+											size="lg"
 											class="w-100 my-3"
 										>Read More</BButton>
 									</RouterLink>
@@ -161,7 +162,7 @@
 								tag="article"
 								class="mb-5"
 							>
-								<BCardHeader>
+								<BCardHeader class="">
 									<h3 class="m-0 text-center">
 										{{ services[1].title }}
 									</h3>
@@ -173,6 +174,7 @@
 									<RouterLink :to="`/services/${services[1].id}`">
 										<BButton
 											variant="outline-light"
+											size="lg"
 											class="w-100 my-3"
 										>Read More</BButton>
 									</RouterLink>
