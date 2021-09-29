@@ -46,11 +46,7 @@ module.exports = {
 			
 			header2: 'Intuitive Empath, Light-worker and Energy Facilitator, Reiki Practitioner and Wellness Coach',
 
-			description1: 'Hi, I\'m Pamela. Thank you for taking your time to visit my site. I\'m so excited to have this platform to share the wellness tools that i provide such as Reiki and Crystal Healing, Chakra Balancing, Sound Bowl Healing, Oracle Card Readings, Meditation and much more, that have helped me on my healing journey.',
-
-			description2: 'I look forward to us sharing the you.',
-
-			description3: 'Love, Light, and Many Blessings',
+			messageHTML: companyInfo.messageHTML,
 
 			caraousel: [
 				{

@@ -72,17 +72,10 @@
 								{{ DPage.moreDetails.row3.header2 }}
 							</h5>
 							<br>
-							<p class="mb-4 h5 text-dark">
-								<i>
-									{{ DPage.moreDetails.row3.description1 }}
-									<br><br>
-									{{ DPage.moreDetails.row3.description2 }}
-									<br><br>
-									{{ DPage.moreDetails.row3.description3 }}
-									<br>
-									Pamela Richardson
-								</i>
-							</p>
+							<p
+								v-html="DPage.moreDetails.row3.messageHTML"
+								class="mb-4 h5 text-dark"
+							></p>
 
 							<div class="w-100 text-center">
 								<RouterLink to="/our-team">
@@ -96,6 +89,7 @@
 						</div>
 					</BCol>
 
+					<!-- Pamela Image -->
 					<BCol cols="12" sm="5" data-aos="fade-up">
 						<BCarousel
 							v-if="show"
