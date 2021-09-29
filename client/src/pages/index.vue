@@ -17,15 +17,14 @@
 				no-body
 				bg-variant="primary"
 				class="my-5 rounded-0 shadow"
-					style="
+				style="
 					background-image: url('https://images2.imgbox.com/c2/ae/Wi5C61BU_o.jpg') !important;
 					background-position: right;
-					border-width: 3px !important;
 				"
 			>
-				<div class="p-3 text-light">
+				<div class="p-3 text-light bg-shade">
 					<!-- Captions -->
-					<h2 data-aos="fade" class="font-weight-bold text-light">
+					<h2 class="font-weight-bold text-light">
 						{{ pageData.mainDetails.caption1 }}
 					</h2>
 					
@@ -51,7 +50,7 @@
 
 					<RouterLink to="/book">
 						<BButton size="lg" variant="secondary" class="">
-							Contact Us!
+							Contact Us
 						</BButton>
 					</RouterLink>
 				</div>

@@ -40,7 +40,7 @@
 								<BButton
 									size="lg"
 									class="w-100"
-								>Click to Learn More!</BButton>
+								>Click to Learn More</BButton>
 							</RouterLink>
 						</BCardFooter>
 					</BCard>
