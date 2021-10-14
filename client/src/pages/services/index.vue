@@ -16,22 +16,22 @@
 					<BCard
 						bg-variant="light"
 						no-body
-						class="w-100 mb-4 border"
+						class="w-100 mb-4 border shadow"
 						:style="`
 							background-image: url(${s.image});
 							background-position: center;'
 							border-color: grey !important;
 						`"
 					>
-						<BCardHeader class="text-center bg-shade text-primary">
+						<BCardHeader class="text-center bg-shade text-primary border-0">
 							<h3 class="m-0 font-weight-bold">{{ s.title }}</h3>
 						</BCardHeader>
 
 						<BCardBody class="bg-shade show">
 							<h5 class="text-justify mb-2 font-weight-bold text-dark">
 							{{
-								s.description.length > 200 ?
-									s.description.substring(0, 200 - 3) + '...' :
+								s.description.length > 100 ?
+									s.description.substring(0, 100 - 3) + '...' :
 									s.description
 							}}
 							</h5>
