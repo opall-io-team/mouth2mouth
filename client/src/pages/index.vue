@@ -57,38 +57,55 @@
 			</BCard>
 		</BContainer>
 
-		<!-- More Details -->
+		<!-- About Balance Within -->
 		<BContainer fluid class="bg-white border-top border-secondary">
-			<BContainer class="pb-3">
-				<!-- Meet Pamela -->
-				<BRow class="mb-4 py-4">
-					<!-- Company Image -->
+			<BContainer class="py-5">
+				<BRow>
 					<BCol cols="12" md="4" class="d-none d-md-block">
-						<img
-							:src="pageData.bodyDetails.row0.image"
-							class="w-100"
-							style="max-width: 300px;"
-						>
+						<div class="text-center">
+							<img
+								:src="pageData.bodyDetails.row0.image"
+								class="w-100"
+								style="max-width: 300px;"
+							>
+						</div>
 					</BCol>
 
 					<BCol cols="12" md="8">
-						<div v-if="show" class="py-5 pr-5" data-aos="fade-up">
-							<h2 class="text-center font-weight-bold text-primary">
+						<div v-if="show" data-aos="fade-up">
+							<h1 class="text-center text-primary fancy-text">
 								{{ pageData.bodyDetails.row0.header }}
-							</h2>
+							</h1>
 							<br>
 							<p
 								v-html="pageData.bodyDetails.row0.aboutCompanyHTML"
 								class="mb-4 h5 text-dark"
 							></p>
+
+							<div class="text-center">
+								<RouterLink to="/services">
+									<BButton
+										size="lg"
+										variant="secondary"
+										class="mt-3 shadow"
+									>Check Out All of Our Services</BButton>
+								</RouterLink>
+							</div>
 						</div>
 					</BCol>
+				</BRow>
+			</BContainer>
+		</BContainer>
 
-					<BCol cols="12" md="7" order="1" order-md="0">
-						<div v-if="show" class="py-5 pr-5"  data-aos="fade-up">
-							<h2 class="text-center font-weight-bold text-primary">
+		<!-- About Me -->
+		<BContainer fluid class="bg-white border-top border-secondary">
+			<BContainer class="py-5">
+				<BRow>
+					<BCol cols="12" md="8" order="1" order-md="0">
+						<div v-if="show" data-aos="fade-up">
+							<h1 class="text-center text-primary fancy-text">
 								{{ pageData.bodyDetails.row1.header }}
-							</h2>
+							</h1>
 							<h5 class="text-center text-secondary">
 								{{ pageData.bodyDetails.row1.header2 }}
 							</h5>
@@ -111,13 +128,15 @@
 					</BCol>
 
 					<!-- Pamela Image -->
-					<BCol cols="12" md="5" order="0" order-md="1">
-						<BCarousel
-							v-if="show"
-							:slideObjs="pageData.bodyDetails.row1.caraousel"
-							:maxHeight="600"
-							class="mb-3"
-						/>
+					<BCol cols="12" md="4" order="0" order-md="1">
+						<div v-if="show">
+							<BCarousel
+								v-if="show"
+								:slideObjs="pageData.bodyDetails.row1.caraousel"
+								:maxHeight="600"
+								class="mb-3"
+							/>
+						</div>
 					</BCol>
 				</BRow>
 			</BContainer>
@@ -148,11 +167,16 @@
 								text-variant="light"
 								border-variant="muted"
 								no-body
-								:img-src="services[0].image"
-								img-top
 								tag="article"
 								class="mb-5"
 							>
+								<div style="max-height: 200px; overflow:hidden;">
+									<BCardImg
+										:src="services[0].image"
+										class="w-100 rounded-top"
+									></BCardImg>
+								</div>
+
 								<BCardHeader>
 									<h3 class="m-0 text-center">
 										{{ services[0].title }}
@@ -179,11 +203,16 @@
 								text-variant="light"
 								border-variant="muted"
 								no-body
-								:img-src="services[1].image"
-								img-top
 								tag="article"
 								class="mb-5"
 							>
+								<div style="max-height: 200px; overflow:hidden;">
+									<BCardImg
+										:src="services[1].image"
+										class="w-100 rounded-top"
+									></BCardImg>
+								</div>
+
 								<BCardHeader class="">
 									<h3 class="m-0 text-center">
 										{{ services[1].title }}
@@ -284,6 +313,10 @@
 	.fade-leave-to { opacity: 0; }
 
 	.hero-text {
+		font-family: 'Caveat', cursive !important;
+	}
+
+	.fancy-text {
 		font-family: 'Caveat', cursive !important;
 	}
 </style>

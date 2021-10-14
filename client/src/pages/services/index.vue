@@ -16,23 +16,28 @@
 					<BCard
 						bg-variant="light"
 						no-body
-						class="mb-4"
+						class="mb-4 border"
+						:style="`
+							background-image: url(${s.image});
+							background-position: center;'
+							border-color: grey !important;
+						`"
 					>
-						<BCardHeader class="h4 text-center bg-light text-primary">
-							{{ s.title }}
+						<BCardHeader class="text-center bg-shade text-primary">
+							<h4 class="m-0 font-weight-bold">{{ s.title }}</h4>
 						</BCardHeader>
 
-						<BCardBody class="text-dark">
-							<p class="mb-2">
+						<BCardBody class="bg-shade">
+							<h5 class="text-justify mb-2 font-weight-bold text-dark">
 								{{
 									s.description.length > 200 ?
 										s.description.substring(0, 200 - 3) + '...' :
 										s.description
 								}}
-							</p>
+							</h5>
 						</BCardBody>
 
-						<BCardFooter class="border-0 bg-light">
+						<BCardFooter class="border-0 bg-shade">
 							<RouterLink
 								:to="`/services/${s.id}`"
 								class="text-decoration-none"
@@ -74,3 +79,9 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.bg-shade {
+		background-color: rgba(255, 255, 255, 0.75) !important;
+	}
+</style>

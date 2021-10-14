@@ -7,51 +7,67 @@
 			<h6 class="mb-3 text-center font-weight-bold text-secondary">
 				{{ product.heading1 }}
 			</h6>
-			<hr>
 		</BCol>
 
 		<BCol cols="12" md="3" class="d-none d-md-block">
 			<img :src="product.image" class="w-100 mb-3 rounded">
+
+			<h6 class="m-0 text-center text-primary fancy-text">Gift Cards Are Available</h6>
+			<p class="text-center fancy-text">
+				Healing is the gift that keeps on giving!
+			</p>
 		</BCol>
 
 		<BCol cols="12" md="9">
-			<p>{{ product.description }}</p>
-			<hr>
+			<p class="h5 p-2" data-aos="fade">
+				{{ product.description }}
+			</p>
+
+			<p class="small p-2 fancy-text" data-aos="fade">
+				{{ product.disclaimer }}
+			</p>
 
 			<!-- [CONTENT] -->
 			<div v-for="(c, i) in product.content" :key="i">
 				<!-- [LIST] -->
 				<div v-if="c.type == 'list'" class="mb-3">
 					<BListGroup>
-						<BListGroupItem>
-							<h5 class="m-0 text-center text-primary">
+						<BListGroupItem class="border-0">
+							<h3 class="text-center m-0 font-weight-bold text-primary fancy-text">
 								{{ c.title }}
-							</h5>
+							</h3>
 						</BListGroupItem>
 						<BListGroupItem
 							v-for="(item, ii) in c.items"
 							:key="ii"
-							class="m-0 py-1"
-						>{{ item }}</BListGroupItem>
+							class="m-0 py-1 border-0"
+						>
+							<h5 class="m-0">{{ item }}</h5>
+						</BListGroupItem>
 					</BListGroup>
-					<hr>
+					<br>
 				</div>
 
 				<!-- [CHECK-LIST] -->
 				<div v-if="c.type == 'check-list'" class="mb-3">
 					<BListGroup class="border-0 transparent">
 						<BListGroupItem class="px-0 border-0 transparent">
-							<h5 class="m-0 text-primary">
+							<h3 class="text-center m-0 font-weight-bold text-primary fancy-text">
 								{{ c.title }}
-							</h5>
+							</h3>
 						</BListGroupItem>
 						<BListGroupItem
 							v-for="(item, ii) in c.items"
 							:key="ii"
 							class="m-0 py-1 border-0 transparent"
-						>✓{{ item }}</BListGroupItem>
+						>
+							<h5 class="m-0">
+								<spna class="text-secondary">✓</spna>
+								{{ item }}
+							</h5>
+						</BListGroupItem>
 					</BListGroup>
-					<hr>
+					<br>
 				</div>
 
 				<!-- [PARAGRAPH] -->
@@ -124,7 +140,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+	@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+	
 	.transparent {
 		background-color: transparent !important;
+	}
+
+	.fancy-text {
+		font-family: 'Caveat', cursive !important;
 	}
 </style>

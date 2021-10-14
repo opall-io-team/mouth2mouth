@@ -52,8 +52,8 @@
 								class="list-unstyled text-small text-light"
 							>
 								<li
-									v-for="(hoo, index) in companyInfo.hoursOfOperation"
-									:key="index"
+									v-for="(hoo, i) in companyInfo.hoursOfOperation"
+									:key="i"
 									class="text-primary h5"
 								>{{ hoo.days }}: {{ hoo.hours }}</li>
 							</ul>
@@ -71,7 +71,7 @@
 									{
 										caption: '',
 										text: '',
-										img: 'https://images2.imgbox.com/88/f5/4BTemAoL_o.png',
+										img: 'https://images2.imgbox.com/9e/f5/8rTtdi1C_o.png',
 									},
 								]"
 								class="mb-3 shadow"

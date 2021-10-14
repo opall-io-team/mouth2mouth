@@ -13,7 +13,7 @@ module.exports = [
 
 		content: [
 			{
-				type: 'list',
+				type: 'check-list',
 				title: 'Each Energy Healing Session Includes:',
 				items: [
 					'A full-body energy scan',
@@ -29,16 +29,11 @@ module.exports = [
 				type: 'list',
 				title: 'Proccess',
 				items: [
-					'Consultation 10-15 mins (first visit may be longer) on any health concerns',
-					'You will be provided an assessment sheet so that we could measure your progress.',
-					'You will be asked to lay flat on the table and to get relaxed and to close your eyes. (Most people fall asleep, either way healing is happening).',
-					'Sound healing is conducted during the session to aid in relaxation and healing on the cell molecular level.',
+					'1. Consultation 10-15 mins (first visit may be longer) on any health concerns',
+					'2. You will be provided an assessment sheet so that we could measure your progress.',
+					'3. You will be asked to lay flat on the table and to get relaxed and to close your eyes. (Most people fall asleep, either way healing is happening).',
+					'4. Sound healing is conducted during the session to aid in relaxation and healing on the cell molecular level.',
 				]
-			},
-			{
-				type: 'paragraph',
-				title: 'Gift Cards Are Available',
-				content: 'Healing is the gift that keeps on giving!'
 			},
 		],
 
@@ -78,11 +73,6 @@ module.exports = [
 					'Increased Vitality'
 				]
 			},
-			{
-				type: 'paragraph',
-				title: 'Gift Cards Are Available',
-				content: 'Healing is the gift that keeps on giving!'
-			}
 		],
 
 		pricing: [
@@ -121,11 +111,6 @@ module.exports = [
 					'Eliminating toxins boosts metabolism, aid in weight loss efforts',
 				]
 			},
-			{
-				type: 'paragraph',
-				title: 'Gift Cards Are Available',
-				content: 'Healing is the gift that keeps on giving!'
-			}
 		],
 
 		pricing: [
@@ -180,7 +165,9 @@ module.exports = [
 
 		image: 'https://images2.imgbox.com/39/42/eA5yfueO_o.jpg',
 
-		description: ' I love creating organic whipped body butters, soap, lotions, bath salts, sugars and anointing oils. ALL PRODUCTS ARE MADE WITH ORGANIC.INGREDIENTS, THERAPEUTIC ESSENTIALS OILS AND LOTS OF LOVE.',
+		description: ' I love creating organic whipped body butters, soap, lotions, bath salts, sugars and anointing oils.',
+
+		disclaimer: 'ALL PRODUCTS ARE MADE WITH ORGANIC.INGREDIENTS, THERAPEUTIC ESSENTIALS OILS AND LOTS OF LOVE.',
 
 		content: [
 			{
