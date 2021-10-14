@@ -26,7 +26,7 @@
 						</h5>
 					</BButton>
 				</a>
-				<hr class="border-primary">
+				<hr class="my-2 border-light">
 
 				<!-- Menu Items -->
 				<RouterLink
