@@ -1,5 +1,7 @@
 <template>
 	<div>
+		<!--
+		-->
 		<BCarousel
 			id="carousel-1"
 			v-model="slide"
@@ -10,14 +12,14 @@
 			background="#ababab"
 			img-width="1024"
 			img-height="680"
-			style="text-shadow: 1px 1px 2px #333;"
 			@sliding-start="onSlideStart"
 			@sliding-end="onSlideEnd"
+			style="text-shadow: 1px 1px 2px #333;"
 		>
 			<!-- For loop for slideObj array -->
 			<BCarouselSlide
-				v-for="(slideObj, index) in slideObjs"
-				:key="index"
+				v-for="(slideObj, i) in slideObjs"
+				:key="i"
 				:caption="slideObj.caption"
 				:text="slideObj.text"
 				:img-src="slideObj.img"
@@ -31,13 +33,25 @@
 			>
 				<!-- isHero -->
 				<div v-if="showContent" class="h-100 my-auto py-2 rounded">
-					<h1 class="title d-none d-md-block font-weight-light text-light"
-					style="font-size: 3em;">
+					<h1
+						class="title d-none d-md-block font-weight-light text-light hero-text"
+						style="font-size: 4em;"
+					>
 						{{ mainText }}
 						<br><br>
 					</h1>
 
-					<h3 class="title d-none d-sm-block d-md-none font-weight-light text-light">
+					<h3
+						class="
+							title
+							d-none
+							d-sm-block
+							d-md-none
+							font-weight-light
+							text-light
+							hero-text
+						"
+					>
 						{{ mainText }}
 						<br><br>
 					</h3>
@@ -120,6 +134,12 @@
 </script>
 
 <style lang="scss" scoped>
+	@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+	.hero-text {
+		font-family: 'Caveat', cursive !important;
+	}
+
 	.content {
 		background: rgba(0, 0, 0, 0.30);
 	}

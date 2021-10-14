@@ -2,7 +2,7 @@ const companyInfo = require('../companyInfo')
 
 
 module.exports = {
-	// Caraousel Slider //
+	// [HERO] Caraousel Slider //
 	caraousel: [
 		{
 			caption:'',
@@ -12,17 +12,17 @@ module.exports = {
 		{
 			caption:'',
 			text: '',
-			img: require('../../assets/images/slide2.jpg'),
+			img: require('../../assets/images/pages/index/slide2.jpg'),
 		},
 		{
 			caption: '',
 			text: '',
-			img: require('../../assets/images/slide3.jpg'),
+			img: require('../../assets/images/pages/index/slide3.jpg'),
 		},
 	],
 
-	// Main Details Company Info //
-	mainDetails: {
+	// Star Details //
+	headerDetails: {
 		caption1: companyInfo.companyCaption1,
 		address: companyInfo.address,
 		googleMapsLink: companyInfo.googleMapsLink,
@@ -30,18 +30,14 @@ module.exports = {
 		text: 'By Appointments',
 	},
 
-	sliderImages: [],
+	bodyDetails: {
+		row0: {
+			image: companyInfo.companyLogo,
+			header: `About ${companyInfo.companyName}`,
+			aboutCompanyHTML: companyInfo.aboutHTML
+		},
 
-	moreDetails: {
 		row1: {
-			image: require('../../assets/images/stars-solo.jpg'),
-		},
-
-		row2: {
-			image: require('../../assets/images/pages/index/wwcdfy.jpg'),
-		},
-	
-		row3: {
 			header: 'Pamela, CEO/Founder of Balance Within',
 			
 			header2: 'Intuitive Empath, Light-worker and Energy Facilitator, Reiki Practitioner and Wellness Coach',
@@ -52,12 +48,12 @@ module.exports = {
 				{
 					caption: '',
 					text: '',
-					img: require('../../assets/images/profile.jpg'),
+					img: require('../../assets/images/pages/index/owner.jpg'),
 				},
 				{
 					caption: '',
 					text: '',
-					img: require('../../assets/images/pages/index/owner.jpg'),
+					img: require('../../assets/images/pages/index/profile.jpg'),
 				},
 			],
 		},

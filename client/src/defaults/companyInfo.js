@@ -34,6 +34,12 @@ module.exports = {
 	instagramLink: 'https://www.instagram.com/',
 	youtubeLink: 'https://www.youtube.com',
 
+	aboutHTML: `
+		Pamela, Owner of Balance Within is passionate  about serving humanity..
+		<br>
+		As a Intuitive Healer, Reiki Practitioner and Wellness Coach - we offer gifts, tools and teachings to assist others in their wellness journey for optimal health and it starts with mind, body and spirit - Reiki Energy Healing, Chakra Clearing and Attunements, Crystal Healing, Sound Bowl Healing, Aura Cleansing, Sacred Ionic Foot Detox & Spa with Reflexology, utilizing High-Grade Therapeutic Essential Oils, Electrolyzed Kangen Water, Nutrition and Reiki-Infused Organic Wellness Products
+	`,
+
 	messageHTML: `
 		Hi, I'm Pamela. lightworker, empath, healer, entrepreneur; I'm so excited to share the wellness tools that I've learned and helped me and others on a wellness journey.
 		<br><br>

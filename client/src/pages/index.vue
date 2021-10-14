@@ -11,7 +11,7 @@
 			data-aos="fade-up"
 		/>
 
-		<!-- Main Details -->
+		<!-- Star Details -->
 		<BContainer class="mb-5 text-center">
 			<BCard
 				no-body
@@ -24,29 +24,29 @@
 			>
 				<div class="p-3 text-light bg-shade">
 					<!-- Captions -->
-					<h2 class="font-weight-bold text-light">
-						{{ pageData.mainDetails.caption1 }}
-					</h2>
+					<h1 class="text-light hero-text">
+						{{ pageData.headerDetails.caption1 }}
+					</h1>
 					
 					<!-- Address -->
 					<p
-						v-if="pageData.mainDetails.hoursOfOperation.length > 0"
+						v-if="pageData.headerDetails.hoursOfOperation.length > 0"
 						class="h6 mb-4 text-center font-weight-bold text-secondary"
 					>Our Hours</p>
 					
 					<!-- Hours of Operation -->
 					<ul
-						v-if="pageData.mainDetails.hoursOfOperation.length > 0"
+						v-if="pageData.headerDetails.hoursOfOperation.length > 0"
 						class="m-0 mb-4 p-0 text-dark"
 					>
 						<li
-							v-for="(hoo, index) in pageData.mainDetails.hoursOfOperation"
+							v-for="(hoo, index) in pageData.headerDetails.hoursOfOperation"
 							:key="index"
 							class="m-0 list-unstyled text-center"
 						><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
 					</ul>
 
-					<h4 class="mb-3 text-light">{{ pageData.mainDetails.text }}</h4>
+					<h4 class="mb-3 text-light">{{ pageData.headerDetails.text }}</h4>
 
 					<RouterLink to="/book">
 						<BButton size="lg" variant="secondary" class="">
@@ -58,21 +58,43 @@
 		</BContainer>
 
 		<!-- More Details -->
-		<BContainer fluid class="bg-white border-top border-secondary -lg">
+		<BContainer fluid class="bg-white border-top border-secondary">
 			<BContainer class="pb-3">
 				<!-- Meet Pamela -->
 				<BRow class="mb-4 py-4">
-					<BCol cols="12" sm="7">
-						<div v-if="show" class="py-5 pr-5">
-							<h2 class="text-primary font-weight-bold">
-								{{ pageData.moreDetails.row3.header }}
+					<!-- Company Image -->
+					<BCol cols="12" md="4" class="d-none d-md-block">
+						<img
+							:src="pageData.bodyDetails.row0.image"
+							class="w-100"
+							style="max-width: 300px;"
+						>
+					</BCol>
+
+					<BCol cols="12" md="8">
+						<div v-if="show" class="py-5 pr-5" data-aos="fade-up">
+							<h2 class="text-center font-weight-bold text-primary">
+								{{ pageData.bodyDetails.row0.header }}
 							</h2>
-							<h5 class="text-secondary">
-								{{ pageData.moreDetails.row3.header2 }}
+							<br>
+							<p
+								v-html="pageData.bodyDetails.row0.aboutCompanyHTML"
+								class="mb-4 h5 text-dark"
+							></p>
+						</div>
+					</BCol>
+
+					<BCol cols="12" md="7" order="1" order-md="0">
+						<div v-if="show" class="py-5 pr-5"  data-aos="fade-up">
+							<h2 class="text-center font-weight-bold text-primary">
+								{{ pageData.bodyDetails.row1.header }}
+							</h2>
+							<h5 class="text-center text-secondary">
+								{{ pageData.bodyDetails.row1.header2 }}
 							</h5>
 							<br>
 							<p
-								v-html="pageData.moreDetails.row3.messageHTML"
+								v-html="pageData.bodyDetails.row1.messageHTML"
 								class="mb-4 h5 text-dark"
 							></p>
 
@@ -89,11 +111,12 @@
 					</BCol>
 
 					<!-- Pamela Image -->
-					<BCol cols="12" sm="5" data-aos="fade-up">
+					<BCol cols="12" md="5" order="0" order-md="1">
 						<BCarousel
 							v-if="show"
-							:slideObjs="pageData.moreDetails.row3.caraousel"
-							class="mb-3 shadow"
+							:slideObjs="pageData.bodyDetails.row1.caraousel"
+							:maxHeight="600"
+							class="mb-3"
 						/>
 					</BCol>
 				</BRow>
@@ -252,9 +275,15 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+	@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 	.fade-enter-active,
 	.fade-leave-active { transition: opacity 1s; }
 	.fade-enter,
 	.fade-leave-to { opacity: 0; }
+
+	.hero-text {
+		font-family: 'Caveat', cursive !important;
+	}
 </style>
