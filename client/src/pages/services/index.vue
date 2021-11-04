@@ -1,8 +1,8 @@
 <template>
 	<BContainer v-if="services != []" class="my-5">
-		<BCard bg-variant="light" class="shadow">
-			<BRow>
-				<BCol cols="12">
+		<BCard bg-variant="light" no-body>
+			<BRow class="m-0 p-0">
+				<BCol cols="12 module">
 					<h1 class="mb-4 text-center text-primary">{{ pData.title }}</h1>
 					<hr class="mb-5 bg-secondary">
 				</BCol>
@@ -16,7 +16,7 @@
 					<BCard
 						bg-variant="light"
 						no-body
-						class="w-100 mb-4 border shadow"
+						class="w-100 mb-4 border"
 						:style="`
 							background-image: url(${s.image});
 							background-position: center;'
@@ -83,5 +83,12 @@
 <style lang="scss" scoped>
 	.bg-shade {
 		background-color: rgba(255, 255, 255, 0.75) !important;
+	}
+
+	.module {
+		background-blend-mode: difference;
+		background-color: salmon;
+		background: rgb(114, 139, 250);
+		background-size: cover;
 	}
 </style>
