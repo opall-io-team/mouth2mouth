@@ -7,7 +7,7 @@
 						<!-- Title Header -->
 						<BCol cols="12" class="bg-primary-lighter">
 							<h1 class="my-4 text-center font-weight-bold text-primary">
-								contact Us
+								Contact Us
 							</h1>
 						</BCol>
 
@@ -15,7 +15,7 @@
 						<BCol cols="12" lg="7" class="m-auto px-2 py-5 px-lg-5">
 							<!-- EMAIL -->
 							<div v-if="companyInfo.emailLink">
-								<h1 class="text-primary">
+								<h1 class="font-weight-bold text-primary text-fancy">
 									Email
 								</h1>
 								<a
@@ -31,7 +31,7 @@
 
 							<!-- Number -->
 							<div v-if="companyInfo.phoneNumberLink">
-								<h1 class="text-primary">
+								<h1 class="font-weight-bold text-primary text-fancy">
 									{{ companyInfo.contactName }}
 								</h1>
 								<a
@@ -50,7 +50,7 @@
 
 							<!-- LOCATION -->
 							<div v-if="companyInfo.googleMapsLink">
-								<h2 class="text-secondary">
+								<h2 class="font-weight-bold text-secondary text-fancy">
 									Location
 								</h2>
 								<a
@@ -66,7 +66,9 @@
 
 							<!-- HOURS -->
 							<div v-if="companyInfo.hoursOfOperation > 0">
-								<h3 class="text-secondary">Hours</h3>
+								<h3 class="font-weight-bold text-secondary text-fancy">
+									Hours
+								</h3>
 								<ul class="list-unstyled text-small text-light">
 									<li
 										v-for="(hoo, i) in companyInfo.hoursOfOperation"
@@ -78,7 +80,7 @@
 							</div>
 
 							<!-- Social Media -->
-							<h1 class="mb-3 text-center text-primary">
+							<h1 class="mb-3 font-weight-bold text-primary text-fancy">
 								Follow Us!
 							</h1>
 							<SocialMediaPlug

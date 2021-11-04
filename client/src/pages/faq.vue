@@ -15,7 +15,9 @@
 							class="d-flex justify-content-between align-items-center q"
 							@click="toggler(index)"
 						>
-							<h3 class="m-0 font-weight-light text-secondary">{{ qa.q }}</h3>
+							<h3 class="m-0 font-weight-bold text-secondary">
+								{{ qa.q }}
+							</h3>
 							<h2 v-if="!inOpened(index)" class="m-0">+</h2>
 							<h2 v-if="inOpened(index)" class="m-0">-</h2>
 						</BListGroupItem>
