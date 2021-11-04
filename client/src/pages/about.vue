@@ -18,20 +18,20 @@
 					order="2" order-lg="1"
 					class="px-5 py-4 bg-secondary-lighter"
 				>
-					<h3 class="mb-3 text-center font-weight-bold text-primary">
+					<h3 class="mb-3 text-center font-weight-bold text-secondary">
 						Contact Us
 					</h3>
 
 					<!-- EMAIL -->
 					<div v-if="companyInfo.emailLink">
-						<h4 class="text-secondary">
+						<h3 class="text-primary font-weight-bold text-fancy">
 							Email
-						</h4>
+						</h3>
 						<a
 							:href="companyInfo.emailLink"
 							class="text-decoration-none"
 						>
-							<BButton variant="primary" class="w-100 mt-2 mb-4">
+							<BButton variant="secondary" class="w-100 mt-2 mb-4">
 								<h6 class="m-0">{{ companyInfo.email }}</h6>
 							</BButton>
 						</a>
@@ -39,14 +39,14 @@
 
 					<!-- Number -->
 					<div v-if="companyInfo.phoneNumberLink">
-						<h4 class="text-secondary">
+						<h3 class="text-primary font-weight-bold text-fancy">
 							Cell
-						</h4>
+						</h3>
 						<a
 							:href="companyInfo.phoneNumberLink"
 							class="text-decoration-none"
 						>
-							<BButton variant="primary" class="w-100 mt-2 mb-4">
+							<BButton variant="secondary" class="w-100 mt-2 mb-4">
 								<h6 class="m-0">
 									<PhoneIcon size="1x" />
 									{{ companyInfo.phoneNumber }}
@@ -76,7 +76,7 @@
 							style="max-width: 180px;"
 							data-aos="fade-up"
 						/>
-						<span class="h3 font-weight-bold text-secondary fancy-text">
+						<span class="h3 font-weight-bold text-secondary text-fancy">
 							{{ pageData.title1 }}
 						</span>
 						<br>

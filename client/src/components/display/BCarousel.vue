@@ -61,13 +61,13 @@
 					<BButton
 						variant="secondary"
 						size="lg"
-						class="d-none d-sm-block m-auto shadow"
+						class="d-none d-sm-block m-auto"
 					>Book Apointment</BButton>
 
 					<BButton
 						variant="secondary"
 						size=""
-						class="d-block d-sm-none m-auto shadow"
+						class="d-block d-sm-none m-auto"
 					>Book Apointment</BButton>
 				</RouterLink>
 

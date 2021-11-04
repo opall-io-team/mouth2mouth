@@ -15,8 +15,8 @@
 		<BContainer class="mb-5 text-center">
 			<BCard
 				no-body
-				bg-variant="primary"
-				class="my-5 rounded-0 shadow"
+				bg-variant="secondary"
+				class="my-5 rounded-0"
 				style="
 					background-image: url('https://images2.imgbox.com/c2/ae/Wi5C61BU_o.jpg') !important;
 					background-position: right;
@@ -58,7 +58,7 @@
 		</BContainer>
 
 		<!-- About Balance Within -->
-		<BContainer fluid class="bg-white border-top border-secondary">
+		<BContainer fluid class="bg-primary-lighter">
 			<BContainer class="py-5">
 				<BRow>
 					<BCol cols="12" md="4" class="d-none d-md-block">
@@ -73,7 +73,7 @@
 
 					<BCol cols="12" md="8">
 						<div v-if="show" data-aos="fade-up">
-							<h1 class="text-center text-primary fancy-text">
+							<h1 class="text-center text-primary text-fancy">
 								{{ pageData.bodyDetails.row0.header }}
 							</h1>
 							<br>
@@ -87,7 +87,7 @@
 									<BButton
 										size="lg"
 										variant="secondary"
-										class="mt-3 shadow"
+										class="mt-3"
 									>Check Out All of Our Services</BButton>
 								</RouterLink>
 							</div>
@@ -98,12 +98,12 @@
 		</BContainer>
 
 		<!-- About Me -->
-		<BContainer fluid class="bg-white border-top border-secondary">
+		<BContainer fluid class="bg-secondary-lighter">
 			<BContainer class="py-5">
 				<BRow>
 					<BCol cols="12" md="8" order="1" order-md="0">
 						<div v-if="show" data-aos="fade-up">
-							<h1 class="text-center text-primary fancy-text">
+							<h1 class="text-center text-primary text-fancy">
 								{{ pageData.bodyDetails.row1.header }}
 							</h1>
 							<h5 class="text-center text-secondary">
@@ -120,7 +120,7 @@
 									<BButton
 										variant="secondary"
 										size="lg"
-										class="mb-4 shadow"
+										class="mb-4"
 									>Read More</BButton>
 								</RouterLink>
 							</div>
@@ -143,7 +143,7 @@
 		</BContainer>
 
 		<!-- INTERESTED? -->
-		<BContainer fluid class="px-0 py-3 bg-secondary">
+		<BContainer fluid class="px-0 py-3 bg-primary-light">
 			<BRow class="w-100 m-0 p-0">
 				<BCol cols="12" md="2" class="d-none d-md-block p-0 text-left">
 					<img
@@ -163,12 +163,11 @@
 
 						<BCol cols="12" md="6" class="d-flex align-items-stretch">
 							<BCard
-								bg-variant="secondary"
 								text-variant="light"
 								border-variant="muted"
 								no-body
 								tag="article"
-								class="mb-5"
+								class="mb-5 transparent"
 							>
 								<div style="max-height: 200px; overflow:hidden;">
 									<BCardImg
@@ -199,12 +198,11 @@
 
 						<BCol cols="12" md="6" class="d-flex align-items-stretch">
 							<BCard
-								bg-variant="secondary"
 								text-variant="light"
 								border-variant="muted"
 								no-body
 								tag="article"
-								class="mb-5"
+								class="mb-5 transparent"
 							>
 								<div style="max-height: 200px; overflow:hidden;">
 									<BCardImg
@@ -316,7 +314,7 @@
 		font-family: 'Caveat', cursive !important;
 	}
 
-	.fancy-text {
+	.text-fancy {
 		font-family: 'Caveat', cursive !important;
 	}
 </style>

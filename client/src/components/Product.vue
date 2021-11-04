@@ -2,7 +2,7 @@
 	<BRow class="m-0">
 		<!-- Title Header -->
 		<BCol cols="12" class="py-4 bg-primary-lighter">
-			<h1 class="mb-3 text-center font-weight-bold text-primary fancy-text">
+			<h1 class="mb-3 text-center font-weight-bold text-primary text-fancy">
 				{{ product.title }}
 			</h1>
 			<h6 class="mb-3 text-center font-weight-bold text-secondary">
@@ -17,8 +17,8 @@
 				<BCol cols="12" md="3" class="d-none d-md-block">
 					<img :src="product.image" class="w-100 mb-3 rounded">
 
-					<h6 class="m-0 text-center text-primary fancy-text">Gift Cards Are Available</h6>
-					<p class="text-center fancy-text">
+					<h6 class="m-0 text-center text-primary text-fancy">Gift Cards Are Available</h6>
+					<p class="text-center text-fancy">
 						Healing is the gift that keeps on giving!
 					</p>
 				</BCol>
@@ -29,7 +29,7 @@
 						{{ product.description }}
 					</p>
 
-					<p class="small p-2 fancy-text" data-aos="fade">
+					<p class="small p-2 text-fancy" data-aos="fade">
 						{{ product.disclaimer }}
 					</p>
 
@@ -39,7 +39,7 @@
 						<div v-if="c.type == 'list'" class="mb-3">
 							<BListGroup>
 								<BListGroupItem class="border-0">
-									<h3 class="text-center m-0 font-weight-bold text-primary fancy-text">
+									<h3 class="text-center m-0 font-weight-bold text-primary text-fancy">
 										{{ c.title }}
 									</h3>
 								</BListGroupItem>
@@ -58,7 +58,7 @@
 						<div v-if="c.type == 'check-list'" class="mb-3">
 							<BListGroup class="border-0 transparent">
 								<BListGroupItem class="px-0 border-0 transparent">
-									<h3 class="text-center m-0 font-weight-bold text-primary fancy-text">
+									<h3 class="text-center m-0 font-weight-bold text-primary text-fancy">
 										{{ c.title }}
 									</h3>
 								</BListGroupItem>
@@ -145,6 +145,7 @@
 									<BButton
 										variant="primary"
 										size="lg"
+										pill
 										class="my-3 my-md-4 w-100"
 									>Book Now</BButton>
 								</RouterLink>

@@ -119,6 +119,10 @@
 	@import '../../assets/styles/bootstrap-override.scss';
 
 	.menu-link {
+		@extend .border-top-0;
+		@extend .border-left-0;
+		@extend .border-right-0;
+
 		:hover {
 			@extend .text-primary;
 		}
@@ -134,6 +138,7 @@
 		.menu-link {
 			@extend .text-primary;
 			@extend .border-bottom;
+			@extend .border-primary;
 		}
 	}
 </style>

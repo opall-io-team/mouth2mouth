@@ -27,19 +27,19 @@
 								`"
 							>
 								<BCardHeader class="text-center bg-shade border-0 rounded-0">
-									<h1 class="m-0 text-primary font-weight-bold fancy-text">
-										{{ s.title }}
+									<h1 class="m-0 text-primary font-weight-bold text-fancy">
+										{{ s.title.substring(0, 33 - 3) }}
 									</h1>
 								</BCardHeader>
 
 								<BCardBody class="px-5 py-3 rounded-0 bg-shade show">
-									<h4 class="text-center mb-2 text-dark">
+									<h5 class="text-center mb-2 text-dark">
 									{{
 										s.description.length > 100 ?
 											s.description.substring(0, 100 - 3) + '...' :
 											s.description
 									}}
-									</h4>
+									</h5>
 								</BCardBody>
 
 								<BCardFooter class="text-center px-5 py-4 border-0 bg-shade">
