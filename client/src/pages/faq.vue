@@ -1,7 +1,7 @@
 <template>
 	<BContainer class="my-5">
 		<BCard no-body bg-variant="light" class="mt-3 border-0 rounded-0 shadow">
-			<div class="bg-primary-lighter">
+			<div class="bg-secondary-lighter">
 				<h1 class="my-4 text-center text-primary font-weight-bold">
 					{{ pageData.pageTitle }}
 				</h1>

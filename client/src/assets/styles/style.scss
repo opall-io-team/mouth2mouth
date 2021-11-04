@@ -15,19 +15,27 @@ body {
 }
 
 .bg-primary-light {
-	background-color: #d4bb76 !important;
-}
-
-.bg-primary-lighter {
-	background-color: #f8f5ed !important;
-}
-
-.bg-secondary-light {
 	background-color: #f0c0da !important;
 }
 
-.bg-secondary-lighter {
+.bg-primary-lightish {
+	background-color: #e698c2 !important;
+}
+
+.bg-primary-lighter {
 	background-color: #fdedf5 !important;
+}
+
+.bg-secondary-light {
+	background-color: #88774a !important;
+}
+
+.bg-secondary-lightish {
+	background-color: #d3b666 !important;
+}
+
+.bg-secondary-lighter {
+	background-color: #f8f5ed !important;
 }
 
 .bg-shade {
@@ -43,3 +51,9 @@ body {
     height: 200px;
     object-fit: cover;
 }
+
+.text-spread { letter-spacing: 4px; }
+
+.text-spread-sm { letter-spacing: 2px; }
+
+.text-spread-lg { letter-spacing: 8px; }

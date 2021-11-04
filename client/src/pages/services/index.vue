@@ -2,7 +2,7 @@
 	<BContainer v-if="services != []" class="my-5">
 		<BCard bg-variant="light" no-body class="rounded-0 shadow">
 			<BRow class="m-0 p-0">
-				<BCol cols="12" class="bg-primary-lighter">
+				<BCol cols="12" class="bg-secondary-lighter">
 					<h1 class="mx-0 my-4 text-center font-weight-bold text-primary">
 						{{ pData.title }}
 					</h1>

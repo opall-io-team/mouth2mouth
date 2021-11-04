@@ -5,7 +5,7 @@
 				<BCard no-body bg-variant="white" class="text-center border-0 shadow">
 					<BRow class="m-0">
 						<!-- Title Header -->
-						<BCol cols="12" class="bg-primary-lighter">
+						<BCol cols="12" class="bg-secondary-lighter">
 							<h1 class="my-4 text-center font-weight-bold text-primary">
 								Contact Us
 							</h1>

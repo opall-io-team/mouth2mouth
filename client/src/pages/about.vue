@@ -2,7 +2,7 @@
 	<BContainer class="my-5" data-aos="fade-up">
 		<BCard no-body bg-variant="white" class="text-center border-0 shadow">
 			<BRow class="m-0">
-				<BCol cols="12" class="bg-primary-lighter">
+				<BCol cols="12" class="bg-secondary-lighter">
 					<h1 class="my-4 text-center font-weight-bold text-primary">
 						{{ pageData.title }}
 					</h1>
@@ -10,13 +10,10 @@
 			</BRow>
 
 			<BRow class="m-0">
-				<!-- CONTACT US
-					data-aos="fade"
-				-->
 				<BCol
 					cols="12" lg="5" xl="4"
 					order="2" order-lg="1"
-					class="px-5 py-4 bg-secondary-lighter"
+					class="px-5 py-4 bg-primary-lighter"
 				>
 					<h3 class="mb-3 text-center font-weight-bold text-secondary">
 						Contact Us

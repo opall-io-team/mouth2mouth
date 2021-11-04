@@ -7,60 +7,15 @@
 			:slideObjs="pageData.caraousel"
 			:maxHeight="600"
 			:rellaxNumber="1"
-			class="mb-5 shadow"
+			class=""
 			data-aos="fade-up"
 		/>
 
-		<!-- Star Details -->
-		<BContainer class="mb-5 text-center">
-			<BCard
-				no-body
-				bg-variant="secondary"
-				class="my-5 rounded-0"
-				style="
-					background-image: url('https://images2.imgbox.com/c2/ae/Wi5C61BU_o.jpg') !important;
-					background-position: right;
-				"
-			>
-				<div class="p-3 text-light bg-shade">
-					<!-- Captions -->
-					<h1 class="text-light hero-text">
-						{{ pageData.headerDetails.caption1 }}
-					</h1>
-					
-					<!-- Address -->
-					<p
-						v-if="pageData.headerDetails.hoursOfOperation.length > 0"
-						class="h6 mb-4 text-center font-weight-bold text-secondary"
-					>Our Hours</p>
-					
-					<!-- Hours of Operation -->
-					<ul
-						v-if="pageData.headerDetails.hoursOfOperation.length > 0"
-						class="m-0 mb-4 p-0 text-dark"
-					>
-						<li
-							v-for="(hoo, index) in pageData.headerDetails.hoursOfOperation"
-							:key="index"
-							class="m-0 list-unstyled text-center"
-						><p class="h6">{{ hoo.days }}<br>{{ hoo.hours }}</p></li>
-					</ul>
-
-					<h4 class="mb-3 text-light">{{ pageData.headerDetails.text }}</h4>
-
-					<RouterLink to="/book">
-						<BButton size="lg" variant="secondary" class="">
-							Contact Us
-						</BButton>
-					</RouterLink>
-				</div>
-			</BCard>
-		</BContainer>
-
 		<!-- About Balance Within -->
-		<BContainer fluid class="bg-primary-lighter">
+		<BContainer fluid class="py-5 bg-secondary-lighter">
 			<BContainer class="py-5">
 				<BRow>
+					<!-- IMAGE -->
 					<BCol cols="12" md="4" class="d-none d-md-block">
 						<div class="text-center">
 							<img
@@ -71,7 +26,8 @@
 						</div>
 					</BCol>
 
-					<BCol cols="12" md="8">
+					<!-- TEXT -->
+					<BCol cols="12" md="8" class="px-5">
 						<div v-if="show" data-aos="fade-up">
 							<h1 class="text-center text-primary text-fancy">
 								{{ pageData.bodyDetails.row0.header }}
@@ -79,7 +35,7 @@
 							<br>
 							<p
 								v-html="pageData.bodyDetails.row0.aboutCompanyHTML"
-								class="mb-4 h5 text-dark"
+								class="mb-4 h5 text-center text-dark"
 							></p>
 
 							<div class="text-center">
@@ -98,10 +54,11 @@
 		</BContainer>
 
 		<!-- About Me -->
-		<BContainer fluid class="bg-secondary-lighter">
+		<BContainer fluid class="py-5 bg-secondary-lighter">
 			<BContainer class="py-5">
 				<BRow>
-					<BCol cols="12" md="8" order="1" order-md="0">
+					<!-- TEXT -->
+					<BCol cols="12" md="8" order="1" order-md="0" class="px-5">
 						<div v-if="show" data-aos="fade-up">
 							<h1 class="text-center text-primary text-fancy">
 								{{ pageData.bodyDetails.row1.header }}
@@ -112,7 +69,7 @@
 							<br>
 							<p
 								v-html="pageData.bodyDetails.row1.messageHTML"
-								class="mb-4 h5 text-dark"
+								class="mb-4 h5 text-center text-dark"
 							></p>
 
 							<div class="w-100 text-center">
@@ -127,7 +84,7 @@
 						</div>
 					</BCol>
 
-					<!-- Pamela Image -->
+					<!-- IMAGE -->
 					<BCol cols="12" md="4" order="0" order-md="1">
 						<div v-if="show">
 							<BCarousel
@@ -143,125 +100,68 @@
 		</BContainer>
 
 		<!-- INTERESTED? -->
-		<BContainer fluid class="px-0 py-3 bg-primary-light">
-			<BRow class="w-100 m-0 p-0">
-				<BCol cols="12" md="2" class="d-none d-md-block p-0 text-left">
-					<img
-						src="https://images2.imgbox.com/c3/c3/XQ36FnwY_o.png"
-						class="w-100 mt-5"
-						style="max-width: 200px;"
-					>
-				</BCol>
+		<BContainer fluid class="px-0 py-3 bg-secondary">
+			<BContainer class="">
+				<BRow>
+					<BCol cols="12">
+						<h2 class="my-4 text-center font-weight-bold text-light">
+							{{ services[0].title }}
+						</h2>
+					</BCol>
 
-				<BCol cols="12" md="8" class="m-auto">
-					<BRow>
-						<BCol cols="12">
-							<h1 class="my-5 text-center text-light">
-								Some Services We Provide
-							</h1>
-						</BCol>
 
-						<BCol cols="12" md="6" class="d-flex align-items-stretch">
-							<BCard
-								text-variant="light"
-								border-variant="muted"
-								no-body
-								tag="article"
-								class="mb-5 transparent"
+					<BCol cols="12" md="4" class="pb-5">
+						<img
+							:src="services[0].image"
+							class="w-100"
+						/>
+					</BCol>
+
+					<BCol cols="12" md="8" class="pb-5">
+						<!-- [CHECK-LIST] -->
+						<BListGroup class="border-0 text-light">
+							<BListGroupItem
+								v-for="(item, ii) in services[0].content[0].items"
+								:key="ii"
+								class="m-0 pb-1 border-0 transparent"
 							>
-								<div style="max-height: 200px; overflow:hidden;">
-									<BCardImg
-										:src="services[0].image"
-										class="w-100 rounded-top"
-									></BCardImg>
-								</div>
+								<h4 class="m-0 text-fancy">
+									<span class="text-light">✓</span>
+									{{ item }}
+								</h4>
+							</BListGroupItem>
+						</BListGroup>
+						<br>
+					</BCol>
 
-								<BCardHeader>
-									<h3 class="m-0 text-center">
-										{{ services[0].title }}
-									</h3>
-								</BCardHeader>
+					<BCol cols="12">
+						<div class="text-center">
+							<RouterLink to="/services">
+								<BButton
+									size="lg"
+									variant="light"
+									class="mb-5"
+								>Check Out All of Our Services</BButton>
+							</RouterLink>
+						</div>
+					</BCol>
+				</BRow>
+			</BContainer>
+		</BContainer>
 
-								<BCardBody>{{ services[0].description }}</BCardBody>
-
-								<BCardFooter class="">
-									<RouterLink :to="`/services/${services[0].id}`">
-										<BButton
-											variant="outline-light"
-											size="lg"
-											class="w-100 my-3"
-										>Read More</BButton>
-									</RouterLink>
-								</BCardFooter>
-							</BCard>
-						</BCol>
-
-						<BCol cols="12" md="6" class="d-flex align-items-stretch">
-							<BCard
-								text-variant="light"
-								border-variant="muted"
-								no-body
-								tag="article"
-								class="mb-5 transparent"
-							>
-								<div style="max-height: 200px; overflow:hidden;">
-									<BCardImg
-										:src="services[1].image"
-										class="w-100 rounded-top"
-									></BCardImg>
-								</div>
-
-								<BCardHeader class="">
-									<h3 class="m-0 text-center">
-										{{ services[1].title }}
-									</h3>
-								</BCardHeader>
-
-								<BCardBody>{{ services[1].description }}</BCardBody>
-
-								<BCardFooter class="">
-									<RouterLink :to="`/services/${services[1].id}`">
-										<BButton
-											variant="outline-light"
-											size="lg"
-											class="w-100 my-3"
-										>Read More</BButton>
-									</RouterLink>
-								</BCardFooter>
-							</BCard>
-						</BCol>
-
-						<BCol cols="12">
-							<div class="text-center">
-								<RouterLink to="/services">
-									<BButton
-										size="lg"
-										variant="light"
-										class="mb-5 shadow"
-									>Check Out All of Our Services</BButton>
-								</RouterLink>
-							</div>
-						</BCol>
-					</BRow>
-				</BCol>
-
-				<BCol cols="12" md="2" class="p-0 text-right">
-					<img
-						src="https://images2.imgbox.com/11/93/PmJs689J_o.png"
-						class="w-100 mt-5"
-						style="max-width: 200px;"
-					>
-				</BCol>
-			</BRow>
+		<!-- Star Details -->
+		<BContainer class="mb-5 text-center">
+			<StarDetails />
 		</BContainer>
 	</div>
 </template>
 
 <script>
 	// [IMPORT] Personal //
-	import PageService from '../services/PageService'
-	import pageData from '@/defaults/pages'
 	import BCarousel from '@/components/display/BCarousel'
+	import StarDetails from '../components/home/StarDetails'
+	import pageData from '@/defaults/pages'
+	import PageService from '../services/PageService'
 	import router from '@/router'
 
 	export default {
@@ -269,6 +169,7 @@
 
 		components: {
 			BCarousel,
+			StarDetails
 		},
 
 		data() {

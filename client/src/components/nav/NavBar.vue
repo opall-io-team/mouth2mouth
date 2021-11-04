@@ -1,5 +1,5 @@
 <template>
-	<div class="w-100 bg-primary-lighter border-bottom border-primary shadow">
+	<div class="w-100 bg-secondary-lighter border-bottom border-primary shadow">
 		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid pt-3 mb-1">
 			<!-- Title -->
 			<div class="text-left">
@@ -47,8 +47,7 @@
 			<!-- Phone # & Social Media -->
 			<div class="ml-auto text-right">
 				<a :href="companyInfo.phoneNumberLink">
-					<BButton variant="outline-primary" class="mb-3 px-4"
-						style="border-width: 2px; border-radius: 8px !important;"
+					<BButton variant="secondary" class="mb-3 px-4"
 					>
 						<PhoneIcon stroke-width="2" size="1.5x" />
 					</BButton>
@@ -57,7 +56,7 @@
 				<div class="w-100">
 					<SocialMediaPlug
 						size="1.8x"
-						variant="secondary"
+						variant="primary"
 						class="d-none d-sm-block float-lg-right"
 					/>
 				</div>
