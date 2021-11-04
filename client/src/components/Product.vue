@@ -88,7 +88,7 @@
 					<div v-if="product.pricing.length > 0" class="">
 						<BListGroup class="mx-auto border" style="max-width: 400px;">
 							<BListGroupItem
-								variant="primary"
+								variant="secondary"
 								class="
 									text-center
 									border-light
@@ -98,13 +98,13 @@
 									border-right-0
 								"
 							>
-								<h5 class="m-0 text-primary font-weight-bold">Pricing</h5>
+								<h5 class="m-0 text-secondary font-weight-bold">Pricing</h5>
 							</BListGroupItem>
 				
 							<BListGroupItem
 								v-for="(p, i) in product.pricing"
 								:key="i"
-								variant="primary"
+								variant="secondary"
 								class="py-2 border-0"
 							>
 								<BRow>
@@ -143,7 +143,7 @@
 							<BCol cols="12" md="4">
 								<RouterLink to="/contact">
 									<BButton
-										variant="primary"
+										variant="secondary"
 										size="lg"
 										pill
 										class="my-3 my-md-4 w-100"
