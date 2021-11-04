@@ -27,12 +27,16 @@ module.exports = {
 		*/
 	],
 
+	contactName: 'Pamela Richardson',
 	phoneNumber: '(201) 913-5760',
 	phoneNumberLink: 'tel:201-913-5760',
 
+	email: 'balancewithinllc@gmail.com',
+	emailLink: 'mailto:balancewithinllc@gmail.com',
+
 	facebookLink: 'https://www.facebook.com/',
-	instagramLink: 'https://www.instagram.com/',
-	youtubeLink: 'https://www.youtube.com',
+	instagramLink: 'https://www.instagram.com/balance.with.pamela/',
+	youtubeLink: '',
 
 	aboutHTML: `
 		Pamela, Owner of Balance Within is passionate  about serving humanity..

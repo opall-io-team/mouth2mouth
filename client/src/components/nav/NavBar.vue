@@ -18,7 +18,7 @@
 			</div>
 
 			<!-- Links -->
-			<div class="d-none d-lg-block mx-auto">
+			<div class="d-none d-lg-block mx-auto my-4">
 				<a v-if="companyInfo.googleMapsLink" :href="companyInfo.googleMapsLink">
 					<BButton variant="none" class="w-100 mb-2 text-primary">
 						<h5 class="m-0">
@@ -26,7 +26,6 @@
 						</h5>
 					</BButton>
 				</a>
-				<hr class="my-2 border-light">
 
 				<!-- Menu Items -->
 				<RouterLink
