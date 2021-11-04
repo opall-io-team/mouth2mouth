@@ -1,10 +1,13 @@
 $theme-colors: (
-	'primary': #5100adcc,
-	'secondary': rgb(123, 196, 206),
+	'secondary': #d771a9,
+	'primary': #c1a24e,
 	'info': rgb(94, 143, 250),
+	/*
+	'primary': #d771a9,
+	'secondary': #c1a24e,
+	*/
 );
-
-
+	
 // [IMPORT] //
 @import 'bootstrap/scss/bootstrap.scss';
 
