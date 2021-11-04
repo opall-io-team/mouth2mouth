@@ -19,7 +19,7 @@
 		</BContainer>
 
 		<!-- About Balance Within -->
-		<BContainer fluid class="py-5 bg-secondary-lighter">
+		<BContainer fluid class="py-5 b-lighter">
 			<BContainer class="py-5">
 				<BRow>
 					<!-- IMAGE -->
@@ -36,7 +36,7 @@
 					<!-- TEXT -->
 					<BCol cols="12" md="8" class="px-5">
 						<div v-if="show" data-aos="fade-up">
-							<h1 class="text-center text-primary text-fancy">
+							<h1 class="text-center font-weight-bold text-primary text-fancy">
 								{{ pageData.bodyDetails.row0.header }}
 							</h1>
 							<br>
@@ -67,7 +67,7 @@
 					<!-- TEXT -->
 					<BCol cols="12" md="8" order="1" order-md="0" class="px-5">
 						<div v-if="show" data-aos="fade-up">
-							<h1 class="text-center text-primary text-fancy">
+							<h1 class="text-center font-weight-bold text-primary text-fancy">
 								{{ pageData.bodyDetails.row1.header }}
 							</h1>
 							<h5 class="text-center text-secondary">
@@ -107,7 +107,7 @@
 		</BContainer>
 
 		<!-- INTERESTED? -->
-		<BContainer fluid class="px-0 py-3 bg-secondary">
+		<BContainer fluid class="px-0 py-5 bg-secondary-light">
 			<BContainer class="">
 				<BRow>
 					<BCol cols="12">
@@ -128,14 +128,14 @@
 						<!-- [CHECK-LIST] -->
 						<BListGroup class="border-0 text-light">
 							<BListGroupItem
-								v-for="(item, ii) in services[0].content[0].items"
-								:key="ii"
+								v-for="(item, i) in services[0].content[0].items"
+								:key="i"
 								class="m-0 pb-1 border-0 transparent"
 							>
-								<h4 class="m-0 text-fancy">
+								<h3 class="m-0 text-fancy">
 									<span class="text-light">✓</span>
 									{{ item }}
-								</h4>
+								</h3>
 							</BListGroupItem>
 						</BListGroup>
 						<br>
