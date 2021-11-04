@@ -1,54 +1,63 @@
 <template>
 	<BContainer v-if="services != []" class="my-5">
-		<BCard bg-variant="light" no-body>
+		<BCard bg-variant="light" no-body class="rounded-0 shadow">
 			<BRow class="m-0 p-0">
-				<BCol cols="12 module">
-					<h1 class="mb-4 text-center text-primary">{{ pData.title }}</h1>
-					<hr class="mb-5 bg-secondary">
+				<BCol cols="12" class="bg-primary-lighter">
+					<h1 class="mx-0 my-4 text-center font-weight-bold text-primary">
+						{{ pData.title }}
+					</h1>
 				</BCol>
 
-				<!-- Service Cards -->
-				<BCol
-					v-for="(s, i) in services" :key="i"
-					cols="12" md="6" lg="4"
-					class="d-flex align-items-stretch"
-				>
-					<BCard
-						bg-variant="light"
-						no-body
-						class="w-100 mb-4 border"
-						:style="`
-							background-image: url(${s.image});
-							background-position: center;'
-							border-color: grey !important;
-						`"
-					>
-						<BCardHeader class="text-center bg-shade text-primary border-0">
-							<h3 class="m-0 font-weight-bold">{{ s.title }}</h3>
-						</BCardHeader>
-
-						<BCardBody class="bg-shade show">
-							<h5 class="text-justify mb-2 font-weight-bold text-dark">
-							{{
-								s.description.length > 100 ?
-									s.description.substring(0, 100 - 3) + '...' :
-									s.description
-							}}
-							</h5>
-						</BCardBody>
-
-						<BCardFooter class="border-0 bg-shade">
-							<RouterLink
-								:to="`/services/${s.id}`"
-								class="text-decoration-none"
+				<BCol cols="12" class="px-4 py-5">
+					<BRow>
+						<!-- Service Cards -->
+						<BCol
+							v-for="(s, i) in services" :key="i"
+							cols="12" md="12" lg="6"
+							class="d-flex align-items-stretch"
+						>
+							<BCard
+								bg-variant="light"
+								no-body
+								class="w-100 mb-5 border rounded-0"
+								:style="`
+									background-image: url(${s.image});
+									background-position: center;'
+									border-color: grey !important;
+								`"
 							>
-								<BButton
-									size="lg"
-									class="w-100"
-								>Click to Learn More</BButton>
-							</RouterLink>
-						</BCardFooter>
-					</BCard>
+								<BCardHeader class="text-center bg-shade border-0 rounded-0">
+									<h1 class="m-0 text-primary font-weight-bold fancy-text">
+										{{ s.title }}
+									</h1>
+								</BCardHeader>
+
+								<BCardBody class="px-5 py-3 rounded-0 bg-shade show">
+									<h4 class="text-center mb-2 text-dark">
+									{{
+										s.description.length > 100 ?
+											s.description.substring(0, 100 - 3) + '...' :
+											s.description
+									}}
+									</h4>
+								</BCardBody>
+
+								<BCardFooter class="text-center px-5 py-4 border-0 bg-shade">
+									<RouterLink
+										:to="`/services/${s.id}`"
+										class="text-decoration-none"
+									>
+										<BButton
+											variant="secondary"
+											size=""
+											class="w-100"
+											style="max-width: 250px;"
+										>Click to Learn More</BButton>
+									</RouterLink>
+								</BCardFooter>
+							</BCard>
+						</BCol>
+					</BRow>
 				</BCol>
 			</BRow>
 		</BCard>

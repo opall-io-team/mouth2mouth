@@ -1,7 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 body {
 	background-image: url('../../assets/images/b.jpg');
 	background-color: rgb(206, 206, 206);
 	background-size: 20%;
+}
+
+.transparent {
+	background-color: transparent !important;
+}
+
+.fancy-text {
+	font-family: 'Caveat', cursive !important;
+}
+
+.bg-primary-light {
+	background-color: #e6dab9 !important;
+}
+
+.bg-primary-lighter {
+	background-color: #f8f5ed !important;
+}
+
+.bg-secondary-light {
+	background-color: #f0c0da !important;
+}
+
+.bg-secondary-lighter {
+	background-color: #fdedf5 !important;
+}
+
+.bg-shade {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.bg-shine {
+	background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .card-img-top {

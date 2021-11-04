@@ -1,6 +1,6 @@
 <template>
 	<BContainer v-if="services != []" class="my-5">
-		<BCard bg-variant="light" class="shadow">
+		<BCard bg-variant="none" no-body class="rounded-0 shadow">
 			<Product :product="services[1]" />
 		</BCard>
 	</BContainer>

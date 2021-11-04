@@ -1,11 +1,7 @@
 $theme-colors: (
+	'primary': #d4a219,
 	'secondary': #d771a9,
-	'primary': #c1a24e,
 	'info': rgb(94, 143, 250),
-	/*
-	'primary': #d771a9,
-	'secondary': #c1a24e,
-	*/
 );
 	
 // [IMPORT] //
@@ -18,14 +14,6 @@ $theme-colors: (
 
 .btn-secondary {
 	color: white !important;
-}
-
-.bg-shade {
-	background-color: rgba(0, 0, 0, 0.4) !important;
-}
-
-.bg-shine {
-	background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 // [CONTAINER] //
