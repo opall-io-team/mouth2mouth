@@ -1,64 +1,84 @@
 <template>
 	<BContainer class="my-5" data-aos="fade-up">
-		<BCard bg-variant="light" class=" shadow">
-			<BRow class="mb-3">
-				<BCol cols="12">
-					<h1 class="text-center font-weight-bold text-primary">
+		<BCard no-body bg-variant="white" class="text-center border-0 shadow">
+			<BRow class="m-0">
+				<BCol cols="12" class="bg-primary-lighter">
+					<h1 class="my-4 text-center font-weight-bold text-primary">
 						{{ pageData.title }}
 					</h1>
-					<hr class="bg-secondary">
 				</BCol>
 			</BRow>
 
-			<BRow>
-				<!-- FIND US -->
-				<BCol
-					cols="12" lg="4" xl="3"
-					order="2" order-lg="1"
-					class="px-5"
+			<BRow class="m-0">
+				<!-- CONTACT US
 					data-aos="fade"
+				-->
+				<BCol
+					cols="12" lg="5" xl="4"
+					order="2" order-lg="1"
+					class="px-5 py-4 bg-secondary-lighter"
 				>
-					<h1 class="mb-3 text-center font-weight-bold text-primary">
-						Find Us
-					</h1>
+					<h3 class="mb-3 text-center font-weight-bold text-primary">
+						Contact Us
+					</h3>
+
+					<!-- EMAIL -->
+					<div v-if="companyInfo.emailLink">
+						<h4 class="text-secondary">
+							Email
+						</h4>
+						<a
+							:href="companyInfo.emailLink"
+							class="text-decoration-none"
+						>
+							<BButton variant="primary" class="w-100 mt-2 mb-4">
+								<h6 class="m-0">{{ companyInfo.email }}</h6>
+							</BButton>
+						</a>
+					</div>
 
 					<!-- Number -->
-					<h3 class="text-secondary">Number</h3>
-					<a
-						:href="companyInfo.phoneNumberLink"
-						class="text-decoration-none"
-					>
-						<p class="h5 mb-4 font-weight-bold text-dark">
-							{{ companyInfo.phoneNumber }}
-						</p>
-					</a>
-					<hr>
+					<div v-if="companyInfo.phoneNumberLink">
+						<h4 class="text-secondary">
+							Cell
+						</h4>
+						<a
+							:href="companyInfo.phoneNumberLink"
+							class="text-decoration-none"
+						>
+							<BButton variant="primary" class="w-100 mt-2 mb-4">
+								<h6 class="m-0">
+									<PhoneIcon size="1x" />
+									{{ companyInfo.phoneNumber }}
+								</h6>
+							</BButton>
+						</a>
+					</div>
 
 					<!-- [LEFT][IMAGE] -->
-					<img
-						:src="pageData.image"
-						class="w-100 mb-4 rounded-lg shadow"
+					<img :src="companyInfo.companyLogo"
+						class="w-100 mb-2" style="max-width: 130px;"
 					>
 				</BCol>
 
+				<!-- CONTENT -->
 				<BCol
-					cols="12" lg="8" xl="9"
+					cols="12" lg="7" xl="8"
 					order="1" order-lg="2"
-					class="px-sm-5"
+					class="px-sm-4 py-4"
 					data-aos="fade"
 				>
-					<h3 class="text-secondary">
-						{{ pageData.title }}
-					</h3>
-					<p class="h5 text-dark">
-						<!-- [RIGHT] Img -->
+					<p class="h6 text-dark">
+						<!-- [RIGHT][IMAGE] -->
 						<img
 							src="https://images2.imgbox.com/6f/f3/kiqIewcm_o.jpg" 
-							class="d-none d-sm-block w-100 float-right mx-4 mb-3 rounded-lg shadow"
-							style="max-width: 250px;"
+							class="d-none d-md-block w-100 float-right mx-4 mb-3 rounded-lg shadow"
+							style="max-width: 180px;"
 							data-aos="fade-up"
 						/>
-						<span class="text-primary">{{ pageData.title1 }}</span>
+						<span class="h3 font-weight-bold text-secondary fancy-text">
+							{{ pageData.title1 }}
+						</span>
 						<br>
 						<br>
 						<span v-html="pageData.description"></span>

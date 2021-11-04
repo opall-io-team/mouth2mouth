@@ -5,7 +5,8 @@
 			<div class="text-left">
 				<RouterLink to="/" class="text-decoration-none">
 					<img :src="require('../../assets/logov2.png')"
-						class="w-100 mb-2" style="max-width: 130px;"
+						class="w-100 mb-2"
+						style="max-width: 130px;"
 					>
 					<!--
 					<h6

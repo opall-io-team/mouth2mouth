@@ -1,29 +1,32 @@
 <template>
 	<BContainer class="my-5">
-		<BCard bg-variant="light" class="mt-3 shadow">
-			<h1 class="mb-3 text-center text-primary font-weight-bold">
-				{{ pageData.pageTitle }}
-			</h1>
-				<hr class="bg-secondary">
-
-			<div v-for="(qa, index) in pageData.faq" :key="index">
-				<BListGroup class="mb-3">
-					<BListGroupItem
-						variant="white"
-						class="d-flex justify-content-between align-items-center q"
-						@click="toggler(index)"
-					>
-						<h3 class="m-0 font-weight-light text-secondary">{{ qa.q }}</h3>
-						<h2 v-if="!inOpened(index)" class="m-0">+</h2>
-						<h2 v-if="inOpened(index)" class="m-0">-</h2>
-					</BListGroupItem>
-
-					<BListGroupItem
-						v-if="inOpened(index)"
-						class="d-flex justify-content-between align-items-center"
-					><p v-html="qa.a" class="h5 font-weight-light"></p></BListGroupItem>
-				</BListGroup>				
+		<BCard no-body bg-variant="light" class="mt-3 border-0 rounded-0 shadow">
+			<div class="bg-primary-lighter">
+				<h1 class="my-4 text-center text-primary font-weight-bold">
+					{{ pageData.pageTitle }}
+				</h1>
 			</div>
+
+			<BContainer fluid class="my-4">
+				<div v-for="(qa, index) in pageData.faq" :key="index">
+					<BListGroup class="mb-3">
+						<BListGroupItem
+							variant="white"
+							class="d-flex justify-content-between align-items-center q"
+							@click="toggler(index)"
+						>
+							<h3 class="m-0 font-weight-light text-secondary">{{ qa.q }}</h3>
+							<h2 v-if="!inOpened(index)" class="m-0">+</h2>
+							<h2 v-if="inOpened(index)" class="m-0">-</h2>
+						</BListGroupItem>
+
+						<BListGroupItem
+							v-if="inOpened(index)"
+							class="d-flex justify-content-between align-items-center"
+						><p v-html="qa.a" class="h5 font-weight-light"></p></BListGroupItem>
+					</BListGroup>				
+				</div>
+			</BContainer>
 		</BCard>
 	</BContainer>
 </template>
