@@ -11,6 +11,13 @@
 			data-aos="fade-up"
 		/>
 
+		<!-- GUIDE -->
+		<BContainer fluid class="bg-white">
+			<BContainer class="">
+				<Guide />
+			</BContainer>
+		</BContainer>
+
 		<!-- About Balance Within -->
 		<BContainer fluid class="py-5 bg-secondary-lighter">
 			<BContainer class="py-5">
@@ -54,7 +61,7 @@
 		</BContainer>
 
 		<!-- About Me -->
-		<BContainer fluid class="py-5 bg-secondary-lighter">
+		<BContainer fluid class="py-5 bg-light">
 			<BContainer class="py-5">
 				<BRow>
 					<!-- TEXT -->
@@ -159,9 +166,10 @@
 <script>
 	// [IMPORT] Personal //
 	import BCarousel from '@/components/display/BCarousel'
-	import StarDetails from '../components/home/StarDetails'
+	import StarDetails from '@/components/home/StarDetails'
+	import Guide from '@/components/home/Guide'
 	import pageData from '@/defaults/pages'
-	import PageService from '../services/PageService'
+	import PageService from '@/services/PageService'
 	import router from '@/router'
 
 	export default {
@@ -169,7 +177,8 @@
 
 		components: {
 			BCarousel,
-			StarDetails
+			StarDetails,
+			Guide,
 		},
 
 		data() {
