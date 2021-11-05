@@ -1,6 +1,6 @@
 <template>
 	<div class="w-100 bg-secondary-lighter">
-		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid pt-3 mb-1">
+		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid pt-3">
 			<!-- Title -->
 			<div class="text-left">
 				<RouterLink to="/" class="text-decoration-none">
