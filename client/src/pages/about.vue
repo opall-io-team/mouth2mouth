@@ -54,8 +54,10 @@
 					</div>
 
 					<!-- [LEFT][IMAGE] -->
-					<img :src="companyInfo.companyLogo"
-						class="w-100 mb-2" style="max-width: 130px;"
+					<img
+						:src="pageData.image"
+						class="d-none d-lg-block w-100 mx-auto my-2"
+						style="max-width: 130px;"
 					>
 				</BCol>
 

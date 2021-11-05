@@ -15,16 +15,6 @@
 						v-html="companyInfo.messageHTML"
 						class="mb-4 h5 text-center text-dark"
 					></p>
-
-					<div class="w-100 text-center">
-						<RouterLink to="/our-team">
-							<BButton
-								variant="secondary"
-								size="lg"
-								class="mb-4"
-							>Read More</BButton>
-						</RouterLink>
-					</div>
 				</div>
 			</BCol>
 

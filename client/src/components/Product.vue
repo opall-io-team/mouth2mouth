@@ -2,12 +2,13 @@
 	<BRow class="m-0">
 		<!-- Title Header -->
 		<BCol cols="12" class="py-4 bg-primary-lighter">
-			<h1 class="mb-3 text-center font-weight-bold text-primary text-fancy">
+			<h1 class="m-0 text-center font-weight-bold text-primary text-fancy">
 				{{ product.title }}
 			</h1>
-			<h6 class="mb-3 text-center font-weight-bold text-secondary">
-				{{ product.heading1 }}
-			</h6>
+			<h6
+				v-if="product.heading1"
+				class="m-0 text-center font-weight-bold text-secondary"
+			>{{ product.heading1 }}</h6>
 		</BCol>
 
 		<!-- Content -->
