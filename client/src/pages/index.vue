@@ -79,8 +79,10 @@
 		</BContainer>
 
 		<!-- Star Details -->
-		<BContainer class="mb-5 text-center">
-			<StarDetails />
+		<BContainer fluid class="py-5 text-center bg-primary-lighter">
+			<BContainer>
+				<ContactMe class="shadow" />
+			</BContainer>
 		</BContainer>
 	</div>
 </template>
@@ -88,9 +90,9 @@
 <script>
 	// [IMPORT] Personal //
 	import BCarousel from '@/components/display/BCarousel'
+	import ContactMe from '../components/ContactMe'
 	import AboutBalanceWithin from '@/components/home/AboutBalanceWithin'
 	import AboutCEO from '@/components/home/AboutCEO'
-	import StarDetails from '@/components/home/StarDetails'
 	import Guide from '@/components/home/Guide'
 	import pageData from '@/defaults/pages'
 	import PageService from '@/services/PageService'
@@ -101,10 +103,10 @@
 
 		components: {
 			BCarousel,
+			ContactMe,
 			AboutBalanceWithin,
 			AboutCEO,
-			StarDetails,
-			Guide
+			Guide,
 		},
 
 		data() {
