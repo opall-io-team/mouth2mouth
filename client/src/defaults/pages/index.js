@@ -2,6 +2,8 @@ const companyInfo = require('../companyInfo')
 
 
 module.exports = {
+	companyInfo: companyInfo,
+	
 	// [HERO] Caraousel Slider //
 	caraousel: [
 		{
@@ -33,7 +35,7 @@ module.exports = {
 	bodyDetails: {
 		row0: {
 			image: companyInfo.companyLogo,
-			header: `About ${companyInfo.companyName}`,
+			header: companyInfo.companyName,
 			aboutCompanyHTML: companyInfo.aboutHTML
 		},
 

@@ -56,5 +56,26 @@ module.exports = {
 		Love, Light and Many Blessings
 		<br><br>
 		<i>Pamela Richardson</i>
-	`
+	`,
+
+	ceo: {
+		name: {
+			firstName: 'Pamela',
+		},
+
+		title: 'Intuitive Empath, Light-worker and Energy Facilitator, Reiki Practitioner and Wellness Coach',
+
+		caraousel: [
+			{
+				caption: '',
+				text: '',
+				img: require('../assets/images/pages/index/owner.jpg'),
+			},
+			{
+				caption: '',
+				text: '',
+				img: require('../assets/images/pages/index/profile.jpg'),
+			},
+		],
+	},
 }

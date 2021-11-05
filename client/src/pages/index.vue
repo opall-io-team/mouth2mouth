@@ -12,103 +12,25 @@
 		/>
 
 		<!-- GUIDE -->
-		<BContainer fluid class="bg-white">
+		<BContainer v-if="show" fluid class="bg-white">
 			<BContainer>
 				<Guide class="py-2" />
 			</BContainer>
 		</BContainer>
 
 		<!-- About Balance Within -->
-		<BContainer fluid class="py-5 b-lighter">
-			<BContainer class="py-5">
-				<BRow>
-					<!-- IMAGE -->
-					<BCol cols="12" md="4" class="d-none d-md-block">
-						<div class="text-center">
-							<img
-								:src="pageData.bodyDetails.row0.image"
-								class="w-100"
-								style="max-width: 300px;"
-							>
-						</div>
-					</BCol>
-
-					<!-- TEXT -->
-					<BCol cols="12" md="8" class="px-5">
-						<div v-if="show" data-aos="fade-up">
-							<h1 class="text-center font-weight-bold text-primary text-fancy">
-								{{ pageData.bodyDetails.row0.header }}
-							</h1>
-							<br>
-							<p
-								v-html="pageData.bodyDetails.row0.aboutCompanyHTML"
-								class="mb-4 h5 text-center text-dark"
-							></p>
-
-							<div class="text-center">
-								<RouterLink to="/services">
-									<BButton
-										size="lg"
-										variant="secondary"
-										class="mt-3"
-									>Check Out All of Our Services</BButton>
-								</RouterLink>
-							</div>
-						</div>
-					</BCol>
-				</BRow>
-			</BContainer>
+		<BContainer v-if="show" fluid class="py-5 b-lighter">
+			<AboutBalanceWithin />
 		</BContainer>
 
 		<!-- About Me -->
-		<BContainer fluid class="py-5 bg-light">
-			<BContainer class="py-5">
-				<BRow>
-					<!-- TEXT -->
-					<BCol cols="12" md="8" order="1" order-md="0" class="px-5">
-						<div v-if="show" data-aos="fade-up">
-							<h1 class="text-center font-weight-bold text-primary text-fancy">
-								{{ pageData.bodyDetails.row1.header }}
-							</h1>
-							<h5 class="text-center text-secondary">
-								{{ pageData.bodyDetails.row1.header2 }}
-							</h5>
-							<br>
-							<p
-								v-html="pageData.bodyDetails.row1.messageHTML"
-								class="mb-4 h5 text-center text-dark"
-							></p>
-
-							<div class="w-100 text-center">
-								<RouterLink to="/our-team">
-									<BButton
-										variant="secondary"
-										size="lg"
-										class="mb-4"
-									>Read More</BButton>
-								</RouterLink>
-							</div>
-						</div>
-					</BCol>
-
-					<!-- IMAGE -->
-					<BCol cols="12" md="4" order="0" order-md="1">
-						<div v-if="show">
-							<BCarousel
-								v-if="show"
-								:slideObjs="pageData.bodyDetails.row1.caraousel"
-								:maxHeight="600"
-								class="mb-3"
-							/>
-						</div>
-					</BCol>
-				</BRow>
-			</BContainer>
+		<BContainer v-if="show" fluid class="py-5 bg-light">
+			<AboutCEO />
 		</BContainer>
 
 		<!-- INTERESTED? -->
-		<BContainer fluid class="px-0 py-5 bg-secondary-light">
-			<BContainer class="">
+		<BContainer v-if="show" fluid class="px-0 py-5 bg-secondary-light">
+			<BContainer>
 				<BRow>
 					<BCol cols="12">
 						<h2 class="my-4 text-center font-weight-bold text-light">
@@ -166,6 +88,8 @@
 <script>
 	// [IMPORT] Personal //
 	import BCarousel from '@/components/display/BCarousel'
+	import AboutBalanceWithin from '@/components/home/AboutBalanceWithin'
+	import AboutCEO from '@/components/home/AboutCEO'
 	import StarDetails from '@/components/home/StarDetails'
 	import Guide from '@/components/home/Guide'
 	import pageData from '@/defaults/pages'
@@ -177,8 +101,10 @@
 
 		components: {
 			BCarousel,
+			AboutBalanceWithin,
+			AboutCEO,
 			StarDetails,
-			Guide,
+			Guide
 		},
 
 		data() {
@@ -213,18 +139,8 @@
 </script>
 
 <style lang="scss" scoped>
-	@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
 	.fade-enter-active,
 	.fade-leave-active { transition: opacity 1s; }
 	.fade-enter,
 	.fade-leave-to { opacity: 0; }
-
-	.hero-text {
-		font-family: 'Caveat', cursive !important;
-	}
-
-	.text-fancy {
-		font-family: 'Caveat', cursive !important;
-	}
 </style>

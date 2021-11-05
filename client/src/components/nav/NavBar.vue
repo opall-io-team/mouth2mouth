@@ -1,5 +1,5 @@
 <template>
-	<div class="w-100 bg-secondary-lighter border-bottom border-primary shadow">
+	<div class="w-100 bg-secondary-lighter">
 		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid pt-3 mb-1">
 			<!-- Title -->
 			<div class="text-left">
@@ -63,9 +63,9 @@
 			</div>
 		</BContainer>
 
-		<BContainer>
+		<BContainer class="d-block d-lg-none pb-3">
 			<!-- [HIDDEN] Menu Button -->
-			<div class="w-100 d-block d-lg-none mb-3">
+			<div class="w-100">
 				<BButton
 					variant="secondary"
 					class="w-100"
