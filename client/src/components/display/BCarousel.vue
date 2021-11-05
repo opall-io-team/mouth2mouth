@@ -60,7 +60,7 @@
 					class="
 						d-block
 						d-sm-none
-						mb-4
+						mb-3
 						title
 						font-weight-light
 						text-light
