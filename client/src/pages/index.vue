@@ -8,7 +8,7 @@
 			:maxHeight="600"
 			:rellaxNumber="1"
 			class=""
-			data-aos="fade-up"
+			data-aos="fade"
 		/>
 
 		<!-- GUIDE -->

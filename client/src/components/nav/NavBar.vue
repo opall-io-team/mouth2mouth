@@ -36,10 +36,9 @@
 				>
 					<BButton
 						variant="none"
-						class="mx-4 px-1 py-4 font-weight-bold shadow-none text-secondary menu-link"
+						class="mx-4 px-1 py-4 font-weight-bold shadow-none text-primary menu-link"
 					>
-						<span v-if="button.navIcon" v-html="button.navIcon"></span>
-						<span v-else>{{ button.text }}</span>
+						<span>{{ button.text }}</span>
 					</BButton>
 				</RouterLink>
 			</div>
@@ -118,12 +117,13 @@
 	@import '../../assets/styles/bootstrap-override.scss';
 
 	.menu-link {
+		transition: 1s;
 		@extend .border-top-0;
 		@extend .border-left-0;
 		@extend .border-right-0;
 
 		:hover {
-			@extend .text-primary;
+			@extend .text-secondary;
 		}
 	}
 
@@ -135,9 +135,11 @@
 
 	.router-link-exact-active {
 		.menu-link {
-			@extend .text-primary;
+			@extend .text-secondary;
 			@extend .border-bottom;
-			@extend .border-primary;
+			@extend .border-secondary;
+
+			border-width: 2px !important;
 		}
 	}
 </style>
