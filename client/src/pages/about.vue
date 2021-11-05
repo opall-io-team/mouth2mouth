@@ -10,8 +10,9 @@
 			</BRow>
 
 			<BRow class="m-0">
+				<!-- CONTACT -->
 				<BCol
-					cols="12" lg="5" xl="4"
+					cols="12" lg="4" xl="3"
 					order="2" order-lg="1"
 					class="px-5 py-4 bg-primary-lighter"
 				>
@@ -60,26 +61,13 @@
 
 				<!-- CONTENT -->
 				<BCol
-					cols="12" lg="7" xl="8"
+					cols="12" lg="8" xl="9"
 					order="1" order-lg="2"
 					class="px-sm-4 py-4"
 					data-aos="fade"
 				>
-					<p class="h6 text-dark">
-						<!-- [RIGHT][IMAGE] -->
-						<img
-							src="https://images2.imgbox.com/6f/f3/kiqIewcm_o.jpg" 
-							class="d-none d-md-block w-100 float-right mx-4 mb-3 rounded-lg shadow"
-							style="max-width: 180px;"
-							data-aos="fade-up"
-						/>
-						<span class="h3 font-weight-bold text-secondary text-fancy">
-							{{ pageData.title1 }}
-						</span>
-						<br>
-						<br>
-						<span v-html="pageData.description"></span>
-					</p>
+					<AboutCEO />
+					<AboutBalanceWithin/>
 				</BCol>
 			</BRow>
 		</BCard>
@@ -89,10 +77,13 @@
 <script>
 	import companyInfo from '@/defaults/companyInfo'
 	import pageData from '@/defaults/pages/about'
+	import AboutCEO from '../components/home/AboutCEO'
+	import AboutBalanceWithin from '../components/home/AboutBalanceWithin.vue'
 
 	export default {
 		components: {
-			
+			AboutCEO,
+			AboutBalanceWithin,
 		},
 
 		data() {
