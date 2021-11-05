@@ -1,29 +1,16 @@
 <template>
-	<BRow>
-		<BCol cols="12" md="4">
+	<BRow class="pt-5">
+		<BCol
+			v-for="(img, i) in images"
+			:key="i"
+			cols="12" sm="6" md="4"
+			class="mx-auto"
+		>
 			<RouterLink to="/about">
-				<div class="px-2 py-5">
-					<img :src="images[0]" class="w-100">
+				<div class="px-2 pb-3 pb-sm-4 pb-md-5">
+					<img :src="img" class="w-100">
 				</div>
-				<h3 class="mb-5 text-center text-primary">About Balance Within</h3>
-			</RouterLink>
-		</BCol>
-
-		<BCol cols="12" md="4">
-			<RouterLink to="/services">
-				<div class="px-2 py-5">
-					<img :src="images[1]" class="w-100">
-				</div>
-				<h3 class="mb-5 text-center text-primary">Therapies</h3>
-			</RouterLink>
-		</BCol>
-
-		<BCol cols="12" md="4">
-			<RouterLink to="/blog">
-				<div class="px-2 py-5">
-					<img :src="images[2]" class="w-100">
-				</div>
-				<h3 class="mb-5 text-center text-primary">Blog</h3>
+				<h3 class="mb-3 mb-sm-4 mb-md-5 text-center text-primary">About Balance Within</h3>
 			</RouterLink>
 		</BCol>
 	</BRow>

@@ -14,7 +14,7 @@
 		<!-- GUIDE -->
 		<BContainer v-if="show" fluid class="bg-white">
 			<BContainer>
-				<Guide class="py-2" />
+				<Guide />
 			</BContainer>
 		</BContainer>
 
