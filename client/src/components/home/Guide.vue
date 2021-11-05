@@ -7,7 +7,7 @@
 			class="mx-auto"
 			data-aos="fade-up"
 		>
-			<RouterLink to="/about">
+			<RouterLink :to="s.to">
 				<div class="px-2 pb-3 pb-sm-4 pb-md-5">
 					<img :src="s.img" class="w-100">
 				</div>
@@ -25,15 +25,18 @@ export default {
 		return {
 			sections: [
 				{
-					text: 'Meditations',
+					text: 'About Balance Within',
+					to: '/about',
 					img: require('../../assets/images/meditation.jpeg'),
 				},
 				{
 					text: 'Services',
+					to: '/services',
 					img: require('../../assets/images/services.jpeg'),
 				},
 				{
 					text: 'Blog',
+					to: '/blog',
 					img: require('../../assets/images/blog.jpeg'),
 				},
 			]
