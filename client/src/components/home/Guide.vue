@@ -30,7 +30,7 @@ export default {
 					img: require('../../assets/images/meditation.jpeg'),
 				},
 				{
-					text: 'Services',
+					text: 'Therapies',
 					to: '/services',
 					img: require('../../assets/images/services.jpeg'),
 				},
