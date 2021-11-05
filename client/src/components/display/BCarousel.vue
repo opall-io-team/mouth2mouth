@@ -31,41 +31,52 @@
 			<!-- isHero -->
 			<div v-if="showContent" class="h-100 my-auto py-2 rounded">
 				<h1
-					class="title d-none d-md-block font-weight-light text-light hero-text"
-					style="font-size: 4em;"
-				>
-					{{ mainText }}
-					<br><br>
-				</h1>
-
-				<h3
 					class="
+						d-none
+						d-md-block
+						mb-5
 						title
+						font-weight-light
+						text-light
+						text-fancy
+					"
+					style="font-size: 4em;"
+				>{{ mainText }}</h1>
+
+				<h1
+					class="
 						d-none
 						d-sm-block
 						d-md-none
+						mb-4
+						title
 						font-weight-light
 						text-light
-						hero-text
+						text-fancy
 					"
-				>
-					{{ mainText }}
-					<br><br>
-				</h3>
+				>{{ mainText }}</h1>
 
-				<h5 class="title d-block d-sm-none font-weight-light text-light">
-					{{ mainText }}
-				</h5>
+				<h3
+					class="
+						d-block
+						d-sm-none
+						mb-4
+						title
+						font-weight-light
+						text-light
+						text-fancy
+					"
+				>{{ mainText }}</h3>
 
 				<RouterLink to="/book" class="text-decoration-none">
 					<BButton
-						variant="secondary"
+						variant="primary"
 						size="lg"
 						class="d-none d-sm-block m-auto"
 					>Book Apointment</BButton>
 
 					<BButton
-						variant="secondary"
+						variant="primary"
 						size=""
 						class="d-block d-sm-none m-auto"
 					>Book Apointment</BButton>
@@ -115,6 +126,7 @@
 				currentSlid: null,
 			}
 		},
+
 		methods: {
 			onSlideStart(slide) {
 				this.currentSlid = slide
@@ -128,15 +140,3 @@
 		}
 	}
 </script>
-
-<style lang="scss" scoped>
-	@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
-	.hero-text {
-		font-family: 'Caveat', cursive !important;
-	}
-
-	.content {
-		background: rgba(0, 0, 0, 0.30);
-	}
-</style>

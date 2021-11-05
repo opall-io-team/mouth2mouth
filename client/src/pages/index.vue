@@ -13,8 +13,8 @@
 
 		<!-- GUIDE -->
 		<BContainer fluid class="bg-white">
-			<BContainer class="">
-				<Guide />
+			<BContainer>
+				<Guide class="py-2" />
 			</BContainer>
 		</BContainer>
 

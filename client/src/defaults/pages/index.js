@@ -7,17 +7,17 @@ module.exports = {
 		{
 			caption:'',
 			text: '',
-			img: require('../../assets/images/pages/index/slide.jpg'),
+			img: require('../../assets/images/slide1.jpg'),
 		},
 		{
 			caption:'',
 			text: '',
-			img: require('../../assets/images/pages/index/slide2.jpg'),
+			img: require('../../assets/images/slide2.jpg'),
 		},
 		{
 			caption: '',
 			text: '',
-			img: require('../../assets/images/pages/index/slide3.jpg'),
+			img: require('../../assets/images/slide3.jpg'),
 		},
 	],
 
