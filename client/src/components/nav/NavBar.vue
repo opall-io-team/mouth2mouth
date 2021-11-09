@@ -4,7 +4,7 @@
 			<!-- Title -->
 			<div class="text-left">
 				<RouterLink to="/" class="text-decoration-none">
-					<img :src="require('../../assets/logov2.png')"
+					<img :src="companyInfo.companyLogo"
 						class="w-100 mb-2"
 						style="max-width: 130px;"
 					>
