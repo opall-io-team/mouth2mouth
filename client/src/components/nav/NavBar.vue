@@ -8,13 +8,6 @@
 						class="w-100 mb-2"
 						style="max-width: 130px;"
 					>
-					<!--
-					<h6
-						v-html="companyInfo.companyCaption1"
-						class="m-0 font-weight-bold text-secondary"
-						style="font-size: .8em;"
-					></h6>
-					-->
 				</RouterLink>
 			</div>
 

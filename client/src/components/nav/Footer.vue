@@ -29,7 +29,6 @@
 							{{ hoo.hours }}
 						</li>
 					</ul>
-					<hr>
 				</BCol>
 
 				<BCol cols="12" sm="4" class="text-center" data-aos="fade-up">
@@ -42,7 +41,16 @@
 							</RouterLink>
 						</li>
 					</ul>
-					<hr>
+					<br>
+
+					<h4>Legal</h4>
+					<ul class="list-unstyled text-small">
+						<li>
+							<RouterLink to="/privacy-policy" class="text-light">
+								Privacy Policy & Terms of Service
+							</RouterLink>
+						</li>
+					</ul>
 				</BCol>
 
 				<BCol cols="12" sm="4" class="text-center" data-aos="fade-up">

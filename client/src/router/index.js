@@ -15,6 +15,7 @@ import gallery from '@/pages/gallery'
 import ourTeam from '@/pages/our-team'
 import payment from '@/pages/payment'
 import payment_success from '@/pages/payment/success'
+import privacyPolicy from '@/pages/privacy-policy'
 import menu from '@/pages/menu'
 import services from '@/pages/services'
 import services_chakraClearingWithCrystals from '@/pages/services/chakra-clearing-with-crystals'
@@ -86,6 +87,12 @@ const router = new VueRouter({
 			path: '/payment/success',
 			name: 'payment_success',
 			component: payment_success,
+		},
+		// Privacy Policy
+		{
+			path: '/privacy-policy',
+			name: 'privacy-policy',
+			component: privacyPolicy,
 		},
 		{
 			path: '/menu',
