@@ -5,7 +5,7 @@ module.exports = {
 	companyCaption1: 'Embrace wellness with Pathways to Inner Balance',
 	companyCaption2: '',
 
-	companyLogo: require('../assets/logov3.png'),
+	companyLogo: require('../assets/logov4.png'),
 
 	address: '',
 	googleMapsLink: '',
