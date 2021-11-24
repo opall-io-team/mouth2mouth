@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); 
+
+// [VANILLA] //
+body {
+	background-image: url('../../assets/images/b.jpg');
+	background-color: rgb(206, 206, 206);
+	background-size: 20%;
+}
+
+// [BG] //
+.transparent {
+	background-color: transparent !important;
+}
+
+.bg-shade {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.bg-shine {
+	background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
 .bg-stacked-waves-gradient {
 	background-image: url('../stacked-waves-gradient.svg');
 	background-size: auto 100%;
@@ -7,3 +29,23 @@
 	background-image: url('../stacked-waves-primary.svg');
 	background-size: cover;
 }
+
+// [TEXT][FONT] //
+.text-fancy {
+	font-family: 'Caveat', cursive !important;
+}
+
+// [TEXT][SPACING] //
+.text-spread { letter-spacing: 4px; }
+
+.text-spread-sm { letter-spacing: 2px; }
+
+.text-spread-lg { letter-spacing: 8px; }
+
+// [MISC] //
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+

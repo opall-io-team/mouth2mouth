@@ -14,7 +14,7 @@
 				<BCol
 					cols="12" lg="4" xl="3"
 					order="2" order-lg="1"
-					class="px-5 py-4 bg-primary-lighter"
+					class="px-5 py-4 bg-primary-lightest"
 				>
 					<h3 class="mb-3 text-center font-weight-bold text-secondary">
 						Contact Us

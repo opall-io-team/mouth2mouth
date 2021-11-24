@@ -1,7 +1,7 @@
 <template>
 	<BRow class="m-0">
 		<!-- Title Header -->
-		<BCol cols="12" class="py-4 bg-primary-lighter">
+		<BCol cols="12" class="py-4 bg-primary-lightest">
 			<h1 class="m-0 text-center font-weight-bold text-primary text-fancy">
 				{{ product.title }}
 			</h1>

@@ -1,5 +1,5 @@
 <template>
-	<div class="w-100 bg-secondary-lighter">
+	<div class="w-100 bg-secondary-lightest">
 		<BContainer bg-variant="dark" class="d-flex justify-content-between container-fluid pt-3">
 			<!-- Title -->
 			<div class="text-left">

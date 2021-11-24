@@ -1,3 +1,20 @@
+// [DEFAULT] //
 $primary: #d771a9;
 $secondary: #c1a24e;
 $info: rgb(94, 143, 250);
+$white: white;
+
+// [VARIANT] //
+$primary-light: mix($primary, rgba(255, 255, 255, 1), $weight: 50%);
+$secondary-light: mix($secondary, rgb(255, 255, 255), $weight: 50%);
+$secondary-dark: mix($secondary, rgb(255, 255, 255), $weight: 50%);
+
+// [VARIANT] er //
+$primary-lighter: mix($primary, rgba(255, 255, 255, 1), $weight: 25%);
+$secondary-lighter: mix($secondary, rgb(255, 255, 255), $weight: 25%);
+$secondary-darker: mix($secondary, rgb(255, 255, 255), $weight: 25%);
+
+// [VARIANT] est //
+$primary-lightest: mix($primary, rgba(255, 255, 255, 1), $weight: 10%);
+$secondary-lightest: mix($secondary, rgb(255, 255, 255), $weight: 5%);
+$secondary-darkest: mix($secondary, rgb(255, 255, 255), $weight: 10%);

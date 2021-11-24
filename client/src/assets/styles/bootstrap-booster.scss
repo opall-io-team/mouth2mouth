@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+// [BG][VARIANTS] //
+.bg-primary-light {
+	background-color: #b10460 !important;
+}
+
+.bg-primary-lighter {
+	background-color: $primary-light !important;
+}
+
+.bg-primary-lightest {
+	background-color: $primary-lightest !important;
+}
+
+.bg-secondary-light {
+	background-color: $secondary-light !important;
+}
+
+.bg-secondary-lighter {
+	background-color: $secondary-lighter !important;
+}
+
+.bg-secondary-lightest {
+	background-color: $secondary-lightest !important;
+}
