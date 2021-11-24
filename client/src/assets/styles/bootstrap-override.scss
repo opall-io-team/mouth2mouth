@@ -1,7 +1,9 @@
+@import './variables.scss';
+
 $theme-colors: (
-	'primary': #d771a9,
-	'secondary': #c1a24e,
-	'info': rgb(94, 143, 250),
+	'primary': $primary,
+	'secondary': $secondary,
+	'info': $info,
 );
 	
 // [IMPORT] //
