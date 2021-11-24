@@ -12,7 +12,7 @@
 			img-height="680"
 			@sliding-start="onSlideStart"
 			@sliding-end="onSlideEnd"
-			style="text-shadow: 1px 1px 2px #333;"
+			class="heading-text"
 		>
 			<!-- For loop for slideObj array -->
 			<BCarouselSlide
@@ -153,6 +153,10 @@
 
 <style lang="scss" scoped>
 	@import '../../assets/styles/variables.scss';
+
+	.heading-text {
+		text-shadow: 1px 1px 2px $secondary-dark;
+	}
 
 	.wave {
 		z-index: 1000;
