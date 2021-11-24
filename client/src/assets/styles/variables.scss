@@ -1,31 +1,32 @@
-// [DEFAULT] //
+// [INIT] //
 $primary: #d771a9;
 $secondary: #c1a24e;
 $info: rgb(94, 143, 250);
 $white: white;
 
-// [VARIANT][LIGHT] //
+
+// [MIX][LIGHT] //
 $primary-light: mix($primary, rgba(255, 255, 255, 1), $weight: 50%);
 $secondary-light: mix($secondary, rgb(255, 255, 255), $weight: 50%);
 
 
-// [VARIANT][LIGHT] er //
+// [MIX][LIGHTER] //
 $primary-lighter: mix($primary, rgba(255, 255, 255, 1), $weight: 25%);
 $secondary-lighter: mix($secondary, rgb(255, 255, 255), $weight: 25%);
 
 
-// [VARIANT][LIGHT] est //
+// [MIX][LIGHTEST] //
 $primary-lightest: mix($primary, rgba(255, 255, 255, 1), $weight: 10%);
 $secondary-lightest: mix($secondary, rgb(255, 255, 255), $weight: 5%);
 
 
-// [VARIANT][DARK] //
+// [MIX][DARK] //
 $secondary-dark: mix($secondary, rgb(0, 0, 0), $weight: 25%);
 
 
-// [VARIANT][DARK] er //
+// [MIX][DARKER] //
 $secondary-darker: mix($secondary, rgb(0, 0, 0), $weight: 50%);
 
 
-// [VARIANT][DARK] est //
+// [MIX][DARKEST] //
 $secondary-darkest: mix($secondary, rgb(0, 0, 0), $weight: 50%);
