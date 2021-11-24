@@ -5,7 +5,6 @@
 			:key="i"
 			cols="12" sm="6" md="4"
 			class="mx-auto"
-			data-aos="fade-up"
 		>
 			<RouterLink :to="s.to">
 				<div class="px-2 pb-3 pb-sm-4 pb-md-5">

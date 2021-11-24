@@ -21,7 +21,7 @@
 					<br>
 					<p
 						v-html="companyInfo.aboutHTML"
-						class="mb-4 h5 text-center text-dark"
+						class="mb-4 h5 text-center font-weight-bold text-light"
 					></p>
 
 					<div class="text-center">

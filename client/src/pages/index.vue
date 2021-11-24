@@ -19,7 +19,7 @@
 		</BContainer>
 
 		<!-- About Balance Within -->
-		<BContainer v-if="show" fluid class="py-5 b-lighter">
+		<BContainer v-if="show" fluid class="py-5 bg-stacked-waves-gradient">
 			<AboutBalanceWithin />
 		</BContainer>
 
@@ -29,7 +29,7 @@
 		</BContainer>
 
 		<!-- INTERESTED? -->
-		<BContainer v-if="show" fluid class="px-0 py-5 bg-secondary-light">
+		<BContainer v-if="show" fluid class="px-0 py-5 bg-stacked-waves-primary">
 			<BContainer>
 				<BRow>
 					<BCol cols="12">
